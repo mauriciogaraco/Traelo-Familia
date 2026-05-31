@@ -97,6 +97,7 @@ export function BottomNav() {
             <Link
               key={item.to}
               to={item.to}
+              id={item.to === "/carrito" ? "cart-fly-target" : undefined}
               className={`relative flex flex-col items-center gap-1 flex-1 py-2 rounded-2xl transition-colors ${
                 active ? "text-primary" : "text-text-secondary"
               }`}

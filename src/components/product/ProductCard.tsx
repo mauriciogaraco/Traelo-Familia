@@ -4,16 +4,19 @@ import { StockBadge } from '../ui/StockBadge'
 import { ProductImage } from '../ui/ProductImage'
 import { useCart } from '../../context/CartContext'
 import { formatAmount } from '../../lib/format'
+import { flyToCart } from '../../lib/flyToCart'
 
 export function ProductCard({ product }: { product: Product }) {
   const { addItem, getQuantity } = useCart()
   const qty = getQuantity(product.id)
   const isOut = product.stockStatus === 'agotado'
 
-  function handleAdd(e: React.MouseEvent) {
+  function handleAdd(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault()
     e.stopPropagation()
-    if (!isOut) addItem(product)
+    if (isOut) return
+    flyToCart(e.currentTarget)
+    addItem(product)
   }
 
   return (
