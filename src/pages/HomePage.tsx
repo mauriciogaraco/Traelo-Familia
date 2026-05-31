@@ -34,9 +34,11 @@ export function HomePage() {
     <div className="animate-fade-in">
       {/* Cabecera: logo + dirección + buscador */}
       <header className="bg-gradient-warm px-4 pt-4 pb-5 rounded-b-[1.75rem] border-b border-border/70">
-        <div className="flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2">
           <Logo />
-          <AddressBar variant="pill" />
+          <div className="ml-auto min-w-0">
+            <AddressBar variant="pill" />
+          </div>
         </div>
 
         <div className="relative mt-3">
@@ -112,9 +114,12 @@ export function HomePage() {
 
 function SectionTitle({ title, action }: { title: string; action?: React.ReactNode }) {
   return (
-    <div className="flex items-center justify-between mb-2.5">
-      <h2 className="text-[17px] font-bold text-text-primary tracking-tight">{title}</h2>
-      {action}
+    <div className="flex items-end justify-between mb-3">
+      <h2 className="flex items-center gap-2.5 text-[1.35rem] font-extrabold text-text-primary tracking-[-0.02em]">
+        <span className="w-1.5 h-6 rounded-full bg-gradient-primary" aria-hidden="true" />
+        {title}
+      </h2>
+      {action && <div className="pb-0.5">{action}</div>}
     </div>
   )
 }
