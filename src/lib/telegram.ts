@@ -35,6 +35,7 @@ export function buildOrderMessage(order: Order): string {
     '',
     `👤 <b>Cliente:</b> ${esc(address.nombre)} ${esc(address.apellidos)}`,
     `📍 <b>Dirección:</b> ${esc(address.direccion)}`,
+    ...(address.referencia ? [`🧭 <b>Referencia:</b> ${esc(address.referencia)}`] : []),
     `📞 <b>Teléfono:</b> ${esc(address.telefono)}`,
     '',
   ]

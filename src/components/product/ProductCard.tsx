@@ -22,7 +22,7 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       to={`/producto/${product.id}`}
-      className="group flex flex-col bg-surface rounded-3xl border border-border overflow-hidden shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200"
+      className="group flex flex-col h-full bg-surface rounded-3xl border border-border overflow-hidden shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200"
     >
       <div className="relative">
         <ProductImage
@@ -42,6 +42,7 @@ export function ProductCard({ product }: { product: Product }) {
         <p className="text-[11px] font-semibold text-text-secondary truncate">
           {product.businessName}
         </p>
+        {/* line-clamp-2: si el texto se sale, puntos suspensivos sin estirar la tarjeta */}
         <h3 className="text-sm font-bold text-text-primary leading-snug line-clamp-2 mt-0.5">
           {product.name}
         </h3>

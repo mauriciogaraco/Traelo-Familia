@@ -70,6 +70,9 @@ export function CheckoutPage() {
                   {address.nombre} {address.apellidos}
                 </p>
                 <p className="text-sm text-text-secondary mt-0.5">{address.direccion}</p>
+                {address.referencia && (
+                  <p className="text-sm text-text-secondary mt-0.5">🧭 {address.referencia}</p>
+                )}
                 <p className="text-sm text-text-secondary mt-0.5">📞 {address.telefono}</p>
               </div>
               <div className="mt-3 pt-3 border-t border-border">

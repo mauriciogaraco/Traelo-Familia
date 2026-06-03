@@ -1,3 +1,7 @@
+/**
+ * Estados de stock. Al ser un union estricto, TypeScript obliga a usar uno de
+ * estos valores: para marcar un producto como agotado basta `stockStatus: 'agotado'`.
+ */
 export type StockStatus = 'disponible' | 'pocas' | 'agotado'
 
 export type Category =
@@ -5,7 +9,6 @@ export type Category =
   | 'Bebidas'
   | 'Aseo'
   | 'Hogar'
-  | 'Electrodomésticos'
   | 'Comida'
 
 export interface Business {
@@ -44,6 +47,8 @@ export interface Address {
   apellidos: string
   telefono: string
   direccion: string
+  /** Detalle opcional: "al doblar de la farmacia", "frente al parque", etc. */
+  referencia?: string
 }
 
 export type OrderStatus = 'pendiente' | 'completado'
