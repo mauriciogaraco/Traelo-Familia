@@ -1,6 +1,7 @@
 import type { Order } from '../types'
 import { formatPrice } from './format'
 import { groupByBusiness } from './order'
+import { hasFormato, lineTotal, packSize, unitsOf } from './cart'
 import {
   TELEGRAM_BOT_TOKEN,
   TELEGRAM_CHAT_ID,
@@ -35,14 +36,19 @@ export function buildOrderMessage(order: Order): string {
     '',
     `👤 <b>Cliente:</b> ${esc(address.nombre)} ${esc(address.apellidos)}`,
     `📍 <b>Dirección:</b> ${esc(address.direccion)}`,
+    ...(address.referencia ? [`🧭 <b>Referencia:</b> ${esc(address.referencia)}`] : []),
     `📞 <b>Teléfono:</b> ${esc(address.telefono)}`,
     '',
   ]
 
   for (const group of groups) {
     lines.push(`🏪 <b>${esc(group.businessName)}</b>`)
-    for (const { product, quantity } of group.items) {
-      lines.push(`   • ${esc(product.name)} × ${quantity} — ${formatPrice(product.price * quantity)}`)
+    for (const item of group.items) {
+      const { product, quantity } = item
+      const detalle = hasFormato(product)
+        ? `${unitsOf(item)} u (${quantity} caja${quantity > 1 ? 's' : ''} × ${packSize(product)})`
+        : `× ${quantity}`
+      lines.push(`   • ${esc(product.name)} ${detalle} — ${formatPrice(lineTotal(item))}`)
     }
     lines.push(`   <i>Subtotal: ${formatPrice(group.subtotal)}</i>`)
     lines.push('')

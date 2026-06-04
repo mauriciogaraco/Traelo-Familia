@@ -4,6 +4,7 @@ import { StockBadge } from '../ui/StockBadge'
 import { ProductImage } from '../ui/ProductImage'
 import { useCart } from '../../context/CartContext'
 import { formatAmount } from '../../lib/format'
+import { hasFormato, packSize } from '../../lib/cart'
 import { flyToCart } from '../../lib/flyToCart'
 
 export function ProductCard({ product }: { product: Product }) {
@@ -22,7 +23,7 @@ export function ProductCard({ product }: { product: Product }) {
   return (
     <Link
       to={`/producto/${product.id}`}
-      className="group flex flex-col bg-surface rounded-3xl border border-border overflow-hidden shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200"
+      className="group flex flex-col h-full bg-surface rounded-3xl border border-border overflow-hidden shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all duration-200"
     >
       <div className="relative">
         <ProductImage
@@ -42,16 +43,24 @@ export function ProductCard({ product }: { product: Product }) {
         <p className="text-[11px] font-semibold text-text-secondary truncate">
           {product.businessName}
         </p>
+        {/* line-clamp-2: si el texto se sale, puntos suspensivos sin estirar la tarjeta */}
         <h3 className="text-sm font-bold text-text-primary leading-snug line-clamp-2 mt-0.5">
           {product.name}
         </h3>
+        {hasFormato(product) && (
+          <span className="inline-flex self-start items-center mt-1 px-1.5 py-0.5 rounded-md bg-primary/10 text-primary text-[10px] font-bold">
+            Caja × {packSize(product)}
+          </span>
+        )}
 
         <div className="flex items-end justify-between gap-2 mt-auto pt-3">
           <div className="leading-none min-w-0">
             <span className="text-base font-bold text-text-primary">
               {formatAmount(product.price)}
             </span>
-            <span className="block text-[10px] font-semibold text-text-secondary mt-0.5">CUP</span>
+            <span className="block text-[10px] font-semibold text-text-secondary mt-0.5">
+              {hasFormato(product) ? 'CUP/u' : 'CUP'}
+            </span>
           </div>
 
           <button

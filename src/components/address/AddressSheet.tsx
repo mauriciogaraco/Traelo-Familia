@@ -9,7 +9,7 @@ interface AddressSheetProps {
   onSave: (address: Address) => void
 }
 
-const empty: Address = { nombre: '', apellidos: '', telefono: '', direccion: '' }
+const empty: Address = { nombre: '', apellidos: '', telefono: '', direccion: '', referencia: '' }
 type Errors = Partial<Record<keyof Address, string>>
 
 export function AddressSheet({ open, initial, onClose, onSave }: AddressSheetProps) {
@@ -61,6 +61,7 @@ export function AddressSheet({ open, initial, onClose, onSave }: AddressSheetPro
       apellidos: form.apellidos.trim(),
       telefono: form.telefono.trim(),
       direccion: form.direccion.trim(),
+      referencia: form.referencia?.trim() || undefined,
     })
   }
 
@@ -99,6 +100,7 @@ export function AddressSheet({ open, initial, onClose, onSave }: AddressSheetPro
           </div>
           <Field label="Teléfono" value={form.telefono} onChange={(v) => update('telefono', v)} error={errors.telefono} placeholder="Ej: 55123456" type="tel" autoComplete="tel" />
           <Field label="Dirección completa" value={form.direccion} onChange={(v) => update('direccion', v)} error={errors.direccion} placeholder="Calle, número, entre calles, municipio..." multiline autoComplete="street-address" />
+          <Field label="Referencia (opcional)" value={form.referencia ?? ''} onChange={(v) => update('referencia', v)} placeholder="Ej: al doblar de la farmacia, frente al parque..." multiline />
 
           <Button type="submit" size="lg" fullWidth>
             Guardar dirección
