@@ -1,5 +1,6 @@
 import type { Address, CartItem, Order } from '../types'
 import { lineTotal } from './cart'
+import { MESSAGING_FEE } from './config'
 
 export interface BusinessGroup {
   businessId: string
@@ -31,11 +32,15 @@ function generateOrderId(): string {
 
 /** Construye un pedido (sin persistir) a partir del carrito y la dirección. */
 export function makeOrder(items: CartItem[], address: Address): Order {
+  const subtotal = items.reduce((sum, i) => sum + lineTotal(i), 0)
+  const fee = items.length > 0 ? MESSAGING_FEE : 0
   return {
     id: generateOrderId(),
     date: new Date().toISOString(),
     items: items.map((i) => ({ ...i })),
-    total: items.reduce((sum, i) => sum + lineTotal(i), 0),
+    subtotal,
+    fee,
+    total: subtotal + fee,
     status: 'pendiente',
     address,
   }

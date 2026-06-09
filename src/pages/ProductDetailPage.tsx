@@ -7,6 +7,7 @@ import { Button } from '../components/ui/Button'
 import { useCart } from '../context/CartContext'
 import { formatAmount } from '../lib/format'
 import { hasFormato, hasOptions, packSize } from '../lib/cart'
+import { isOpenNow } from '../lib/hours'
 import { businessById } from '../data/catalog'
 import { PaymentNote } from '../components/ui/PaymentNote'
 
@@ -31,7 +32,9 @@ export function ProductDetailPage() {
 
   const isOut = product.stockStatus === 'agotado'
   const needsOption = hasOptions(product)
-  const canAdd = !isOut && (!needsOption || option !== null)
+  const biz = businessById(product.businessId)
+  const closed = biz ? !isOpenNow(biz) : false
+  const canAdd = !isOut && !closed && (!needsOption || option !== null)
 
   function add() {
     if (!canAdd) return
@@ -83,6 +86,20 @@ export function ProductDetailPage() {
         </div>
 
         <h1 className="text-2xl font-bold text-text-primary leading-tight mt-2">{product.name}</h1>
+
+        {biz && (
+          <p className="flex items-center gap-1.5 mt-1.5 text-xs font-semibold">
+            <span
+              className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full ${
+                closed ? 'bg-stone-100 text-text-secondary' : 'bg-green-50 text-success'
+              }`}
+            >
+              <span className={`w-1.5 h-1.5 rounded-full ${closed ? 'bg-stone-400' : 'bg-success'}`} />
+              {closed ? 'Cerrado' : 'Abierto'}
+            </span>
+            <span className="text-text-secondary">{biz.schedule.label}</span>
+          </p>
+        )}
 
         <div className="flex items-baseline gap-1.5 mt-3">
           <span className="text-3xl font-bold text-primary">{formatAmount(product.price)}</span>
@@ -187,6 +204,10 @@ export function ProductDetailPage() {
         {isOut ? (
           <Button size="lg" fullWidth disabled>
             Producto agotado
+          </Button>
+        ) : closed ? (
+          <Button size="lg" fullWidth disabled>
+            Cerrado ahora · {biz?.schedule.label}
           </Button>
         ) : needsOption && option === null ? (
           <Button size="lg" fullWidth disabled>

@@ -1,10 +1,10 @@
 /** Configuración del MVP de Tráelo. */
 
-/** Tarifa de mensajería (CUP). Fija, pero GRATIS por lanzamiento (se muestra tachada). */
-export const MESSAGING_FEE = 300
+/** Tarifa fija de mensajería (CUP). */
+export const MESSAGING_FEE = 200
 
-/** Mientras sea true, la mensajería es gratis (tarifa tachada). */
-export const MESSAGING_FREE = true
+/** Promoción de lanzamiento mostrada al cliente. */
+export const MESSAGING_PROMO = 'Los primeros 10 pedidos del día son gratis 🎉'
 
 /**
  * Telegram Bot API.
