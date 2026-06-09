@@ -6,7 +6,7 @@ import {
   TELEGRAM_BOT_TOKEN,
   TELEGRAM_CHAT_ID,
   MESSAGING_FEE,
-  MESSAGING_FREE,
+  MESSAGING_PROMO,
 } from './config'
 
 /** Escapa los caracteres reservados de HTML para Telegram (parse_mode=HTML). */
@@ -55,7 +55,8 @@ export function buildOrderMessage(order: Order): string {
     lines.push('')
   }
 
-  lines.push(`🛵 <b>Mensajería:</b> ${MESSAGING_FREE ? `Gratis (lanzamiento) — antes ${formatPrice(MESSAGING_FEE)}` : formatPrice(MESSAGING_FEE)}`)
+  lines.push(`🛵 <b>Mensajería:</b> ${formatPrice(MESSAGING_FEE)}`)
+  lines.push(`🎁 <i>${esc(MESSAGING_PROMO)}</i>`)
   lines.push(`💵 <b>Total: ${formatPrice(total)}</b>`)
 
   return lines.join('\n')

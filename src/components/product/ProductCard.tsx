@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
 import { formatAmount } from '../../lib/format'
 import { hasFormato, hasOptions, packSize } from '../../lib/cart'
+import { isOpenNow } from '../../lib/hours'
+import { businessById } from '../../data/catalog'
 import { flyToCart } from '../../lib/flyToCart'
 
 export function ProductCard({ product }: { product: Product }) {
@@ -14,11 +16,14 @@ export function ProductCard({ product }: { product: Product }) {
   const qty = getQuantity(product.id)
   const isOut = product.stockStatus === 'agotado'
   const needsOption = hasOptions(product)
+  const biz = businessById(product.businessId)
+  const closed = biz ? !isOpenNow(biz) : false
+  const disabled = isOut || closed
 
   function handleAdd(e: React.MouseEvent<HTMLButtonElement>) {
     e.preventDefault()
     e.stopPropagation()
-    if (isOut) return
+    if (disabled) return
     // Con tipos: no se añade directo, se abre el detalle para elegir.
     if (needsOption) {
       navigate(`/producto/${product.id}`)
@@ -56,6 +61,11 @@ export function ProductCard({ product }: { product: Product }) {
           {product.name}
         </h3>
         <div className="flex flex-wrap gap-1 mt-1">
+          {closed && (
+            <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-md bg-stone-100 text-text-secondary text-[10px] font-bold">
+              🕒 Cerrado
+            </span>
+          )}
           {hasFormato(product) && (
             <span className="inline-flex items-center px-1.5 py-0.5 rounded-md bg-primary/10 text-primary text-[10px] font-bold">
               Caja × {packSize(product)}
@@ -80,10 +90,10 @@ export function ProductCard({ product }: { product: Product }) {
 
           <button
             onClick={handleAdd}
-            disabled={isOut}
+            disabled={disabled}
             aria-label={needsOption ? `Elegir tipo de ${product.name}` : `Añadir ${product.name}`}
             className={`relative w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0 transition-all active:scale-90 ${
-              isOut
+              disabled
                 ? 'bg-stone-100 text-stone-400 cursor-not-allowed'
                 : 'bg-gradient-primary text-white shadow-btn-primary hover:brightness-105'
             }`}

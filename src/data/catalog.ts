@@ -66,6 +66,7 @@ export const businesses: Business[] = [
     image: BMercado,
     color: 'from-amber-100 to-orange-50',
     paymentNote: 'Solo se aceptan billetes de 50 CUP en adelante.',
+    schedule: { days: [1, 2, 3, 4, 5, 6], open: '09:00', close: '17:00', label: 'Lun–Sáb · 9:00 am – 5:00 pm' },
   },
   {
     id: 'el-patio',
@@ -73,11 +74,32 @@ export const businesses: Business[] = [
     description: 'Comida criolla recién hecha, lista para disfrutar en casa.',
     image: BRestaurante,
     color: 'from-rose-100 to-orange-50',
+    schedule: { days: [3, 4, 5, 6, 0], open: '09:00', close: '20:00', label: 'Mié–Dom · 9:00 am – 8:00 pm' },
+  },
+  {
+    id: 'panes-macus',
+    name: 'Panes Macus',
+    description: 'Panadería: panes frescos, frezco, malta y cerveza.',
+    image: Coconut,
+    color: 'from-yellow-100 to-amber-50',
+    schedule: { days: [0, 1, 2, 3, 4, 5, 6], open: '08:00', close: '20:00', label: 'Todos los días · 8:00 am – 8:00 pm' },
+  },
+  {
+    id: 'mercadito-ahorro',
+    name: 'Mercadito El Ahorro',
+    description: 'Granos por libra, aceite y embutidos frescos.',
+    image: BMercado,
+    color: 'from-emerald-100 to-teal-50',
+    schedule: { days: [0, 1, 2, 3, 4, 5, 6], open: '08:00', close: '20:00', label: 'Todos los días · 8:00 am – 8:00 pm' },
   },
 ]
 
 const MERCADO = 'bodega-central'
 const MERCADO_NAME = 'La Bodega Central'
+const PANES = 'panes-macus'
+const PANES_NAME = 'Panes Macus'
+const MERCA2 = 'mercadito-ahorro'
+const MERCA2_NAME = 'Mercadito El Ahorro'
 
 /**
  * Datos de prueba.
@@ -327,5 +349,82 @@ export const products: Product[] = [
     category: 'Comida', shortDescription: 'Postre cremoso.',
     longDescription: 'Flan casero de huevo con caramelo, suave y cremoso. El cierre perfecto.',
     image: '🍮', price: 220, stockStatus: 'pocas',
+  },
+
+  // ───────────────── Panes Macus (panadería) ─────────────────
+  // (fotos reutilizadas / placeholder; el cliente las ajustará luego)
+  {
+    id: 'pm-001', name: 'Pan suave', businessId: PANES, businessName: PANES_NAME,
+    category: 'Alimentos', shortDescription: 'Recién horneado.',
+    longDescription: 'Pan suave recién horneado, ideal para el desayuno o la merienda. Se vende por unidad.',
+    image: '🍞', price: 60, stockStatus: 'disponible',
+  },
+  {
+    id: 'pm-002', name: 'Pan de flauta', businessId: PANES, businessName: PANES_NAME,
+    category: 'Alimentos', shortDescription: 'Crujiente.',
+    longDescription: 'Flauta de corteza crujiente y miga esponjosa. Se vende por unidad.',
+    image: '🥖', price: 90, stockStatus: 'disponible',
+  },
+  {
+    id: 'pm-003', name: 'Pan de molde', businessId: PANES, businessName: PANES_NAME,
+    category: 'Alimentos', shortDescription: 'Para sándwiches.',
+    longDescription: 'Pan de molde en rebanadas, perfecto para sándwiches y tostadas. Bolsa.',
+    image: '🍞', photo: Coconut, price: 320, stockStatus: 'disponible',
+  },
+  {
+    id: 'pm-004', name: 'Frezco natural', businessId: PANES, businessName: PANES_NAME,
+    category: 'Bebidas', shortDescription: 'Bien frío.',
+    longDescription: 'Refresco natural de la casa, bien frío. Vaso de 16 oz.',
+    image: '🥤', photo: RefrescoCana, price: 120, stockStatus: 'disponible',
+  },
+  {
+    id: 'pm-005', name: 'Malta', businessId: PANES, businessName: PANES_NAME,
+    category: 'Bebidas', shortDescription: 'Lata individual.',
+    longDescription: 'Malta refrescante en lata. Se vende por unidad.',
+    image: '🍺', photo: Bambil, price: 180, stockStatus: 'disponible',
+  },
+  {
+    id: 'pm-006', name: 'Cerveza', businessId: PANES, businessName: PANES_NAME,
+    category: 'Bebidas', shortDescription: 'Bien fría.',
+    longDescription: 'Cerveza nacional bien fría. Se vende por unidad.',
+    image: '🍺', photo: CervezaBeck, price: 280, stockStatus: 'disponible',
+  },
+
+  // ───────────────── Mercadito El Ahorro ─────────────────
+  {
+    id: 'ma-001', name: 'Arroz (por libra)', businessId: MERCA2, businessName: MERCA2_NAME,
+    category: 'Alimentos', shortDescription: 'Precio por libra.',
+    longDescription: 'Arroz a granel, precio por libra. Indica la cantidad de libras al confirmar.',
+    image: '🍚', photo: Frijoles, price: 90, stockStatus: 'disponible',
+  },
+  {
+    id: 'ma-002', name: 'Aceite (1 L)', businessId: MERCA2, businessName: MERCA2_NAME,
+    category: 'Alimentos', shortDescription: 'Botella de 1 litro.',
+    longDescription: 'Aceite vegetal en botella de 1 litro.',
+    image: '🫒', photo: Vinagre, price: 760, stockStatus: 'disponible',
+  },
+  {
+    id: 'ma-003', name: 'Perrito caliente', businessId: MERCA2, businessName: MERCA2_NAME,
+    category: 'Alimentos', shortDescription: 'Salchicha + pan.',
+    longDescription: 'Perrito caliente listo para preparar (salchicha y pan). Se vende por unidad.',
+    image: '🌭', price: 150, stockStatus: 'disponible',
+  },
+  {
+    id: 'ma-004', name: 'Azúcar (por libra)', businessId: MERCA2, businessName: MERCA2_NAME,
+    category: 'Alimentos', shortDescription: 'Precio por libra.',
+    longDescription: 'Azúcar a granel, precio por libra. Indica la cantidad de libras al confirmar.',
+    image: '🍬', price: 80, stockStatus: 'disponible',
+  },
+  {
+    id: 'ma-005', name: 'Jamonada de pollo (1 lb)', businessId: MERCA2, businessName: MERCA2_NAME,
+    category: 'Alimentos', shortDescription: 'Una libra.',
+    longDescription: 'Jamonada de pollo, se entrega por libra.',
+    image: '🍖', photo: Pollo, price: 420, stockStatus: 'disponible',
+  },
+  {
+    id: 'ma-006', name: 'Lomo de cerdo en bistec (1 lb)', businessId: MERCA2, businessName: MERCA2_NAME,
+    category: 'Alimentos', shortDescription: 'Una libra, en bistec.',
+    longDescription: 'Lomo de cerdo cortado en bistec, se entrega por libra.',
+    image: '🥩', photo: Hamburguesa, price: 950, stockStatus: 'disponible',
   },
 ]

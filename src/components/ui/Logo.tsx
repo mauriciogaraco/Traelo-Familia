@@ -5,8 +5,8 @@ interface LogoProps {
   size?: 'sm' | 'md' | 'lg'
   /** Mostrar el texto "Tráelo" junto a la marca. */
   showWordmark?: boolean
-  /** Usar un avión de papel (con estela) como acento sobre la "a", en vez de la tilde. */
-  planeAccent?: boolean
+  /** Mostrar el avión de papel "volando" alrededor de la "o". */
+  plane?: boolean
   className?: string
 }
 
@@ -22,23 +22,31 @@ const wordSize = {
 }
 
 /**
- * Acento en forma de avión de papel con puntos suspensivos detrás (estela de
- * vuelo). Va sobre la "a", inclinado, para que se lea como la tilde de "Tráelo".
+ * Avión de papel (outline) con una pequeña estela de puntos, posicionado arriba
+ * a la derecha de la "o" para que parezca que vuela a su alrededor.
  */
-function PlaneAccent() {
+function PlaneAroundO() {
   return (
     <span
-      className="absolute left-1/2 -top-[0.46em] flex items-center gap-[0.05em] text-primary"
-      style={{ transform: 'translateX(-46%) rotate(-16deg)' }}
+      className="absolute left-1/2 -top-[0.62em] flex items-center gap-[0.05em] text-primary"
+      style={{ transform: 'translateX(-6%) rotate(-18deg)' }}
       aria-hidden="true"
     >
-      {/* puntos suspensivos / estela */}
+      {/* estela / puntos suspensivos */}
       <span className="w-[0.07em] h-[0.07em] rounded-full bg-current opacity-40" />
-      <span className="w-[0.1em] h-[0.1em] rounded-full bg-current opacity-60" />
-      <span className="w-[0.13em] h-[0.13em] rounded-full bg-current opacity-80" />
-      {/* avión de papel */}
-      <svg viewBox="0 0 24 24" fill="currentColor" className="w-[0.5em] h-[0.5em] ml-[0.04em]">
-        <path d="M21.7 3.3 2.5 11.1c-.9.4-.9 1.6 0 1.9l4.8 1.6 1.8 5.8c.2.7 1.1.9 1.6.3l2.7-2.9 4.7 3.4c.6.4 1.5.1 1.7-.6l3.4-15.6c.2-1-.8-1.9-1.5-1.7Z" />
+      <span className="w-[0.1em] h-[0.1em] rounded-full bg-current opacity-70" />
+      {/* avión de papel outline */}
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth={2}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="w-[0.52em] h-[0.52em] ml-[0.04em]"
+      >
+        <path d="m22 2-7 20-4-9-9-4Z" />
+        <path d="M22 2 11 13" />
       </svg>
     </span>
   )
@@ -47,7 +55,7 @@ function PlaneAccent() {
 export function Logo({
   size = 'md',
   showWordmark = true,
-  planeAccent = true,
+  plane = true,
   className = '',
 }: LogoProps) {
   return (
@@ -63,14 +71,13 @@ export function Logo({
       />
       {showWordmark && (
         <span className={`font-brand text-primary leading-none pb-1 ${wordSize[size]}`}>
-          {planeAccent ? (
+          {plane ? (
             <>
-              Tr
+              Tráel
               <span className="relative inline-block">
-                a
-                <PlaneAccent />
+                o
+                <PlaneAroundO />
               </span>
-              elo
             </>
           ) : (
             'Tráelo'

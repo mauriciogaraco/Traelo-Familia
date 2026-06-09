@@ -8,17 +8,18 @@ import { AddressBar } from '../components/address/AddressBar'
 import { ProductImage } from '../components/ui/ProductImage'
 import { Button } from '../components/ui/Button'
 import { EmptyState } from '../components/ui/EmptyState'
-import { MessagingFeeRow } from '../components/ui/MessagingFeeRow'
+import { MessagingFeeRow, MessagingPromo } from '../components/ui/MessagingFeeRow'
 import { PaymentNote } from '../components/ui/PaymentNote'
 import { formatAmount, formatPrice } from '../lib/format'
 import { makeOrder, groupByBusiness } from '../lib/order'
 import { hasFormato, itemLineId, lineTotal, packSize, unitsOf } from '../lib/cart'
+import { isOpenNow } from '../lib/hours'
 import { sendOrderToTelegram } from '../lib/telegram'
 import { businessById } from '../data/catalog'
 
 export function CheckoutPage() {
   const navigate = useNavigate()
-  const { items, total, clearCart } = useCart()
+  const { items, subtotal, total, clearCart } = useCart()
   const { saveOrder } = useOrders()
   const { address } = useAddress()
   const { showToast } = useToast()
@@ -39,12 +40,18 @@ export function CheckoutPage() {
   }
 
   const groups = groupByBusiness(items)
+  const closedGroups = groups.filter((g) => {
+    const b = businessById(g.businessId)
+    return b ? !isOpenNow(b) : false
+  })
+  const hasClosed = closedGroups.length > 0
+  const canConfirm = !!address && !sending && !hasClosed
 
   async function confirm() {
-    if (!address || sending) return
+    if (!canConfirm) return
     setSending(true)
 
-    const order = makeOrder(items, address)
+    const order = makeOrder(items, address!)
     const ok = await sendOrderToTelegram(order)
 
     if (ok) {
@@ -136,11 +143,14 @@ export function CheckoutPage() {
           </div>
         </section>
 
+        {/* Promo */}
+        <MessagingPromo />
+
         {/* Totales */}
         <section className="bg-surface border border-border rounded-3xl p-4 space-y-2.5">
           <div className="flex justify-between text-sm">
             <span className="text-text-secondary">Subtotal</span>
-            <span className="font-semibold text-text-primary">{formatPrice(total)}</span>
+            <span className="font-semibold text-text-primary">{formatPrice(subtotal)}</span>
           </div>
           <MessagingFeeRow />
           <div className="border-t border-border pt-2.5 flex justify-between items-baseline">
@@ -148,6 +158,20 @@ export function CheckoutPage() {
             <span className="text-xl font-bold text-primary">{formatPrice(total)}</span>
           </div>
         </section>
+
+        {/* Negocio cerrado: no se puede pedir */}
+        {hasClosed && (
+          <div className="flex items-start gap-2.5 bg-red-50 border border-red-200 rounded-2xl p-3">
+            <span className="text-lg flex-shrink-0">🕒</span>
+            <p className="text-xs text-red-800 leading-relaxed">
+              <span className="font-bold">
+                {closedGroups.map((g) => g.businessName).join(', ')}
+              </span>{' '}
+              está cerrado ahora. No puedes confirmar pedidos fuera del horario de atención. Vuelve
+              dentro del horario o quita esos productos.
+            </p>
+          </div>
+        )}
 
         {/* Aviso */}
         <div className="flex items-start gap-2.5 bg-sky-50 border border-sky-200 rounded-2xl p-3">
@@ -158,7 +182,7 @@ export function CheckoutPage() {
           </p>
         </div>
 
-        <Button size="lg" fullWidth disabled={!address || sending} onClick={confirm}>
+        <Button size="lg" fullWidth disabled={!canConfirm} onClick={confirm}>
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <path d="M21.7 3.3 2.5 11.1c-.9.4-.9 1.6 0 1.9l4.8 1.6 1.8 5.8c.2.7 1.1.9 1.6.3l2.7-2.9 4.7 3.4c.6.4 1.5.1 1.7-.6l3.4-15.6c.2-1-.8-1.9-1.5-1.7Z" />
           </svg>

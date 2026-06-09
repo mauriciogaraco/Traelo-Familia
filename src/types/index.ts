@@ -11,6 +11,18 @@ export type Category =
   | 'Confituras'
   | 'Comida'
 
+/** Horario de atención del negocio (para no permitir pedidos fuera de hora). */
+export interface BusinessSchedule {
+  /** Días que abre: 0=Domingo … 6=Sábado. */
+  days: number[]
+  /** Hora de apertura "HH:mm" (24h). */
+  open: string
+  /** Hora de cierre "HH:mm" (24h). */
+  close: string
+  /** Etiqueta legible, ej: "Lun–Sáb · 9:00 am – 5:00 pm". */
+  label: string
+}
+
 export interface Business {
   id: string
   name: string
@@ -21,6 +33,8 @@ export interface Business {
   color: string
   /** Aviso de pago opcional, ej: "Solo billetes de 50 CUP en adelante". */
   paymentNote?: string
+  /** Horario de atención. */
+  schedule: BusinessSchedule
 }
 
 export interface Product {
@@ -73,6 +87,11 @@ export interface Order {
   id: string
   date: string
   items: CartItem[]
+  /** Suma de los productos (sin mensajería). */
+  subtotal: number
+  /** Tarifa de mensajería aplicada. */
+  fee: number
+  /** subtotal + fee. */
   total: number
   status: OrderStatus
   address: Address

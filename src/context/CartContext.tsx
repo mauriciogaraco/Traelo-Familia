@@ -10,6 +10,7 @@ import {
 import type { CartItem, Product } from '../types'
 import { readStorage, writeStorage, STORAGE_KEYS } from '../lib/storage'
 import { lineTotal, lineId, itemLineId } from '../lib/cart'
+import { MESSAGING_FEE } from '../lib/config'
 
 interface CartContextValue {
   items: CartItem[]
@@ -21,6 +22,8 @@ interface CartContextValue {
   clearCart: () => void
   getQuantity: (lineKey: string) => number
   subtotal: number
+  /** Tarifa de mensajería (0 si el carrito está vacío). */
+  fee: number
   total: number
   itemCount: number
 }
@@ -83,6 +86,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
     [items]
   )
 
+  const fee = items.length > 0 ? MESSAGING_FEE : 0
+
   const value: CartContextValue = {
     items,
     addItem,
@@ -91,7 +96,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
     clearCart,
     getQuantity,
     subtotal,
-    total: subtotal, // sin costo de envío en el MVP
+    fee,
+    total: subtotal + fee,
     itemCount,
   }
 
