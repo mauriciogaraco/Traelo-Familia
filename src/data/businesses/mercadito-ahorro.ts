@@ -24,7 +24,7 @@ export const mercaditoAhorro: Business = {
   description: 'Granos por libra, aceite y embutidos frescos.',
   image: BMercado,
   color: 'from-emerald-100 to-teal-50',
-  schedule: { days: [0, 1, 2, 3, 4, 5, 6], open: '08:00', close: '20:00', label: 'Todos los días · 8:00 am – 8:00 pm' },
+  schedule: { days: [0, 1, 2, 3, 4, 5, 6], open: '09:00', close: '22:00', label: 'Todos los días · 9:00 am – 10:00 pm' },
 }
 
 export const mercaditoAhorroProducts: Product[] = [

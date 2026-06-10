@@ -14,7 +14,7 @@ export const laMarina: Business = {
   image: LogoPizza,
   color: 'from-red-100 to-orange-50',
   // Horario tentativo (ajústalo): todos los días 10:00 am – 10:00 pm.
-  schedule: { days: [0, 1, 2, 3, 4, 5, 6], open: '10:00', close: '22:00', label: 'Todos los días · 10:00 am – 10:00 pm' },
+  schedule: { days: [0, 1, 2, 3, 4, 5, 6], open: '9:00', close: '22:00', label: 'Todos los días · 10:00 am – 10:00 pm' },
 }
 
 /** Agregos opcionales (máximo uno por producto). */

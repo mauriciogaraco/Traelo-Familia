@@ -11,7 +11,7 @@ export const dlm: Business = {
   description: 'Sabores de la casa, bebidas, picaderas y platos fuertes para compartir.',
   image: DLM,
   color: 'from-rose-100 to-orange-50',
-  schedule: { days: [3, 4, 5, 6, 0], open: '09:00', close: '20:00', label: 'Mié–Dom · 9:00 am – 8:00 pm' },
+  schedule: { days: [3, 4, 5, 6, 0], open: '09:00', close: '22:00', label: 'Mié–Dom · 9:00 am – 10:00 pm' },
 }
 
 // ── Mapeo del JSON de la carta al formato de la app ──
