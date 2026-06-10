@@ -1,7 +1,7 @@
 /** Configuración del MVP de Tráelo. */
 
 /** Promoción de lanzamiento mostrada al cliente. */
-export const MESSAGING_PROMO = 'Los primeros 10 pedidos del día son gratis 🎉'
+export const MESSAGING_PROMO = 'Los primeros 10 pedidos no tienen costo de mensajería 🎉'
 
 /**
  * Telegram Bot API.

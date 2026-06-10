@@ -7,15 +7,15 @@ import {
   useState,
   type ReactNode,
 } from 'react'
-import type { CartItem, Product } from '../types'
+import type { Addon, CartItem, Product } from '../types'
 import { readStorage, writeStorage, STORAGE_KEYS } from '../lib/storage'
 import { lineTotal, lineId, itemLineId } from '../lib/cart'
 import { computeFee } from '../lib/fees'
 
 interface CartContextValue {
   items: CartItem[]
-  /** Añade un producto. `option` es el tipo/sabor elegido (si aplica). */
-  addItem: (product: Product, quantity?: number, option?: string) => void
+  /** Añade un producto. `option` = tipo/sabor, `addon` = agrego/extra (si aplica). */
+  addItem: (product: Product, quantity?: number, option?: string, addon?: Addon) => void
   /** Operaciones por id de línea (usa lineId / itemLineId de lib/cart). */
   removeItem: (lineKey: string) => void
   setQuantity: (lineKey: string, quantity: number) => void
@@ -39,8 +39,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
     writeStorage(STORAGE_KEYS.cart, items)
   }, [items])
 
-  const addItem = useCallback((product: Product, quantity = 1, option?: string) => {
-    const key = lineId(product.id, option)
+  const addItem = useCallback((product: Product, quantity = 1, option?: string, addon?: Addon) => {
+    const key = lineId(product.id, option, addon?.name)
     setItems((prev) => {
       const existing = prev.find((i) => itemLineId(i) === key)
       if (existing) {
@@ -48,7 +48,7 @@ export function CartProvider({ children }: { children: ReactNode }) {
           itemLineId(i) === key ? { ...i, quantity: i.quantity + quantity } : i
         )
       }
-      return [...prev, { product, quantity, option }]
+      return [...prev, { product, quantity, option, addon }]
     })
   }, [])
 

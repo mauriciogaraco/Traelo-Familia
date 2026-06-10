@@ -5,16 +5,21 @@ export function hasOptions(product: Product): boolean {
   return Array.isArray(product.options) && product.options.length > 0
 }
 
+/** ¿El producto admite agregos (extras)? */
+export function hasAddons(product: Product): boolean {
+  return Array.isArray(product.addons) && product.addons.length > 0
+}
+
 /**
- * Identidad de una línea de carrito: el mismo producto con distinto tipo cuenta
- * como líneas separadas.
+ * Identidad de una línea de carrito: el mismo producto con distinto tipo o
+ * distinto agrego cuenta como líneas separadas.
  */
-export function lineId(productId: string, option?: string): string {
-  return option ? `${productId}::${option}` : productId
+export function lineId(productId: string, option?: string, addonName?: string): string {
+  return [productId, option ?? '', addonName ?? ''].join('::')
 }
 
 export function itemLineId(item: CartItem): string {
-  return lineId(item.product.id, item.option)
+  return lineId(item.product.id, item.option, item.addon?.name)
 }
 
 /** Unidades por caja/paquete (1 si el producto se vende por unidad). */
@@ -35,7 +40,8 @@ export function unitsOf(item: CartItem): number {
   return item.quantity * packSize(item.product)
 }
 
-/** Total de la línea = precio por unidad × unidades totales. */
+/** Total de la línea = (precio + agrego) por unidad × unidades totales. */
 export function lineTotal(item: CartItem): number {
-  return item.product.price * unitsOf(item)
+  const unitPrice = item.product.price + (item.addon?.price ?? 0)
+  return unitPrice * unitsOf(item)
 }

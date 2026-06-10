@@ -193,11 +193,18 @@ function CartRow({
         >
           {product.name}
         </button>
-        {item.option && (
-          <span className="inline-flex self-start items-center mt-0.5 px-1.5 py-0.5 rounded-md bg-primary/10 text-primary text-[10px] font-bold">
-            {item.option}
-          </span>
-        )}
+        <div className="flex flex-wrap gap-1 mt-0.5">
+          {item.option && (
+            <span className="inline-flex items-center px-1.5 py-0.5 rounded-md bg-primary/10 text-primary text-[10px] font-bold">
+              {item.option}
+            </span>
+          )}
+          {item.addon && (
+            <span className="inline-flex items-center px-1.5 py-0.5 rounded-md bg-success/10 text-success text-[10px] font-bold">
+              + {item.addon.name}
+            </span>
+          )}
+        </div>
         {hasFormato(product) && (
           <p className="text-[11px] font-semibold text-text-secondary mt-0.5">
             {unitsOf(item)} u · caja × {packSize(product)} ·{" "}

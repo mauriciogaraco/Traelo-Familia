@@ -120,7 +120,8 @@ function OrderCard({ order, onComplete }: { order: Order; onComplete: () => void
                 <div key={itemLineId(item)} className="flex items-center justify-between gap-2 text-sm">
                   <span className="text-text-secondary line-clamp-1 flex-1">
                     {item.product.name}
-                    {item.option && <span className="text-primary font-semibold"> · {item.option}</span>}{' '}
+                    {item.option && <span className="text-primary font-semibold"> · {item.option}</span>}
+                    {item.addon && <span className="text-success font-semibold"> · + {item.addon.name}</span>}{' '}
                     <span className="text-text-secondary/70">
                       × {hasFormato(item.product) ? `${unitsOf(item)} u` : item.quantity}
                     </span>
