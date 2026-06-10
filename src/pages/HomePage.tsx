@@ -7,6 +7,7 @@ import { ProductCard } from "../components/product/ProductCard";
 import { Pagination } from "../components/ui/Pagination";
 import { Logo } from "../components/ui/Logo";
 import { PaymentNote } from "../components/ui/PaymentNote";
+import { ShareSection } from "../components/home/ShareSection";
 import type { Category } from "../types";
 
 const PAGE_SIZE = 20;
@@ -214,7 +215,8 @@ export function HomePage() {
           </>
         )}
       </div>
-      <div className="px-4">
+      <div className="px-4 pt-6">
+        <ShareSection />
         <SupportSection />
       </div>
     </div>
