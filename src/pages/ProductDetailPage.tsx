@@ -5,11 +5,12 @@ import { StockBadge } from '../components/ui/StockBadge'
 import { ProductImage } from '../components/ui/ProductImage'
 import { Button } from '../components/ui/Button'
 import { useCart } from '../context/CartContext'
-import { formatAmount } from '../lib/format'
-import { hasFormato, hasOptions, packSize } from '../lib/cart'
+import { formatAmount, formatPrice } from '../lib/format'
+import { hasAddons, hasFormato, hasOptions, packSize } from '../lib/cart'
 import { isOpenNow } from '../lib/hours'
 import { businessById } from '../data/catalog'
 import { PaymentNote } from '../components/ui/PaymentNote'
+import type { Addon } from '../types'
 
 export function ProductDetailPage() {
   const { id } = useParams<{ id: string }>()
@@ -17,6 +18,7 @@ export function ProductDetailPage() {
   const { addItem } = useCart()
   const [qty, setQty] = useState(1)
   const [option, setOption] = useState<string | null>(null)
+  const [addon, setAddon] = useState<Addon | null>(null)
 
   const product = products.find((p) => p.id === id)
 
@@ -32,13 +34,15 @@ export function ProductDetailPage() {
 
   const isOut = product.stockStatus === 'agotado'
   const needsOption = hasOptions(product)
+  const canAddon = hasAddons(product)
   const biz = businessById(product.businessId)
   const closed = biz ? !isOpenNow(biz) : false
   const canAdd = !isOut && !closed && (!needsOption || option !== null)
+  const unitPrice = product.price + (addon?.price ?? 0)
 
   function add() {
     if (!canAdd) return
-    addItem(product!, qty, option ?? undefined)
+    addItem(product!, qty, option ?? undefined, addon ?? undefined)
   }
 
   // Volver: usa el historial si existe, si no (entrada directa/recarga) va al inicio.
@@ -155,6 +159,43 @@ export function ProductDetailPage() {
                 )
               })}
             </div>
+          </div>
+        )}
+
+        {/* Agregos (opcional, máximo uno) */}
+        {canAddon && !isOut && (
+          <div className="mt-5">
+            <div className="flex items-center gap-2 mb-2">
+              <h2 className="text-sm font-bold text-text-primary">Agrega un extra</h2>
+              <span className="text-[11px] font-bold text-text-secondary">Opcional · máx. 1</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {product.addons!.map((ag) => {
+                const active = addon?.name === ag.name
+                return (
+                  <button
+                    key={ag.name}
+                    onClick={() => setAddon(active ? null : ag)}
+                    aria-pressed={active}
+                    className={`px-3.5 py-2 rounded-xl text-sm font-bold border transition-all active:scale-95 ${
+                      active
+                        ? 'bg-gradient-primary text-white border-transparent shadow-btn-primary'
+                        : 'bg-surface text-text-primary border-border hover:border-primary/40'
+                    }`}
+                  >
+                    {ag.name}{' '}
+                    <span className={active ? 'text-white/80' : 'text-text-secondary'}>
+                      +{formatAmount(ag.price)}
+                    </span>
+                  </button>
+                )
+              })}
+            </div>
+            {addon && (
+              <p className="text-xs text-text-secondary mt-2">
+                Con {addon.name}: <span className="font-bold text-primary">{formatPrice(unitPrice)}</span> c/u
+              </p>
+            )}
           </div>
         )}
 

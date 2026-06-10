@@ -40,11 +40,13 @@ export function buildOrderMessage(order: Order): string {
   for (const group of groups) {
     lines.push(`🏪 <b>${esc(group.businessName)}</b>`)
     for (const item of group.items) {
-      const { product, quantity, option } = item
+      const { product, quantity, option, addon } = item
       const detalle = hasFormato(product)
         ? `${unitsOf(item)} u (${quantity} caja${quantity > 1 ? 's' : ''} × ${packSize(product)})`
         : `× ${quantity}`
-      const nombre = option ? `${product.name} (${option})` : product.name
+      let nombre = product.name
+      if (option) nombre += ` (${option})`
+      if (addon) nombre += ` + ${addon.name}`
       lines.push(`   • ${esc(nombre)} ${detalle} — ${formatPrice(lineTotal(item))}`)
     }
     lines.push(`   <i>Subtotal: ${formatPrice(group.subtotal)}</i>`)

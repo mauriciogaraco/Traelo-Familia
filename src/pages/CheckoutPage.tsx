@@ -10,6 +10,7 @@ import { Button } from '../components/ui/Button'
 import { EmptyState } from '../components/ui/EmptyState'
 import { MessagingFeeRow, MessagingPromo } from '../components/ui/MessagingFeeRow'
 import { PaymentNote } from '../components/ui/PaymentNote'
+import { TimeWheel } from '../components/ui/TimeWheel'
 import { formatAmount, formatPrice, formatTime12h } from '../lib/format'
 import { makeOrder, groupByBusiness } from '../lib/order'
 import { hasFormato, itemLineId, lineTotal, packSize, unitsOf } from '../lib/cart'
@@ -170,7 +171,10 @@ export function CheckoutPage() {
                 Lo antes posible
               </button>
               <button
-                onClick={() => setDeliveryMode('scheduled')}
+                onClick={() => {
+                  setDeliveryMode('scheduled')
+                  if (!deliveryTime && timeSlots[0]) setDeliveryTime(timeSlots[0].value)
+                }}
                 className={`h-11 rounded-2xl text-sm font-bold border transition-all ${
                   deliveryMode === 'scheduled'
                     ? 'bg-gradient-primary text-white border-transparent shadow-btn-primary'
@@ -181,32 +185,19 @@ export function CheckoutPage() {
               </button>
             </div>
 
-            {deliveryMode === 'scheduled' && (
-              <div className="bg-background border border-border rounded-2xl px-4 py-2.5">
-                <label htmlFor="delivery-time" className="block text-sm font-semibold text-text-primary mb-1">
-                  Hora de entrega (hoy)
-                </label>
-                {timeSlots.length === 0 ? (
-                  <p className="text-xs text-warning font-semibold">
-                    Ya no quedan horarios disponibles hoy. Elige “Lo antes posible”.
+            {deliveryMode === 'scheduled' &&
+              (timeSlots.length === 0 ? (
+                <p className="text-xs text-warning font-semibold px-1">
+                  Ya no quedan horarios disponibles hoy. Elige “Lo antes posible”.
+                </p>
+              ) : (
+                <div className="bg-surface border border-border rounded-2xl overflow-hidden">
+                  <p className="text-xs font-bold text-text-secondary text-center pt-2">
+                    Hora de entrega (hoy)
                   </p>
-                ) : (
-                  <select
-                    id="delivery-time"
-                    value={deliveryTime}
-                    onChange={(e) => setDeliveryTime(e.target.value)}
-                    className="w-full bg-transparent text-sm font-bold text-text-primary focus:outline-none"
-                  >
-                    <option value="">Selecciona la hora</option>
-                    {timeSlots.map((s) => (
-                      <option key={s.value} value={s.value}>
-                        {s.label}
-                      </option>
-                    ))}
-                  </select>
-                )}
-              </div>
-            )}
+                  <TimeWheel slots={timeSlots} value={deliveryTime} onChange={setDeliveryTime} />
+                </div>
+              ))}
             {feeInfo.isLate && (
               <p className="text-[11px] text-warning font-semibold">
                 A partir de las 7:00 pm la mensajería cuesta {formatPrice(350)}.
@@ -241,6 +232,7 @@ export function CheckoutPage() {
                         <p className="text-sm font-bold text-text-primary line-clamp-1">
                           {item.product.name}
                           {item.option && <span className="text-primary"> · {item.option}</span>}
+                          {item.addon && <span className="text-success"> · + {item.addon.name}</span>}
                         </p>
                         <p className="text-xs text-text-secondary">
                           {hasFormato(item.product)

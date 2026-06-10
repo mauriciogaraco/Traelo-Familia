@@ -37,6 +37,12 @@ export interface Business {
   schedule: BusinessSchedule
 }
 
+/** Agrego opcional (extra) que se puede sumar a un producto, ej: { name: 'Queso', price: 200 }. */
+export interface Addon {
+  name: string
+  price: number
+}
+
 export interface Product {
   id: string
   name: string
@@ -62,6 +68,11 @@ export interface Product {
    * producto NO se puede añadir directo: hay que elegir el tipo en su detalle.
    */
   options?: string[]
+  /**
+   * Agregos opcionales (extras). Se puede añadir como máximo UNO por producto,
+   * ej: pizza + queso. Cada agrego suma su precio a la línea.
+   */
+  addons?: Addon[]
   stockStatus: StockStatus
 }
 
@@ -70,6 +81,8 @@ export interface CartItem {
   quantity: number
   /** Tipo/sabor elegido (para productos con `options`). */
   option?: string
+  /** Agrego (extra) elegido, opcional (máximo uno). */
+  addon?: Addon
 }
 
 export interface Address {
