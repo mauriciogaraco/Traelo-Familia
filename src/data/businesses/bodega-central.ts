@@ -34,7 +34,7 @@ import Yogurt from '../../assets/images/products/mercadito/yogurt_vima.jpg'
 import ZumoNaranjaLimon from '../../assets/images/products/mercadito/zumo_naranja_limon.jpg'
 import QuesoCriollo from '../../assets/images/products/mercadito/queso_criollo.jpg'
 import ArrozSam from '../../assets/images/products/mercadito/arroz_sam.jpg'
-import CoditosAda from '../../assets/images/products/mercadito/coditos_ada.jpg'
+//import CoditosAda from '../../assets/images/products/mercadito/coditos_ada.jpg'
 import DetergenteLiquido from '../../assets/images/products/mercadito/detergente_liquido.jpg'
 import Bombones from '../../assets/images/products/mercadito/bombones.jpg'
 import PastaDental from '../../assets/images/products/mercadito/bombones.jpg'
@@ -89,7 +89,7 @@ export const bodegaCentralProducts: Product[] = [
   { id: 'bc-034', name: 'Toallitas Húmedas', businessId: ID, businessName: NAME, category: 'Aseo', shortDescription: 'Toallitas húmedas para el cuidado personal', longDescription: 'Se venden por unnidad.', image: '🧴', photo: ToasllitasHumedas, price: 650, stockStatus: 'disponible' },
   { id: 'bc-035', name: 'Bombones', businessId: ID, businessName: NAME, category: 'Confituras', shortDescription: '', longDescription: 'Se venden por paquete 80/90 bombones', image: '🍫', photo: Bombones, price: 3200, stockStatus: 'disponible' },
   { id: 'bc-036', name: 'Pasta Dental CoolWhite', businessId: ID, businessName: NAME, category: 'Aseo', shortDescription: 'Pasta dental', longDescription: 'Se venden por paquete de 12 unidades', formato: 12, image: '🪥', photo: PastaDental, price: 360, stockStatus: 'disponible' },
-  { id: 'bc-037', name: 'Coditos Ada', businessId: ID, businessName: NAME, category: 'Alimentos', shortDescription: '', longDescription: 'Se vende por paca de 20 unidades', formato: 20, image: '🍝', photo: CoditosAda, price: 290, stockStatus: 'disponible' },
+ // { id: 'bc-037', name: 'Coditos Ada', businessId: ID, businessName: NAME, category: 'Alimentos', shortDescription: '', longDescription: 'Se vende por paca de 20 unidades', formato: 20, image: '🍝', photo: CoditosAda, price: 290, stockStatus: 'disponible' },
   { id: 'bc-038', name: 'Queso criollo', businessId: ID, businessName: NAME, category: 'Alimentos', shortDescription: '', longDescription: 'Se vende por libra', image: '🧀', photo: QuesoCriollo, price: 750, stockStatus: 'disponible' },
   { id: 'bc-039', name: 'Zumo Naranja/Limón', businessId: ID, businessName: NAME, category: 'Alimentos', shortDescription: '', longDescription: 'Se vende por blister de 10 unidades', formato: 10, options: ['Naranja', 'Limón'], image: '🧃', photo: ZumoNaranjaLimon, price: 750, stockStatus: 'disponible' },
   { id: 'bc-040', name: 'Arroz Sam 1kg', businessId: ID, businessName: NAME, category: 'Alimentos', shortDescription: '', longDescription: 'Se vende por paca de 10 unidades', formato: 10, image: '🍚', photo: ArrozSam, price: 640, stockStatus: 'disponible' },

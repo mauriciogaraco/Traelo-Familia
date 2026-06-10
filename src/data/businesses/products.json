@@ -99,7 +99,7 @@
         { "name": "Bistec grillé 230g", "price": "$2000", "available": true },
         { "name": "Bistec grillé", "price": "Con agregos", "available": true },
         { "name": "Ropa vieja 150g", "price": "$2000", "available": true },
-        { "name": "Brusquetas 230g", "price": "$2200", "available": true },
+        { "name": "Brusquetas 300g", "price": "$2200", "available": true },
         { "name": "Masa frita 460g", "price": "$3300", "available": true },
         { "name": "Masa Fricasé 460g", "price": "$3800", "available": true },
         { "name": "Lomillo relleno gratinado 460g (vegetales, jamón y aceitunas)", "price": "$4400", "available": true }
@@ -190,7 +190,7 @@
       { "name": "Cerveza de lata", "price": "$400", "available": true },
       { "name": "Cerveza Cristal", "price": "$550", "available": true },
       { "name": "Cerveza importada", "price": "$100", "available": true },
-      { "name": "Refresco de lata", "price": "$320", "available": true },
+      { "name": "Refresco de lata", "price": "$380", "available": true },
       { "name": "Malta", "price": "$400", "available": true },
       { "name": "Red Bull", "price": "$850", "available": true },
       { "name": "Energético", "price": "$450", "available": true },
