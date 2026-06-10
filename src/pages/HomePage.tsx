@@ -18,6 +18,7 @@ export function HomePage() {
   const [category, setCategory] = useState<Category | "Todos">("Todos");
   const [page, setPage] = useState(1);
   const inputRef = useRef<HTMLInputElement>(null);
+  const resultsRef = useRef<HTMLElement>(null);
 
   // Modo búsqueda: al escribir se muestran SOLO resultados (sin negocios/categorías).
   const searchActive = query.trim() !== "";
@@ -49,6 +50,13 @@ export function HomePage() {
   useEffect(() => {
     setPage(1);
   }, [query, business, category]);
+
+  // Al seleccionar un negocio, baja con scroll suave hasta los productos.
+  useEffect(() => {
+    if (business) {
+      resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [business]);
 
   const totalPages = Math.ceil(filtered.length / PAGE_SIZE);
   const pageItems = filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
@@ -209,7 +217,7 @@ export function HomePage() {
             </section>
 
             {/* Resultados (solo si hay negocio/categoría) o invitación */}
-            <section className="pt-6">
+            <section ref={resultsRef} className="pt-6 scroll-mt-4">
               {browseActive ? resultsBlock : <StartHint />}
             </section>
           </>
