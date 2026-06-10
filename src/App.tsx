@@ -16,7 +16,7 @@ import { ProductDetailPage } from "./pages/ProductDetailPage";
 import { CartPage } from "./pages/CartPage";
 import { CheckoutPage } from "./pages/CheckoutPage";
 import { OrdersPage } from "./pages/OrdersPage";
-import { ComingSoonModal } from "./pages/CommingSoonModal";
+//import { ComingSoonModal } from "./pages/CommingSoonModal";
 
 function Providers({ children }: { children: ReactNode }) {
   return (
@@ -57,8 +57,6 @@ export default function App() {
     <BrowserRouter>
       <Providers>
         <ScrollToTop />
-        <ComingSoonModal />
-
         <AppShell>
           <Routes>
             <Route path="/" element={<HomePage />} />
