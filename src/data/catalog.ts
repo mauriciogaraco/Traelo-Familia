@@ -96,7 +96,7 @@ export const businesses: Business[] = [
   },
   {
     id: 'el-patio',
-    name: 'Restaurante El Patio',
+    name: 'DLM Bar-ResTaurante',
     description: 'Comida criolla recién hecha, lista para disfrutar en casa.',
     image: DLM,
     color: 'from-rose-100 to-orange-50',
@@ -104,7 +104,7 @@ export const businesses: Business[] = [
   },
   {
     id: 'panes-macus',
-    name: 'Panes Macus',
+    name: 'Los Macus',
     description: 'Panadería: panes frescos, frezco, malta y cerveza.',
     image: Macus,
     color: 'from-yellow-100 to-amber-50',
@@ -112,7 +112,7 @@ export const businesses: Business[] = [
   },
   {
     id: 'mercadito-ahorro',
-    name: 'Mercadito El Ahorro',
+    name: 'El Mercadito',
     description: 'Granos por libra, aceite y embutidos frescos.',
     image: BMercado,
     color: 'from-emerald-100 to-teal-50',
