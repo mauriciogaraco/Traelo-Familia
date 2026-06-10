@@ -3,6 +3,12 @@
 /** Promoción de lanzamiento mostrada al cliente. */
 export const MESSAGING_PROMO = 'Los primeros 10 pedidos no tienen costo de mensajería 🎉'
 
+/** WhatsApp de soporte/atención al cliente (formato internacional, sin +). */
+export const SUPPORT_WHATSAPP = '5358365388'
+
+/** URL pública de la web (para compartir / QR). */
+export const SITE_URL = 'https://traelo-sigma.vercel.app'
+
 /**
  * Telegram Bot API.
  * ⚠️ Al no haber backend, el token viaja en el bundle del cliente: cualquiera
