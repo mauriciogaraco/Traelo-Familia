@@ -1,6 +1,9 @@
-import type { Business, Category, Product, StockStatus } from '../../types'
+import type { Business, Category, Packaging, Product, StockStatus } from '../../types'
 import DLM from '../../assets/images/business/DLM.jpg'
 import menuData from './products.json'
+
+/** Envase obligatorio para la comida del restaurante (no aplica a bebidas). */
+const TERMOPACK: Packaging[] = [{ name: 'Termopack', price: 200 }]
 
 const ID = 'dlm'
 const NAME = 'Bar Restaurante DLM'
@@ -70,9 +73,18 @@ function buildProducts(): Product[] {
       if (price === null) continue // ignora precios no numéricos (ej: "Con agregos")
       n += 1
       const status: StockStatus = p.available ? 'disponible' : 'agotado'
+
+      const baseName = p.name.trim()
+      // Las fajitas se diferencian por carne (sección Pollo/Cerdo) en el nombre.
+      const isFajita = /fajita/i.test(baseName) && (cat.title === 'Pollo' || cat.title === 'Cerdo')
+      const name = isFajita ? `${baseName} (${cat.title})` : baseName
+      // El refresco de lata se sirve en varios sabores.
+      const options =
+        baseName.toLowerCase() === 'refresco de lata' ? ['Naranja', 'Limón', 'Cola'] : undefined
+
       out.push({
         id: `dlm-${String(n).padStart(3, '0')}`,
-        name: p.name.trim(),
+        name,
         businessId: ID,
         businessName: NAME,
         category,
@@ -80,6 +92,9 @@ function buildProducts(): Product[] {
         longDescription: cat.subtitle ? `${cat.title} · ${cat.subtitle}` : cat.title,
         image,
         price,
+        ...(options ? { options } : {}),
+        // La comida lleva termopack obligatorio; las bebidas no.
+        ...(category === 'Bebidas' ? {} : { packaging: TERMOPACK }),
         stockStatus: status,
       })
     }

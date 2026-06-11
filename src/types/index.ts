@@ -43,6 +43,12 @@ export interface Addon {
   price: number
 }
 
+/** Envase obligatorio para llevar el producto, ej: { name: 'Termopack', price: 200 }. */
+export interface Packaging {
+  name: string
+  price: number
+}
+
 export interface Product {
   id: string
   name: string
@@ -73,6 +79,12 @@ export interface Product {
    * ej: pizza + queso. Cada agrego suma su precio a la línea.
    */
   addons?: Addon[]
+  /**
+   * Envases para llevar (obligatorio elegir uno si está presente). Cada envase
+   * suma su precio por unidad. Ej: [{name:'Jaba',price:10},{name:'Termopack',price:150}].
+   * Si solo hay uno, se considera obligatorio y se selecciona automáticamente.
+   */
+  packaging?: Packaging[]
   stockStatus: StockStatus
 }
 
@@ -83,6 +95,8 @@ export interface CartItem {
   option?: string
   /** Agrego (extra) elegido, opcional (máximo uno). */
   addon?: Addon
+  /** Envase elegido (obligatorio en productos con `packaging`). */
+  packaging?: Packaging
 }
 
 export interface Address {

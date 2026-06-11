@@ -2,7 +2,7 @@ import type { Order } from '../types'
 import { formatPrice } from './format'
 import { groupByBusiness } from './order'
 import { hasFormato, lineTotal, packSize, unitsOf } from './cart'
-import { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID, MESSAGING_PROMO } from './config'
+import { TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID } from './config'
 
 /** Escapa los caracteres reservados de HTML para Telegram (parse_mode=HTML). */
 function esc(text: string): string {
@@ -40,13 +40,14 @@ export function buildOrderMessage(order: Order): string {
   for (const group of groups) {
     lines.push(`🏪 <b>${esc(group.businessName)}</b>`)
     for (const item of group.items) {
-      const { product, quantity, option, addon } = item
+      const { product, quantity, option, addon, packaging } = item
       const detalle = hasFormato(product)
         ? `${unitsOf(item)} u (${quantity} caja${quantity > 1 ? 's' : ''} × ${packSize(product)})`
         : `× ${quantity}`
       let nombre = product.name
       if (option) nombre += ` (${option})`
       if (addon) nombre += ` + ${addon.name}`
+      if (packaging) nombre += ` [${packaging.name}]`
       lines.push(`   • ${esc(nombre)} ${detalle} — ${formatPrice(lineTotal(item))}`)
     }
     lines.push(`   <i>Subtotal: ${formatPrice(group.subtotal)}</i>`)
@@ -54,7 +55,6 @@ export function buildOrderMessage(order: Order): string {
   }
 
   lines.push(`🛵 <b>Mensajería:</b> ${formatPrice(order.fee ?? 0)}`)
-  lines.push(`🎁 <i>${esc(MESSAGING_PROMO)}</i>`)
   lines.push(`💵 <b>Total: ${formatPrice(total)}</b>`)
 
   return lines.join('\n')

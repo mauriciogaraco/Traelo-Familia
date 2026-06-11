@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { products } from '../data/catalog'
 import { StockBadge } from '../components/ui/StockBadge'
@@ -6,11 +6,11 @@ import { ProductImage } from '../components/ui/ProductImage'
 import { Button } from '../components/ui/Button'
 import { useCart } from '../context/CartContext'
 import { formatAmount, formatPrice } from '../lib/format'
-import { hasAddons, hasFormato, hasOptions, packSize } from '../lib/cart'
+import { hasAddons, hasFormato, hasOptions, hasPackaging, packSize } from '../lib/cart'
 import { isOpenNow } from '../lib/hours'
 import { businessById } from '../data/catalog'
 import { PaymentNote } from '../components/ui/PaymentNote'
-import type { Addon } from '../types'
+import type { Addon, Packaging } from '../types'
 
 export function ProductDetailPage() {
   const { id } = useParams<{ id: string }>()
@@ -19,8 +19,14 @@ export function ProductDetailPage() {
   const [qty, setQty] = useState(1)
   const [option, setOption] = useState<string | null>(null)
   const [addon, setAddon] = useState<Addon | null>(null)
+  const [packaging, setPackaging] = useState<Packaging | null>(null)
 
   const product = products.find((p) => p.id === id)
+
+  // Si solo hay un envase, se selecciona automáticamente (es obligatorio).
+  useEffect(() => {
+    if (product?.packaging?.length === 1) setPackaging(product.packaging[0])
+  }, [product])
 
   if (!product) {
     return (
@@ -35,14 +41,17 @@ export function ProductDetailPage() {
   const isOut = product.stockStatus === 'agotado'
   const needsOption = hasOptions(product)
   const canAddon = hasAddons(product)
+  const needsPackaging = hasPackaging(product)
+  const multiPackaging = (product.packaging?.length ?? 0) > 1
   const biz = businessById(product.businessId)
   const closed = biz ? !isOpenNow(biz) : false
-  const canAdd = !isOut && !closed && (!needsOption || option !== null)
-  const unitPrice = product.price + (addon?.price ?? 0)
+  const canAdd =
+    !isOut && !closed && (!needsOption || option !== null) && (!needsPackaging || packaging !== null)
+  const unitPrice = product.price + (addon?.price ?? 0) + (packaging?.price ?? 0)
 
   function add() {
     if (!canAdd) return
-    addItem(product!, qty, option ?? undefined, addon ?? undefined)
+    addItem(product!, qty, option ?? undefined, addon ?? undefined, packaging ?? undefined)
   }
 
   // Volver: usa el historial si existe, si no (entrada directa/recarga) va al inicio.
@@ -191,12 +200,55 @@ export function ProductDetailPage() {
                 )
               })}
             </div>
-            {addon && (
-              <p className="text-xs text-text-secondary mt-2">
-                Con {addon.name}: <span className="font-bold text-primary">{formatPrice(unitPrice)}</span> c/u
-              </p>
-            )}
           </div>
+        )}
+
+        {/* Envase para llevar (obligatorio) */}
+        {needsPackaging && !isOut && (
+          <div className="mt-5">
+            <div className="flex items-center gap-2 mb-2">
+              <h2 className="text-sm font-bold text-text-primary">Envase para llevar</h2>
+              {multiPackaging ? (
+                packaging === null && (
+                  <span className="text-[11px] font-bold text-warning">Requerido</span>
+                )
+              ) : (
+                <span className="text-[11px] font-bold text-text-secondary">Obligatorio</span>
+              )}
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {product.packaging!.map((pk) => {
+                const active = packaging?.name === pk.name
+                return (
+                  <button
+                    key={pk.name}
+                    onClick={() => multiPackaging && setPackaging(pk)}
+                    aria-pressed={active}
+                    className={`px-3.5 py-2 rounded-xl text-sm font-bold border transition-all ${
+                      multiPackaging ? 'active:scale-95' : 'cursor-default'
+                    } ${
+                      active
+                        ? 'bg-gradient-primary text-white border-transparent shadow-btn-primary'
+                        : 'bg-surface text-text-primary border-border hover:border-primary/40'
+                    }`}
+                  >
+                    {pk.name}{' '}
+                    <span className={active ? 'text-white/80' : 'text-text-secondary'}>
+                      +{formatAmount(pk.price)}
+                    </span>
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+        )}
+
+        {/* Precio por unidad con extras (agrego/envase) */}
+        {!isOut && (addon || packaging) && (
+          <p className="text-sm text-text-secondary mt-4">
+            Precio por unidad:{' '}
+            <span className="font-bold text-primary">{formatPrice(unitPrice)}</span>
+          </p>
         )}
 
         {/* Cantidad */}
@@ -253,6 +305,10 @@ export function ProductDetailPage() {
         ) : needsOption && option === null ? (
           <Button size="lg" fullWidth disabled>
             Elige un tipo para continuar
+          </Button>
+        ) : needsPackaging && packaging === null ? (
+          <Button size="lg" fullWidth disabled>
+            Elige el envase para continuar
           </Button>
         ) : (
           <div className="grid grid-cols-2 gap-3">
