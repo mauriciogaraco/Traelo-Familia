@@ -121,7 +121,8 @@ function OrderCard({ order, onComplete }: { order: Order; onComplete: () => void
                   <span className="text-text-secondary line-clamp-1 flex-1">
                     {item.product.name}
                     {item.option && <span className="text-primary font-semibold"> · {item.option}</span>}
-                    {item.addon && <span className="text-success font-semibold"> · + {item.addon.name}</span>}{' '}
+                    {item.addon && <span className="text-success font-semibold"> · + {item.addon.name}</span>}
+                    {item.packaging && <span className="text-sky-700 font-semibold"> · 📦 {item.packaging.name}</span>}{' '}
                     <span className="text-text-secondary/70">
                       × {hasFormato(item.product) ? `${unitsOf(item)} u` : item.quantity}
                     </span>

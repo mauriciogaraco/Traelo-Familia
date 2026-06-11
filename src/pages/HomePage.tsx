@@ -8,6 +8,8 @@ import { Pagination } from "../components/ui/Pagination";
 import { Logo } from "../components/ui/Logo";
 import { PaymentNote } from "../components/ui/PaymentNote";
 import { ShareSection } from "../components/home/ShareSection";
+import { ClosedTodayBanner } from "../components/home/ClosedTodayBanner";
+import { ordersClosedForToday } from "../lib/hours";
 import type { Category } from "../types";
 
 const PAGE_SIZE = 20;
@@ -19,6 +21,8 @@ export function HomePage() {
   const [page, setPage] = useState(1);
   const inputRef = useRef<HTMLInputElement>(null);
   const resultsRef = useRef<HTMLElement>(null);
+
+  const ordersClosed = ordersClosedForToday();
 
   // Modo búsqueda: al escribir se muestran SOLO resultados (sin negocios/categorías).
   const searchActive = query.trim() !== "";
@@ -160,6 +164,8 @@ export function HomePage() {
             />
           </div>
         </form>
+
+        {ordersClosed && <ClosedTodayBanner />}
 
         {searchActive ? (
           /* Modo búsqueda: solo resultados + limpiar */

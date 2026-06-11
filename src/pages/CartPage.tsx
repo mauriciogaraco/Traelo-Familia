@@ -3,10 +3,7 @@ import { useCart } from "../context/CartContext";
 import { ProductImage } from "../components/ui/ProductImage";
 import { Button } from "../components/ui/Button";
 import { EmptyState } from "../components/ui/EmptyState";
-import {
-  MessagingFeeRow,
-  MessagingPromo,
-} from "../components/ui/MessagingFeeRow";
+import { MessagingFeeRow } from "../components/ui/MessagingFeeRow";
 import { PaymentNote } from "../components/ui/PaymentNote";
 import { formatAmount, formatPrice } from "../lib/format";
 import { groupByBusiness } from "../lib/order";
@@ -115,7 +112,6 @@ export function CartPage() {
 
       {/* Resumen */}
       <div className="px-4 mt-5 space-y-3">
-        <MessagingPromo />
         <div className="bg-surface border border-border rounded-3xl p-4 space-y-2.5">
           <div className="flex justify-between text-sm">
             <span className="text-text-secondary">Subtotal</span>
@@ -202,6 +198,11 @@ function CartRow({
           {item.addon && (
             <span className="inline-flex items-center px-1.5 py-0.5 rounded-md bg-success/10 text-success text-[10px] font-bold">
               + {item.addon.name}
+            </span>
+          )}
+          {item.packaging && (
+            <span className="inline-flex items-center px-1.5 py-0.5 rounded-md bg-sky-50 text-sky-700 text-[10px] font-bold">
+              📦 {item.packaging.name}
             </span>
           )}
         </div>

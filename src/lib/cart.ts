@@ -10,16 +10,26 @@ export function hasAddons(product: Product): boolean {
   return Array.isArray(product.addons) && product.addons.length > 0
 }
 
+/** ¿El producto requiere elegir envase para llevar? */
+export function hasPackaging(product: Product): boolean {
+  return Array.isArray(product.packaging) && product.packaging.length > 0
+}
+
 /**
- * Identidad de una línea de carrito: el mismo producto con distinto tipo o
- * distinto agrego cuenta como líneas separadas.
+ * Identidad de una línea de carrito: el mismo producto con distinto tipo,
+ * agrego o envase cuenta como líneas separadas.
  */
-export function lineId(productId: string, option?: string, addonName?: string): string {
-  return [productId, option ?? '', addonName ?? ''].join('::')
+export function lineId(
+  productId: string,
+  option?: string,
+  addonName?: string,
+  packagingName?: string,
+): string {
+  return [productId, option ?? '', addonName ?? '', packagingName ?? ''].join('::')
 }
 
 export function itemLineId(item: CartItem): string {
-  return lineId(item.product.id, item.option, item.addon?.name)
+  return lineId(item.product.id, item.option, item.addon?.name, item.packaging?.name)
 }
 
 /** Unidades por caja/paquete (1 si el producto se vende por unidad). */
@@ -40,8 +50,8 @@ export function unitsOf(item: CartItem): number {
   return item.quantity * packSize(item.product)
 }
 
-/** Total de la línea = (precio + agrego) por unidad × unidades totales. */
+/** Total de la línea = (precio + agrego + envase) por unidad × unidades totales. */
 export function lineTotal(item: CartItem): number {
-  const unitPrice = item.product.price + (item.addon?.price ?? 0)
+  const unitPrice = item.product.price + (item.addon?.price ?? 0) + (item.packaging?.price ?? 0)
   return unitPrice * unitsOf(item)
 }

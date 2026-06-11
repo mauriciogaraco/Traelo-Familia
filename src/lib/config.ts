@@ -1,8 +1,5 @@
 /** Configuración del MVP de Tráelo. */
 
-/** Promoción de lanzamiento mostrada al cliente. */
-export const MESSAGING_PROMO = 'Los primeros 10 pedidos no tienen costo de mensajería 🎉'
-
 /** WhatsApp de soporte/atención al cliente (formato internacional, sin +). */
 export const SUPPORT_WHATSAPP = '5358365388'
 

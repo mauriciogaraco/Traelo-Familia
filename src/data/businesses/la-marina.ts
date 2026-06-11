@@ -1,4 +1,4 @@
-import type { Addon, Business, Product } from '../../types'
+import type { Addon, Business, Packaging, Product } from '../../types'
 import { makeDrinks } from '../drinks'
 
 // Sin fotos propias por ahora: se reutiliza una imagen como logo del negocio.
@@ -24,6 +24,12 @@ const AGREGOS: Addon[] = [
   { name: 'Cebolla', price: 100 },
 ]
 
+/** Envase obligatorio (el cliente elige uno). */
+const ENVASE: Packaging[] = [
+  { name: 'Jaba', price: 10 },
+  { name: 'Termopack', price: 150 },
+]
+
 const comida: Product[] = [
   { id: 'lm-001', name: 'Espaguetis', businessId: ID, businessName: NAME, category: 'Comida',
      shortDescription: 'Con salsa de la casa.', longDescription: 'Espaguetis recién hechos. Puedes añadir un agrego.',
@@ -45,4 +51,9 @@ const comida: Product[] = [
      image: '🍕', price: 570, addons: AGREGOS, stockStatus: 'disponible' },
 ]
 
-export const laMarinaProducts: Product[] = [...comida, ...makeDrinks(ID, NAME, 'lm-dr')]
+// Solo los espaguetis llevan envase para llevar; las pizzas y bebidas no.
+const comidaConEnvase: Product[] = comida.map((p) =>
+  /espagueti/i.test(p.name) ? { ...p, packaging: ENVASE } : p,
+)
+
+export const laMarinaProducts: Product[] = [...comidaConEnvase, ...makeDrinks(ID, NAME, 'lm-dr')]

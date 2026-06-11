@@ -5,7 +5,7 @@ import { ProductImage } from '../ui/ProductImage'
 import { useNavigate } from 'react-router-dom'
 import { useCart } from '../../context/CartContext'
 import { formatAmount } from '../../lib/format'
-import { hasAddons, hasFormato, hasOptions, packSize } from '../../lib/cart'
+import { hasAddons, hasFormato, hasOptions, hasPackaging, packSize } from '../../lib/cart'
 import { isOpenNow } from '../../lib/hours'
 import { businessById } from '../../data/catalog'
 import { flyToCart } from '../../lib/flyToCart'
@@ -15,8 +15,8 @@ export function ProductCard({ product }: { product: Product }) {
   const { addItem, getQuantity } = useCart()
   const qty = getQuantity(product.id)
   const isOut = product.stockStatus === 'agotado'
-  // Con tipos (requerido) o agregos (opcional), se abre el detalle para elegir.
-  const needsChoice = hasOptions(product) || hasAddons(product)
+  // Con tipos, agregos o envase, se abre el detalle para elegir antes de añadir.
+  const needsChoice = hasOptions(product) || hasAddons(product) || hasPackaging(product)
   const biz = businessById(product.businessId)
   const closed = biz ? !isOpenNow(biz) : false
   const disabled = isOut || closed

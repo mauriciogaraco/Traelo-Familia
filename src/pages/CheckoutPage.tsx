@@ -8,14 +8,14 @@ import { AddressBar } from '../components/address/AddressBar'
 import { ProductImage } from '../components/ui/ProductImage'
 import { Button } from '../components/ui/Button'
 import { EmptyState } from '../components/ui/EmptyState'
-import { MessagingFeeRow, MessagingPromo } from '../components/ui/MessagingFeeRow'
+import { MessagingFeeRow } from '../components/ui/MessagingFeeRow'
 import { PaymentNote } from '../components/ui/PaymentNote'
 import { TimeWheel } from '../components/ui/TimeWheel'
 import { formatAmount, formatPrice, formatTime12h } from '../lib/format'
 import { makeOrder, groupByBusiness } from '../lib/order'
 import { hasFormato, itemLineId, lineTotal, packSize, unitsOf } from '../lib/cart'
 import { computeFee } from '../lib/fees'
-import { isOpenNow } from '../lib/hours'
+import { isOpenNow, ordersClosedForToday } from '../lib/hours'
 import { sendOrderToTelegram } from '../lib/telegram'
 import { businessById } from '../data/catalog'
 
@@ -101,7 +101,8 @@ export function CheckoutPage() {
     .filter(Boolean)
     .join(' · ')
 
-  const canConfirm = !!address && !sending && !hasClosed && !scheduledMissing
+  const ordersClosed = ordersClosedForToday()
+  const canConfirm = !!address && !sending && !hasClosed && !scheduledMissing && !ordersClosed
 
   async function confirm() {
     if (!canConfirm) return
@@ -233,6 +234,7 @@ export function CheckoutPage() {
                           {item.product.name}
                           {item.option && <span className="text-primary"> · {item.option}</span>}
                           {item.addon && <span className="text-success"> · + {item.addon.name}</span>}
+                          {item.packaging && <span className="text-sky-700"> · 📦 {item.packaging.name}</span>}
                         </p>
                         <p className="text-xs text-text-secondary">
                           {hasFormato(item.product)
@@ -250,9 +252,6 @@ export function CheckoutPage() {
             ))}
           </div>
         </section>
-
-        {/* Promo */}
-        <MessagingPromo />
 
         {/* Totales */}
         <section className="bg-surface border border-border rounded-3xl p-4 space-y-2.5">
@@ -291,6 +290,17 @@ export function CheckoutPage() {
           </p>
         )}
 
+        {/* Pedidos cerrados por hoy (después de las 9 pm) */}
+        {ordersClosed && (
+          <div className="flex items-start gap-2.5 bg-amber-50 border border-amber-200 rounded-2xl p-3">
+            <span className="text-lg flex-shrink-0">🌙</span>
+            <p className="text-xs text-amber-900 leading-relaxed">
+              Ya terminamos de tomar encargos por hoy. Las mensajerías pendientes se entregarán.
+              Vuelve mañana a partir de las 9:00 am para confirmar tu pedido.
+            </p>
+          </div>
+        )}
+
         {/* Aviso */}
         <div className="flex items-start gap-2.5 bg-sky-50 border border-sky-200 rounded-2xl p-3">
           <span className="text-lg flex-shrink-0">📨</span>
@@ -304,7 +314,7 @@ export function CheckoutPage() {
           <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
             <path d="M21.7 3.3 2.5 11.1c-.9.4-.9 1.6 0 1.9l4.8 1.6 1.8 5.8c.2.7 1.1.9 1.6.3l2.7-2.9 4.7 3.4c.6.4 1.5.1 1.7-.6l3.4-15.6c.2-1-.8-1.9-1.5-1.7Z" />
           </svg>
-          {sending ? 'Enviando pedido...' : 'Confirmar pedido'}
+          {sending ? 'Enviando pedido...' : ordersClosed ? 'Pedidos cerrados por hoy' : 'Confirmar pedido'}
         </Button>
       </div>
     </div>
