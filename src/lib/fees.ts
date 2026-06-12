@@ -28,8 +28,9 @@ export function computeFee(items: CartItem[], when: Date = new Date()): FeeBreak
   }
   const isLate = when.getHours() >= LATE_HOUR
   const base = isLate ? FEE_LATE : FEE_BASE
-  const multiBusiness = new Set(items.map((i) => i.product.businessId)).size > 1
-  const surcharge = multiBusiness ? MULTI_BUSINESS_SURCHARGE : 0
+  const businessCount = new Set(items.map((i) => i.product.businessId)).size
+  const multiBusiness = businessCount > 1
+  const surcharge = multiBusiness ? (businessCount - 1) * MULTI_BUSINESS_SURCHARGE : 0
   return { base, surcharge, fee: base + surcharge, isLate, multiBusiness }
 }
 
