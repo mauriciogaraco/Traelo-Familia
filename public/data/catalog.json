@@ -2758,10 +2758,6 @@
           "price": 200
         },
         {
-          "name": "Picadillo de cerdo",
-          "price": 300
-        },
-        {
           "name": "Cebolla",
           "price": 100
         }
@@ -2798,10 +2794,6 @@
           "price": 200
         },
         {
-          "name": "Picadillo de cerdo",
-          "price": 300
-        },
-        {
           "name": "Cebolla",
           "price": 100
         }
@@ -2826,10 +2818,6 @@
         {
           "name": "Queso",
           "price": 200
-        },
-        {
-          "name": "Picadillo de cerdo",
-          "price": 300
         },
         {
           "name": "Cebolla",
@@ -2858,10 +2846,6 @@
           "price": 200
         },
         {
-          "name": "Picadillo de cerdo",
-          "price": 300
-        },
-        {
           "name": "Cebolla",
           "price": 100
         }
@@ -2877,7 +2861,7 @@
       "longDescription": "Pizza de picadillo. Puedes añadir un agrego.",
       "image": "🍕",
       "price": 770,
-      "stockStatus": "disponible",
+      "stockStatus": "agotado",
       "addons": [
         {
           "name": "Jamón",
@@ -2886,10 +2870,6 @@
         {
           "name": "Queso",
           "price": 200
-        },
-        {
-          "name": "Picadillo de cerdo",
-          "price": 300
         },
         {
           "name": "Cebolla",
@@ -2916,10 +2896,6 @@
         {
           "name": "Queso",
           "price": 200
-        },
-        {
-          "name": "Picadillo de cerdo",
-          "price": 300
         },
         {
           "name": "Cebolla",

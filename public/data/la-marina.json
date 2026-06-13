@@ -5,7 +5,7 @@
     "image": "🍝", "price": 450, "stockStatus": "disponible",
     "addons": [
       { "name": "Jamón", "price": 150 }, { "name": "Queso", "price": 200 },
-      { "name": "Picadillo de cerdo", "price": 300 }, { "name": "Cebolla", "price": 100 }
+      { "name": "Cebolla", "price": 100 }
     ],
     "packaging": [{ "name": "Jaba", "price": 10 }, { "name": "Termopack", "price": 150 }]
   },
@@ -15,7 +15,7 @@
     "image": "🍕", "price": 300, "stockStatus": "disponible",
     "addons": [
       { "name": "Jamón", "price": 150 }, { "name": "Queso", "price": 200 },
-      { "name": "Picadillo de cerdo", "price": 300 }, { "name": "Cebolla", "price": 100 }
+      { "name": "Cebolla", "price": 100 }
     ]
   },
   {
@@ -24,7 +24,7 @@
     "image": "🍕", "price": 520, "stockStatus": "disponible",
     "addons": [
       { "name": "Jamón", "price": 150 }, { "name": "Queso", "price": 200 },
-      { "name": "Picadillo de cerdo", "price": 300 }, { "name": "Cebolla", "price": 100 }
+      { "name": "Cebolla", "price": 100 }
     ]
   },
   {
@@ -33,16 +33,16 @@
     "image": "🍕", "price": 670, "stockStatus": "disponible",
     "addons": [
       { "name": "Jamón", "price": 150 }, { "name": "Queso", "price": 200 },
-      { "name": "Picadillo de cerdo", "price": 300 }, { "name": "Cebolla", "price": 100 }
+      { "name": "Cebolla", "price": 100 }
     ]
   },
   {
     "id": "lm-005", "name": "Pizza de Picadillo", "businessId": "la-marina", "businessName": "La Marina",
     "category": "Comida", "shortDescription": "Con picadillo.", "longDescription": "Pizza de picadillo. Puedes añadir un agrego.",
-    "image": "🍕", "price": 770, "stockStatus": "disponible",
+    "image": "🍕", "price": 770, "stockStatus": "agotado",
     "addons": [
       { "name": "Jamón", "price": 150 }, { "name": "Queso", "price": 200 },
-      { "name": "Picadillo de cerdo", "price": 300 }, { "name": "Cebolla", "price": 100 }
+      { "name": "Cebolla", "price": 100 }
     ]
   },
   {
@@ -51,7 +51,7 @@
     "image": "🍕", "price": 570, "stockStatus": "disponible",
     "addons": [
       { "name": "Jamón", "price": 150 }, { "name": "Queso", "price": 200 },
-      { "name": "Picadillo de cerdo", "price": 300 }, { "name": "Cebolla", "price": 100 }
+      { "name": "Cebolla", "price": 100 }
     ]
   },
   { "id": "lm-dr-ref-naranja", "name": "Ref. Naranja", "businessId": "la-marina", "businessName": "La Marina", "category": "Bebidas", "shortDescription": "", "longDescription": "Se vende por unidad.", "image": "🥤", "price": 350, "stockStatus": "disponible" },
