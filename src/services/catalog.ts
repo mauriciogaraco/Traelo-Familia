@@ -1,25 +1,54 @@
 import type { Business, Product } from '../types'
 
-const BUSINESS_IDS = ['bodega-central', 'dlm', 'panes-macus', 'mercadito-ahorro', 'la-marina']
-
-async function fetchJson<T>(path: string): Promise<T> {
-  const res = await fetch(path, { cache: 'no-store' })
-  if (!res.ok) throw new Error(`${res.status} ${path}`)
-  return res.json() as Promise<T>
+export interface CatalogData {
+  businesses: Business[]
+  products: Product[]
 }
 
-export function fetchBusinesses(): Promise<Business[]> {
-  return fetchJson<Business[]>('/data/businesses.json')
+const CACHE_KEY = 'traelo_catalog_v1'
+const CATALOG_URL = '/data/catalog.json'
+
+function readCache(): CatalogData | null {
+  try {
+    const raw = localStorage.getItem(CACHE_KEY)
+    if (!raw) return null
+    return JSON.parse(raw) as CatalogData
+  } catch {
+    return null
+  }
 }
 
-export function fetchProducts(businessId: string): Promise<Product[]> {
-  return fetchJson<Product[]>(`/data/${businessId}.json`)
+function writeCache(data: CatalogData): void {
+  try {
+    localStorage.setItem(CACHE_KEY, JSON.stringify(data))
+  } catch {
+    // quota exceeded o localStorage no disponible
+  }
 }
 
-export async function fetchCatalog(): Promise<{ businesses: Business[]; products: Product[] }> {
-  const [businesses, groups] = await Promise.all([
-    fetchBusinesses(),
-    Promise.all(BUSINESS_IDS.map(fetchProducts)),
-  ])
-  return { businesses, products: groups.flat() }
+export interface LoadCatalogResult {
+  /** Catálogo desde localStorage; null en la primera visita ever. */
+  cached: CatalogData | null
+  /** Resuelve con datos frescos si cambiaron, null si no hubo cambios o falló la red. */
+  synced: Promise<CatalogData | null>
+}
+
+export function loadCatalog(): LoadCatalogResult {
+  const cached = readCache()
+  const cachedStr = cached ? JSON.stringify(cached) : null
+
+  const synced = fetch(CATALOG_URL)
+    .then((res) => {
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      return res.json() as Promise<CatalogData>
+    })
+    .then((fresh) => {
+      const freshStr = JSON.stringify(fresh)
+      if (freshStr === cachedStr) return null // sin cambios
+      writeCache(fresh)
+      return fresh
+    })
+    .catch(() => null)
+
+  return { cached, synced }
 }

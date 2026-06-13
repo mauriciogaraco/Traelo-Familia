@@ -15,7 +15,7 @@ import type { Category } from "../types";
 const PAGE_SIZE = 20;
 
 export function HomePage() {
-  const { businesses, products, loading } = useCatalog();
+  const { businesses, products, loading, syncing } = useCatalog();
   const [query, setQuery] = useState("");
   const [business, setBusiness] = useState<string | null>(null);
   const [category, setCategory] = useState<Category | "Todos">("Todos");
@@ -147,6 +147,13 @@ export function HomePage() {
           </div>
         </div>
       </header>
+
+      {syncing && (
+        <div className="flex items-center gap-2 px-4 py-1.5 text-[11px] font-medium text-text-secondary bg-stone-100/80 border-b border-border/30">
+          <div className="w-2.5 h-2.5 border border-primary border-t-transparent rounded-full animate-spin shrink-0" />
+          Actualizando catálogo...
+        </div>
+      )}
 
       <div className="px-4">
         {/* Buscador con botón */}

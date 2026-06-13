@@ -30,13 +30,14 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html}'],
         runtimeCaching: [
           {
-            // Catálogo JSON: NetworkFirst para que los cambios de precio reflejen siempre.
-            urlPattern: /\/data\/.*\.json$/,
+            // catalog.json: NetworkFirst con timeout corto. La app muestra localStorage
+            // mientras tanto; el SW entrega datos frescos en cuanto llegan.
+            urlPattern: /\/data\/catalog\.json$/,
             handler: 'NetworkFirst',
             options: {
               cacheName: 'catalog-data',
-              networkTimeoutSeconds: 5,
-              expiration: { maxEntries: 20, maxAgeSeconds: 5 * 60 },
+              networkTimeoutSeconds: 3,
+              expiration: { maxEntries: 1, maxAgeSeconds: 24 * 60 * 60 },
             },
           },
           {
