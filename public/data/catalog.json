@@ -376,6 +376,19 @@
       "price": 560,
       "stockStatus": "disponible"
     },
+     {
+      "id": "bc-024",
+      "name": "Lavavajillas",
+      "businessId": "bodega-central",
+      "businessName": "Mercado Alpha",
+      "category": "Aseo",
+      "shortDescription": "Pote Lavavajillas",
+      "longDescription": "Lavavajillas líquido. Se vende por unidad.",
+      "image": "🧴",
+      "photo": "/assets/images/products/mercadito/lavavajillas.jpg",
+      "price": 560,
+      "stockStatus": "disponible"
+    },
     {
       "id": "bc-025",
       "name": "Mayonesa",
@@ -589,6 +602,36 @@
       "formato": 10,
       "stockStatus": "disponible"
     },
+        {
+      "id": "bc-041",
+      "name": "Saco de Arroz 50lb",
+      "businessId": "bodega-central",
+      "businessName": "Mercado Alpha",
+      "category": "Alimentos",
+      "shortDescription": "Arroz Americano.",
+      "longDescription": "El mejor precio del mercado , sale a 280 la libra",
+      "image": "🍚",
+      "photo": "/assets/images/products/mercadito/arroz50lb.jpg",
+      "price": 14000,
+      "formato": 1,
+      "stockStatus": "disponible"
+    },
+        {
+      "id": "bc-042",
+      "name": "Leche condensada",
+      "businessId": "bodega-central",
+      "businessName": "Mercado Alpha",
+      "category": "Alimentos",
+      "shortDescription": "",
+      "longDescription": "Se vende por caja de 24 unidades",
+      "image": "🍚",
+      "photo": "/assets/images/products/mercadito/leche_condensada.jpg",
+      "price": 660,
+      "formato": 24,
+      "stockStatus": "disponible"
+    },
+
+    
     {
       "id": "dlm-001",
       "name": "Entremés de Queso",
