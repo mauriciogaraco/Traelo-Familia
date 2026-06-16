@@ -155,7 +155,7 @@
       "longDescription": "Excelente calidad. Se vende por blister de 12 unidades. Contiene 420ml",
       "image": "🥤",
       "photo": "/assets/images/products/mercadito/refresco_cana_cola.jpg",
-      "price": 255,
+      "price": 260,
       "formato": 12,
       "options": [
         "Cola",
@@ -362,19 +362,7 @@
       "formato": 12,
       "stockStatus": "disponible"
     },
-    {
-      "id": "bc-024",
-      "name": "Lavavajillas",
-      "businessId": "bodega-central",
-      "businessName": "Mercado Alpha",
-      "category": "Aseo",
-      "shortDescription": "Pote Lavavajillas",
-      "longDescription": "Lavavajillas líquido. Se vende por unidad.",
-      "image": "🧴",
-      "photo": "/assets/images/products/mercadito/lavavajillas.jpg",
-      "price": 560,
-      "stockStatus": "disponible"
-    },
+
     {
       "id": "bc-024",
       "name": "Lavavajillas",
@@ -512,7 +500,7 @@
       "longDescription": "Se venden por blister 10 unidades.",
       "image": "🧴",
       "photo": "/assets/images/products/mercadito/detergente_liquido.jpg",
-      "price": 340,
+      "price": 350,
       "formato": 10,
       "stockStatus": "disponible"
     },
@@ -579,7 +567,7 @@
       "longDescription": "Se vende por blister de 10 unidades",
       "image": "🧃",
       "photo": "/assets/images/products/mercadito/zumo_naranja_limon.jpg",
-      "price": 750,
+      "price": 260,
       "formato": 10,
       "options": [
         "Naranja",
@@ -597,7 +585,7 @@
       "longDescription": "Se vende por paca de 10 unidades",
       "image": "🍚",
       "photo": "/assets/images/products/mercadito/arroz_sam.jpg",
-      "price": 640,
+      "price": 650,
       "formato": 10,
       "stockStatus": "disponible"
     },
@@ -627,6 +615,19 @@
       "photo": "/assets/images/products/mercadito/leche_condensada.jpg",
       "price": 660,
       "formato": 24,
+      "stockStatus": "disponible"
+    },
+      {
+      "id": "bc-043",
+      "name": "Arroz de Guyana 110lbs",
+      "businessId": "bodega-central",
+      "businessName": "Mercado Alpha",
+      "category": "Alimentos",
+      "shortDescription": "",
+      "longDescription": "Se vende por saco",
+      "image": "🍚",
+      "photo": "/assets/images/products/mercadito/leche_condensada.jpg",
+      "price": 31200,
       "stockStatus": "disponible"
     },
     {
