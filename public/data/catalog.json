@@ -2663,7 +2663,7 @@
       "longDescription": "Aceite vegetal en botella de 900ml.",
       "image": "🫒",
       "photo": "/assets/images/products/mercado/aceite_900ml.jpg",
-      "price": 1500,
+      "price": 1600,
       "stockStatus": "disponible"
     },
     {
@@ -2676,7 +2676,7 @@
       "longDescription": "Perrito caliente listo para preparar (salchicha y pan). Se vende por unidad.",
       "image": "🌭",
       "photo": "/assets/images/products/mercado/perritos_mana.jpg",
-      "price": 620,
+      "price": 650,
       "stockStatus": "disponible"
     },
     {
@@ -2689,7 +2689,7 @@
       "longDescription": "Azúcar a granel, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🍬",
       "photo": "/assets/images/products/mercado/azucar_blanca_lb.jpg",
-      "price": 400,
+      "price": 420,
       "stockStatus": "disponible"
     },
     {
@@ -2702,7 +2702,7 @@
       "longDescription": "Jamonada de pollo, se entrega por unidad.",
       "image": "🍖",
       "photo": "/assets/images/products/mercado/mortadella_500g.webp",
-      "price": 700,
+      "price": 750,
       "stockStatus": "disponible"
     },
     {
@@ -2714,7 +2714,7 @@
       "shortDescription": "Una libra, en bistec.",
       "longDescription": "Lomo de cerdo cortado en bistec, se entrega por libra.",
       "image": "🥩",
-      "price": 1400,
+      "price": 1500,
       "stockStatus": "disponible"
     },
     {
@@ -2727,7 +2727,7 @@
       "longDescription": "Sopa intantanea.",
       "image": "🍚",
       "photo": "/assets/images/products/mercado/sopa_instantanea.jpg",
-      "price": 200,
+      "price": 220,
       "stockStatus": "disponible"
     },
     {
@@ -2753,7 +2753,7 @@
       "longDescription": "Mortadella de 1kg.",
       "image": "🥩",
       "photo": "/assets/images/products/mercado/mortadella_1kg.jpg",
-      "price": 1300,
+      "price": 1400,
       "stockStatus": "disponible"
     },
     {
