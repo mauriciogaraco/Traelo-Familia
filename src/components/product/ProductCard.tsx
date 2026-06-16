@@ -18,7 +18,7 @@ export function ProductCard({ product }: { product: Product }) {
   // Con tipos, agregos o envase, se abre el detalle para elegir antes de añadir.
   const needsChoice = hasOptions(product) || hasAddons(product) || hasPackaging(product)
   const biz = businessById(product.businessId)
-  const closed = biz ? !isOpenNow(biz) : false
+  const closed = !biz || !isOpenNow(biz)
   const disabled = isOut || closed
 
   function handleAdd(e: React.MouseEvent<HTMLButtonElement>) {

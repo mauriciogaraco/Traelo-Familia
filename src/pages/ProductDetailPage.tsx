@@ -53,7 +53,7 @@ export function ProductDetailPage() {
   const needsPackaging = hasPackaging(product)
   const multiPackaging = (product.packaging?.length ?? 0) > 1
   const biz = businessById(product.businessId)
-  const closed = biz ? !isOpenNow(biz) : false
+  const closed = !biz || !isOpenNow(biz)
   const canAdd =
     !isOut && !closed && (!needsOption || option !== null) && (!needsPackaging || packaging !== null)
   const unitPrice = product.price + (addon?.price ?? 0) + (packaging?.price ?? 0)
