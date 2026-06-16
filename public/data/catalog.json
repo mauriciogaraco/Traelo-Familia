@@ -92,6 +92,7 @@
       "schedule": {
         "days": [
           0,
+          1,
           2,
           3,
           4,
@@ -100,8 +101,9 @@
         ],
         "open": "09:00",
         "close": "22:00",
-        "label": "Cerrada hoy por limpieza · Mar–Dom · 9:00 am – 10:00 pm"
-      }
+        "label": "Todos los días · 9:00 am – 10:00 pm"
+      },
+      "status": "cerrado"
     }
   ],
   "products": [
@@ -362,7 +364,6 @@
       "formato": 12,
       "stockStatus": "disponible"
     },
-
     {
       "id": "bc-024",
       "name": "Lavavajillas",
@@ -617,9 +618,7 @@
       "formato": 24,
       "stockStatus": "disponible"
     },
-
-  
-      {
+    {
       "id": "bc-043",
       "name": "Arroz de Guyana 110lbs",
       "businessId": "bodega-central",
@@ -632,7 +631,7 @@
       "price": 31200,
       "stockStatus": "disponible"
     },
-       {
+    {
       "id": "bc-044",
       "name": "Marranetas",
       "businessId": "bodega-central",
@@ -646,7 +645,7 @@
       "formato": 40,
       "stockStatus": "disponible"
     },
-          {
+    {
       "id": "bc-045",
       "name": "Jabón de lavar",
       "businessId": "bodega-central",
@@ -2558,14 +2557,14 @@
     },
     {
       "id": "pm-dr-energizante-xl",
-      "name": "Energizante XL",
+      "name": "Energizante Flash",
       "businessId": "panes-macus",
       "businessName": "Los Macus",
       "category": "Bebidas",
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "⚡",
-      "price": 380,
+      "price": 400,
       "stockStatus": "disponible"
     },
     {
