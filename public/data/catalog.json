@@ -617,6 +617,8 @@
       "formato": 24,
       "stockStatus": "disponible"
     },
+
+  
       {
       "id": "bc-043",
       "name": "Arroz de Guyana 110lbs",
@@ -626,8 +628,36 @@
       "shortDescription": "",
       "longDescription": "Se vende por saco",
       "image": "🍚",
-      "photo": "/assets/images/products/mercadito/leche_condensada.jpg",
+      "photo": "/assets/images/products/mercadito/arroz_saco_guyana.jpg",
       "price": 31200,
+      "stockStatus": "disponible"
+    },
+       {
+      "id": "bc-045",
+      "name": "Marranetas",
+      "businessId": "bodega-central",
+      "businessName": "Mercado Alpha",
+      "category": "Alimentos",
+      "shortDescription": "",
+      "longDescription": "Se vende por estuche de 12 unidades",
+      "image": "🍚",
+      "photo": "/assets/images/products/mercadito/marranetas.jpg",
+      "price": 180,
+      "formato": 40,
+      "stockStatus": "disponible"
+    },
+          {
+      "id": "bc-045",
+      "name": "Jabón de lavar",
+      "businessId": "bodega-central",
+      "businessName": "Mercado Alpha",
+      "category": "Alimentos",
+      "shortDescription": "Multiusos de 170g ",
+      "longDescription": "Se vende por cajas de 40 unidades",
+      "image": "🍚",
+      "photo": "/assets/images/products/mercadito/jabón_lavar_multiuso.jpg",
+      "price": 270,
+      "formato": 40,
       "stockStatus": "disponible"
     },
     {
