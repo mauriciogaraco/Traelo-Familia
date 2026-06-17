@@ -102,8 +102,7 @@
         "open": "09:00",
         "close": "22:00",
         "label": "Todos los días · 9:00 am – 10:00 pm"
-      },
-      "status": "cerrado"
+      }
     }
   ],
   "products": [
@@ -1874,7 +1873,7 @@
       "shortDescription": "Bebidas",
       "longDescription": "Bebidas · Refrescantes y Energéticas",
       "image": "🥤",
-      "price": 400,
+      "price": 450,
       "stockStatus": "disponible"
     },
     {
@@ -1898,7 +1897,7 @@
       "shortDescription": "Bebidas",
       "longDescription": "Bebidas · Refrescantes y Energéticas",
       "image": "🥤",
-      "price": 100,
+      "price": 1000,
       "stockStatus": "disponible"
     },
     {
@@ -3006,7 +3005,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🍺",
-      "price": 1200,
+      "price": 1400,
       "stockStatus": "disponible"
     },
     {
