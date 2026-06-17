@@ -116,7 +116,7 @@
       "longDescription": "Avena con leche, se vende por unidad.",
       "image": "🥣",
       "photo": "/assets/images/products/mercadito/avena.jpg",
-      "price": 2250,
+      "price": 2100,
       "stockStatus": "disponible"
     },
     {
@@ -129,7 +129,7 @@
       "longDescription": "Se venden por unidad, listos para freír.",
       "image": "🍟",
       "photo": "/assets/images/products/mercadito/chicharrones.jpg",
-      "price": 850,
+      "price": 900,
       "stockStatus": "disponible"
     },
     {
@@ -156,7 +156,7 @@
       "longDescription": "Excelente calidad. Se vende por blister de 12 unidades. Contiene 420ml",
       "image": "🥤",
       "photo": "/assets/images/products/mercadito/refresco_cana_cola.jpg",
-      "price": 260,
+      "price": 265,
       "formato": 12,
       "options": [
         "Cola",
@@ -205,7 +205,7 @@
       "longDescription": "Se vende por estuches de 48 unidades.",
       "image": "🍭",
       "photo": "/assets/images/products/mercadito/chups_chups.jpg",
-      "price": 47,
+      "price": 48,
       "formato": 48,
       "stockStatus": "disponible"
     },
@@ -232,7 +232,7 @@
       "longDescription": "Se vende por unidad.",
       "image": "🧃",
       "photo": "/assets/images/products/mercadito/bambil.jpg",
-      "price": 330,
+      "price": 300,
       "stockStatus": "disponible"
     },
     {
@@ -245,7 +245,7 @@
       "longDescription": "Se vende por estuches de 12 unidades",
       "image": "🍪",
       "photo": "/assets/images/products/mercadito/coconut.jpg",
-      "price": 85,
+      "price": 87,
       "formato": 12,
       "stockStatus": "disponible"
     },
@@ -259,7 +259,7 @@
       "longDescription": "Galletas tipo cracker. Se vende por unidad.",
       "image": "🍘",
       "photo": "/assets/images/products/mercadito/crackers.jpg",
-      "price": 230,
+      "price": 200,
       "stockStatus": "disponible"
     },
     {
@@ -272,7 +272,7 @@
       "longDescription": " Se vende por estuche de 12 unidades",
       "image": "🍪",
       "photo": "/assets/images/products/mercadito/cukis.jpg",
-      "price": 1050,
+      "price": 1080,
       "options": [
         "Vainilla",
         "Chocolate"
@@ -315,7 +315,7 @@
       "longDescription": "Gelatina en pomo. Se vende por pomos de 100 unidades",
       "image": "🍮",
       "photo": "/assets/images/products/mercadito/gelatina_pomo.jpg",
-      "price": 3500,
+      "price": 3400,
       "options": [
         "Pingüino",
         "Mono"
@@ -333,7 +333,7 @@
       "image": "🧻",
       "photo": "/assets/images/products/mercadito/intimas.jpg",
       "price": 580,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "bc-022",
@@ -359,7 +359,7 @@
       "longDescription": "Se vende por estuches de 12 unidades",
       "image": "🧺",
       "photo": "/assets/images/products/mercadito/jumbo.jpg",
-      "price": 85,
+      "price": 87,
       "formato": 12,
       "stockStatus": "disponible"
     },
@@ -373,7 +373,7 @@
       "longDescription": "Lavavajillas líquido. Se vende por unidad.",
       "image": "🧴",
       "photo": "/assets/images/products/mercadito/lavavajillas.jpg",
-      "price": 560,
+      "price": 500,
       "stockStatus": "disponible"
     },
     {
@@ -386,7 +386,7 @@
       "longDescription": "Mayonesa en pomo. Se vende por blister de 12 unidades",
       "image": "🥚",
       "photo": "/assets/images/products/mercadito/mayonesa.jpg",
-      "price": 850,
+      "price": 830,
       "formato": 12,
       "stockStatus": "disponible"
     },
@@ -400,7 +400,7 @@
       "longDescription": "Se vende por caja de 48 pastillitas",
       "image": "🧂",
       "photo": "/assets/images/products/mercadito/pastillaCongrís.jpg",
-      "price": 60,
+      "price": 55,
       "formato": 12,
       "stockStatus": "disponible"
     },
@@ -428,7 +428,7 @@
       "longDescription": "Se vende por cajas de 24 unidades",
       "image": "🍪",
       "photo": "/assets/images/products/mercadito/peter_neptun.jpg",
-      "price": 135,
+      "price": 120,
       "formato": 24,
       "stockStatus": "disponible"
     },
@@ -442,7 +442,7 @@
       "longDescription": " Se vende por unidad.",
       "image": "🥔",
       "photo": "/assets/images/products/mercadito/pure_de_papas.jpg",
-      "price": 3370,
+      "price": 3100,
       "stockStatus": "disponible"
     },
     {
@@ -455,7 +455,7 @@
       "longDescription": "Se vende por cajas de 20 unidades.",
       "image": "🍝",
       "photo": "/assets/images/products/mercadito/spaguetti.jpg",
-      "price": 235,
+      "price": 240,
       "formato": 20,
       "stockStatus": "disponible"
     },
@@ -483,7 +483,7 @@
       "longDescription": " Se vende por estuche de 4 vasitos",
       "image": "🥛",
       "photo": "/assets/images/products/mercadito/yogurt_vima.jpg",
-      "price": 880,
+      "price": 900,
       "options": [
         "Fresa",
         "Natural"
@@ -514,7 +514,7 @@
       "longDescription": "Se venden por unnidad.",
       "image": "🧴",
       "photo": "/assets/images/products/mercadito/toallitas_indoxa.jpg",
-      "price": 650,
+      "price": 665,
       "stockStatus": "disponible"
     },
     {
@@ -567,7 +567,7 @@
       "longDescription": "Se vende por blister de 10 unidades",
       "image": "🧃",
       "photo": "/assets/images/products/mercadito/zumo_naranja_limon.jpg",
-      "price": 260,
+      "price": 250,
       "formato": 10,
       "options": [
         "Naranja",
@@ -585,7 +585,7 @@
       "longDescription": "Se vende por paca de 10 unidades",
       "image": "🍚",
       "photo": "/assets/images/products/mercadito/arroz_sam.jpg",
-      "price": 650,
+      "price": 660,
       "formato": 10,
       "stockStatus": "disponible"
     },
@@ -599,7 +599,7 @@
       "longDescription": "El mejor precio del mercado , sale a 280 la libra",
       "image": "🍚",
       "photo": "/assets/images/products/mercadito/arroz50lb.jpg",
-      "price": 14000,
+      "price": 14400,
       "formato": 1,
       "stockStatus": "disponible"
     },
@@ -613,7 +613,7 @@
       "longDescription": "Se vende por caja de 24 unidades",
       "image": "🍚",
       "photo": "/assets/images/products/mercadito/leche_condensada.jpg",
-      "price": 660,
+      "price": 670,
       "formato": 24,
       "stockStatus": "disponible"
     },
@@ -627,7 +627,7 @@
       "longDescription": "Se vende por saco",
       "image": "🍚",
       "photo": "/assets/images/products/mercadito/arroz_saco_guyana.jpg",
-      "price": 31200,
+      "price": 31800,
       "stockStatus": "disponible"
     },
     {
@@ -640,7 +640,7 @@
       "longDescription": "Se vende por estuche de 12 unidades",
       "image": "🍚",
       "photo": "/assets/images/products/mercadito/marranetas.jpg",
-      "price": 180,
+      "price": 185,
       "formato": 40,
       "stockStatus": "disponible"
     },
@@ -654,7 +654,7 @@
       "longDescription": "Se vende por cajas de 40 unidades",
       "image": "🍚",
       "photo": "/assets/images/products/mercadito/jabón_lavar_multiuso.jpg",
-      "price": 270,
+      "price": 265,
       "formato": 40,
       "stockStatus": "disponible"
     },
