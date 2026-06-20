@@ -8,6 +8,8 @@ import { groupByBusiness } from '../lib/order'
 import { hasFormato, itemLineId, lineTotal, packSize, unitsOf } from '../lib/cart'
 import type { CartItem } from '../types'
 
+const MIN_ORDER_USD = 20
+
 export function CartPage() {
   const navigate = useNavigate()
   const { items, setQuantity, removeItem, subtotal } = useCart()
@@ -99,8 +101,23 @@ export function CartPage() {
           </p>
         </div>
 
+        {subtotal < MIN_ORDER_USD && (
+          <div className="flex items-start gap-2.5 bg-amber-50 border border-amber-200 rounded-2xl p-3">
+            <span className="text-lg flex-shrink-0">⚠️</span>
+            <p className="text-xs text-amber-800 leading-relaxed">
+              El pedido mínimo es <span className="font-bold">${MIN_ORDER_USD} USD</span>. Te faltan{' '}
+              <span className="font-bold">${(MIN_ORDER_USD - subtotal).toFixed(2)} USD</span> para continuar.
+            </p>
+          </div>
+        )}
+
         <div className="mt-4">
-          <Button size="lg" fullWidth onClick={() => navigate('/checkout')}>
+          <Button
+            size="lg"
+            fullWidth
+            onClick={() => navigate('/checkout')}
+            disabled={subtotal < MIN_ORDER_USD}
+          >
             Continuar al pedido
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M13 6l6 6-6 6" />
