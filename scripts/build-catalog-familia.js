@@ -271,7 +271,7 @@ const businesses = [
     id: 'linea-callejon',
     name: 'Línea Callejón',
     description: 'Pizzería restaurante con sabor de barrio.',
-    image: '/assets/images/business/Linea_Callejón.jpg',
+    image: '/assets/images/business/Linea_Callejon.jpg',
     color: 'from-purple-100 to-pink-50',
   },
 ]
