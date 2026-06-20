@@ -4,32 +4,35 @@ import { useCatalog } from '../context/CatalogContext'
 import { ProductCard } from '../components/product/ProductCard'
 import { Logo } from '../components/ui/Logo'
 import { useCart } from '../context/CartContext'
-import { categories, categoryEmoji } from '../data/catalog'
-import type { Category } from '../types'
 import { SUPPORT_WHATSAPP } from '../lib/config'
 
-const CATEGORY_LABELS: Record<Category, string> = {
-  Combos: 'Combos',
-  Comidas: 'Comidas',
-  Regalos: 'Regalos',
-  Bebidas: 'Bebidas',
-  Panadería: 'Panadería',
+const BUSINESS_EMOJI: Record<string, string> = {
+  'bodega-central': '🏪',
+  'dlm': '🍽️',
+  'panes-macus': '🥖',
+  'mercadito-ahorro': '🎁',
+  'la-marina': '🍕',
+  'linea-callejon': '🍕',
 }
 
+const COMBOS_BUSINESS_ID = 'mercadito-ahorro'
+
 export function HomePage() {
-  const { products, loading } = useCatalog()
+  const { products, businesses, loading } = useCatalog()
   const { itemCount } = useCart()
   const navigate = useNavigate()
-  const [activeCategory, setActiveCategory] = useState<Category | 'Todos'>('Todos')
+  const [activeBusinessId, setActiveBusinessId] = useState<string | 'todos'>('todos')
   const productsRef = useRef<HTMLElement>(null)
 
   const filtered =
-    activeCategory === 'Todos'
+    activeBusinessId === 'todos'
       ? products
-      : products.filter((p) => p.category === activeCategory)
+      : products.filter((p) => p.businessId === activeBusinessId)
 
-  function selectCategory(cat: Category | 'Todos') {
-    setActiveCategory(cat)
+  const activeBusiness = businesses.find((b) => b.id === activeBusinessId)
+
+  function selectBusiness(id: string | 'todos') {
+    setActiveBusinessId(id)
     setTimeout(() => {
       productsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }, 60)
@@ -74,13 +77,13 @@ export function HomePage() {
         </p>
         <div className="flex items-center gap-3 mt-6">
           <button
-            onClick={() => selectCategory('Combos')}
+            onClick={() => selectBusiness(COMBOS_BUSINESS_ID)}
             className="flex-1 h-13 bg-gradient-primary text-white font-bold rounded-2xl shadow-btn-primary text-base flex items-center justify-center gap-2 active:scale-[0.97] transition-transform"
           >
             🎁 Ver Combos
           </button>
           <button
-            onClick={() => selectCategory('Todos')}
+            onClick={() => selectBusiness('todos')}
             className="h-13 px-5 bg-surface border border-border text-text-primary font-bold rounded-2xl text-sm active:scale-[0.97] transition-transform"
           >
             Todo
@@ -99,22 +102,22 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* Category chips */}
+      {/* Business chips */}
       <div className="px-4 pt-5">
         <div className="flex gap-2 overflow-x-auto scrollbar-none pb-1">
-          <CategoryChip
+          <BusinessChip
             label="Todos"
             emoji="🛍️"
-            active={activeCategory === 'Todos'}
-            onClick={() => selectCategory('Todos')}
+            active={activeBusinessId === 'todos'}
+            onClick={() => selectBusiness('todos')}
           />
-          {categories.map((cat) => (
-            <CategoryChip
-              key={cat}
-              label={CATEGORY_LABELS[cat]}
-              emoji={categoryEmoji[cat]}
-              active={activeCategory === cat}
-              onClick={() => selectCategory(cat)}
+          {businesses.map((biz) => (
+            <BusinessChip
+              key={biz.id}
+              label={biz.name}
+              emoji={BUSINESS_EMOJI[biz.id] ?? '🏪'}
+              active={activeBusinessId === biz.id}
+              onClick={() => selectBusiness(biz.id)}
             />
           ))}
         </div>
@@ -123,7 +126,7 @@ export function HomePage() {
       {/* Products */}
       <section ref={productsRef} className="px-4 pt-5 scroll-mt-4">
         <SectionTitle
-          title={activeCategory === 'Todos' ? 'Todo el catálogo' : CATEGORY_LABELS[activeCategory as Category]}
+          title={activeBusinessId === 'todos' ? 'Todo el catálogo' : (activeBusiness?.name ?? '')}
           action={
             <span className="text-xs font-semibold text-text-secondary">
               {filtered.length} {filtered.length === 1 ? 'producto' : 'productos'}
@@ -255,7 +258,7 @@ const TRUST_SIGNALS = [
   },
 ]
 
-function CategoryChip({
+function BusinessChip({
   label,
   emoji,
   active,
