@@ -218,44 +218,6 @@ export function HomePage() {
           </section>
         ) : (
           <>
-            {/* Promo leve */}
-            <section className="pt-5">
-              <div className="rounded-3xl bg-gradient-to-br from-secondary to-background border border-border/60 px-5 py-4">
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-accent/15 text-accent text-[10px] font-bold mb-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                  Entrega en Güira de Melena
-                </span>
-                <p className="text-[1.15rem] font-extrabold text-text-primary leading-snug">
-                  Hazle llegar una sonrisa<br />a tu familia.
-                </p>
-                <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3">
-                  {["Pago por Zelle", "Entrega garantizada", "Atención por WhatsApp"].map((t) => (
-                    <span key={t} className="flex items-center gap-1 text-[10.5px] font-semibold text-text-secondary">
-                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} className="text-accent flex-shrink-0">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                      </svg>
-                      {t}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </section>
-
-            {/* Cómo funciona */}
-            <section className="pt-5">
-              <SectionTitle title="¿Cómo funciona?" />
-              <div className="flex gap-2.5 overflow-x-auto scrollbar-none -mx-4 px-4 pb-1">
-                {HOW_IT_WORKS.map((step, i) => (
-                  <div key={i} className="flex-shrink-0 w-[130px] bg-surface border border-border rounded-2xl p-3">
-                    <span className="text-2xl">{step.emoji}</span>
-                    <p className="text-[10px] font-bold text-primary mt-1.5 mb-0.5">Paso {i + 1}</p>
-                    <p className="text-xs font-bold text-text-primary leading-snug">{step.title}</p>
-                    <p className="text-[10px] text-text-secondary mt-0.5 leading-relaxed">{step.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-
             {/* Negocios */}
             <section className="pt-5">
               <SectionTitle
@@ -292,6 +254,40 @@ export function HomePage() {
         )}
       </div>
       <div className="px-4 pt-6">
+        {/* Promo leve */}
+        <div className="rounded-3xl bg-gradient-to-br from-secondary to-background border border-border/60 px-5 py-4 mb-5">
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-accent/15 text-accent text-[10px] font-bold mb-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+            Entrega en Güira de Melena
+          </span>
+          <p className="text-[1.15rem] font-extrabold text-text-primary leading-snug">
+            Hazle llegar una sonrisa<br />a tu familia.
+          </p>
+          <div className="flex flex-wrap gap-x-4 gap-y-1 mt-3">
+            {["Pago por Zelle", "Entrega garantizada", "Atención por WhatsApp"].map((t) => (
+              <span key={t} className="flex items-center gap-1 text-[10.5px] font-semibold text-text-secondary">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} className="text-accent flex-shrink-0">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+                {t}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Cómo funciona */}
+        <SectionTitle title="¿Cómo funciona?" />
+        <div className="flex gap-2.5 overflow-x-auto scrollbar-none -mx-4 px-4 pb-1 mb-6">
+          {HOW_IT_WORKS.map((step, i) => (
+            <div key={i} className="flex-shrink-0 w-[130px] bg-surface border border-border rounded-2xl p-3">
+              <span className="text-2xl">{step.emoji}</span>
+              <p className="text-[10px] font-bold text-primary mt-1.5 mb-0.5">Paso {i + 1}</p>
+              <p className="text-xs font-bold text-text-primary leading-snug">{step.title}</p>
+              <p className="text-[10px] text-text-secondary mt-0.5 leading-relaxed">{step.desc}</p>
+            </div>
+          ))}
+        </div>
+
         <ShareSection />
         <SupportSection />
       </div>
