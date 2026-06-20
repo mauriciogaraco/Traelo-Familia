@@ -5,7 +5,7 @@ export interface CatalogData {
   products: Product[]
 }
 
-const CACHE_KEY = 'traelo_familia_catalog_v1'
+const CACHE_KEY = 'traelo_familia_catalog_v2'
 const CATALOG_URL = '/data/catalog-familia.json'
 
 function readCache(): CatalogData | null {
