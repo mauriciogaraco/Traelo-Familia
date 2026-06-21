@@ -310,27 +310,14 @@ const HOW_IT_WORKS = [
   { emoji: '🚀', title: 'Entregamos', desc: 'Directo en Güira de Melena.' },
 ]
 
-const FEATURED_IDS = ['combo-papa', 'combo-001', 'combo-super']
-
 function FeaturedSection({ products }: { products: Product[] }) {
   const hero = products.find((p) => p.id === 'combo-papa')
-  const others = FEATURED_IDS.slice(1)
-    .map((id) => products.find((p) => p.id === id))
-    .filter((p): p is Product => !!p)
-
   if (!hero) return null
 
   return (
     <section className="pt-5">
       <SectionTitle title="Destacados" />
       <FeaturedHeroCard product={hero} />
-      {others.length > 0 && (
-        <div className="grid grid-cols-2 gap-3 mt-3">
-          {others.map((p) => (
-            <ProductCard key={p.id} product={p} />
-          ))}
-        </div>
-      )}
     </section>
   )
 }
