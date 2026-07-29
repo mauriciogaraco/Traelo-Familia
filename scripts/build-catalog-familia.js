@@ -18,13 +18,6 @@ const root = resolve(__dirname, '..')
 const SOURCE_URL =
   'https://raw.githubusercontent.com/mauriciogaraco/Traelo/main/public/data/catalog-familia.json'
 
-const RATE = 500
-
-function toUsd(price, currency) {
-  if (currency === 'USD') return price
-  return Math.round((price / RATE) * 100) / 100
-}
-
 const CAT_MAP = {
   Comida: 'Comidas',
   Bebidas: 'Bebidas',
@@ -134,12 +127,6 @@ async function main() {
   if (!res.ok) throw new Error(`HTTP ${res.status} al descargar ${SOURCE_URL}`)
   const normal = await res.json()
 
-  // Mapa de moneda por negocio (ej. eme-boutique → "USD")
-  const bizCurrency = {}
-  normal.businesses.forEach(b => {
-    if (b.currency) bizCurrency[b.id] = b.currency
-  })
-
   // Transformar negocios
   const businesses = normal.businesses.map(b => {
     const biz = { ...b }
@@ -156,28 +143,14 @@ async function main() {
     return biz
   })
 
-  // Transformar productos
+  // Transformar productos (precios ya en USD en el catálogo fuente)
   const products = normal.products.map(p => {
-    const effectiveCurrency = p.currency ?? bizCurrency[p.businessId]
     const prod = {
       ...p,
-      price: toUsd(p.price, effectiveCurrency),
       category: mapCat(p.category, p.businessId),
     }
     if (p.businessId === 'linea-callejon') {
       prod.businessName = 'Línea Callejón'
-    }
-    if (prod.addons) {
-      prod.addons = prod.addons.map(a => ({
-        ...a,
-        price: toUsd(a.price, effectiveCurrency),
-      }))
-    }
-    if (prod.packaging) {
-      prod.packaging = prod.packaging.map(pk => ({
-        ...pk,
-        price: toUsd(pk.price, effectiveCurrency),
-      }))
     }
     return prod
   })
