@@ -18,6 +18,13 @@ const root = resolve(__dirname, '..')
 const SOURCE_URL =
   'https://raw.githubusercontent.com/mauriciogaraco/Traelo/main/public/data/catalog-familia.json'
 
+const RATE = 500
+
+/** Convierte CUP → USD (solo para addons y packaging, cuyo precio llega en CUP). */
+function cupToUsd(cup) {
+  return Math.round((cup / RATE) * 100) / 100
+}
+
 const CAT_MAP = {
   Comida: 'Comidas',
   Bebidas: 'Bebidas',
@@ -143,7 +150,9 @@ async function main() {
     return biz
   })
 
-  // Transformar productos (precios ya en USD en el catálogo fuente)
+  // Transformar productos
+  // El precio principal ya viene en USD desde el catálogo fuente.
+  // Addons y packaging siguen en CUP → se convierten aquí.
   const products = normal.products.map(p => {
     const prod = {
       ...p,
@@ -151,6 +160,12 @@ async function main() {
     }
     if (p.businessId === 'linea-callejon') {
       prod.businessName = 'Línea Callejón'
+    }
+    if (prod.addons) {
+      prod.addons = prod.addons.map(a => ({ ...a, price: cupToUsd(a.price) }))
+    }
+    if (prod.packaging) {
+      prod.packaging = prod.packaging.map(pk => ({ ...pk, price: cupToUsd(pk.price) }))
     }
     return prod
   })
