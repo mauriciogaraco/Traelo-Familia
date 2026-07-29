@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "catalog": "node scripts/build-catalog.js",
-    "build": "tsc && vite build",
+    "build": "node scripts/build-catalog-familia.js && tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
