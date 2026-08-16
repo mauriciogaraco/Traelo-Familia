@@ -46,6 +46,19 @@ function mapCat(cat, bizId) {
   return CAT_MAP[cat] ?? 'Comidas'
 }
 
+/**
+ * Ajustes de precio propios de Familia (no vienen del catálogo fuente,
+ * hay que reaplicarlos en cada sync).
+ */
+function adjustPrice(p) {
+  const text = `${p.name} ${p.shortDescription ?? ''} ${p.longDescription ?? ''}`.toLowerCase()
+  let extra = 0
+  if (p.businessId === 'mercadito-ahorro' && text.includes('aceite')) extra += 5
+  if (p.businessId === 'dlm' && p.name.trim().toLowerCase() === 'ensalada mixta') extra += 3
+  if (extra === 0) return p
+  return { ...p, price: Math.round((p.price + extra) * 100) / 100 }
+}
+
 // Combos exclusivos de Familia (ya en USD)
 const COMBOS = [
   {
@@ -172,7 +185,7 @@ async function main() {
 
   const catalog = {
     businesses,
-    products: [...products, ...COMBOS],
+    products: [...products, ...COMBOS].map(adjustPrice),
   }
 
   const outPath = resolve(root, 'public/data/catalog-familia.json')
