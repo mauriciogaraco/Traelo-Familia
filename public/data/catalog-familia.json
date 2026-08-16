@@ -7,6 +7,8 @@
       "image": "/assets/images/business/alpha.jpg",
       "color": "from-amber-100 to-orange-50",
       "paymentNote": "Solo se aceptan billetes de 50 CUP en adelante. · El costo de mensajería indicado es referencial. Debido a la naturaleza del pedido, la tarifa final puede ajustarse en función del peso y volumen total de los productos. El mensajero le comunicará el monto definitivo al momento de coordinar la entrega.",
+      "businessCommission": 0,
+      "clientCommission": 2,
       "schedule": {
         "days": [
           1,
@@ -27,6 +29,8 @@
       "image": "/assets/images/business/DLM.jpg",
       "color": "from-rose-100 to-orange-50",
       "deliveryFee": 350,
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           3,
@@ -46,6 +50,8 @@
       "description": "Panadería: panes recién hechos y bebidas frías.",
       "image": "/assets/images/business/macus.jpg",
       "color": "from-yellow-100 to-amber-50",
+      "businessCommission": 0,
+      "clientCommission": 4,
       "schedule": {
         "days": [
           0,
@@ -67,6 +73,8 @@
       "description": "Combos curados para enviar a tu familia, más productos del día a día.",
       "image": "/assets/images/business/Mercadito.jpg",
       "color": "from-emerald-100 to-teal-50",
+      "businessCommission": 0,
+      "clientCommission": 3,
       "schedule": {
         "days": [
           0,
@@ -89,6 +97,8 @@
       "description": "Pizzas y espaguetis con agregos a elección, más bebidas frías.",
       "image": "/assets/images/products/pizza.jpg",
       "color": "from-red-100 to-orange-50",
+      "businessCommission": 0,
+      "clientCommission": 4,
       "schedule": {
         "days": [
           0,
@@ -110,6 +120,8 @@
       "description": "Batidos artesanales y malteadas con crema batida, sirope y confituras.",
       "image": "/assets/images/business/Cronos.jpg",
       "color": "from-sky-100 to-cyan-50",
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           0,
@@ -131,9 +143,11 @@
       "description": "Ropa, lencería, bolsos y accesorios de moda.",
       "image": "/assets/images/business/Eme-Boutique.jpg",
       "color": "from-pink-100 to-rose-50",
-      "currency": "USD",
       "paymentNote": "Precios en USD · pago al cambio del día (El Toque). La mensajería se abona en CUP y se cobra aunque no se retenga la prenda.",
       "deliveryFee": 350,
+      "currency": "USD",
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           0,
@@ -155,6 +169,8 @@
       "description": "Bodega de confianza: alimentos, bebidas, aseo y más, todo en un solo lugar.",
       "image": "/assets/images/business/Tu-Kprichito.jpg",
       "color": "from-violet-100 to-purple-50",
+      "businessCommission": 0,
+      "clientCommission": 3,
       "schedule": {
         "days": [
           0,
@@ -176,6 +192,8 @@
       "description": "Pizzas individuales y familiares, espaguetis, comidas criollas y picaderas.",
       "image": "/assets/images/business/Linea_Callejon.jpg",
       "color": "from-green-100 to-emerald-50",
+      "businessCommission": 0,
+      "clientCommission": 4,
       "schedule": {
         "days": [
           0,
@@ -197,6 +215,8 @@
       "description": "Torticas, pasteles, merenguitos, tartaletas y cakes artesanales.",
       "image": "/assets/images/business/Amore.jpg",
       "color": "from-pink-100 to-rose-50",
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           0,
@@ -219,6 +239,8 @@
       "image": "/assets/images/business/Cafetería_D'-Leo.jpg",
       "color": "from-yellow-100 to-amber-50",
       "status": "cerrado",
+      "businessCommission": 0,
+      "clientCommission": 4,
       "schedule": {
         "days": [
           0,
@@ -240,6 +262,8 @@
       "description": "Pizzas artesanales con agregos a elección y bebidas frías.",
       "image": "/assets/images/business/pizzeriaM&M.jpg",
       "color": "from-red-100 to-orange-50",
+      "businessCommission": 0,
+      "clientCommission": 4,
       "schedule": {
         "days": [
           0,
@@ -261,8 +285,10 @@
       "description": "Restaurante Las Palmitas — carnes, mariscos, pollo, coctelería y más en Güira de Melena.",
       "image": "/assets/images/business/LasPamitasLogo2.jpg",
       "color": "from-green-100 to-lime-50",
-      "deliveryFee": 350,
       "paymentNote": "Mensajería 350 CUP · después de las 7:00 pm sube a 450 CUP. · A su cuenta se le suma el 5% de servicio.",
+      "deliveryFee": 350,
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           0,
@@ -283,6 +309,8 @@
       "description": "Helados artesanales en copas individuales y tinas familiares.",
       "image": "/assets/images/business/heladeria-mk.jpg",
       "color": "from-pink-100 to-fuchsia-50",
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           0,
@@ -304,6 +332,8 @@
       "description": "Ferretería FerreGüira — herramientas, materiales eléctricos, fontanería y más en Güira de Melena.",
       "image": "/assets/images/business/FerreGüira.jpg",
       "color": "from-orange-100 to-amber-50",
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           1,
@@ -324,6 +354,8 @@
       "description": "Los Llenik — El bar a tu casa",
       "image": "/assets/images/business/Los Llenik.jpg",
       "color": "from-sky-100 to-cyan-50",
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           0,
@@ -346,6 +378,8 @@
       "image": "/assets/images/business/Dulce-momento.jpg",
       "color": "from-sky-100 to-cyan-50",
       "status": "cerrado",
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           1,
@@ -366,6 +400,8 @@
       "description": "Frappio — Otra forma de disfrutar el café.",
       "image": "/assets/images/business/Frappio.jpg",
       "color": "from-sky-100 to-cyan-50",
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           0,
@@ -387,6 +423,8 @@
       "description": "Brochetas y cerdo asado a las brasas, directo a tu puerta.",
       "image": "/assets/images/business/AlCarbón.jpg",
       "color": "from-orange-100 to-red-50",
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           0,
@@ -408,6 +446,8 @@
       "description": "Los 4 Hermanos — Comida casera a domicilio.",
       "image": "/assets/images/business/Los 4 Hermanos.jpg",
       "color": "from-sky-100 to-cyan-50",
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           0,
@@ -429,6 +469,8 @@
       "description": "Agro Los Prietos — Viandas, frutas y vegetales frescos.",
       "image": "/assets/images/business/Los Prietos.jpg",
       "color": "from-lime-100 to-green-50",
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           1,
@@ -440,7 +482,15 @@
         ],
         "open": "09:00",
         "close": "18:00",
-        "label": "Lun–Sáb · 9:00 am – 6:00 pm"
+        "label": "Lun–Sáb · 9:00 am – 6:00 pm · Dom · 9:00 am – 1:00 pm"
+      },
+      "scheduleExtra": {
+        "days": [
+          0
+        ],
+        "open": "09:00",
+        "close": "13:00",
+        "label": "Domingo · 9:00 am – 1:00 pm"
       }
     },
     {
@@ -449,6 +499,8 @@
       "description": "La Nevada — Helados, cakes y dulces artesanales.",
       "image": "/assets/images/business/La Nevada.jpg",
       "color": "from-pink-100 to-rose-50",
+      "businessCommission": 0,
+      "clientCommission": 5,
       "schedule": {
         "days": [
           0,
@@ -475,7 +527,7 @@
       "shortDescription": "Batido natural de mango.",
       "longDescription": "Batido cremoso de mango natural, suave y tropical. Coronado con crema batida, sirope y confituras de decoración.",
       "image": "🥤",
-      "photo": "/assets/images/products/Cronos/Mango.jpg",
+      "photo": "/assets/images/products/cronos/cr-001.jpg",
       "price": 1.4,
       "stockStatus": "agotado"
     },
@@ -488,7 +540,7 @@
       "shortDescription": "Batido natural de fruta bomba",
       "longDescription": "Batido cremoso de fruta bomba natural, suave y tropical. Coronado con crema batida, sirope y confituras de decoración.",
       "image": "🥛",
-      "photo": "/assets/images/products/Cronos/Fruta-Bomba.jpg",
+      "photo": "/assets/images/products/cronos/cr-002.jpg",
       "price": 1.4,
       "stockStatus": "disponible"
     },
@@ -501,7 +553,7 @@
       "shortDescription": "Batido natural de maní",
       "longDescription": "Batido cremoso de maní, suave y tropical. Coronado con crema batida, sirope y confituras de decoración.",
       "image": "🥛",
-      "photo": "/assets/images/products/Cronos/Maní.jpg",
+      "photo": "/assets/images/products/cronos/cr-003.jpg",
       "price": 1.7,
       "featured": true,
       "stockStatus": "disponible"
@@ -515,7 +567,7 @@
       "shortDescription": "Malteada espesa y cremosa.",
       "longDescription": "Malteada artesanal, espesa y aterciopelada. Coronada con crema batida, sirope y confituras de decoración.",
       "image": "🥛",
-      "photo": "/assets/images/products/Cronos/Malteada.jpg",
+      "photo": "/assets/images/products/cronos/cr-004.jpg",
       "price": 1.7,
       "stockStatus": "disponible"
     },
@@ -528,7 +580,7 @@
       "shortDescription": "Batido de helado de fresa.",
       "longDescription": "Batido de helado de fresa, intenso y refrescante. Coronado con crema batida, sirope y confituras de decoración.",
       "image": "🍓",
-      "photo": "/assets/images/products/Cronos/Helado-fresa.jpg",
+      "photo": "/assets/images/products/cronos/cr-005.jpg",
       "price": 2.2,
       "stockStatus": "disponible"
     },
@@ -541,7 +593,7 @@
       "shortDescription": "Batido de helado de chocolate.",
       "longDescription": "Batido de helado de chocolate oscuro e irresistible. Coronado con crema batida, sirope y confituras de decoración.",
       "image": "🍫",
-      "photo": "/assets/images/products/Cronos/Helado-Chocolate.jpg",
+      "photo": "/assets/images/products/cronos/cr-006.jpg",
       "price": 2.2,
       "featured": true,
       "stockStatus": "disponible"
@@ -555,7 +607,7 @@
       "shortDescription": "Batido de helado de vainilla.",
       "longDescription": "Batido de helado de vainilla, suave y cremoso. Coronado con crema batida, sirope y confituras de decoración.",
       "image": "🍦",
-      "photo": "/assets/images/products/Cronos/helado-Vanilla.jpg",
+      "photo": "/assets/images/products/cronos/cr-007.jpg",
       "price": 2.2,
       "stockStatus": "disponible"
     },
@@ -568,7 +620,7 @@
       "shortDescription": "Batido de helado de naranja y piña.",
       "longDescription": "Batido de helado de naranja y piña, tropical y refrescante. Coronado con crema batida, sirope y confituras de decoración.",
       "image": "🍊",
-      "photo": "/assets/images/products/Cronos/Helado-Naranja-Piña.jpg",
+      "photo": "/assets/images/products/cronos/cr-008.jpg",
       "price": 2.2,
       "stockStatus": "disponible"
     },
@@ -581,7 +633,7 @@
       "shortDescription": "Batido de helado de avellana.",
       "longDescription": "Batido de helado sabor avellana, cremoso e irresistible. Coronado con crema batida, maní, sirope y confituras de decoración.",
       "image": "🌰",
-      "photo": "/assets/images/products/Cronos/Helado-Sabor-Avellana.jpg",
+      "photo": "/assets/images/products/cronos/cr-009.jpg",
       "price": 2.2,
       "stockStatus": "agotado"
     },
@@ -594,7 +646,7 @@
       "shortDescription": "Batido de helado de mantecado.",
       "longDescription": "Batido de helado de mantecado, suave y nostálgico. Coronado con crema batida, maní, sirope y confituras de decoración.",
       "image": "🍨",
-      "photo": "/assets/images/products/Cronos/Helado-Mantecado.jpg",
+      "photo": "/assets/images/products/cronos/cr-010.jpg",
       "price": 2.2,
       "stockStatus": "disponible"
     },
@@ -607,7 +659,7 @@
       "shortDescription": "Batido de helado de caramelo.",
       "longDescription": "Batido de helado de caramelo, dulce e irresistible. Coronado con crema batida, sirope y confituras de decoración.",
       "image": "🍯",
-      "photo": "/assets/images/products/Cronos/Helado-De-Caramelo.jpg",
+      "photo": "/assets/images/products/cronos/cr-011.jpg",
       "price": 2.2,
       "stockStatus": "disponible"
     },
@@ -620,7 +672,7 @@
       "shortDescription": "Batido de helado de dulce de leche.",
       "longDescription": "Batido de helado de dulce de leche, cremoso e irresistible. Coronado con crema batida, sirope y confituras de decoración.",
       "image": "🍮",
-      "photo": "/assets/images/products/Cronos/Helado-Dulce-De-Leche.jpg",
+      "photo": "/assets/images/products/cronos/cr-012.jpg",
       "price": 2.2,
       "stockStatus": "agotado"
     },
@@ -1231,7 +1283,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 1.9,
+      "price": 1.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1249,7 +1301,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 1.7,
+      "price": 1.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1267,7 +1319,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 2.8,
+      "price": 2.7,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1285,7 +1337,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 3.5,
+      "price": 3.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1303,7 +1355,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 2.5,
+      "price": 2.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1321,7 +1373,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 2.9,
+      "price": 2.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1339,7 +1391,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 2.9,
+      "price": 2.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1357,7 +1409,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 3.2,
+      "price": 3.1,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1375,7 +1427,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 3.2,
+      "price": 3.1,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1393,7 +1445,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 2.5,
+      "price": 2.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1411,7 +1463,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 2.5,
+      "price": 2.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1429,7 +1481,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 1.9,
+      "price": 1.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1447,7 +1499,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 3.3,
+      "price": 3.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1465,7 +1517,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 3.9,
+      "price": 3.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1483,7 +1535,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 3.9,
+      "price": 3.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1501,7 +1553,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 3.7,
+      "price": 3.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1519,7 +1571,7 @@
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes · Para empezar",
       "image": "🍤",
-      "price": 9.7,
+      "price": 9.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1537,7 +1589,7 @@
       "shortDescription": "Fríos",
       "longDescription": "Fríos · Frescos",
       "image": "🥗",
-      "price": 1.9,
+      "price": 1.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1555,7 +1607,7 @@
       "shortDescription": "Fríos",
       "longDescription": "Fríos · Frescos",
       "image": "🥗",
-      "price": 2,
+      "price": 1.9,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1573,7 +1625,7 @@
       "shortDescription": "Fríos",
       "longDescription": "Fríos · Frescos",
       "image": "🥗",
-      "price": 1.9,
+      "price": 1.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1591,7 +1643,7 @@
       "shortDescription": "Fríos",
       "longDescription": "Fríos · Frescos",
       "image": "🥗",
-      "price": 2.3,
+      "price": 2.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1609,7 +1661,7 @@
       "shortDescription": "Cocteles",
       "longDescription": "Cocteles · Del bar",
       "image": "🦐",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1627,7 +1679,7 @@
       "shortDescription": "Cocteles",
       "longDescription": "Cocteles · Del bar",
       "image": "🦐",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1645,7 +1697,7 @@
       "shortDescription": "Guarniciones",
       "longDescription": "Guarniciones · Acompañantes",
       "image": "🍚",
-      "price": 1,
+      "price": 0.9,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1681,7 +1733,7 @@
       "shortDescription": "Pastas & arroz",
       "longDescription": "Pastas & arroz · Clásicos",
       "image": "🍝",
-      "price": 2.1,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1699,7 +1751,7 @@
       "shortDescription": "Pastas & arroz",
       "longDescription": "Pastas & arroz · Clásicos",
       "image": "🍝",
-      "price": 2.1,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1717,7 +1769,7 @@
       "shortDescription": "Pastas & arroz",
       "longDescription": "Pastas & arroz · Clásicos",
       "image": "🍝",
-      "price": 2.8,
+      "price": 2.7,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1735,7 +1787,7 @@
       "shortDescription": "Pastas & arroz",
       "longDescription": "Pastas & arroz · Clásicos",
       "image": "🍝",
-      "price": 0.7,
+      "price": 0.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1753,7 +1805,7 @@
       "shortDescription": "Pastas & arroz",
       "longDescription": "Pastas & arroz · Clásicos",
       "image": "🍝",
-      "price": 1.1,
+      "price": 1,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1771,7 +1823,7 @@
       "shortDescription": "Pastas & arroz",
       "longDescription": "Pastas & arroz · Clásicos",
       "image": "🍝",
-      "price": 2.3,
+      "price": 2.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1789,7 +1841,7 @@
       "shortDescription": "Pollo",
       "longDescription": "Pollo · Fuertes",
       "image": "🍗",
-      "price": 8.3,
+      "price": 8.2,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -1807,7 +1859,7 @@
       "shortDescription": "Pollo",
       "longDescription": "Pollo · Fuertes",
       "image": "🍗",
-      "price": 5.5,
+      "price": 5.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1825,7 +1877,7 @@
       "shortDescription": "Pollo",
       "longDescription": "Pollo · Fuertes",
       "image": "🍗",
-      "price": 5.5,
+      "price": 5.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1843,7 +1895,7 @@
       "shortDescription": "Pollo",
       "longDescription": "Pollo · Fuertes",
       "image": "🍗",
-      "price": 5.3,
+      "price": 5.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1861,7 +1913,7 @@
       "shortDescription": "Pollo",
       "longDescription": "Pollo · Fuertes",
       "image": "🍗",
-      "price": 8.3,
+      "price": 8.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1879,7 +1931,7 @@
       "shortDescription": "Cerdo",
       "longDescription": "Cerdo · Parrilla",
       "image": "🥩",
-      "price": 7.7,
+      "price": 7.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1897,7 +1949,7 @@
       "shortDescription": "Cerdo",
       "longDescription": "Cerdo · Parrilla",
       "image": "🥩",
-      "price": 7.7,
+      "price": 7.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1915,7 +1967,7 @@
       "shortDescription": "Cerdo",
       "longDescription": "Cerdo · Parrilla",
       "image": "🥩",
-      "price": 4.9,
+      "price": 4.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1933,7 +1985,7 @@
       "shortDescription": "Cerdo",
       "longDescription": "Cerdo · Parrilla",
       "image": "🥩",
-      "price": 4.7,
+      "price": 4.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1951,7 +2003,7 @@
       "shortDescription": "Cerdo",
       "longDescription": "Cerdo · Parrilla",
       "image": "🥩",
-      "price": 7.7,
+      "price": 7.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1969,7 +2021,7 @@
       "shortDescription": "Cerdo",
       "longDescription": "Cerdo · Parrilla",
       "image": "🥩",
-      "price": 4.7,
+      "price": 4.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1987,7 +2039,7 @@
       "shortDescription": "Cerdo",
       "longDescription": "Cerdo · Parrilla",
       "image": "🥩",
-      "price": 5.1,
+      "price": 5,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2005,7 +2057,7 @@
       "shortDescription": "Cerdo",
       "longDescription": "Cerdo · Parrilla",
       "image": "🥩",
-      "price": 7.3,
+      "price": 7.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2023,7 +2075,7 @@
       "shortDescription": "Cerdo",
       "longDescription": "Cerdo · Parrilla",
       "image": "🥩",
-      "price": 8.3,
+      "price": 8.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2041,7 +2093,7 @@
       "shortDescription": "Cerdo",
       "longDescription": "Cerdo · Parrilla",
       "image": "🥩",
-      "price": 10.7,
+      "price": 10.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2059,7 +2111,7 @@
       "shortDescription": "Res",
       "longDescription": "Res · Parrilla",
       "image": "🥩",
-      "price": 5.1,
+      "price": 5,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2077,7 +2129,7 @@
       "shortDescription": "Res",
       "longDescription": "Res · Parrilla",
       "image": "🥩",
-      "price": 5.1,
+      "price": 5,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2095,7 +2147,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 5.8,
+      "price": 5.7,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2113,7 +2165,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 6,
+      "price": 5.9,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2131,7 +2183,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 6.7,
+      "price": 6.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2149,7 +2201,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 6.5,
+      "price": 6.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2167,7 +2219,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 6.9,
+      "price": 6.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2185,7 +2237,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 7.3,
+      "price": 7.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2203,7 +2255,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 7.3,
+      "price": 7.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2221,7 +2273,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 6.9,
+      "price": 6.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2239,7 +2291,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 7.3,
+      "price": 7.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2257,7 +2309,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 3.8,
+      "price": 3.7,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2275,7 +2327,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 4.3,
+      "price": 4.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2293,7 +2345,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 4.9,
+      "price": 4.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2311,7 +2363,7 @@
       "shortDescription": "Mar",
       "longDescription": "Mar · Del mar",
       "image": "🦞",
-      "price": 4.9,
+      "price": 4.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2329,7 +2381,7 @@
       "shortDescription": "Postres",
       "longDescription": "Postres · Final dulce",
       "image": "🍮",
-      "price": 1.2,
+      "price": 1.1,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -2347,7 +2399,7 @@
       "shortDescription": "Postres",
       "longDescription": "Postres · Final dulce",
       "image": "🍮",
-      "price": 1.6,
+      "price": 1.5,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -2365,7 +2417,7 @@
       "shortDescription": "Postres",
       "longDescription": "Postres · Final dulce",
       "image": "🍮",
-      "price": 3.1,
+      "price": 3,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -2383,7 +2435,7 @@
       "shortDescription": "Cake",
       "longDescription": "Postres · Final dulce",
       "image": "🍮",
-      "price": 1.9,
+      "price": 1.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -4666,7 +4718,7 @@
       "longDescription": "Ensalada fría casera de Los 4 Hermanos.",
       "image": "🥗",
       "price": 0.8,
-      "photo": "/assets/images/products/Los 4 Hermanos/Ensalada fria.jpg",
+      "photo": "/assets/images/products/los-4-hermanos/los-4-hermanos-001.jpg",
       "stockStatus": "disponible",
       "featured": true
     },
@@ -6088,7 +6140,7 @@
       "options": [
         "M"
       ],
-      "photo": "/assets/images/products/Eme Boutique/Aloruh-perlado.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-001.jpg",
       "price": 25,
       "stockStatus": "disponible"
     },
@@ -6101,7 +6153,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Aloruh-verde-con-nudo.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-002.jpg",
       "price": 25,
       "options": [
         "M"
@@ -6117,7 +6169,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Batidor-de-pilas.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-003.jpg",
       "price": 10,
       "stockStatus": "disponible"
     },
@@ -6130,7 +6182,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Bikini-blanco-tirantes.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-004.jpg",
       "price": 16,
       "options": [
         "S"
@@ -6146,7 +6198,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Bikini-negro-con-tiras.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-005.jpg",
       "price": 16,
       "options": [
         "S"
@@ -6162,7 +6214,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Blusa-blanca-puntos.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-007.jpg",
       "price": 15,
       "options": [
         "S"
@@ -6178,7 +6230,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Blusa-de-mangas-ancha.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-009.jpg",
       "price": 15,
       "options": [
         "S"
@@ -6194,7 +6246,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Blusa-Firerie-blanco.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-010.jpg",
       "price": 15,
       "options": [
         "S"
@@ -6210,7 +6262,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Blusa-Firerie-Marrón.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-011.jpg",
       "price": 15,
       "options": [
         "S"
@@ -6226,7 +6278,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Blusa-Maija-tiras.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-012.jpg",
       "price": 14,
       "options": [
         "S"
@@ -6245,7 +6297,7 @@
       "options": [
         "S"
       ],
-      "photo": "/assets/images/products/Eme Boutique/blusa-roja.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-013.jpg",
       "price": 14,
       "stockStatus": "disponible"
     },
@@ -6258,7 +6310,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Blusa-rojo-vino-Botones.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-014.jpg",
       "price": 14,
       "options": [
         "XS"
@@ -6274,7 +6326,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/blusa-tirantes-blanca-tejida.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-015.jpg",
       "price": 14,
       "options": [
         "L"
@@ -6290,7 +6342,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Bolso-rojo.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-017.jpg",
       "price": 12,
       "stockStatus": "disponible"
     },
@@ -6303,7 +6355,7 @@
       "shortDescription": "Talla 26",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/ConfortCana-short.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-021.jpg",
       "price": 20,
       "stockStatus": "disponible"
     },
@@ -6316,7 +6368,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Conjunto de bikini y maya blanco.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-022.jpg",
       "price": 30,
       "options": [
         "S"
@@ -6332,7 +6384,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Conjunto-deportivo-negro.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-023.jpg",
       "price": 20,
       "options": [
         "M"
@@ -6351,7 +6403,7 @@
       "options": [
         "S"
       ],
-      "photo": "/assets/images/products/Eme Boutique/conjunto-lencería-negra-2-piezas.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-024.jpg",
       "price": 12,
       "stockStatus": "disponible"
     },
@@ -6364,7 +6416,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Enterizo-levantaGlúeteo-azul.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-025.jpg",
       "price": 20,
       "options": [
         "S"
@@ -6380,7 +6432,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Firerie-Satín-verde.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-026.jpg",
       "price": 20,
       "options": [
         "M"
@@ -6396,7 +6448,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/lencería-enterisa-rojo-vino.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-028.jpg",
       "price": 16,
       "options": [
         "S"
@@ -6412,7 +6464,7 @@
       "shortDescription": "Las 3 piezas",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Lencería-enteriso-azul.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-029.jpg",
       "price": 18,
       "options": [
         "M"
@@ -6428,7 +6480,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/lencería-negra-encaje.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-030.jpg",
       "price": 16,
       "options": [
         "M"
@@ -6444,7 +6496,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Licra-LevantaGlúteos-corta-azul.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-031.jpg",
       "price": 14,
       "options": [
         "S"
@@ -6460,7 +6512,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Licra-LevantaGlúteos-corta-negra.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-032.jpg",
       "price": 14,
       "options": [
         "M"
@@ -6476,7 +6528,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Licra-negra-pata-campana.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-033.jpg",
       "price": 18,
       "options": [
         "M"
@@ -6492,7 +6544,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Licras-LevantaGlúteos-larga-marrón.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-035.jpg",
       "price": 18,
       "options": [
         "M"
@@ -6508,7 +6560,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Licras-LevantaGlúteos-larga-negra.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-036.jpg",
       "price": 18,
       "options": [
         "S",
@@ -6526,7 +6578,7 @@
       "shortDescription": "Solo la maya.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/maya-negra-con-mangas.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-037.jpg",
       "price": 15,
       "options": [
         "S"
@@ -6542,7 +6594,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Mono-enterizo-celeste.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-038.jpg",
       "price": 20,
       "options": [
         "S"
@@ -6558,7 +6610,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/pantaloneta-negra.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-040.jpg",
       "price": 20,
       "options": [
         "S"
@@ -6574,7 +6626,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/pullover-Shein-Essce-beige.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-042.jpg",
       "price": 14,
       "options": [
         "S"
@@ -6590,7 +6642,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Pullover-Shein-Essce.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-043.jpg",
       "price": 14,
       "options": [
         "S"
@@ -6606,7 +6658,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Selianne-Blanco-Negro.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-045.jpg",
       "price": 20,
       "options": [
         "M"
@@ -6622,7 +6674,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Shein-Bae-marrón.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-046.jpg",
       "price": 30,
       "options": [
         "S"
@@ -6638,7 +6690,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Shein-Petit-rayas-azules.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-047.jpg",
       "price": 25,
       "options": [
         "S"
@@ -6654,7 +6706,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Shein-Unity-blusa.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-049.jpg",
       "price": 18,
       "options": [
         "M"
@@ -6670,7 +6722,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Short-Mezclilla.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-050.jpg",
       "price": 15,
       "options": [
         "S"
@@ -6686,7 +6738,7 @@
       "shortDescription": "Las 3 piezas",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Swim,-Mod-3-piezas-raya.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-051.jpg",
       "price": 25,
       "options": [
         "S"
@@ -6702,7 +6754,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/swim-SXY-negro.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-053.jpg",
       "price": 20,
       "options": "S",
       "stockStatus": "disponible"
@@ -6716,7 +6768,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Top-tejido-negro.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-054.jpg",
       "price": 8,
       "options": [
         8
@@ -6732,7 +6784,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/trusa-aloruh-blanca.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-055.jpg",
       "price": 18,
       "options": [
         "S"
@@ -6748,7 +6800,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Vesido-Aloruh.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-056.jpg",
       "price": 20,
       "options": [
         "S"
@@ -6764,7 +6816,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestido-Aloruh-azul-metálico.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-057.jpg",
       "price": 25,
       "options": [
         "S"
@@ -6780,7 +6832,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestido-aloruh-blanco.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-058.jpg",
       "price": 20,
       "options": [
         "S"
@@ -6796,7 +6848,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestido-aloruh-marrón.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-059.jpg",
       "price": 20,
       "options": [
         "XS"
@@ -6812,7 +6864,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestido-blanco-tejido.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-060.jpg",
       "price": 20,
       "options": [
         "S"
@@ -6828,7 +6880,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestido-blanco-un-solo-hombro.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-061.jpg",
       "price": 22,
       "options": [
         "S"
@@ -6844,7 +6896,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestido-brillora-blanco-negro.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-062.jpg",
       "price": 20,
       "options": [
         "M",
@@ -6861,7 +6913,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestido-escote-carmelita.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-063.jpg",
       "price": 25,
       "options": [
         "S"
@@ -6877,7 +6929,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestido-hauture-gasa.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-064.jpg",
       "price": 15,
       "options": [
         "S"
@@ -6893,7 +6945,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestido-rojo.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-065.jpg",
       "price": 15,
       "options": [
         "S"
@@ -6909,7 +6961,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestido-selianne-blanco.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-066.jpg",
       "price": 20,
       "options": [
         "M"
@@ -6925,7 +6977,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestido-tirantes-rojo-vino.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-067.jpg",
       "price": 22,
       "options": [
         "S"
@@ -6941,7 +6993,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestido-verde-escote.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-068.jpg",
       "price": 22,
       "options": [
         "M"
@@ -6973,7 +7025,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/vestigo-aloruh-rojo-vino.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-070.jpg",
       "price": 20,
       "options": [
         "S"
@@ -6989,7 +7041,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Zapatera.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-071.jpg",
       "price": 20,
       "stockStatus": "disponible"
     },
@@ -7002,7 +7054,7 @@
       "shortDescription": "Reloj de lujo.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "⌚",
-      "photo": "/assets/images/products/Eme Boutique/Patelk-PhiliPPe-rosa.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-073.jpg",
       "price": 140,
       "stockStatus": "disponible"
     },
@@ -7015,7 +7067,7 @@
       "shortDescription": "Reloj de lujo.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "⌚",
-      "photo": "/assets/images/products/Eme Boutique/Patek-phillipe-plateado-cara-negra.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-074.jpg",
       "price": 140,
       "stockStatus": "disponible"
     },
@@ -7028,7 +7080,7 @@
       "shortDescription": "Reloj de lujo.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "⌚",
-      "photo": "/assets/images/products/Eme Boutique/Audemars-Piguet-dorado-cara-negra.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-079.jpg",
       "price": 65,
       "stockStatus": "disponible"
     },
@@ -7041,7 +7093,7 @@
       "shortDescription": "Reloj de lujo.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "⌚",
-      "photo": "/assets/images/products/Eme Boutique/Audemars-Piguet-plateado-cara-negra.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-080.jpg",
       "price": 65,
       "stockStatus": "disponible"
     },
@@ -7054,7 +7106,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/conjunto-jemour-blanco.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-081.jpg",
       "price": 25,
       "stockStatus": "disponible"
     },
@@ -7067,7 +7119,7 @@
       "shortDescription": "Precio en USD.",
       "longDescription": "Precio en USD. Equivalente en CUP al cambio del día en \"El Toque\".",
       "image": "👗",
-      "photo": "/assets/images/products/Eme Boutique/Bris Aura Blusa negra 14 , xs.jpg",
+      "photo": "/assets/images/products/eme-boutique/eb-083.jpg",
       "price": 14,
       "options": [
         "XS"
@@ -7782,7 +7834,7 @@
       "shortDescription": "",
       "longDescription": "Termo  pack de marquesitas",
       "image": "🍞",
-      "photo": "/assets/images/products/AmoRe/marquesitas.jpg",
+      "photo": "/assets/images/products/amore/am-001.jpg",
       "price": 1.2,
       "stockStatus": "disponible"
     },
@@ -7795,7 +7847,7 @@
       "shortDescription": "Caja de 15 unidades.",
       "longDescription": "Deliciosas torticas caseras. La caja trae 15 unidades.",
       "image": "🍪",
-      "photo": "/assets/images/products/AmoRe/torticas.jpg",
+      "photo": "/assets/images/products/amore/am-002.jpg",
       "price": 3,
       "stockStatus": "disponible"
     },
@@ -7808,7 +7860,7 @@
       "shortDescription": "Caja de 13 unidades.",
       "longDescription": "Pasteles esponjosos y rellenos. La caja trae 13 unidades.",
       "image": "🥐",
-      "photo": "/assets/images/products/AmoRe/caja de pasteles.jpg",
+      "photo": "/assets/images/products/amore/am-003.jpg",
       "price": 3,
       "stockStatus": "disponible"
     },
@@ -7821,7 +7873,7 @@
       "shortDescription": "Caja de 13 unidades.",
       "longDescription": "Rosquitas caseras, crujientes y esponjosas. La caja trae 13 unidades.",
       "image": "🍩",
-      "photo": "/assets/images/products/AmoRe/Rosquitas.jpg",
+      "photo": "/assets/images/products/amore/am-004.jpg",
       "price": 3,
       "stockStatus": "disponible"
     },
@@ -7834,7 +7886,7 @@
       "shortDescription": "Bolsa de 15 unidades.",
       "longDescription": "Merenguitos crujientes y ligeros. La bolsa trae 15 unidades.",
       "image": "🍬",
-      "photo": "/assets/images/products/AmoRe/Merenguitos (bolsa de 15 ).jpg",
+      "photo": "/assets/images/products/amore/am-005.jpg",
       "price": 2,
       "stockStatus": "agotado"
     },
@@ -7847,7 +7899,7 @@
       "shortDescription": "Caja de 6 unidades.",
       "longDescription": "Tartaletas artesanales. La caja trae 6 unidades.",
       "image": "🥧",
-      "photo": "/assets/images/products/AmoRe/tartaletas.jpg",
+      "photo": "/assets/images/products/amore/am-006.jpg",
       "price": 2.8,
       "stockStatus": "disponible"
     },
@@ -7860,7 +7912,7 @@
       "shortDescription": "Porción individual.",
       "longDescription": "Esponjoso bizcocho bañado en tres leches, cremoso y suave en cada bocado.",
       "image": "🍮",
-      "photo": "/assets/images/products/AmoRe/3-leches.jpg",
+      "photo": "/assets/images/products/amore/am-007.jpg",
       "price": 1.5,
       "stockStatus": "disponible"
     },
@@ -7873,7 +7925,7 @@
       "shortDescription": "Minicake de 20 cm.",
       "longDescription": "Minicake de tres leches de 20 cm. Esponjoso, bañado en tres leches y decorado con crema.",
       "image": "🎂",
-      "photo": "/assets/images/products/AmoRe/Mini-cake-3-leches.jpg",
+      "photo": "/assets/images/products/amore/am-008.jpg",
       "price": 6,
       "stockStatus": "disponible"
     },
@@ -7886,7 +7938,7 @@
       "shortDescription": "Solicítalo con anticipación · 8 am–3 pm.",
       "longDescription": "Los cakes siempre los deben pedir un tiempo antes en el horario de 8 am a 3 de la tarde.",
       "image": "🎂",
-      "photo": "/assets/images/products/AmoRe/cake-3-leches.jpg",
+      "photo": "/assets/images/products/amore/am-009.jpg",
       "price": 10,
       "stockStatus": "disponible",
       "packaging": [
@@ -7905,7 +7957,7 @@
       "shortDescription": "Solicítalo con anticipación · 8 am–3 pm.",
       "longDescription": "Los cakes siempre los deben pedir un tiempo antes en el horario de 8 am a 3 de la tarde.",
       "image": "🎂",
-      "photo": "/assets/images/products/AmoRe/cake-de-almibar-y-dulce-de-leche.jpg",
+      "photo": "/assets/images/products/amore/am-010.jpg",
       "price": 9,
       "stockStatus": "disponible",
       "packaging": [
@@ -7924,7 +7976,7 @@
       "shortDescription": "Bolsa de 20 panes de bocadito.",
       "longDescription": "Bolsa de 20 panes de bocadito artesanales.",
       "image": "🍞",
-      "photo": "/assets/images/products/AmoRe/Bolsa de Pan de Bocadito x 20 --400cup.jpg",
+      "photo": "/assets/images/products/amore/am-011.jpg",
       "price": 0.8,
       "stockStatus": "disponible"
     },
@@ -7937,7 +7989,7 @@
       "shortDescription": "Bolsa de 15 panes de perro.",
       "longDescription": "Bolsa de 15 panes de perro artesanales.",
       "image": "🍞",
-      "photo": "/assets/images/products/AmoRe/Bolsa de panes perro.jpg",
+      "photo": "/assets/images/products/amore/am-012.jpg",
       "price": 1.6,
       "stockStatus": "disponible"
     },
@@ -7950,7 +8002,7 @@
       "shortDescription": "Minicake de 3 leches y 5 tartaletas.",
       "longDescription": "El cake se puede hacer del color que desea el cliente",
       "image": "🍞",
-      "photo": "/assets/images/products/AmoRe/Mini-cake-3-leches-y-tartaletas.jpg",
+      "photo": "/assets/images/products/amore/am-013.jpg",
       "price": 16,
       "stockStatus": "disponible"
     },
@@ -7963,7 +8015,7 @@
       "shortDescription": "Paquete.",
       "longDescription": "Galletas panaderas artesanales de AmoRe, por paquete.",
       "image": "🍪",
-      "photo": "/assets/images/products/AmoRe/galletas panaderas 300.jpg",
+      "photo": "/assets/images/products/amore/am-014.jpg",
       "price": 0.6,
       "stockStatus": "disponible"
     },
@@ -8030,55 +8082,6 @@
       "image": "🥩",
       "photo": "/assets/images/products/Cafetería-D'-Leo/Pan-Con-Bistec-Y-Hamburguesa-1000.jpg",
       "price": 2.5,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cdl-006",
-      "name": "Malta Morena",
-      "businessId": "cafeteria-d-leo",
-      "businessName": "Cafetería D' Leo",
-      "category": "Bebidas",
-      "shortDescription": "Se vende por unidad.",
-      "longDescription": "Malta morena fría, se vende por unidad.",
-      "image": "🍺",
-      "price": 0.7,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cdl-007",
-      "name": "Cerveza Presidente",
-      "businessId": "cafeteria-d-leo",
-      "businessName": "Cafetería D' Leo",
-      "category": "Bebidas",
-      "shortDescription": "Lata fría.",
-      "longDescription": "Cerveza Presidente fría, se vende por unidad.",
-      "image": "🍺",
-      "photo": "/assets/images/products/Cafetería-D'-Leo/cerveza-presidente-380.jpg",
-      "price": 0.76,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cdl-008",
-      "name": "Refresco de Limón",
-      "businessId": "cafeteria-d-leo",
-      "businessName": "Cafetería D' Leo",
-      "category": "Bebidas",
-      "shortDescription": "Se vende por unidad.",
-      "longDescription": "Refresco de limón frío, se vende por unidad.",
-      "image": "🥤",
-      "price": 0.7,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cdl-009",
-      "name": "Cerveza 3 Caballos",
-      "businessId": "cafeteria-d-leo",
-      "businessName": "Cafetería D' Leo",
-      "category": "Bebidas",
-      "shortDescription": "Se vende por unidad.",
-      "longDescription": "Cerveza 3 Caballos fría, se vende por unidad.",
-      "image": "🍺",
-      "price": 0.8,
       "stockStatus": "disponible"
     },
     {
@@ -8202,7 +8205,7 @@
       "shortDescription": "Posta de pollo asada a las brasas.",
       "longDescription": "Posta de pollo asada a las brasas.",
       "image": "🍗",
-      "photo": "/assets/images/products/posta de pollo asada 1000 cup.jpg",
+      "photo": "/assets/images/products/al-carbon/ac-007.jpg",
       "price": 2.6,
       "stockStatus": "disponible"
     },
@@ -8214,7 +8217,7 @@
       "category": "Comidas",
       "shortDescription": "3 Bolas con Sirope y gragea ",
       "image": "�",
-      "photo": "/assets/images/products/Dulce momento/Cesta de helado.jpg",
+      "photo": "/assets/images/products/dulce-momento/dulceM-001.jpg",
       "price": 0.92,
       "stockStatus": "disponible"
     },
@@ -8226,7 +8229,7 @@
       "category": "Comidas",
       "shortDescription": "3 Bolas con Sirope , grajea y un dulce ",
       "image": "�",
-      "photo": "/assets/images/products/Dulce momento/Cesta dulce Momento 580.jpg",
+      "photo": "/assets/images/products/dulce-momento/dulceM-002.jpg",
       "price": 1.16,
       "stockStatus": "disponible"
     },
@@ -8238,7 +8241,7 @@
       "category": "Bebidas",
       "shortDescription": "Clásico Coctel de frutas cubano",
       "image": "�",
-      "photo": "/assets/images/products/Dulce momento/coctel de frutas.jpg",
+      "photo": "/assets/images/products/dulce-momento/dulceM-003.jpg",
       "price": 0.8,
       "stockStatus": "disponible"
     },
@@ -8250,7 +8253,7 @@
       "category": "Comidas",
       "shortDescription": "Termopack de 6 rollos",
       "image": "�",
-      "photo": "/assets/images/products/Dulce momento/termopack de rollos x 6.jpg",
+      "photo": "/assets/images/products/dulce-momento/dulceM-004.jpg",
       "price": 1.64,
       "stockStatus": "agotado"
     },
@@ -8262,7 +8265,7 @@
       "category": "Comidas",
       "shortDescription": "Helado de fábrica 280 ml",
       "image": "�",
-      "photo": "/assets/images/products/Dulce momento/pote de helado 280ml.jpg",
+      "photo": "/assets/images/products/dulce-momento/dulceM-005.jpg",
       "price": 1.16,
       "stockStatus": "agotado"
     },
@@ -8274,7 +8277,7 @@
       "category": "Comidas",
       "shortDescription": "helado , panetela , helado doble , sirope y gragea",
       "image": "�",
-      "photo": "/assets/images/products/Dulce momento/vaso de panetela con helado.jpg",
+      "photo": "/assets/images/products/dulce-momento/dulceM-006.jpg",
       "price": 1.5,
       "stockStatus": "disponible"
     },
@@ -8286,7 +8289,7 @@
       "category": "Comidas",
       "shortDescription": "8 bolas de helado , sirope y gragea",
       "image": "�",
-      "photo": "/assets/images/products/Dulce momento/termopackde helado 8 bolas de helado.jpg",
+      "photo": "/assets/images/products/dulce-momento/dulceM-007.jpg",
       "price": 3.5,
       "stockStatus": "disponible"
     },
@@ -8298,7 +8301,7 @@
       "category": "Comidas",
       "shortDescription": "Tina de Helado de Chocolate 4 litros",
       "image": "�",
-      "photo": "/assets/images/products/Dulce momento/Tina de Helado.jpg",
+      "photo": "/assets/images/products/dulce-momento/dulceM-008.jpg",
       "price": 10,
       "stockStatus": "agotado"
     },
@@ -8310,7 +8313,7 @@
       "category": "Comidas",
       "shortDescription": "Combo de Tina de Helado de Chocolate 4 litros y 10 conos",
       "image": "�",
-      "photo": "/assets/images/products/Dulce momento/tina de helado con 10 barquillos.jpg",
+      "photo": "/assets/images/products/dulce-momento/dulceM-009.jpg",
       "price": 12,
       "stockStatus": "agotado"
     },
@@ -8323,7 +8326,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Brazos gitanos artesanales de Dulce Momento.",
       "image": "🍰",
-      "photo": "/assets/images/products/Dulce momento/brazos-gitanos-900.jpg",
+      "photo": "/assets/images/products/dulce-momento/dulceM-010.jpg",
       "price": 1.8,
       "stockStatus": "disponible"
     },
@@ -8336,7 +8339,7 @@
       "shortDescription": "Pote de 750 ml.",
       "longDescription": "Helado artesanal s en pote de 750 ml.",
       "image": "�",
-      "photo": "/assets/images/products/HeladeriaM&K/helado-dulce-de-leche-750ml-1100.jpg",
+      "photo": "/assets/images/products/heladeria-mk/hmk-001.jpg",
       "price": 2.4,
       "options": [
         "Mantecado",
@@ -8358,7 +8361,7 @@
       "shortDescription": "Copa de 280 ml.",
       "longDescription": "Helado artesanal de chocolate en copa de 280 ml.",
       "image": "🍫",
-      "photo": "/assets/images/products/HeladeriaM&K/Pote-de-Helado-Chocolate-280ml-1.webp",
+      "photo": "/assets/images/products/heladeria-mk/hmk-002.webp",
       "price": 1.08,
       "stockStatus": "disponible"
     },
@@ -8371,7 +8374,7 @@
       "shortDescription": "Copa de 280 ml.",
       "longDescription": "Helado artesanal de leche condensada en copa de 280 ml.",
       "image": "🍦",
-      "photo": "/assets/images/products/HeladeriaM&K/helado-leche-condensada-280ml-540.jpg",
+      "photo": "/assets/images/products/heladeria-mk/hmk-003.jpg",
       "price": 1.08,
       "stockStatus": "agotado"
     },
@@ -8384,7 +8387,7 @@
       "shortDescription": "Copa de 280 ml.",
       "longDescription": "Helado artesanal de vainilla en copa de 280 ml.",
       "image": "🍦",
-      "photo": "/assets/images/products/HeladeriaM&K/helado-vainilla-280ml-540.jpg",
+      "photo": "/assets/images/products/heladeria-mk/hmk-004.jpg",
       "price": 1.08,
       "stockStatus": "agotado"
     },
@@ -8397,7 +8400,7 @@
       "shortDescription": "Tina familiar de 4 litros.",
       "longDescription": "Tina familiar de helado artesanal de 4 litros. Elige tu sabor.",
       "image": "🧊",
-      "photo": "/assets/images/products/HeladeriaM&K/tina-helado-4l-4650.jpg",
+      "photo": "/assets/images/products/heladeria-mk/hmk-005.jpg",
       "price": 9.3,
       "stockStatus": "disponible",
       "options": [
@@ -8416,7 +8419,7 @@
       "shortDescription": "Copa de 280 ml.",
       "longDescription": "Helado artesanal de naranja piña en copa de 280 ml.",
       "image": "🍊",
-      "photo": "/assets/images/products/HeladeriaM&K/Helado-de-Naranja-Piña-280ml-540.jpg",
+      "photo": "/assets/images/products/heladeria-mk/hmk-006.jpg",
       "price": 1.08,
       "stockStatus": "agotado"
     },
@@ -8429,7 +8432,7 @@
       "shortDescription": "Copa de 280 ml.",
       "longDescription": "Helado artesanal de mantecado en copa de 280 ml.",
       "image": "🍦",
-      "photo": "/assets/images/products/HeladeriaM&K/Helado-de-Mantecado-280ml-540.jpg",
+      "photo": "/assets/images/products/heladeria-mk/hmk-007.jpg",
       "price": 1.08,
       "stockStatus": "agotado"
     },
@@ -8442,7 +8445,7 @@
       "shortDescription": "Copa de 280 ml.",
       "longDescription": "Helado artesanal de manzana en copa de 280 ml.",
       "image": "🍏",
-      "photo": "/assets/images/products/HeladeriaM&K/Helado-de-Manzana-280ml-540.jpg",
+      "photo": "/assets/images/products/heladeria-mk/hmk-008.jpg",
       "price": 1.1,
       "stockStatus": "disponible"
     },
@@ -8455,7 +8458,7 @@
       "shortDescription": "Vaso con helado y panetela. Elige tu sabor.",
       "longDescription": "Vaso con helado artesanal y panetela. Elige tu sabor.",
       "image": "🍫",
-      "photo": "/assets/images/products/HeladeriaM&K/Vaso de Helado y panetela -600.jpg",
+      "photo": "/assets/images/products/heladeria-mk/hmk-009.jpg",
       "price": 1.3,
       "stockStatus": "disponible",
       "options": [
@@ -8475,7 +8478,7 @@
       "shortDescription": "Vaso con helado extra y panetela. Elige tu sabor.",
       "longDescription": "Vaso con helado artesanal extra y panetela. Elige tu sabor.",
       "image": "🍨",
-      "photo": "/assets/images/products/HeladeriaM&K/vaso  de Helado Y panetela con helado Extra -850.jpg",
+      "photo": "/assets/images/products/heladeria-mk/hmk-010.jpg",
       "price": 1.7,
       "stockStatus": "disponible",
       "options": [
@@ -8495,7 +8498,7 @@
       "shortDescription": "Caja de 4 marquesitas artesanales.",
       "longDescription": "Caja de 4 marquesitas artesanales.",
       "image": "🥐",
-      "photo": "/assets/images/products/HeladeriaM&K/marquesitas 90cup.jpg",
+      "photo": "/assets/images/products/heladeria-mk/hmk-011.jpg",
       "price": 1,
       "stockStatus": "agotado",
       "formato": 4
@@ -8509,7 +8512,7 @@
       "shortDescription": "Caja de 4 rollitos artesanales.",
       "longDescription": "Caja de 4 rollitos artesanales.",
       "image": "🌀",
-      "photo": "/assets/images/products/HeladeriaM&K/rollitos 90cup.jpg",
+      "photo": "/assets/images/products/heladeria-mk/hmk-012.jpg",
       "price": 1,
       "stockStatus": "agotado",
       "formato": 4
@@ -8523,7 +8526,7 @@
       "shortDescription": "Caja de 4 dobos artesanales.",
       "longDescription": "Caja de 4 dobos artesanales.",
       "image": "🍩",
-      "photo": "/assets/images/products/HeladeriaM&K/Dobos 90 cup.jpg",
+      "photo": "/assets/images/products/heladeria-mk/hmk-013.jpg",
       "price": 1,
       "stockStatus": "agotado",
       "formato": 4
@@ -8537,7 +8540,7 @@
       "shortDescription": "",
       "longDescription": "Bistec uruguayo de cerdo.",
       "image": "🥩",
-      "price": 6.3,
+      "price": 6.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8555,7 +8558,7 @@
       "shortDescription": "",
       "longDescription": "Rollo de cerdo.",
       "image": "🥩",
-      "price": 6.3,
+      "price": 6.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8573,7 +8576,7 @@
       "shortDescription": "",
       "longDescription": "Bistec de cerdo a la parrilla.",
       "image": "🥩",
-      "price": 4.9,
+      "price": 4.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8591,7 +8594,7 @@
       "shortDescription": "",
       "longDescription": "Masa de cerdo frita.",
       "image": "🍖",
-      "price": 4.7,
+      "price": 4.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8609,7 +8612,7 @@
       "shortDescription": "",
       "longDescription": "Masa de cerdo asada en cazuela.",
       "image": "🍖",
-      "price": 4.7,
+      "price": 4.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8627,7 +8630,7 @@
       "shortDescription": "",
       "longDescription": "Fricasé de cerdo.",
       "image": "🍖",
-      "price": 4.9,
+      "price": 4.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8645,7 +8648,7 @@
       "shortDescription": "",
       "longDescription": "Cerdo a la Juliana.",
       "image": "🍖",
-      "price": 3.9,
+      "price": 3.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8663,7 +8666,7 @@
       "shortDescription": "",
       "longDescription": "Chuleta de cerdo.",
       "image": "🥩",
-      "price": 4.9,
+      "price": 4.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8681,7 +8684,7 @@
       "shortDescription": "",
       "longDescription": "Costilla de cerdo frita.",
       "image": "🍖",
-      "price": 6.1,
+      "price": 6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8699,7 +8702,7 @@
       "shortDescription": "",
       "longDescription": "Bistec de cerdo empanado.",
       "image": "🥩",
-      "price": 4.7,
+      "price": 4.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8717,7 +8720,7 @@
       "shortDescription": "",
       "longDescription": "Ropa vieja de res.",
       "image": "🥩",
-      "price": 5.5,
+      "price": 5.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8735,7 +8738,7 @@
       "shortDescription": "",
       "longDescription": "Vaca frita.",
       "image": "🥩",
-      "price": 5.5,
+      "price": 5.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8753,7 +8756,7 @@
       "shortDescription": "",
       "longDescription": "Arroz moro (congri).",
       "image": "🍚",
-      "price": 0.9,
+      "price": 0.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8771,7 +8774,7 @@
       "shortDescription": "",
       "longDescription": "Arroz blanco.",
       "image": "🍚",
-      "price": 0.7,
+      "price": 0.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8807,7 +8810,7 @@
       "shortDescription": "",
       "longDescription": "Arroz pilaf.",
       "image": "🍚",
-      "price": 0.9,
+      "price": 0.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8825,7 +8828,7 @@
       "shortDescription": "",
       "longDescription": "Yuca con mojo.",
       "image": "🌿",
-      "price": 0.9,
+      "price": 0.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8843,7 +8846,7 @@
       "shortDescription": "",
       "longDescription": "Yuca con chicharrón.",
       "image": "🌿",
-      "price": 2.1,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8861,7 +8864,7 @@
       "shortDescription": "",
       "longDescription": "Vianda frita.",
       "image": "🌿",
-      "price": 1.1,
+      "price": 1,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8879,7 +8882,7 @@
       "shortDescription": "",
       "longDescription": "Ensalada de estación.",
       "image": "🥗",
-      "price": 1.1,
+      "price": 1,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8897,7 +8900,7 @@
       "shortDescription": "",
       "longDescription": "Flan casero.",
       "image": "🍮",
-      "price": 1.1,
+      "price": 1,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8915,7 +8918,7 @@
       "shortDescription": "",
       "longDescription": "Helado.",
       "image": "🍦",
-      "price": 1.3,
+      "price": 1.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8933,7 +8936,7 @@
       "shortDescription": "",
       "longDescription": "Garbanzo frito.",
       "image": "🫘",
-      "price": 3.1,
+      "price": 3,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8951,7 +8954,7 @@
       "shortDescription": "",
       "longDescription": "Langosta al ajillo.",
       "image": "🦞",
-      "price": 4.5,
+      "price": 4.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8969,7 +8972,7 @@
       "shortDescription": "",
       "longDescription": "Fajita de langosta.",
       "image": "🦞",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -8987,7 +8990,7 @@
       "shortDescription": "",
       "longDescription": "Mar y Tierra.",
       "image": "🥩",
-      "price": 12.1,
+      "price": 12,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9005,7 +9008,7 @@
       "shortDescription": "",
       "longDescription": "Filete de pescado gratinado.",
       "image": "🐟",
-      "price": 4.5,
+      "price": 4.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9023,7 +9026,7 @@
       "shortDescription": "Pescado, camarón, bechamel y queso.",
       "longDescription": "Jhon Bill: pescado, camarón, bechamel y queso.",
       "image": "🐟",
-      "price": 8.5,
+      "price": 8.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9041,7 +9044,7 @@
       "shortDescription": "",
       "longDescription": "Bistec de cerdo gratinado.",
       "image": "🥩",
-      "price": 5.9,
+      "price": 5.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9059,7 +9062,7 @@
       "shortDescription": "",
       "longDescription": "Bistec de pollo gratinado.",
       "image": "🍗",
-      "price": 5.5,
+      "price": 5.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9077,7 +9080,7 @@
       "shortDescription": "Masa de cerdo, aceitunas, queso, jamón, fajitas de pollo, croquetas y tostones rellenos.",
       "longDescription": "Picadera Las Palmitas: masa de cerdo, aceitunas, queso, jamón, fajitas de pollo, croquetas y tostones rellenos.",
       "image": "🍽️",
-      "price": 12.1,
+      "price": 12,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9095,7 +9098,7 @@
       "shortDescription": "",
       "longDescription": "Chilindrón de cordero.",
       "image": "🍖",
-      "price": 6.1,
+      "price": 6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9113,7 +9116,7 @@
       "shortDescription": "",
       "longDescription": "Chicharronetas mexicanas.",
       "image": "🌮",
-      "price": 5.1,
+      "price": 5,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9131,7 +9134,7 @@
       "shortDescription": "",
       "longDescription": "Paea.",
       "image": "🥘",
-      "price": 6.1,
+      "price": 6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9461,7 +9464,7 @@
       "shortDescription": "",
       "longDescription": "Bolitas de queso.",
       "image": "🧀",
-      "price": 1.7,
+      "price": 1.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9479,7 +9482,7 @@
       "shortDescription": "",
       "longDescription": "Fajitas de cerdo.",
       "image": "🥩",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9497,7 +9500,7 @@
       "shortDescription": "",
       "longDescription": "Fajitas de cerdo con aceitunas.",
       "image": "🥩",
-      "price": 5.4,
+      "price": 5.3,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9515,7 +9518,7 @@
       "shortDescription": "",
       "longDescription": "Fajitas de pollo.",
       "image": "🍗",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9533,7 +9536,7 @@
       "shortDescription": "",
       "longDescription": "Fajitas de pollo con aceitunas.",
       "image": "🍗",
-      "price": 5.4,
+      "price": 5.3,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9551,7 +9554,7 @@
       "shortDescription": "",
       "longDescription": "Esperlan de pescado.",
       "image": "🐟",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9569,7 +9572,7 @@
       "shortDescription": "",
       "longDescription": "Minuta de pescado frita.",
       "image": "🐟",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9587,7 +9590,7 @@
       "shortDescription": "",
       "longDescription": "Entremés de jamón y queso.",
       "image": "🍽️",
-      "price": 2.7,
+      "price": 2.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9605,7 +9608,7 @@
       "shortDescription": "Jamón, queso y aceituna.",
       "longDescription": "Entremés mixto: jamón, queso y aceituna.",
       "image": "🍽️",
-      "price": 3.5,
+      "price": 3.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9623,7 +9626,7 @@
       "shortDescription": "",
       "longDescription": "Croquetas.",
       "image": "🍘",
-      "price": 2.1,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9641,7 +9644,7 @@
       "shortDescription": "Jamón, queso y salsa rosa.",
       "longDescription": "Tostones rellenos con jamón, queso y salsa rosa.",
       "image": "🫔",
-      "price": 3.1,
+      "price": 3,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9659,7 +9662,7 @@
       "shortDescription": "",
       "longDescription": "Tostones rellenos con atún.",
       "image": "🫔",
-      "price": 3.5,
+      "price": 3.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9677,7 +9680,7 @@
       "shortDescription": "",
       "longDescription": "Tostones rellenos con ropa vieja.",
       "image": "🫔",
-      "price": 3.5,
+      "price": 3.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9695,7 +9698,7 @@
       "shortDescription": "",
       "longDescription": "Frituras de malanga.",
       "image": "🥙",
-      "price": 2.1,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9713,7 +9716,7 @@
       "shortDescription": "",
       "longDescription": "Cóctel de langosta.",
       "image": "🦞",
-      "price": 3.5,
+      "price": 3.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9731,7 +9734,7 @@
       "shortDescription": "",
       "longDescription": "Aceitunas.",
       "image": "🫒",
-      "price": 2.1,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9749,7 +9752,7 @@
       "shortDescription": "",
       "longDescription": "Cóctel de camarones.",
       "image": "🍤",
-      "price": 3.7,
+      "price": 3.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9767,7 +9770,7 @@
       "shortDescription": "",
       "longDescription": "Papas fritas.",
       "image": "🍟",
-      "price": 2.1,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9785,7 +9788,7 @@
       "shortDescription": "",
       "longDescription": "Papas fritas con salchichas.",
       "image": "🍟",
-      "price": 2.7,
+      "price": 2.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9803,7 +9806,7 @@
       "shortDescription": "",
       "longDescription": "Periquito.",
       "image": "🍽️",
-      "price": 3.1,
+      "price": 3,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9821,7 +9824,7 @@
       "shortDescription": "",
       "longDescription": "Fajita de langosta.",
       "image": "🦞",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9839,7 +9842,7 @@
       "shortDescription": "",
       "longDescription": "Bolitas de jamón y queso.",
       "image": "🧀",
-      "price": 2.5,
+      "price": 2.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9857,7 +9860,7 @@
       "shortDescription": "",
       "longDescription": "Crema de queso.",
       "image": "🍲",
-      "price": 2.1,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9875,7 +9878,7 @@
       "shortDescription": "",
       "longDescription": "Crema de jamón y queso.",
       "image": "🍲",
-      "price": 2.5,
+      "price": 2.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9893,7 +9896,7 @@
       "shortDescription": "",
       "longDescription": "Crema Aurora.",
       "image": "🍲",
-      "price": 2.1,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9911,7 +9914,7 @@
       "shortDescription": "",
       "longDescription": "Espagueti napolitano.",
       "image": "🍝",
-      "price": 1.7,
+      "price": 1.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9929,7 +9932,7 @@
       "shortDescription": "",
       "longDescription": "Espagueti con jamón y queso.",
       "image": "🍝",
-      "price": 2.1,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9947,7 +9950,7 @@
       "shortDescription": "",
       "longDescription": "Langosta mariposa.",
       "image": "🦞",
-      "price": 5.7,
+      "price": 5.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9965,7 +9968,7 @@
       "shortDescription": "",
       "longDescription": "Enchilado de langosta.",
       "image": "🦞",
-      "price": 6.1,
+      "price": 6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -9983,7 +9986,7 @@
       "shortDescription": "",
       "longDescription": "Langosta a la parrilla.",
       "image": "🦞",
-      "price": 5.1,
+      "price": 5,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10001,7 +10004,7 @@
       "shortDescription": "",
       "longDescription": "Langosta frita.",
       "image": "🦞",
-      "price": 6.1,
+      "price": 6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10019,7 +10022,7 @@
       "shortDescription": "",
       "longDescription": "Langosta sensación.",
       "image": "🦞",
-      "price": 6.1,
+      "price": 6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10037,7 +10040,7 @@
       "shortDescription": "",
       "longDescription": "Camarón empanado.",
       "image": "🍤",
-      "price": 4.7,
+      "price": 4.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10055,7 +10058,7 @@
       "shortDescription": "",
       "longDescription": "Camarón al ajillo.",
       "image": "🍤",
-      "price": 4.7,
+      "price": 4.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10073,7 +10076,7 @@
       "shortDescription": "",
       "longDescription": "Camarón enchilado.",
       "image": "🍤",
-      "price": 6.1,
+      "price": 6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10091,7 +10094,7 @@
       "shortDescription": "",
       "longDescription": "Camarón a la parrilla.",
       "image": "🍤",
-      "price": 4.5,
+      "price": 4.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10109,7 +10112,7 @@
       "shortDescription": "",
       "longDescription": "Pulpo al ajillo.",
       "image": "🐙",
-      "price": 5.1,
+      "price": 5,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10127,7 +10130,7 @@
       "shortDescription": "",
       "longDescription": "Pulpo enchilado.",
       "image": "🐙",
-      "price": 6.1,
+      "price": 6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10145,7 +10148,7 @@
       "shortDescription": "",
       "longDescription": "Filete de sierra empanada.",
       "image": "🐟",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10163,7 +10166,7 @@
       "shortDescription": "",
       "longDescription": "Filete de pescado a la parrilla.",
       "image": "🐟",
-      "price": 3.7,
+      "price": 3.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10181,7 +10184,7 @@
       "shortDescription": "Pescado, jamón y queso.",
       "longDescription": "Canciller: pescado con jamón y queso.",
       "image": "🐟",
-      "price": 5.7,
+      "price": 5.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10199,7 +10202,7 @@
       "shortDescription": "",
       "longDescription": "Calamar.",
       "image": "🦑",
-      "price": 6.1,
+      "price": 6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10217,7 +10220,7 @@
       "shortDescription": "",
       "longDescription": "Rueda de sierra.",
       "image": "🐟",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10235,7 +10238,7 @@
       "shortDescription": "",
       "longDescription": "Seviche de camarón.",
       "image": "🍤",
-      "price": 4.3,
+      "price": 4.2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10253,7 +10256,7 @@
       "shortDescription": "",
       "longDescription": "Filete Emperador.",
       "image": "🐟",
-      "price": 5.1,
+      "price": 5,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10271,7 +10274,7 @@
       "shortDescription": "",
       "longDescription": "Seviche surtido.",
       "image": "🍤",
-      "price": 5.1,
+      "price": 5,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10289,7 +10292,7 @@
       "shortDescription": "",
       "longDescription": "Pollo Golden Blue.",
       "image": "🍗",
-      "price": 5.5,
+      "price": 5.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10307,7 +10310,7 @@
       "shortDescription": "",
       "longDescription": "Pollo frito.",
       "image": "🍗",
-      "price": 3.7,
+      "price": 3.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10325,7 +10328,7 @@
       "shortDescription": "",
       "longDescription": "Pollo chiflado.",
       "image": "🍗",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10343,7 +10346,7 @@
       "shortDescription": "",
       "longDescription": "Pollo asado en cazuela.",
       "image": "🍗",
-      "price": 3.7,
+      "price": 3.6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10361,7 +10364,7 @@
       "shortDescription": "",
       "longDescription": "Pollo fricasé.",
       "image": "🍗",
-      "price": 3.9,
+      "price": 3.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10379,7 +10382,7 @@
       "shortDescription": "",
       "longDescription": "Pollo a la Juliana.",
       "image": "🍗",
-      "price": 3.5,
+      "price": 3.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10397,7 +10400,7 @@
       "shortDescription": "",
       "longDescription": "Bistec de pollo empanizado.",
       "image": "🍗",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10415,7 +10418,7 @@
       "shortDescription": "",
       "longDescription": "Pechuga de pollo a la parrilla.",
       "image": "🍗",
-      "price": 4.1,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -10624,7 +10627,7 @@
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con canela espolvoreada.",
       "image": "�",
       "price": 1.5,
-      "photo": "/assets/images/products/Frappio/Frappio-Tradicional.jpg",
+      "photo": "/assets/images/products/frappio/frappio-001.jpg",
       "stockStatus": "disponible",
       "addons": [
         {
@@ -10647,7 +10650,7 @@
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con chocolate, sirope y galletas de chocolate espolvoreadas.",
       "image": "�",
       "price": 1.6,
-      "photo": "/assets/images/products/Frappio/Frappio-Mocha.jpg",
+      "photo": "/assets/images/products/frappio/frappio-002.jpg",
       "stockStatus": "disponible",
       "addons": [
         {
@@ -10670,7 +10673,7 @@
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con leche condensada y galletas espolvoreadas.",
       "image": "�",
       "price": 1.7,
-      "photo": "/assets/images/products/Frappio/Frappio 2 Leches.jpg",
+      "photo": "/assets/images/products/frappio/frappio-003.jpg",
       "stockStatus": "disponible",
       "addons": [
         {
@@ -10693,7 +10696,7 @@
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con dulce de leche (fanguito) y galletas espolvoreadas.",
       "image": "�",
       "price": 1.8,
-      "photo": "/assets/images/products/Frappio/Frappio-Machiato.jpg",
+      "photo": "/assets/images/products/frappio/frappio-004.jpg",
       "stockStatus": "disponible",
       "addons": [
         {
@@ -10716,7 +10719,7 @@
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con galletas de chocolate batidas, sirope y galletas de decoración.",
       "image": "�",
       "price": 1.9,
-      "photo": "/assets/images/products/Frappio/Frappio-Biscuit.jpg",
+      "photo": "/assets/images/products/frappio/frappio-005.jpg",
       "stockStatus": "disponible",
       "addons": [
         {
@@ -10739,7 +10742,7 @@
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con dulce de leche (fanguito), galletas de chocolate batidas, sirope y galletas de decoración.",
       "image": "�",
       "price": 2.2,
-      "photo": "/assets/images/products/Frappio/Super-Frappio.jpg",
+      "photo": "/assets/images/products/frappio/frappio-006.jpg",
       "stockStatus": "disponible",
       "addons": [
         {
@@ -10761,7 +10764,7 @@
       "shortDescription": "",
       "longDescription": "Alicate.",
       "image": "🔧",
-      "photo": "/assets/images/products/FerreGüira/Alicate -2600cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-001.jpg",
       "price": 5.2,
       "stockStatus": "disponible"
     },
@@ -10774,7 +10777,7 @@
       "shortDescription": "",
       "longDescription": "Destornillador de Puntas.",
       "image": "🔩",
-      "photo": "/assets/images/products/FerreGüira/Destornillador de puntas 3000cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-002.jpg",
       "price": 6,
       "stockStatus": "disponible"
     },
@@ -10787,7 +10790,7 @@
       "shortDescription": "",
       "longDescription": "Juego de Destornilladores.",
       "image": "🔩",
-      "photo": "/assets/images/products/FerreGüira/juego de destornillador 1500.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-003.jpg",
       "price": 3,
       "stockStatus": "disponible"
     },
@@ -10800,7 +10803,7 @@
       "shortDescription": "",
       "longDescription": "Juego de Barrenas de Tusteno.",
       "image": "🔩",
-      "photo": "/assets/images/products/FerreGüira/Juego de Barrenas de Tusteno 4500cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-004.jpg",
       "price": 9,
       "stockStatus": "disponible"
     },
@@ -10813,7 +10816,7 @@
       "shortDescription": "",
       "longDescription": "Juego de Barrenas de Hierro.",
       "image": "🔩",
-      "photo": "/assets/images/products/FerreGüira/Juegos de Barrenas de Hierro --2000cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-005.jpg",
       "price": 4,
       "stockStatus": "disponible"
     },
@@ -10826,7 +10829,7 @@
       "shortDescription": "",
       "longDescription": "Tenaza de Soldar.",
       "image": "🔧",
-      "photo": "/assets/images/products/FerreGüira/Tenaza de soldar --5000cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-006.jpg",
       "price": 10,
       "stockStatus": "disponible"
     },
@@ -10839,7 +10842,7 @@
       "shortDescription": "",
       "longDescription": "Taladro.",
       "image": "🔧",
-      "photo": "/assets/images/products/FerreGüira/Taladro 22000.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-007.jpg",
       "price": 44,
       "stockStatus": "disponible"
     },
@@ -10852,7 +10855,7 @@
       "shortDescription": "",
       "longDescription": "Pinza de Presión.",
       "image": "🔧",
-      "photo": "/assets/images/products/FerreGüira/pinza de Presión --4200cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-008.jpg",
       "price": 8.4,
       "stockStatus": "disponible"
     },
@@ -10865,7 +10868,7 @@
       "shortDescription": "",
       "longDescription": "Terraja para Tubos Plásticos.",
       "image": "🔧",
-      "photo": "/assets/images/products/FerreGüira/Terraja para tubos plácticos --4200.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-009.jpg",
       "price": 8.4,
       "stockStatus": "disponible"
     },
@@ -10878,7 +10881,7 @@
       "shortDescription": "3 m → 1000 CUP · 7.5 m → 2000 CUP",
       "longDescription": "Cinta métrica. Elige la medida. 3 m: 1000 CUP · 7.5 m: 2000 CUP.",
       "image": "📏",
-      "photo": "/assets/images/products/FerreGüira/Cinta métrica 3m y 7.5m --1000 y 2000cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-010.jpg",
       "price": 2,
       "stockStatus": "disponible",
       "options": [
@@ -10895,7 +10898,7 @@
       "shortDescription": "",
       "longDescription": "Disco de Corte (pequeño).",
       "image": "⚙️",
-      "photo": "/assets/images/products/FerreGüira/disco de corte 200.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-011.jpg",
       "price": 0.4,
       "stockStatus": "disponible"
     },
@@ -10908,7 +10911,7 @@
       "shortDescription": "",
       "longDescription": "Disco de Corte para Vidrio.",
       "image": "⚙️",
-      "photo": "/assets/images/products/FerreGüira/Disco de corte para vidrio 2000.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-012.jpg",
       "price": 4,
       "stockStatus": "disponible"
     },
@@ -10921,7 +10924,7 @@
       "shortDescription": "",
       "longDescription": "Disco de Desbaste.",
       "image": "⚙️",
-      "photo": "/assets/images/products/FerreGüira/Disco desvaste 900.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-013.jpg",
       "price": 1.8,
       "stockStatus": "disponible"
     },
@@ -10934,7 +10937,7 @@
       "shortDescription": "",
       "longDescription": "Disco de Sierra.",
       "image": "⚙️",
-      "photo": "/assets/images/products/FerreGüira/Disco de cierra 1300.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-014.jpg",
       "price": 2.6,
       "stockStatus": "disponible"
     },
@@ -10947,7 +10950,7 @@
       "shortDescription": "",
       "longDescription": "Disco de Tusteno Liso.",
       "image": "⚙️",
-      "photo": "/assets/images/products/FerreGüira/Disco de Tusteno liso 1300.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-015.jpg",
       "price": 2.6,
       "stockStatus": "disponible"
     },
@@ -10960,7 +10963,7 @@
       "shortDescription": "",
       "longDescription": "Disco de Tusteno Estriado.",
       "image": "⚙️",
-      "photo": "/assets/images/products/FerreGüira/disco de tusteno estriado --1500cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-016.jpg",
       "price": 3,
       "stockStatus": "disponible"
     },
@@ -10973,7 +10976,7 @@
       "shortDescription": "",
       "longDescription": "Disco Mil Hojas.",
       "image": "⚙️",
-      "photo": "/assets/images/products/FerreGüira/Disco mil hojas --700cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-017.jpg",
       "price": 1.4,
       "stockStatus": "disponible"
     },
@@ -10986,7 +10989,7 @@
       "shortDescription": "",
       "longDescription": "Breake AC Monofásico 63A.",
       "image": "⚡",
-      "photo": "/assets/images/products/FerreGüira/Breake AC MonoFásico 63A 4500.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-018.jpg",
       "price": 9,
       "stockStatus": "disponible"
     },
@@ -10999,7 +11002,7 @@
       "shortDescription": "",
       "longDescription": "Breake AC Monofásico 2 Polos (32A–50A).",
       "image": "⚡",
-      "photo": "/assets/images/products/FerreGüira/Breake AC Monofásico (2 polos) 32A 40A 50A -4200cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-019.jpg",
       "price": 8.4,
       "stockStatus": "disponible"
     },
@@ -11012,7 +11015,7 @@
       "shortDescription": "",
       "longDescription": "Breake AC Trifásico (32A–63A).",
       "image": "⚡",
-      "photo": "/assets/images/products/FerreGüira/Breake AC Trifasico 32A 50A 63A -5500cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-020.jpg",
       "price": 11,
       "stockStatus": "disponible"
     },
@@ -11025,7 +11028,7 @@
       "shortDescription": "",
       "longDescription": "Breake AC Trifásico 80A.",
       "image": "⚡",
-      "photo": "/assets/images/products/FerreGüira/Breake AC Trifasico 80A -7000cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-021.jpg",
       "price": 14,
       "stockStatus": "disponible"
     },
@@ -11038,7 +11041,7 @@
       "shortDescription": "",
       "longDescription": "Breake DC 63A.",
       "image": "⚡",
-      "photo": "/assets/images/products/FerreGüira/Breake DC 63 A en 12000.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-022.jpg",
       "price": 24,
       "stockStatus": "disponible"
     },
@@ -11051,7 +11054,7 @@
       "shortDescription": "",
       "longDescription": "Brekera de 4 Posiciones.",
       "image": "⚡",
-      "photo": "/assets/images/products/FerreGüira/Brekera de 4 posiciones 3500 cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-023.jpg",
       "price": 7,
       "stockStatus": "disponible"
     },
@@ -11064,7 +11067,7 @@
       "shortDescription": "",
       "longDescription": "Interruptor Combinado.",
       "image": "⚡",
-      "photo": "/assets/images/products/FerreGüira/Interruptor combinado 1000cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-024.jpg",
       "price": 2,
       "stockStatus": "disponible"
     },
@@ -11077,7 +11080,7 @@
       "shortDescription": "",
       "longDescription": "Interruptor Simple con Tapa.",
       "image": "⚡",
-      "photo": "/assets/images/products/FerreGüira/Interruptor simple con su tapa 550 cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-025.jpg",
       "price": 1.1,
       "stockStatus": "disponible"
     },
@@ -11090,7 +11093,7 @@
       "shortDescription": "",
       "longDescription": "Toma Corriente de Superficie.",
       "image": "🔌",
-      "photo": "/assets/images/products/FerreGüira/Toma corriente de superficie 750.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-026.jpg",
       "price": 1.5,
       "stockStatus": "disponible"
     },
@@ -11103,7 +11106,7 @@
       "shortDescription": "",
       "longDescription": "Toma Corriente Universal con Tapa.",
       "image": "🔌",
-      "photo": "/assets/images/products/FerreGüira/toma corriente universal con su tapa --600cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-027.jpg",
       "price": 1.2,
       "stockStatus": "disponible"
     },
@@ -11116,7 +11119,7 @@
       "shortDescription": "",
       "longDescription": "Extensión Eléctrica 10 m.",
       "image": "🔌",
-      "photo": "/assets/images/products/FerreGüira/Extensión de 10m 4500cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-028.jpg",
       "price": 9,
       "stockStatus": "disponible"
     },
@@ -11129,7 +11132,7 @@
       "shortDescription": "",
       "longDescription": "Cuchilla Doble Tiro 2P 100A.",
       "image": "⚡",
-      "photo": "/assets/images/products/FerreGüira/Cuchilla doble tiro 2P 100A en 12000.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-029.jpg",
       "price": 24,
       "stockStatus": "disponible"
     },
@@ -11142,7 +11145,7 @@
       "shortDescription": "",
       "longDescription": "Ducha Eléctrica con Resistencia de Repuesto.",
       "image": "🚿",
-      "photo": "/assets/images/products/FerreGüira/Ducha Eléctrica con resistencia de repuesto --7500.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-030.jpg",
       "price": 15,
       "stockStatus": "disponible"
     },
@@ -11155,7 +11158,7 @@
       "shortDescription": "",
       "longDescription": "Protector de Línea Digital 110/220V.",
       "image": "⚡",
-      "photo": "/assets/images/products/FerreGüira/Protector de Línea digital 110 y 220v --12000cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-031.jpg",
       "price": 24,
       "stockStatus": "disponible"
     },
@@ -11168,7 +11171,7 @@
       "shortDescription": "",
       "longDescription": "Protector de Voltaje 220V.",
       "image": "⚡",
-      "photo": "/assets/images/products/FerreGüira/protector de voltaje 220v - 4500cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-032.jpg",
       "price": 9,
       "stockStatus": "disponible"
     },
@@ -11181,7 +11184,7 @@
       "shortDescription": "",
       "longDescription": "Foco 9W.",
       "image": "💡",
-      "photo": "/assets/images/products/FerreGüira/foco 9w.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-033.jpg",
       "price": 1.1,
       "stockStatus": "disponible"
     },
@@ -11194,7 +11197,7 @@
       "shortDescription": "",
       "longDescription": "Flotante Automático para Tanque.",
       "image": "🚰",
-      "photo": "/assets/images/products/FerreGüira/Flotante Automático para tanque  4000cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-034.jpg",
       "price": 8,
       "stockStatus": "disponible"
     },
@@ -11207,7 +11210,7 @@
       "shortDescription": "",
       "longDescription": "Herraje de Baño (media).",
       "image": "🚰",
-      "photo": "/assets/images/products/FerreGüira/Herraje de Baño (de media) 3200cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-035.jpg",
       "price": 6.4,
       "stockStatus": "disponible"
     },
@@ -11220,7 +11223,7 @@
       "shortDescription": "",
       "longDescription": "Manguera de Agua (media).",
       "image": "🚿",
-      "photo": "/assets/images/products/FerreGüira/Manguera de agua de media 20000 cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-036.jpg",
       "price": 40,
       "stockStatus": "disponible"
     },
@@ -11233,7 +11236,7 @@
       "shortDescription": "",
       "longDescription": "Regilla de Baño.",
       "image": "🚿",
-      "photo": "/assets/images/products/FerreGüira/Regilla de Baño --2000cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-037.jpg",
       "price": 4,
       "stockStatus": "disponible"
     },
@@ -11246,7 +11249,7 @@
       "shortDescription": "",
       "longDescription": "Regulador de Gas.",
       "image": "🔧",
-      "photo": "/assets/images/products/FerreGüira/regulador de gas 2000cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-038.jpg",
       "price": 4,
       "stockStatus": "disponible"
     },
@@ -11259,7 +11262,7 @@
       "shortDescription": "",
       "longDescription": "Picaporte.",
       "image": "🔐",
-      "photo": "/assets/images/products/FerreGüira/Picaporte-3500cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-039.jpg",
       "price": 7,
       "stockStatus": "disponible"
     },
@@ -11272,7 +11275,7 @@
       "shortDescription": "",
       "longDescription": "Yale de Puerta.",
       "image": "🔑",
-      "photo": "/assets/images/products/FerreGüira/Yale de puerta en 4500.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-040.jpg",
       "price": 9,
       "stockStatus": "disponible"
     },
@@ -11285,7 +11288,7 @@
       "shortDescription": "10\" → 3500 CUP · 12\" → 4000 CUP",
       "longDescription": "Picoloro. Elige la medida. 10 pulgadas: 3500 CUP · 12 pulgadas: 4000 CUP.",
       "image": "🔐",
-      "photo": "/assets/images/products/FerreGüira/Picoloro de 10 y 12 pulgadas.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-041.jpg",
       "price": 7,
       "stockStatus": "disponible",
       "options": [
@@ -11302,7 +11305,7 @@
       "shortDescription": "",
       "longDescription": "Plasti Loka.",
       "image": "🧴",
-      "photo": "/assets/images/products/FerreGüira/Plasti Loka --1650 cup.jpg",
+      "photo": "/assets/images/products/ferreguira/fg-042.jpg",
       "price": 3.3,
       "stockStatus": "disponible"
     },
@@ -11315,7 +11318,7 @@
       "shortDescription": "",
       "longDescription": "Limonada natural hecha con ingredientes frescos.",
       "image": "�",
-      "photo": "/assets/images/products/Los Llenik/Limonada Natural.jpg",
+      "photo": "/assets/images/products/los-llenik/lllk-001.jpg",
       "price": 1,
       "addons": [
         {
@@ -11341,7 +11344,7 @@
       "longDescription": "Limonada natural con hierva buena.",
       "image": "�",
       "price": 1,
-      "photo": "/assets/images/products/Los Llenik/Limonada Frescura.jpg",
+      "photo": "/assets/images/products/los-llenik/lllk-002.jpg",
       "addons": [
         {
           "name": "Con Alchol",
@@ -11367,7 +11370,7 @@
       "image": "�",
       "price": 1.1,
       "stockStatus": "disponible",
-      "photo": "/assets/images/products/Los Llenik/Limonada Clarete.jpg",
+      "photo": "/assets/images/products/los-llenik/lllk-003.jpg",
       "packaging": [
         {
           "name": "Vaso Domo",
@@ -11385,7 +11388,7 @@
       "longDescription": "La clásica piña colada con ingredientes frescos.",
       "image": "�",
       "price": 1.2,
-      "photo": "/assets/images/products/Los Llenik/pina-colada.jpg",
+      "photo": "/assets/images/products/los-llenik/lllk-004.jpg",
       "addons": [
         {
           "name": "Con Alchol",
@@ -11410,7 +11413,7 @@
       "longDescription": "El Clásico pan con perro caliente , ketchup y mostaza",
       "image": "�",
       "price": 1,
-      "photo": "/assets/images/products/Los Llenik/Pan con Perro.webp",
+      "photo": "/assets/images/products/los-llenik/lllk-005.webp",
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -11429,7 +11432,7 @@
       "longDescription": "Coctel de frutas con ingredientes frescos ",
       "image": "�",
       "price": 0.9,
-      "photo": "/assets/images/products/Los Llenik/coctel de frutas.jpg",
+      "photo": "/assets/images/products/los-llenik/lllk-006.jpg",
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -11486,7 +11489,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Frijol negro a granel, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🫘",
-      "photo": "/assets/images/products/Los Prietos/frijol-negro.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-001.jpg",
       "price": 0.8,
       "stockStatus": "disponible"
     },
@@ -11499,7 +11502,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Frijol colorado a granel, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🫘",
-      "photo": "/assets/images/products/Los Prietos/frijol-colorado.webp",
+      "photo": "/assets/images/products/agro-los-prietos/alp-002.webp",
       "price": 1.1,
       "stockStatus": "disponible"
     },
@@ -11512,7 +11515,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Frijol bayo a granel, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🫘",
-      "photo": "/assets/images/products/Los Prietos/frijol-bayo.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-003.jpg",
       "price": 1,
       "stockStatus": "disponible"
     },
@@ -11525,7 +11528,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Garbanzos a granel, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🫘",
-      "photo": "/assets/images/products/Los Prietos/garbanzos.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-004.jpg",
       "price": 1.2,
       "stockStatus": "disponible"
     },
@@ -11538,7 +11541,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Pepino fresco, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🥒",
-      "photo": "/assets/images/products/Los Prietos/pepino.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-005.jpg",
       "price": 0.4,
       "stockStatus": "disponible"
     },
@@ -11551,7 +11554,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Papa fresca, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🥔",
-      "photo": "/assets/images/products/Los Prietos/papa.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-006.jpg",
       "price": 1,
       "stockStatus": "disponible"
     },
@@ -11564,7 +11567,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Ají pimiento fresco, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🫑",
-      "photo": "/assets/images/products/Los Prietos/Ají-Pimiento.webp",
+      "photo": "/assets/images/products/agro-los-prietos/alp-007.webp",
       "price": 1,
       "stockStatus": "disponible"
     },
@@ -11577,7 +11580,7 @@
       "shortDescription": "Precio por unidad.",
       "longDescription": "Col fresca, se vende por unidad.",
       "image": "🥬",
-      "photo": "/assets/images/products/Los Prietos/col.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-008.jpg",
       "price": 1,
       "stockStatus": "disponible"
     },
@@ -11590,7 +11593,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Malanga fresca, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🍠",
-      "photo": "/assets/images/products/Los Prietos/malanga.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-009.jpg",
       "price": 0.4,
       "stockStatus": "disponible"
     },
@@ -11603,7 +11606,7 @@
       "shortDescription": "Precio por pote.",
       "longDescription": "Ají cachucha fresco, se vende por pote.",
       "image": "🌶️",
-      "photo": "/assets/images/products/Los Prietos/ají-cachucha.webp",
+      "photo": "/assets/images/products/agro-los-prietos/alp-010.webp",
       "price": 0.4,
       "stockStatus": "disponible"
     },
@@ -11616,7 +11619,7 @@
       "shortDescription": "Precio por mano.",
       "longDescription": "Plátano fruta, se vende por mano.",
       "image": "🍌",
-      "photo": "/assets/images/products/Los Prietos/plátano-fruta.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-011.jpg",
       "price": 0.5,
       "stockStatus": "disponible"
     },
@@ -11629,7 +11632,7 @@
       "shortDescription": "Precio por unidad.",
       "longDescription": "Plátano macho, se vende por unidad.",
       "image": "🍌",
-      "photo": "/assets/images/products/Los Prietos/plátano-macho.webp",
+      "photo": "/assets/images/products/agro-los-prietos/alp-012.webp",
       "price": 0.1,
       "stockStatus": "disponible"
     },
@@ -11642,7 +11645,7 @@
       "shortDescription": "Precio por unidad.",
       "longDescription": "Piña fresca, se vende por unidad.",
       "image": "🍍",
-      "photo": "/assets/images/products/Los Prietos/piña.webp",
+      "photo": "/assets/images/products/agro-los-prietos/alp-013.webp",
       "price": 0.9,
       "stockStatus": "disponible"
     },
@@ -11655,7 +11658,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Guayaba fresca, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🍏",
-      "photo": "/assets/images/products/Los Prietos/guayaba.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-014.jpg",
       "price": 0.24,
       "stockStatus": "disponible"
     },
@@ -11668,7 +11671,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Melón fresco, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🍈",
-      "photo": "/assets/images/products/Los Prietos/melón.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-015.jpg",
       "price": 0.32,
       "stockStatus": "disponible"
     },
@@ -11681,7 +11684,7 @@
       "shortDescription": "Precio por unidad.",
       "longDescription": "Mango fresco, se vende por unidad.",
       "image": "🥭",
-      "photo": "/assets/images/products/Los Prietos/mango.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-016.jpg",
       "price": 0.3,
       "stockStatus": "disponible"
     },
@@ -11694,7 +11697,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Fruta bomba fresca, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🍑",
-      "photo": "/assets/images/products/Los Prietos/fruta-bomba.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-017.jpg",
       "price": 0.3,
       "stockStatus": "disponible"
     },
@@ -11707,7 +11710,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Cúrcuma fresca, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🫚",
-      "photo": "/assets/images/products/Los Prietos/cúrcuma.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-018.jpg",
       "price": 0.6,
       "stockStatus": "disponible"
     },
@@ -11720,7 +11723,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Uva fresca, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🍇",
-      "photo": "/assets/images/products/Los Prietos/uva.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-019.jpg",
       "price": 2.6,
       "stockStatus": "disponible"
     },
@@ -11733,7 +11736,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Naranja agria fresca, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🍊",
-      "photo": "/assets/images/products/Los Prietos/naranja-agria.webp",
+      "photo": "/assets/images/products/agro-los-prietos/alp-020.webp",
       "price": 0.4,
       "stockStatus": "disponible"
     },
@@ -11746,7 +11749,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Tomate fresco, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🍅",
-      "photo": "/assets/images/products/Los Prietos/tomate.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-021.jpg",
       "price": 1.4,
       "stockStatus": "disponible"
     },
@@ -11759,7 +11762,7 @@
       "shortDescription": "Precio por libra.",
       "longDescription": "Cebolla blanca fresca, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🧅",
-      "photo": "/assets/images/products/Los Prietos/cebolla.jpg",
+      "photo": "/assets/images/products/agro-los-prietos/alp-022.jpg",
       "price": 1.6,
       "stockStatus": "disponible"
     },
@@ -11772,7 +11775,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Bolsa de panqués artesanales de La Nevada.",
       "image": "🧁",
-      "photo": "/assets/images/products/La Nevada/bolsa de panques 1500.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-001.jpg",
       "price": 3,
       "stockStatus": "disponible"
     },
@@ -11785,7 +11788,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Bombas rellenas artesanales de La Nevada.",
       "image": "🍩",
-      "photo": "/assets/images/products/La Nevada/bombas rellenas 420.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-002.jpg",
       "price": 0.84,
       "stockStatus": "disponible"
     },
@@ -11798,7 +11801,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Brownie de frutos secos artesanal de La Nevada.",
       "image": "🍫",
-      "photo": "/assets/images/products/La Nevada/Brownie de frutos secos 600.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-003.jpg",
       "price": 1.2,
       "stockStatus": "disponible"
     },
@@ -11811,7 +11814,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Cake especial de crema blanca de galleta, artesanal de La Nevada.",
       "image": "🎂",
-      "photo": "/assets/images/products/La Nevada/Cake especial de cremas blanca de galleta 6000.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-004.jpg",
       "price": 12,
       "stockStatus": "disponible"
     },
@@ -11824,7 +11827,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Cake de leche condensada artesanal de La Nevada.",
       "image": "🎂",
-      "photo": "/assets/images/products/La Nevada/cakes de leche condensada 4600.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-005.jpg",
       "price": 9.2,
       "stockStatus": "disponible"
     },
@@ -11837,7 +11840,7 @@
       "shortDescription": "Sabor chocolate.",
       "longDescription": "Cono de helado artesanal de La Nevada, sabor chocolate.",
       "image": "🍦",
-      "photo": "/assets/images/products/La Nevada/Cono de helado.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-006.jpg",
       "price": 0.6,
       "options": [
         "Chocolate"
@@ -11853,7 +11856,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Cuñas sencillas artesanales de La Nevada.",
       "image": "🥐",
-      "photo": "/assets/images/products/La Nevada/cuñas sencillas 550.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-007.jpg",
       "price": 1.1,
       "stockStatus": "disponible"
     },
@@ -11866,7 +11869,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Donas con cobertura artesanales de La Nevada.",
       "image": "🍩",
-      "photo": "/assets/images/products/La Nevada/donas con cobertura -370.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-008.jpg",
       "price": 0.74,
       "stockStatus": "disponible"
     },
@@ -11879,7 +11882,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Eclair artesanal de La Nevada.",
       "image": "🍰",
-      "photo": "/assets/images/products/La Nevada/eclear -350.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-009.jpg",
       "price": 0.7,
       "stockStatus": "disponible"
     },
@@ -11892,7 +11895,7 @@
       "shortDescription": "Guayaba y coco.",
       "longDescription": "Masa real artesanal de guayaba y coco, de La Nevada.",
       "image": "🍮",
-      "photo": "/assets/images/products/La Nevada/Masa real 320 (guayaba y coco).jpg",
+      "photo": "/assets/images/products/la-nevada/ln-010.jpg",
       "price": 0.64,
       "stockStatus": "disponible"
     },
@@ -11905,7 +11908,7 @@
       "shortDescription": "Sabor chocolate.",
       "longDescription": "Paleticas heladas artesanales de La Nevada, sabor chocolate.",
       "image": "🍭",
-      "photo": "/assets/images/products/La Nevada/paleticas 240.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-011.jpg",
       "price": 0.44,
       "options": [
         "Chocolate"
@@ -11921,7 +11924,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Pastel artesanal de La Nevada.",
       "image": "🍰",
-      "photo": "/assets/images/products/La Nevada/pastel 400.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-012.jpg",
       "price": 0.8,
       "stockStatus": "disponible"
     },
@@ -11934,7 +11937,7 @@
       "shortDescription": "Guayaba y coco.",
       "longDescription": "Pie artesanal de guayaba y coco, de La Nevada.",
       "image": "🥧",
-      "photo": "/assets/images/products/La Nevada/pie (guayaba y coco ) 1750.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-013.jpg",
       "price": 3.5,
       "stockStatus": "disponible"
     },
@@ -11947,7 +11950,7 @@
       "shortDescription": "Pote de 280 ml.",
       "longDescription": "Helado artesanal de La Nevada en pote de 280 ml.",
       "image": "🍨",
-      "photo": "/assets/images/products/La Nevada/pote de helado 280 ml 440.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-014.jpg",
       "price": 0.84,
       "options": [
         "Fresa",
@@ -11976,7 +11979,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Quesito siciliano artesanal de La Nevada.",
       "image": "🧀",
-      "photo": "/assets/images/products/La Nevada/Quesito ciciliano 550.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-016.jpg",
       "price": 1.1,
       "stockStatus": "disponible"
     },
@@ -11989,7 +11992,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Señorita artesanal de La Nevada.",
       "image": "🍰",
-      "photo": "/assets/images/products/La Nevada/Señorita-600.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-017.jpg",
       "price": 1.2,
       "stockStatus": "disponible"
     },
@@ -12002,7 +12005,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Tarta nata artesanal de La Nevada.",
       "image": "🥧",
-      "photo": "/assets/images/products/La Nevada/tarta nata -370.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-018.jpg",
       "price": 0.74,
       "stockStatus": "disponible"
     },
@@ -12015,7 +12018,7 @@
       "shortDescription": "Tina de 4 litros, sabor chocolate.",
       "longDescription": "Tina de helado artesanal de La Nevada, 4 litros, sabor chocolate.",
       "image": "🍨",
-      "photo": "/assets/images/products/La Nevada/Tina de Helado 4 litros , 4500.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-019.jpg",
       "price": 9.1,
       "options": [
         "Chocolate"
@@ -12031,7 +12034,7 @@
       "shortDescription": "Precio en CUP.",
       "longDescription": "Tocinillo del cielo artesanal de La Nevada.",
       "image": "🍮",
-      "photo": "/assets/images/products/La Nevada/tocinillo del clielo - 500.jpg",
+      "photo": "/assets/images/products/la-nevada/ln-020.jpg",
       "price": 1,
       "stockStatus": "disponible"
     },
