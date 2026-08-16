@@ -51,12 +51,14 @@ function mapCat(cat, bizId) {
  * hay que reaplicarlos en cada sync).
  */
 function adjustPrice(p) {
+  if (p.businessId === 'dlm' && p.name.trim().toLowerCase() === 'ensalada mixta') {
+    return { ...p, price: 3 }
+  }
   const text = `${p.name} ${p.shortDescription ?? ''} ${p.longDescription ?? ''}`.toLowerCase()
-  let extra = 0
-  if (p.businessId === 'mercadito-ahorro' && text.includes('aceite')) extra += 5
-  if (p.businessId === 'dlm' && p.name.trim().toLowerCase() === 'ensalada mixta') extra += 3
-  if (extra === 0) return p
-  return { ...p, price: Math.round((p.price + extra) * 100) / 100 }
+  if (p.businessId === 'mercadito-ahorro' && text.includes('aceite')) {
+    return { ...p, price: Math.round((p.price + 5) * 100) / 100 }
+  }
+  return p
 }
 
 // Combos exclusivos de Familia (ya en USD)
