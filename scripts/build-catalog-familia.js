@@ -54,6 +54,10 @@ function adjustPrice(p) {
   if (p.businessId === 'dlm' && p.name.trim().toLowerCase() === 'ensalada mixta') {
     return { ...p, price: 3 }
   }
+  // Cerveza/refresco de lata: precio de mercado fijo, 500 CUP = 1 USD.
+  if (/(cerveza|refresco).*\b(de|en)\s+lata\b/i.test(p.name)) {
+    return { ...p, price: 1 }
+  }
   const text = `${p.name} ${p.shortDescription ?? ''} ${p.longDescription ?? ''}`.toLowerCase()
   if (p.businessId === 'mercadito-ahorro' && text.includes('aceite')) {
     return { ...p, price: Math.round((p.price + 5) * 100) / 100 }

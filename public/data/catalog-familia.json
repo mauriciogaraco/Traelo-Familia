@@ -20,7 +20,10 @@
         ],
         "open": "09:00",
         "close": "17:00"
-      }
+      },
+      "businessCategories": [
+        "Mercado"
+      ]
     },
     {
       "id": "dlm",
@@ -42,7 +45,11 @@
         "open": "13:00",
         "close": "22:00",
         "label": "Mié–Dom · 1:00 pm – 10:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Destacados",
+        "Restaurantes"
+      ]
     },
     {
       "id": "panes-macus",
@@ -65,7 +72,10 @@
         "open": "09:00",
         "close": "22:00",
         "label": "Todos los días · 9:00 am – 10:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Panes"
+      ]
     },
     {
       "id": "mercadito-ahorro",
@@ -89,6 +99,10 @@
         "close": "22:00",
         "label": "Todos los días · 9:00 am – 10:00 pm"
       },
+      "businessCategories": [
+        "Destacados",
+        "Mercado"
+      ],
       "paymentNote": "¿Quieres añadir o quitar algo? Todos los combos se pueden personalizar a tu gusto. Escríbenos por WhatsApp y armamos el tuyo."
     },
     {
@@ -112,7 +126,10 @@
         "open": "09:00",
         "close": "22:00",
         "label": "Todos los días · 9:00 am – 10:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Pizzas"
+      ]
     },
     {
       "id": "cronos",
@@ -124,18 +141,28 @@
       "clientCommission": 5,
       "schedule": {
         "days": [
-          0,
-          1,
           2,
-          3,
           4,
           5,
           6
         ],
-        "open": "09:00",
+        "open": "10:00",
         "close": "19:00",
-        "label": "Lun–Dom · 9:00 am – 7:00 pm"
-      }
+        "label": "Mar, Jue, Vie y Sáb · 10:00 am – 7:00 pm · Mié y Dom · 12:00 pm – 7:00 pm"
+      },
+      "scheduleExtra": {
+        "days": [
+          0,
+          3
+        ],
+        "open": "12:00",
+        "close": "19:00",
+        "label": "Mié y Dom · 12:00 pm – 7:00 pm"
+      },
+      "businessCategories": [
+        "Destacados",
+        "Bebidas"
+      ]
     },
     {
       "id": "eme-boutique",
@@ -161,7 +188,10 @@
         "open": "09:00",
         "close": "21:00",
         "label": "Todos los días · 9:00 am – 9:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Ropa"
+      ]
     },
     {
       "id": "tu-kprichito",
@@ -184,7 +214,10 @@
         "open": "09:00",
         "close": "17:00",
         "label": "Todos los días · 9:00 am – 5:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Mercado"
+      ]
     },
     {
       "id": "linea-callejon",
@@ -207,7 +240,11 @@
         "open": "09:00",
         "close": "22:00",
         "label": "Todos los días · 9:00 am – 10:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Restaurantes",
+        "Pizzas"
+      ]
     },
     {
       "id": "amore",
@@ -219,7 +256,6 @@
       "clientCommission": 5,
       "schedule": {
         "days": [
-          0,
           1,
           2,
           3,
@@ -230,7 +266,10 @@
         "open": "09:00",
         "close": "18:00",
         "label": "Lun–Sáb · 9:00 am – 6:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Dulces"
+      ]
     },
     {
       "id": "cafeteria-d-leo",
@@ -254,7 +293,10 @@
         "open": "09:00",
         "close": "17:00",
         "label": "Todos los días · 9:00 am – 5:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Panes"
+      ]
     },
     {
       "id": "pizzeria-mm",
@@ -266,7 +308,6 @@
       "clientCommission": 4,
       "schedule": {
         "days": [
-          0,
           1,
           2,
           3,
@@ -276,8 +317,11 @@
         ],
         "open": "09:00",
         "close": "22:00",
-        "label": "Todos los días · 9:00 am – 10:00 pm"
-      }
+        "label": "Lun–Sáb · 9:00 am – 10:00 pm"
+      },
+      "businessCategories": [
+        "Pizzas"
+      ]
     },
     {
       "id": "las-palmitas",
@@ -301,7 +345,10 @@
         "open": "12:00",
         "close": "22:00",
         "label": "Mar–Dom · 12:00 pm – 10:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Restaurantes"
+      ]
     },
     {
       "id": "heladeria-mk",
@@ -324,7 +371,11 @@
         "open": "09:00",
         "close": "21:00",
         "label": "Todos los días · 9:00 am – 9:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Helados",
+        "Dulces"
+      ]
     },
     {
       "id": "ferreguira",
@@ -346,13 +397,42 @@
         "open": "09:00",
         "close": "18:00",
         "label": "Lun–Sáb · 9:00 am – 6:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Ferretería"
+      ]
     },
     {
       "id": "los-llenik",
       "name": "Los Llenik",
       "description": "Los Llenik — El bar a tu casa",
       "image": "/assets/images/business/Los Llenik.jpg",
+      "color": "from-sky-100 to-cyan-50",
+      "businessCommission": 0,
+      "clientCommission": 5,
+      "schedule": {
+        "days": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "close": "21:00",
+        "label": "Mar–Dom · 9:00 am – 9:00 pm"
+      },
+      "businessCategories": [
+        "Restaurantes",
+        "Bebidas"
+      ]
+    },
+    {
+      "id": "dulce-momento",
+      "name": "Dulce Momento",
+      "description": "Dulce Momento — Helados, dulces y postres a domicilio",
+      "image": "/assets/images/business/Dulce-momento.jpg",
       "color": "from-sky-100 to-cyan-50",
       "businessCommission": 0,
       "clientCommission": 5,
@@ -369,30 +449,12 @@
         "open": "09:00",
         "close": "21:00",
         "label": "Lun–Dom · 9:00 am – 9:00 pm"
-      }
-    },
-    {
-      "id": "dulce-momento",
-      "name": "Dulce Momento",
-      "description": "Dulce Momento — Helados, dulces y postres a domicilio",
-      "image": "/assets/images/business/Dulce-momento.jpg",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado",
-      "businessCommission": 0,
-      "clientCommission": 5,
-      "schedule": {
-        "days": [
-          1,
-          2,
-          3,
-          4,
-          5,
-          6
-        ],
-        "open": "09:00",
-        "close": "21:00",
-        "label": "Lun–Dom · 9:00 am – 9:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Bebidas",
+        "Helados",
+        "Dulces"
+      ]
     },
     {
       "id": "frappio",
@@ -407,15 +469,17 @@
           0,
           1,
           2,
-          3,
           4,
           5,
           6
         ],
-        "open": "09:00",
+        "open": "10:00",
         "close": "21:00",
-        "label": "Lun–Dom · 9:00 am – 9:00 pm"
-      }
+        "label": "Lun, Mar, Jue, Vie, Sáb y Dom · 10:00 am – 9:00 pm"
+      },
+      "businessCategories": [
+        "Bebidas"
+      ]
     },
     {
       "id": "al-carbon",
@@ -438,7 +502,10 @@
         "open": "11:00",
         "close": "21:00",
         "label": "Todos los días · 11:00 am – 9:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Asados"
+      ]
     },
     {
       "id": "los-4-hermanos",
@@ -461,7 +528,10 @@
         "open": "09:00",
         "close": "21:00",
         "label": "Lun–Dom · 9:00 am – 9:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Dulces"
+      ]
     },
     {
       "id": "agro-los-prietos",
@@ -491,7 +561,10 @@
         "open": "09:00",
         "close": "13:00",
         "label": "Domingo · 9:00 am – 1:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Restaurantes"
+      ]
     },
     {
       "id": "la-nevada",
@@ -514,13 +587,183 @@
         "open": "09:00",
         "close": "21:00",
         "label": "Todos los días · 9:00 am – 9:00 pm"
+      },
+      "businessCategories": [
+        "Helados",
+        "Dulces"
+      ]
+    },
+    {
+      "id": "mercado-daf",
+      "name": "Mercado DAF",
+      "description": "Mercado DAF — Productos importados, dulces y bebidas.",
+      "image": "/assets/images/business/Mercado DAF.jpg",
+      "color": "from-indigo-100 to-blue-50",
+      "businessCommission": 0,
+      "clientCommission": 3,
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "close": "19:00",
+        "label": "Todos los días · 9:00 am – 7:00 pm"
+      },
+      "businessCategories": [
+        "Mercado"
+      ]
+    },
+    {
+      "id": "el-monito",
+      "name": "El Monito",
+      "description": "El Monito — Comida criolla a la brasa.",
+      "image": "/assets/images/business/La Paladar del Monito.jpg",
+      "color": "from-amber-100 to-yellow-50",
+      "businessCommission": 0,
+      "clientCommission": 4,
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "close": "21:00",
+        "label": "Todos los días · 9:00 am – 9:00 pm"
+      },
+      "businessCategories": [
+        "Restaurantes",
+        "Asados"
+      ]
+    },
+    {
+      "id": "ella-y-yo",
+      "name": "Ella y Yo",
+      "description": "Heladería Ella y Yo — Panes, pizzas y helados. Sabores que enamoran.",
+      "image": "/assets/images/business/Ella y Yo.jpg",
+      "color": "from-pink-100 to-rose-50",
+      "businessCommission": 0,
+      "clientCommission": 5,
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+        ],
+        "open": "15:00",
+        "close": "21:00",
+        "label": "Jue–Mar · 3:00 pm – 9:00 pm"
+      },
+      "businessCategories": [
+        "Pizzas",
+        "Helados",
+        "Panes"
+      ]
+    },
+    {
+      "id": "4-esquinas",
+      "name": "4 Esquinas",
+      "description": "4 Esquinas — Pizzas, espaguetis y dulces caseros.",
+      "image": "/assets/images/business/4 esquinas.jpg",
+      "color": "from-orange-100 to-amber-50",
+      "businessCommission": 0,
+      "clientCommission": 4,
+      "schedule": {
+        "days": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "close": "21:00",
+        "label": "Todos los días · 9:00 am – 9:00 pm"
+      },
+      "businessCategories": [
+        "Pizzas"
+      ]
+    },
+    {
+      "id": "atrevete",
+      "name": "Atrévete",
+      "description": "Atrévete — Mipyme S.U.R.L. Alimentos, aseo y confituras.",
+      "image": "/assets/images/business/Atrévete.jpg",
+      "color": "from-teal-100 to-cyan-50",
+      "businessCommission": 0,
+      "clientCommission": 2,
+      "schedule": {
+        "days": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "open": "09:00",
+        "close": "18:00",
+        "label": "Lun–Sáb · 9:00 am – 6:00 pm"
+      }
+    },
+    {
+      "id": "cocina-de-claudia",
+      "name": "La Cocina de Claudia",
+      "description": "La Cocina de Claudia — De mi cocina a tu mesa. Comida casera, panes y postres.",
+      "image": "/assets/images/business/La Cocina de Claudia.jpg",
+      "color": "from-rose-100 to-pink-50",
+      "paymentNote": "Mensajería 250 CUP · después de las 7:00 pm sube a 350 CUP.",
+      "deliveryFee": 250,
+      "businessCommission": 0,
+      "clientCommission": 4,
+      "schedule": {
+        "days": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          0
+        ],
+        "open": "12:30",
+        "close": "19:00",
+        "label": "Mar–Dom · 12:30 pm – 7:00 pm"
       }
     }
   ],
   "products": [
     {
+      "id": "cr-014",
+      "name": "Cronos de Oreo",
+      "businessId": "cronos",
+      "businessName": "Cronos",
+      "category": "Bebidas",
+      "shortDescription": "Batido de helado con Oreo.",
+      "longDescription": "Batido de helado con galletas Oreo, cremoso e irresistible. Coronado con crema batida, sirope y confituras de decoración.",
+      "image": "🍪",
+      "photo": "/assets/images/products/Cronos/Oreo.jpg",
+      "price": 1.8,
+      "featured": true,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cr-001",
-      "name": "Smoothie de Mango",
+      "name": "Cronos de Mango",
       "businessId": "cronos",
       "businessName": "Cronos",
       "category": "Bebidas",
@@ -533,7 +776,7 @@
     },
     {
       "id": "cr-002",
-      "name": "Smoothie Fruta-Bomba",
+      "name": "Cronos Fruta-Bomba",
       "businessId": "cronos",
       "businessName": "Cronos",
       "category": "Bebidas",
@@ -546,7 +789,7 @@
     },
     {
       "id": "cr-003",
-      "name": "Smoothie de Maní",
+      "name": "Cronos de Maní",
       "businessId": "cronos",
       "businessName": "Cronos",
       "category": "Bebidas",
@@ -560,7 +803,7 @@
     },
     {
       "id": "cr-004",
-      "name": "Smoothie Malteado",
+      "name": "Cronos Malteado",
       "businessId": "cronos",
       "businessName": "Cronos",
       "category": "Bebidas",
@@ -568,12 +811,12 @@
       "longDescription": "Malteada artesanal, espesa y aterciopelada. Coronada con crema batida, sirope y confituras de decoración.",
       "image": "🥛",
       "photo": "/assets/images/products/cronos/cr-004.jpg",
-      "price": 1.7,
+      "price": 2,
       "stockStatus": "disponible"
     },
     {
       "id": "cr-005",
-      "name": "Smoothie de Fresa",
+      "name": "Cronos de Fresa",
       "businessId": "cronos",
       "businessName": "Cronos",
       "category": "Bebidas",
@@ -586,7 +829,7 @@
     },
     {
       "id": "cr-006",
-      "name": "Smoothie de Chocolate",
+      "name": "Cronos de Chocolate",
       "businessId": "cronos",
       "businessName": "Cronos",
       "category": "Bebidas",
@@ -600,7 +843,7 @@
     },
     {
       "id": "cr-007",
-      "name": "Smoothie de Vainilla",
+      "name": "Cronos de Vainilla",
       "businessId": "cronos",
       "businessName": "Cronos",
       "category": "Bebidas",
@@ -613,7 +856,7 @@
     },
     {
       "id": "cr-008",
-      "name": "Smoothie de Naranja y Piña",
+      "name": "Cronos de Naranja y Piña",
       "businessId": "cronos",
       "businessName": "Cronos",
       "category": "Bebidas",
@@ -626,7 +869,7 @@
     },
     {
       "id": "cr-009",
-      "name": "Smoothie de Avellana",
+      "name": "Cronos de Avellana",
       "businessId": "cronos",
       "businessName": "Cronos",
       "category": "Bebidas",
@@ -639,7 +882,7 @@
     },
     {
       "id": "cr-010",
-      "name": "Smoothie de Mantecado",
+      "name": "Cronos de Mantecado",
       "businessId": "cronos",
       "businessName": "Cronos",
       "category": "Bebidas",
@@ -651,21 +894,8 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cr-011",
-      "name": "Smoothie de Caramelo",
-      "businessId": "cronos",
-      "businessName": "Cronos",
-      "category": "Bebidas",
-      "shortDescription": "Batido de helado de caramelo.",
-      "longDescription": "Batido de helado de caramelo, dulce e irresistible. Coronado con crema batida, sirope y confituras de decoración.",
-      "image": "🍯",
-      "photo": "/assets/images/products/cronos/cr-011.jpg",
-      "price": 2.2,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cr-012",
-      "name": "Smoothie de Dulce de Leche",
+      "name": "Cronos de Dulce de Leche",
       "businessId": "cronos",
       "businessName": "Cronos",
       "category": "Bebidas",
@@ -674,7 +904,20 @@
       "image": "🍮",
       "photo": "/assets/images/products/cronos/cr-012.jpg",
       "price": 2.2,
-      "stockStatus": "agotado"
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cr-015",
+      "name": "Cronos de 3 Leches",
+      "businessId": "cronos",
+      "businessName": "Cronos",
+      "category": "Bebidas",
+      "shortDescription": "Batido de helado de 3 leches.",
+      "longDescription": "Batido de helado de 3 leches, cremoso e irresistible. Coronado con crema batida, sirope y confituras de decoración.",
+      "image": "🥛",
+      "photo": "/assets/images/products/Cronos/Helado-3-leches.jpg",
+      "price": 2.2,
+      "stockStatus": "disponible"
     },
     {
       "id": "bc-001",
@@ -775,9 +1018,9 @@
       "longDescription": "Se vende por estuches de 48 unidades.",
       "image": "🍭",
       "photo": "/assets/images/products/mercadito/chups_chups.jpg",
-      "price": 0.1,
+      "price": 0.05,
       "formato": 48,
-      "stockStatus": "agotado"
+      "stockStatus": "disponible"
     },
     {
       "id": "bc-010",
@@ -789,7 +1032,7 @@
       "longDescription": "Se vende por unidad.",
       "image": "🧷",
       "photo": "/assets/images/products/mercadito/culeros_bebish.jpg",
-      "price": 5.2,
+      "price": 6.96,
       "stockStatus": "disponible"
     },
     {
@@ -815,7 +1058,7 @@
       "longDescription": "Se vende por estuches de 12 unidades",
       "image": "🍪",
       "photo": "/assets/images/products/mercadito/coconut.jpg",
-      "price": 0.15,
+      "price": 0.16,
       "formato": 12,
       "stockStatus": "disponible"
     },
@@ -1039,7 +1282,7 @@
       "longDescription": "Se vende por blister de 10 unidades.",
       "image": "🧴",
       "photo": "/assets/images/products/mercadito/Vinagre.jpg",
-      "price": 0.52,
+      "price": 0.58,
       "formato": 10,
       "stockStatus": "disponible"
     },
@@ -1070,7 +1313,7 @@
       "longDescription": "Se venden por blister 10 unidades.",
       "image": "🧴",
       "photo": "/assets/images/products/mercadito/detergente_liquido.jpg",
-      "price": 0.72,
+      "price": 0.8,
       "formato": 10,
       "stockStatus": "disponible"
     },
@@ -1085,7 +1328,7 @@
       "image": "🧴",
       "photo": "/assets/images/products/mercadito/toallitas_indoxa.jpg",
       "price": 1.24,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "bc-035",
@@ -1137,7 +1380,7 @@
       "longDescription": "Se vende por blister de 10 unidades.",
       "image": "🍊",
       "photo": "/assets/images/products/mercadito/zumo_naranja_limon.jpg",
-      "price": 0.52,
+      "price": 0.58,
       "formato": 10,
       "stockStatus": "disponible"
     },
@@ -1151,7 +1394,7 @@
       "longDescription": "Se vende por blister de 10 unidades.",
       "image": "🍋",
       "photo": "/assets/images/products/mercadito/zumo_naranja_limon.jpg",
-      "price": 0.52,
+      "price": 0.58,
       "formato": 10,
       "stockStatus": "disponible"
     },
@@ -1179,7 +1422,7 @@
       "longDescription": "Se vende por saco",
       "image": "🍚",
       "photo": "/assets/images/products/mercadito/arroz_saco_guyana.jpg",
-      "price": 59,
+      "price": 62,
       "stockStatus": "disponible"
     },
     {
@@ -1216,11 +1459,12 @@
       "businessId": "bodega-central",
       "businessName": "Mercado Alpha",
       "category": "Bebidas",
-      "shortDescription": "Se vende por unidad.",
+      "shortDescription": "Blister de 10 unidades.",
       "longDescription": "Vino seco, se vende por unidad.",
       "image": "🍷",
-      "price": 0.52,
-      "stockStatus": "disponible"
+      "price": 0.58,
+      "stockStatus": "disponible",
+      "formato": 10
     },
     {
       "id": "bc-049",
@@ -1625,7 +1869,7 @@
       "shortDescription": "Fríos",
       "longDescription": "Fríos · Frescos",
       "image": "🥗",
-      "price": 1.8,
+      "price": 2.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -1725,24 +1969,6 @@
       ]
     },
     {
-      "id": "dlm-026",
-      "name": "Espaguetis de jamón",
-      "businessId": "dlm",
-      "businessName": "Bar Restaurante DLM",
-      "category": "Comidas",
-      "shortDescription": "Pastas & arroz",
-      "longDescription": "Pastas & arroz · Clásicos",
-      "image": "🍝",
-      "price": 2,
-      "stockStatus": "disponible",
-      "packaging": [
-        {
-          "name": "Termopack",
-          "price": 0
-        }
-      ]
-    },
-    {
       "id": "dlm-027",
       "name": "Espaguetis con  queso",
       "businessId": "dlm",
@@ -1769,7 +1995,7 @@
       "shortDescription": "Pastas & arroz",
       "longDescription": "Pastas & arroz · Clásicos",
       "image": "🍝",
-      "price": 2.7,
+      "price": 2.8,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -2417,7 +2643,7 @@
       "shortDescription": "Postres",
       "longDescription": "Postres · Final dulce",
       "image": "🍮",
-      "price": 3,
+      "price": 1.4,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -2471,7 +2697,7 @@
       "shortDescription": "Bebidas",
       "longDescription": "Bebidas · Refrescantes y Energéticas",
       "image": "🥤",
-      "price": 1.1,
+      "price": 1,
       "stockStatus": "disponible"
     },
     {
@@ -2524,7 +2750,7 @@
       "shortDescription": "Bebidas",
       "longDescription": "Bebidas · Refrescantes y Energéticas",
       "image": "🥤",
-      "price": 0.9,
+      "price": 1,
       "stockStatus": "disponible"
     },
     {
@@ -2548,7 +2774,7 @@
       "shortDescription": "Bebidas",
       "longDescription": "Bebidas · Refrescantes y Energéticas",
       "image": "🥤",
-      "price": 1.1,
+      "price": 1.3,
       "stockStatus": "disponible"
     },
     {
@@ -2560,7 +2786,7 @@
       "shortDescription": "Bebidas",
       "longDescription": "Bebidas · Refrescantes y Energéticas",
       "image": "🥤",
-      "price": 1.8,
+      "price": 1.9,
       "stockStatus": "disponible"
     },
     {
@@ -2584,7 +2810,7 @@
       "shortDescription": "Bebidas",
       "longDescription": "Bebidas · Refrescantes y Energéticas",
       "image": "🥤",
-      "price": 1,
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -2804,6 +3030,18 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "dlm-096",
+      "name": "Cerveza Heineken (lata)",
+      "businessId": "dlm",
+      "businessName": "Bar Restaurante DLM",
+      "category": "Bebidas",
+      "shortDescription": "Bebidas",
+      "longDescription": "Bebidas · Refrescantes y Energéticas",
+      "image": "🍺",
+      "price": 1.5,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "pm-001",
       "name": "Jamón",
       "businessId": "panes-macus",
@@ -2904,7 +3142,7 @@
       "shortDescription": "Hamburguesa de la casa.",
       "longDescription": "Hamburguesa preparada al momento.",
       "image": "🍔",
-      "price": 0.9,
+      "price": 1,
       "addons": [
         {
           "name": "Hamburguesa",
@@ -2950,7 +3188,7 @@
       "shortDescription": "Especialidad de la casa.",
       "longDescription": "Pan Macu preparado al momento.",
       "image": "🥪",
-      "price": 1.3,
+      "price": 1.4,
       "addons": [
         {
           "name": "Hamburguesa",
@@ -3227,7 +3465,7 @@
       "shortDescription": "Tortilla recién hecha.",
       "longDescription": "Pan con tortilla.",
       "image": "🥚",
-      "price": 0.7,
+      "price": 0.8,
       "addons": [
         {
           "name": "Hamburguesa",
@@ -4047,7 +4285,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "⚡",
-      "price": 0.9,
+      "price": 1,
       "stockStatus": "disponible"
     },
     {
@@ -4059,7 +4297,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🍺",
-      "price": 0.9,
+      "price": 1.04,
       "stockStatus": "disponible"
     },
     {
@@ -4071,7 +4309,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🍺",
-      "price": 0.9,
+      "price": 1.04,
       "stockStatus": "disponible"
     },
     {
@@ -4083,7 +4321,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🍺",
-      "price": 0.9,
+      "price": 1.04,
       "stockStatus": "disponible"
     },
     {
@@ -4095,7 +4333,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🍺",
-      "price": 0.9,
+      "price": 1.04,
       "stockStatus": "disponible"
     },
     {
@@ -4157,7 +4395,7 @@
       "longDescription": "Perrito caliente listo para preparar (salchicha y pan). Se vende por unidad.",
       "image": "🌭",
       "photo": "/assets/images/products/mercado/perritos_mana.jpg",
-      "price": 2,
+      "price": 2.4,
       "stockStatus": "disponible"
     },
     {
@@ -4170,7 +4408,19 @@
       "longDescription": "Azúcar a granel, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🍬",
       "photo": "/assets/images/products/mercado/azucar_blanca_lb.jpg",
-      "price": 0.9,
+      "price": 0.96,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ma-050",
+      "name": "Lomo de Cerdo (1 lb)",
+      "businessId": "mercadito-ahorro",
+      "businessName": "El Mercadito",
+      "category": "Comidas",
+      "shortDescription": "Una libra.",
+      "longDescription": "Lomo de cerdo, se entrega por libra.",
+      "image": "🥩",
+      "price": 3.4,
       "stockStatus": "disponible"
     },
     {
@@ -4182,7 +4432,7 @@
       "shortDescription": "Una libra, en bistec.",
       "longDescription": "Lomo de cerdo cortado en bistec, se entrega por libra.",
       "image": "🥩",
-      "price": 3.2,
+      "price": 3.5,
       "stockStatus": "disponible"
     },
     {
@@ -4258,7 +4508,7 @@
       "shortDescription": "Se vende por lata.",
       "longDescription": "Pasta de tomate concentrada, se vende por lata.",
       "image": "🍅",
-      "price": 1.2,
+      "price": 1.4,
       "stockStatus": "disponible"
     },
     {
@@ -4306,19 +4556,7 @@
       "shortDescription": "Se vende por lata.",
       "longDescription": "Leche evaporada, se vende por lata.",
       "image": "🥛",
-      "price": 1.7,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "ma-028",
-      "name": "Leche condensada (lata)",
-      "businessId": "mercadito-ahorro",
-      "businessName": "El Mercadito",
-      "category": "Comidas",
-      "shortDescription": "Se vende por lata.",
-      "longDescription": "Leche condensada, se vende por lata.",
-      "image": "🥛",
-      "price": 1.7,
+      "price": 1.8,
       "stockStatus": "disponible"
     },
     {
@@ -4330,7 +4568,7 @@
       "shortDescription": "Se vende por lata.",
       "longDescription": "Fanguito, se vende por lata.",
       "image": "🍫",
-      "price": 1.8,
+      "price": 1.9,
       "stockStatus": "disponible"
     },
     {
@@ -4370,20 +4608,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "ma-026",
-      "name": "Licor Crema de Vie",
-      "businessId": "mercadito-ahorro",
-      "businessName": "El Mercadito",
-      "category": "Bebidas",
-      "shortDescription": "Deliciosa crema de vie artesanal.",
-      "longDescription": "Licor Crema de Vie artesanal. Se vende por unidad.",
-      "image": "🍶",
-      "photo": "/assets/images/crema-de-vie.jpg",
-      "price": 4.6,
-      "featured": true,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "ma-025",
       "name": "Picadillo de pollo MDM (1 lb)",
       "businessId": "mercadito-ahorro",
@@ -4393,20 +4617,6 @@
       "longDescription": "Picadillo de pollo MDM, se vende por libra.",
       "image": "🍖",
       "price": 1.1,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "ma-027",
-      "name": "Café El Arriero (250 g)",
-      "businessId": "mercadito-ahorro",
-      "businessName": "El Mercadito",
-      "category": "Comidas",
-      "shortDescription": "Café molido 250 g.",
-      "longDescription": "Café El Arriero molido, presentación de 250 gramos.",
-      "image": "☕",
-      "photo": "/assets/images/products/mercado/café_arreiro.jpg",
-      "price": 3.6,
-      "featured": true,
       "stockStatus": "disponible"
     },
     {
@@ -4449,7 +4659,7 @@
       "longDescription": "Leche condensada, se vende por lata.",
       "image": "🥛",
       "photo": "/assets/images/products/mercado/leche condensada 800.jpg",
-      "price": 1.7,
+      "price": 1.8,
       "stockStatus": "disponible"
     },
     {
@@ -4486,7 +4696,7 @@
       "shortDescription": "",
       "longDescription": "Café Bárbaro, se vende por unidad.",
       "image": "☕",
-      "price": 4,
+      "price": 4.8,
       "stockStatus": "disponible"
     },
     {
@@ -4558,7 +4768,7 @@
       "shortDescription": "Se vende por unidad.",
       "longDescription": "Toallas íntimas, se venden por unidad.",
       "image": "🌸",
-      "price": 1.1,
+      "price": 1.3,
       "stockStatus": "disponible"
     },
     {
@@ -4646,7 +4856,7 @@
       "longDescription": "Jamonada.",
       "image": "🥩",
       "price": 1.7,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "ma-045",
@@ -4658,7 +4868,7 @@
       "longDescription": "Jamón en porción de 1 libra.",
       "image": "🍖",
       "price": 3,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "ma-046",
@@ -4670,7 +4880,7 @@
       "longDescription": "Jamón en porción de media libra.",
       "image": "🍖",
       "price": 1.5,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "ma-046",
@@ -4698,14 +4908,76 @@
     },
     {
       "id": "ma-047",
-      "name": "Jabón de Lavar",
+      "name": "Jabón de Lavar Albaraka",
       "businessId": "mercadito-ahorro",
       "businessName": "El Mercadito",
       "category": "Regalos",
       "shortDescription": "Jabón de Lavar ,150 gramos",
       "longDescription": "",
       "image": "🧺",
-      "price": 0.7,
+      "price": 0.76,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ma-048",
+      "name": "Pechuga de Pollo (1 kg)",
+      "businessId": "mercadito-ahorro",
+      "businessName": "El Mercadito",
+      "category": "Comidas",
+      "shortDescription": "Paquete de 1 kg.",
+      "longDescription": "Pechuga de pollo, paquete de 1 kg.",
+      "image": "🍗",
+      "price": 9,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ma-049",
+      "name": "Jamón",
+      "businessId": "mercadito-ahorro",
+      "businessName": "El Mercadito",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Jamón, se vende por unidad.",
+      "image": "🍖",
+      "price": 1.9,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ma-051",
+      "name": "Papel Sanitario (paquete)",
+      "businessId": "mercadito-ahorro",
+      "businessName": "El Mercadito",
+      "category": "Regalos",
+      "shortDescription": "Se vende por paquete.",
+      "longDescription": "Papel sanitario, se vende por paquete.",
+      "image": "🧻",
+      "photo": "/assets/images/products/mercado/Papel sanitario.jpg",
+      "price": 1.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ma-052",
+      "name": "Papel Sanitario (por rollo)",
+      "businessId": "mercadito-ahorro",
+      "businessName": "El Mercadito",
+      "category": "Regalos",
+      "shortDescription": "Precio por rollo.",
+      "longDescription": "Papel sanitario, precio por rollo.",
+      "image": "🧻",
+      "photo": "/assets/images/products/mercado/Papel sanitario.jpg",
+      "price": 0.44,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ma-053",
+      "name": "Paquete de Pollo (Posta)",
+      "businessId": "mercadito-ahorro",
+      "businessName": "El Mercadito",
+      "category": "Comidas",
+      "shortDescription": "Postas de pollo.",
+      "longDescription": "Paquete de postas de pollo.",
+      "image": "🍗",
+      "price": 4.4,
       "stockStatus": "disponible"
     },
     {
@@ -4717,8 +4989,21 @@
       "shortDescription": "",
       "longDescription": "Ensalada fría casera de Los 4 Hermanos.",
       "image": "🥗",
-      "price": 0.8,
+      "price": 0.9,
       "photo": "/assets/images/products/los-4-hermanos/los-4-hermanos-001.jpg",
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "los-4-hermanos-002",
+      "name": "Natilla",
+      "businessId": "los-4-hermanos",
+      "businessName": "Los 4 Hermanos",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Natilla casera de Los 4 Hermanos.",
+      "image": "🍮",
+      "price": 0.6,
+      "photo": "/assets/images/products/Los 4 Hermanos/natilla.jpg",
       "stockStatus": "disponible",
       "featured": true
     },
@@ -5007,7 +5292,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "⚡",
-      "price": 0.9,
+      "price": 1,
       "stockStatus": "disponible"
     },
     {
@@ -5019,7 +5304,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🍺",
-      "price": 0.9,
+      "price": 1.04,
       "stockStatus": "disponible"
     },
     {
@@ -5031,7 +5316,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🍺",
-      "price": 0.9,
+      "price": 1.04,
       "stockStatus": "disponible"
     },
     {
@@ -5043,7 +5328,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🍺",
-      "price": 0.9,
+      "price": 1.04,
       "stockStatus": "disponible"
     },
     {
@@ -5055,7 +5340,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🍺",
-      "price": 0.9,
+      "price": 1.04,
       "stockStatus": "disponible"
     },
     {
@@ -5091,7 +5376,7 @@
       "shortDescription": "Picaderas",
       "longDescription": "Picaderas · Para empezar",
       "image": "🍤",
-      "price": 3,
+      "price": 4,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5109,7 +5394,7 @@
       "shortDescription": "Picaderas",
       "longDescription": "Picaderas · Para empezar",
       "image": "🍤",
-      "price": 4,
+      "price": 5,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5127,7 +5412,7 @@
       "shortDescription": "Picaderas",
       "longDescription": "Picaderas · Para empezar",
       "image": "🍤",
-      "price": 3,
+      "price": 4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -5145,7 +5430,7 @@
       "shortDescription": "Picaderas",
       "longDescription": "Picaderas · Para empezar",
       "image": "🍤",
-      "price": 4,
+      "price": 5,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5163,7 +5448,7 @@
       "shortDescription": "Picaderas",
       "longDescription": "Picaderas · Para empezar",
       "image": "🍗",
-      "price": 3,
+      "price": 4,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5181,7 +5466,7 @@
       "shortDescription": "Picaderas",
       "longDescription": "Picaderas · Para empezar",
       "image": "🍤",
-      "price": 1.4,
+      "price": 2,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5199,7 +5484,7 @@
       "shortDescription": "Picaderas",
       "longDescription": "Picaderas · Para empezar",
       "image": "🐟",
-      "price": 3,
+      "price": 4,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5217,7 +5502,7 @@
       "shortDescription": "Picaderas",
       "longDescription": "Picaderas · Para empezar",
       "image": "🍽️",
-      "price": 4,
+      "price": 5,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5289,7 +5574,7 @@
       "shortDescription": "Comidas Criollas",
       "longDescription": "Comidas Criollas · Platos",
       "image": "🍗",
-      "price": 4,
+      "price": 5,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5343,7 +5628,7 @@
       "shortDescription": "Comidas Criollas",
       "longDescription": "Comidas Criollas · Platos",
       "image": "🥩",
-      "price": 4,
+      "price": 6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -5361,7 +5646,7 @@
       "shortDescription": "Comidas Criollas",
       "longDescription": "Comidas Criollas · Platos",
       "image": "🥩",
-      "price": 4,
+      "price": 5,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5379,7 +5664,7 @@
       "shortDescription": "Comidas Criollas",
       "longDescription": "Comidas Criollas · Platos",
       "image": "🥩",
-      "price": 5,
+      "price": 6,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5397,7 +5682,7 @@
       "shortDescription": "Comidas Criollas",
       "longDescription": "Comidas Criollas · Platos",
       "image": "🥩",
-      "price": 5,
+      "price": 6,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5415,7 +5700,7 @@
       "shortDescription": "Comidas Criollas",
       "longDescription": "Comidas Criollas · Platos",
       "image": "🥩",
-      "price": 5,
+      "price": 6,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5469,7 +5754,7 @@
       "shortDescription": "Comidas Criollas",
       "longDescription": "Comidas Criollas · Platos",
       "image": "🦞",
-      "price": 5,
+      "price": 6,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -5487,7 +5772,7 @@
       "shortDescription": "Comidas Criollas",
       "longDescription": "Comidas Criollas · Platos",
       "image": "🥩",
-      "price": 5,
+      "price": 6,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5505,7 +5790,7 @@
       "shortDescription": "Comidas Criollas",
       "longDescription": "Comidas Criollas · Platos",
       "image": "🐟",
-      "price": 4,
+      "price": 5,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5523,7 +5808,7 @@
       "shortDescription": "Comidas Criollas",
       "longDescription": "Comidas Criollas · Platos",
       "image": "🥩",
-      "price": 4,
+      "price": 6,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5695,7 +5980,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Individuales",
       "image": "🍕",
-      "price": 0.6,
+      "price": 1,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -5717,7 +6002,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Individuales",
       "image": "🍕",
-      "price": 1,
+      "price": 1.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -5761,7 +6046,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Individuales",
       "image": "🍕",
-      "price": 1,
+      "price": 1.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -5783,7 +6068,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Individuales",
       "image": "🍕",
-      "price": 1,
+      "price": 1.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -5827,7 +6112,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Doble queso",
       "image": "🍕",
-      "price": 1,
+      "price": 1.4,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -5849,7 +6134,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Doble queso",
       "image": "🍕",
-      "price": 1.4,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -5871,7 +6156,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Doble queso",
       "image": "🍕",
-      "price": 1.4,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -5893,7 +6178,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Queso Gouda",
       "image": "🍕",
-      "price": 1.4,
+      "price": 2,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5915,7 +6200,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Queso Gouda",
       "image": "🍕",
-      "price": 1.8,
+      "price": 2.4,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5937,7 +6222,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Queso Gouda",
       "image": "🍕",
-      "price": 1.8,
+      "price": 2.4,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5959,7 +6244,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Queso Gouda",
       "image": "🍕",
-      "price": 1.8,
+      "price": 2.4,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -5981,7 +6266,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Especiales",
       "image": "🍕",
-      "price": 1.4,
+      "price": 2,
       "stockStatus": "disponible",
       "packaging": [
         {
@@ -6003,7 +6288,7 @@
       "shortDescription": "Pizzas",
       "longDescription": "Pizzas · Especiales",
       "image": "🍕",
-      "price": 2.2,
+      "price": 3,
       "stockStatus": "agotado",
       "packaging": [
         {
@@ -6025,7 +6310,7 @@
       "shortDescription": "Pizzas Familiares",
       "longDescription": "Pizzas Familiares · Tamaño grande",
       "image": "🍕",
-      "price": 2.4,
+      "price": 3,
       "stockStatus": "disponible",
       "addons": [
         {
@@ -6053,7 +6338,7 @@
       "shortDescription": "Pizzas Familiares",
       "longDescription": "Pizzas Familiares · Tamaño grande",
       "image": "🍕",
-      "price": 3,
+      "price": 4.4,
       "stockStatus": "disponible",
       "addons": [
         {
@@ -6081,7 +6366,7 @@
       "shortDescription": "Pizzas Familiares",
       "longDescription": "Pizzas Familiares · Tamaño grande",
       "image": "🍕",
-      "price": 3,
+      "price": 4,
       "stockStatus": "agotado",
       "addons": [
         {
@@ -6109,7 +6394,7 @@
       "shortDescription": "Pizzas Familiares",
       "longDescription": "Pizzas Familiares · Tamaño grande",
       "image": "🍕",
-      "price": 4,
+      "price": 5,
       "stockStatus": "agotado",
       "addons": [
         {
@@ -7136,12 +7421,12 @@
       "longDescription": "Leche condensada, se vende por lata.",
       "image": "🥛",
       "photo": "/assets/images/products/TuKprichito/leche-condensada.jpg",
-      "price": 1.5,
+      "price": 1.8,
       "stockStatus": "disponible"
     },
     {
       "id": "tk-002",
-      "name": "Mayonesa",
+      "name": "Mayonesa Celorrio",
       "businessId": "tu-kprichito",
       "businessName": "Tu Kprichito",
       "category": "Comidas",
@@ -7149,7 +7434,7 @@
       "longDescription": "Mayonesa, se vende por unidad.",
       "image": "🫙",
       "photo": "/assets/images/products/TuKprichito/mayonesa.jpg",
-      "price": 3,
+      "price": 4.8,
       "stockStatus": "disponible"
     },
     {
@@ -7214,7 +7499,7 @@
       "longDescription": "Espaguetis, se venden por unidad.",
       "image": "🍝",
       "photo": "/assets/images/products/TuKprichito/spaguettis.jpg",
-      "price": 0.6,
+      "price": 0.72,
       "stockStatus": "disponible"
     },
     {
@@ -7435,7 +7720,7 @@
       "longDescription": "Refresco en lata. Elige el sabor al confirmar.",
       "image": "🥤",
       "photo": "/assets/images/products/TuKprichito/refrezco-lata.jpg",
-      "price": 0.7,
+      "price": 1,
       "stockStatus": "disponible",
       "options": [
         "Piña",
@@ -7466,7 +7751,7 @@
       "longDescription": "Bebida energética Flash, se vende por unidad.",
       "image": "⚡",
       "photo": "/assets/images/products/TuKprichito/cerveza-shaka-energético.jpg",
-      "price": 0.72,
+      "price": 0.9,
       "stockStatus": "disponible"
     },
     {
@@ -7479,7 +7764,7 @@
       "longDescription": "Cerveza Becks, se vende por unidad.",
       "image": "🍺",
       "photo": "/assets/images/products/TuKprichito/cerveza-beck's-400.jpg",
-      "price": 0.8,
+      "price": 0.92,
       "stockStatus": "disponible"
     },
     {
@@ -7570,7 +7855,7 @@
       "longDescription": "Jabón de lavar ropa, se vende por unidad.",
       "image": "🧼",
       "photo": "/assets/images/products/TuKprichito/jabón de lavar.jpg",
-      "price": 0.7,
+      "price": 0.8,
       "stockStatus": "disponible"
     },
     {
@@ -7751,7 +8036,7 @@
       "longDescription": "Atún en aceite vegetal Docanned Star, se vende por lata.",
       "image": "🥫",
       "photo": "/assets/images/products/TuKprichito/Atún-lata-550.jpg",
-      "price": 1.1,
+      "price": 1.3,
       "stockStatus": "agotado"
     },
     {
@@ -7823,6 +8108,162 @@
       "image": "🥛",
       "photo": "/assets/images/products/TuKprichito/Leche-en-polvo-400gramos-2000.jpg",
       "price": 4,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "tk-054",
+      "name": "Aceite",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Aceite, se vende por unidad.",
+      "image": "🛢️",
+      "price": 7.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "tk-055",
+      "name": "Macarrones",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Macarrones, se venden por unidad.",
+      "image": "🍝",
+      "price": 0.84,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "tk-056",
+      "name": "Frazadas",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Frazadas, se venden por unidad.",
+      "image": "🧹",
+      "price": 0.7,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "tk-057",
+      "name": "Chicharrón (bolsa de 1 kg)",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Comidas",
+      "shortDescription": "Bolsa de 1 kg.",
+      "longDescription": "Chicharrón, bolsa de 1 kg.",
+      "image": "🥓",
+      "price": 2.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "tk-058",
+      "name": "Garbanzos (500 g)",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Comidas",
+      "shortDescription": "Paquete de 500 gramos.",
+      "longDescription": "Garbanzos, paquete de 500 gramos.",
+      "image": "🫘",
+      "price": 2.2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "tk-059",
+      "name": "Crema para la Piel",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Crema para la piel, se vende por unidad.",
+      "image": "🧴",
+      "price": 3,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "tk-060",
+      "name": "Detergente Defá (500 g)",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Regalos",
+      "shortDescription": "Paquete de 500 gramos.",
+      "longDescription": "Detergente Defá, paquete de 500 gramos.",
+      "image": "🧺",
+      "price": 1.5,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "tk-061",
+      "name": "Detergente Murex (500 g)",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Regalos",
+      "shortDescription": "Paquete de 500 gramos.",
+      "longDescription": "Detergente Murex, paquete de 500 gramos.",
+      "image": "🧺",
+      "price": 1.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "tk-062",
+      "name": "Jugo de Cajita",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Bebidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Jugo de cajita, se vende por unidad.",
+      "image": "🧃",
+      "price": 0.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "tk-063",
+      "name": "Cerveza Parranda (1.5 litros)",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Bebidas",
+      "shortDescription": "Botella de 1.5 litros.",
+      "longDescription": "Cerveza Parranda, botella de 1.5 litros.",
+      "image": "🍺",
+      "price": 2.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "tk-064",
+      "name": "Galletas Saltinas",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Galletas Saltinas, se venden por unidad.",
+      "image": "🍪",
+      "price": 0.26,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "tk-065",
+      "name": "Galletas de Soda",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Galletas de soda, se venden por unidad.",
+      "image": "🍪",
+      "price": 0.5,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "tk-066",
+      "name": "Jaba de Galletas Panaderas",
+      "businessId": "tu-kprichito",
+      "businessName": "Tu Kprichito",
+      "category": "Regalos",
+      "shortDescription": "Precio por jaba.",
+      "longDescription": "Jaba de galletas panaderas.",
+      "image": "🍪",
+      "price": 0.6,
       "stockStatus": "disponible"
     },
     {
@@ -7900,7 +8341,7 @@
       "longDescription": "Tartaletas artesanales. La caja trae 6 unidades.",
       "image": "🥧",
       "photo": "/assets/images/products/amore/am-006.jpg",
-      "price": 2.8,
+      "price": 3,
       "stockStatus": "disponible"
     },
     {
@@ -8353,45 +8794,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "hmk-002",
-      "name": "Helado de Chocolate 280 ml",
-      "businessId": "heladeria-mk",
-      "businessName": "Heladería M&K",
-      "category": "Comidas",
-      "shortDescription": "Copa de 280 ml.",
-      "longDescription": "Helado artesanal de chocolate en copa de 280 ml.",
-      "image": "🍫",
-      "photo": "/assets/images/products/heladeria-mk/hmk-002.webp",
-      "price": 1.08,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "hmk-003",
-      "name": "Helado de Leche Condensada 280 ml",
-      "businessId": "heladeria-mk",
-      "businessName": "Heladería M&K",
-      "category": "Comidas",
-      "shortDescription": "Copa de 280 ml.",
-      "longDescription": "Helado artesanal de leche condensada en copa de 280 ml.",
-      "image": "🍦",
-      "photo": "/assets/images/products/heladeria-mk/hmk-003.jpg",
-      "price": 1.08,
-      "stockStatus": "agotado"
-    },
-    {
-      "id": "hmk-004",
-      "name": "Helado de Vainilla 280 ml",
-      "businessId": "heladeria-mk",
-      "businessName": "Heladería M&K",
-      "category": "Comidas",
-      "shortDescription": "Copa de 280 ml.",
-      "longDescription": "Helado artesanal de vainilla en copa de 280 ml.",
-      "image": "🍦",
-      "photo": "/assets/images/products/heladeria-mk/hmk-004.jpg",
-      "price": 1.08,
-      "stockStatus": "agotado"
-    },
-    {
       "id": "hmk-005",
       "name": "Tina de Helado 4 litros",
       "businessId": "heladeria-mk",
@@ -8401,7 +8803,7 @@
       "longDescription": "Tina familiar de helado artesanal de 4 litros. Elige tu sabor.",
       "image": "🧊",
       "photo": "/assets/images/products/heladeria-mk/hmk-005.jpg",
-      "price": 9.3,
+      "price": 9,
       "stockStatus": "disponible",
       "options": [
         "Fresa",
@@ -8409,45 +8811,6 @@
         "3 Leches",
         "Chocolate"
       ]
-    },
-    {
-      "id": "hmk-006",
-      "name": "Helado de Naranja Piña 280 ml",
-      "businessId": "heladeria-mk",
-      "businessName": "Heladería M&K",
-      "category": "Comidas",
-      "shortDescription": "Copa de 280 ml.",
-      "longDescription": "Helado artesanal de naranja piña en copa de 280 ml.",
-      "image": "🍊",
-      "photo": "/assets/images/products/heladeria-mk/hmk-006.jpg",
-      "price": 1.08,
-      "stockStatus": "agotado"
-    },
-    {
-      "id": "hmk-007",
-      "name": "Helado de Mantecado 280 ml",
-      "businessId": "heladeria-mk",
-      "businessName": "Heladería M&K",
-      "category": "Comidas",
-      "shortDescription": "Copa de 280 ml.",
-      "longDescription": "Helado artesanal de mantecado en copa de 280 ml.",
-      "image": "🍦",
-      "photo": "/assets/images/products/heladeria-mk/hmk-007.jpg",
-      "price": 1.08,
-      "stockStatus": "agotado"
-    },
-    {
-      "id": "hmk-008",
-      "name": "Helado de Manzana 280 ml",
-      "businessId": "heladeria-mk",
-      "businessName": "Heladería M&K",
-      "category": "Comidas",
-      "shortDescription": "Copa de 280 ml.",
-      "longDescription": "Helado artesanal de manzana en copa de 280 ml.",
-      "image": "🍏",
-      "photo": "/assets/images/products/heladeria-mk/hmk-008.jpg",
-      "price": 1.1,
-      "stockStatus": "disponible"
     },
     {
       "id": "hmk-009",
@@ -8459,7 +8822,7 @@
       "longDescription": "Vaso con helado artesanal y panetela. Elige tu sabor.",
       "image": "🍫",
       "photo": "/assets/images/products/heladeria-mk/hmk-009.jpg",
-      "price": 1.3,
+      "price": 1.2,
       "stockStatus": "disponible",
       "options": [
         "Vainilla",
@@ -8479,7 +8842,7 @@
       "longDescription": "Vaso con helado artesanal extra y panetela. Elige tu sabor.",
       "image": "🍨",
       "photo": "/assets/images/products/heladeria-mk/hmk-010.jpg",
-      "price": 1.7,
+      "price": 1.6,
       "stockStatus": "disponible",
       "options": [
         "Vainilla",
@@ -8530,6 +8893,37 @@
       "price": 1,
       "stockStatus": "agotado",
       "formato": 4
+    },
+    {
+      "id": "hmk-014",
+      "name": "Pote de Helado 280 ml",
+      "businessId": "heladeria-mk",
+      "businessName": "Heladería M&K",
+      "category": "Comidas",
+      "shortDescription": "Copa de 280 ml.",
+      "longDescription": "Helado artesanal en copa de 280 ml. Elige tu sabor.",
+      "image": "🍨",
+      "photo": "/assets/images/products/HeladeriaM&K/pote de helado 280 ml.jpg",
+      "price": 1.08,
+      "options": [
+        "3 Leches",
+        "Dulce de Leche",
+        "Vainilla"
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "hmk-015",
+      "name": "Tina de Helado 4 Litros con Cestas y Palitos",
+      "businessId": "heladeria-mk",
+      "businessName": "Heladería M&K",
+      "category": "Comidas",
+      "shortDescription": "Tina de 4 litros con cestas y palitos incluidos.",
+      "longDescription": "Tina familiar de helado artesanal de 4 litros, incluye cestas y sus palitos.",
+      "image": "🍦",
+      "photo": "/assets/images/products/HeladeriaM&K/tina de helado con 10 cestas 5500.jpg",
+      "price": 11,
+      "stockStatus": "disponible"
     },
     {
       "id": "lp-001",
@@ -10637,6 +11031,10 @@
         {
           "name": "Dulce de Leche",
           "price": 0
+        },
+        {
+          "name": "Sirope de Chocolate",
+          "price": 0
         }
       ]
     },
@@ -10659,6 +11057,10 @@
         },
         {
           "name": "Dulce de Leche",
+          "price": 0
+        },
+        {
+          "name": "Sirope de Chocolate",
           "price": 0
         }
       ]
@@ -10683,6 +11085,10 @@
         {
           "name": "Dulce de Leche",
           "price": 0
+        },
+        {
+          "name": "Sirope de Chocolate",
+          "price": 0
         }
       ]
     },
@@ -10705,6 +11111,10 @@
         },
         {
           "name": "Dulce de Leche",
+          "price": 0
+        },
+        {
+          "name": "Sirope de Chocolate",
           "price": 0
         }
       ]
@@ -10729,6 +11139,10 @@
         {
           "name": "Dulce de Leche",
           "price": 0
+        },
+        {
+          "name": "Sirope de Chocolate",
+          "price": 0
         }
       ]
     },
@@ -10751,6 +11165,64 @@
         },
         {
           "name": "Dulce de Leche",
+          "price": 0
+        },
+        {
+          "name": "Sirope de Chocolate",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "frappio-007",
+      "name": "Frappio Bombón",
+      "businessId": "frappio",
+      "businessName": "Frappio",
+      "category": "Bebidas",
+      "shortDescription": "",
+      "longDescription": "Refrescante bebida frappé (12 oz) a base de café, leche, nutella, galletas y peter de chocolate.",
+      "image": "🍫",
+      "price": 2.2,
+      "photo": "/assets/images/products/Frappio/Frappio-Bombón 1100.jpg",
+      "stockStatus": "disponible",
+      "addons": [
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Dulce de Leche",
+          "price": 0
+        },
+        {
+          "name": "Sirope de Chocolate",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "frappio-008",
+      "name": "Frappio Pacha",
+      "businessId": "frappio",
+      "businessName": "Frappio",
+      "category": "Bebidas",
+      "shortDescription": "",
+      "longDescription": "Refrescante bebida frappé (12 oz) a base de café, leche, maní molido y en grano, sirope de chocolate y galletas.",
+      "image": "🥜",
+      "price": 1.8,
+      "photo": "/assets/images/products/Frappio/Frappio Pacha - 900.jpg",
+      "stockStatus": "disponible",
+      "addons": [
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Dulce de Leche",
+          "price": 0
+        },
+        {
+          "name": "Sirope de Chocolate",
           "price": 0
         }
       ]
@@ -11517,7 +11989,7 @@
       "image": "🫘",
       "photo": "/assets/images/products/agro-los-prietos/alp-003.jpg",
       "price": 1,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "alp-004",
@@ -11530,7 +12002,7 @@
       "image": "🫘",
       "photo": "/assets/images/products/agro-los-prietos/alp-004.jpg",
       "price": 1.2,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "alp-005",
@@ -11569,7 +12041,7 @@
       "image": "🫑",
       "photo": "/assets/images/products/agro-los-prietos/alp-007.webp",
       "price": 1,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "alp-008",
@@ -11582,7 +12054,7 @@
       "image": "🥬",
       "photo": "/assets/images/products/agro-los-prietos/alp-008.jpg",
       "price": 1,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "alp-009",
@@ -11607,7 +12079,7 @@
       "longDescription": "Ají cachucha fresco, se vende por pote.",
       "image": "🌶️",
       "photo": "/assets/images/products/agro-los-prietos/alp-010.webp",
-      "price": 0.4,
+      "price": 0.6,
       "stockStatus": "disponible"
     },
     {
@@ -11620,7 +12092,7 @@
       "longDescription": "Plátano fruta, se vende por mano.",
       "image": "🍌",
       "photo": "/assets/images/products/agro-los-prietos/alp-011.jpg",
-      "price": 0.5,
+      "price": 0.4,
       "stockStatus": "disponible"
     },
     {
@@ -11634,7 +12106,7 @@
       "image": "🍌",
       "photo": "/assets/images/products/agro-los-prietos/alp-012.webp",
       "price": 0.1,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "alp-013",
@@ -11646,7 +12118,7 @@
       "longDescription": "Piña fresca, se vende por unidad.",
       "image": "🍍",
       "photo": "/assets/images/products/agro-los-prietos/alp-013.webp",
-      "price": 0.9,
+      "price": 1,
       "stockStatus": "disponible"
     },
     {
@@ -11660,7 +12132,7 @@
       "image": "🍏",
       "photo": "/assets/images/products/agro-los-prietos/alp-014.jpg",
       "price": 0.24,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "alp-015",
@@ -11686,19 +12158,19 @@
       "image": "🥭",
       "photo": "/assets/images/products/agro-los-prietos/alp-016.jpg",
       "price": 0.3,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "alp-017",
-      "name": "Fruta Bomba (por libra)",
+      "name": "Fruta Bomba Verde (por libra)",
       "businessId": "agro-los-prietos",
       "businessName": "Agro Los Prietos",
       "category": "Comidas",
       "shortDescription": "Precio por libra.",
-      "longDescription": "Fruta bomba fresca, precio por libra. Indica la cantidad de libras al confirmar.",
+      "longDescription": "Fruta bomba verde, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🍑",
       "photo": "/assets/images/products/agro-los-prietos/alp-017.jpg",
-      "price": 0.3,
+      "price": 0.2,
       "stockStatus": "disponible"
     },
     {
@@ -11724,7 +12196,7 @@
       "longDescription": "Uva fresca, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🍇",
       "photo": "/assets/images/products/agro-los-prietos/alp-019.jpg",
-      "price": 2.6,
+      "price": 2.4,
       "stockStatus": "disponible"
     },
     {
@@ -11763,7 +12235,140 @@
       "longDescription": "Cebolla blanca fresca, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🧅",
       "photo": "/assets/images/products/agro-los-prietos/alp-022.jpg",
-      "price": 1.6,
+      "price": 2.8,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "alp-023",
+      "name": "Cebollino (unidad)",
+      "businessId": "agro-los-prietos",
+      "businessName": "Agro Los Prietos",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Cebollino fresco, se vende por unidad.",
+      "image": "🌱",
+      "price": 0.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "alp-024",
+      "name": "Ristras de Cebolla",
+      "businessId": "agro-los-prietos",
+      "businessName": "Agro Los Prietos",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Ristra de cebolla, se vende por unidad.",
+      "image": "🧅",
+      "price": 2,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "alp-025",
+      "name": "Naranja Dulce (por libra)",
+      "businessId": "agro-los-prietos",
+      "businessName": "Agro Los Prietos",
+      "category": "Comidas",
+      "shortDescription": "Precio por libra.",
+      "longDescription": "Naranja dulce fresca, precio por libra. Indica la cantidad de libras al confirmar.",
+      "image": "🍊",
+      "price": 1.2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "alp-026",
+      "name": "Cebolla Morada (por libra)",
+      "businessId": "agro-los-prietos",
+      "businessName": "Agro Los Prietos",
+      "category": "Comidas",
+      "shortDescription": "Precio por libra.",
+      "longDescription": "Cebolla morada fresca, precio por libra. Indica la cantidad de libras al confirmar.",
+      "image": "🧅",
+      "price": 1.4,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "alp-027",
+      "name": "Boniato (por libra)",
+      "businessId": "agro-los-prietos",
+      "businessName": "Agro Los Prietos",
+      "category": "Comidas",
+      "shortDescription": "Precio por libra.",
+      "longDescription": "Boniato fresco, precio por libra. Indica la cantidad de libras al confirmar.",
+      "image": "🍠",
+      "price": 0.16,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "alp-028",
+      "name": "Calabaza (por libra)",
+      "businessId": "agro-los-prietos",
+      "businessName": "Agro Los Prietos",
+      "category": "Comidas",
+      "shortDescription": "Precio por libra.",
+      "longDescription": "Calabaza fresca, precio por libra. Indica la cantidad de libras al confirmar.",
+      "image": "🎃",
+      "photo": "/assets/images/products/Los Prietos/calabaza.jpg",
+      "price": 0.16,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "alp-029",
+      "name": "Ajo (cabeza)",
+      "businessId": "agro-los-prietos",
+      "businessName": "Agro Los Prietos",
+      "category": "Comidas",
+      "shortDescription": "Precio por cabeza.",
+      "longDescription": "Ajo fresco, se vende por cabeza.",
+      "image": "🧄",
+      "price": 0.06,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "alp-030",
+      "name": "Aguacate (unidad)",
+      "businessId": "agro-los-prietos",
+      "businessName": "Agro Los Prietos",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Aguacate fresco, se vende por unidad.",
+      "image": "🥑",
+      "price": 0.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "alp-031",
+      "name": "Jengibre (por libra)",
+      "businessId": "agro-los-prietos",
+      "businessName": "Agro Los Prietos",
+      "category": "Comidas",
+      "shortDescription": "Precio por libra.",
+      "longDescription": "Jengibre fresco, precio por libra. Indica la cantidad de libras al confirmar.",
+      "image": "🫚",
+      "price": 1.2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "alp-032",
+      "name": "Vinagre",
+      "businessId": "agro-los-prietos",
+      "businessName": "Agro Los Prietos",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Vinagre, se vende por unidad.",
+      "image": "🍶",
+      "price": 0.5,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "alp-033",
+      "name": "Adobo",
+      "businessId": "agro-los-prietos",
+      "businessName": "Agro Los Prietos",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Adobo, se vende por unidad.",
+      "image": "🧂",
+      "price": 0.5,
       "stockStatus": "disponible"
     },
     {
@@ -11777,7 +12382,18 @@
       "image": "🧁",
       "photo": "/assets/images/products/la-nevada/ln-001.jpg",
       "price": 3,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0,
+          "capacity": 4
+        },
+        {
+          "name": "Jaba",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ln-002",
@@ -11790,7 +12406,18 @@
       "image": "🍩",
       "photo": "/assets/images/products/la-nevada/ln-002.jpg",
       "price": 0.84,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0,
+          "capacity": 4
+        },
+        {
+          "name": "Jaba",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ln-003",
@@ -11803,7 +12430,18 @@
       "image": "🍫",
       "photo": "/assets/images/products/la-nevada/ln-003.jpg",
       "price": 1.2,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0,
+          "capacity": 4
+        },
+        {
+          "name": "Jaba",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ln-004",
@@ -11815,7 +12453,7 @@
       "longDescription": "Cake especial de crema blanca de galleta, artesanal de La Nevada.",
       "image": "🎂",
       "photo": "/assets/images/products/la-nevada/ln-004.jpg",
-      "price": 12,
+      "price": 14,
       "stockStatus": "disponible"
     },
     {
@@ -11828,7 +12466,7 @@
       "longDescription": "Cake de leche condensada artesanal de La Nevada.",
       "image": "🎂",
       "photo": "/assets/images/products/la-nevada/ln-005.jpg",
-      "price": 9.2,
+      "price": 14,
       "stockStatus": "disponible"
     },
     {
@@ -11857,8 +12495,19 @@
       "longDescription": "Cuñas sencillas artesanales de La Nevada.",
       "image": "🥐",
       "photo": "/assets/images/products/la-nevada/ln-007.jpg",
-      "price": 1.1,
-      "stockStatus": "disponible"
+      "price": 1.16,
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0,
+          "capacity": 4
+        },
+        {
+          "name": "Jaba",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ln-008",
@@ -11871,7 +12520,18 @@
       "image": "🍩",
       "photo": "/assets/images/products/la-nevada/ln-008.jpg",
       "price": 0.74,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0,
+          "capacity": 4
+        },
+        {
+          "name": "Jaba",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ln-009",
@@ -11884,7 +12544,18 @@
       "image": "🍰",
       "photo": "/assets/images/products/la-nevada/ln-009.jpg",
       "price": 0.7,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0,
+          "capacity": 4
+        },
+        {
+          "name": "Jaba",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ln-010",
@@ -11897,7 +12568,18 @@
       "image": "🍮",
       "photo": "/assets/images/products/la-nevada/ln-010.jpg",
       "price": 0.64,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0,
+          "capacity": 4
+        },
+        {
+          "name": "Jaba",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ln-011",
@@ -11939,7 +12621,18 @@
       "image": "🥧",
       "photo": "/assets/images/products/la-nevada/ln-013.jpg",
       "price": 3.5,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0,
+          "capacity": 4
+        },
+        {
+          "name": "Jaba",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ln-014",
@@ -11959,18 +12652,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "ln-015",
-      "name": "Pote de Helado 1 Litro",
-      "businessId": "la-nevada",
-      "businessName": "La Nevada",
-      "category": "Comidas",
-      "shortDescription": "Pote de 1 litro.",
-      "longDescription": "Helado artesanal de La Nevada en pote de 1 litro.",
-      "image": "🍨",
-      "price": 3.2,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "ln-016",
       "name": "Quesito Siciliano",
       "businessId": "la-nevada",
@@ -11980,8 +12661,19 @@
       "longDescription": "Quesito siciliano artesanal de La Nevada.",
       "image": "🧀",
       "photo": "/assets/images/products/la-nevada/ln-016.jpg",
-      "price": 1.1,
-      "stockStatus": "disponible"
+      "price": 1.2,
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0,
+          "capacity": 4
+        },
+        {
+          "name": "Jaba",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ln-017",
@@ -11994,7 +12686,18 @@
       "image": "🍰",
       "photo": "/assets/images/products/la-nevada/ln-017.jpg",
       "price": 1.2,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0,
+          "capacity": 4
+        },
+        {
+          "name": "Jaba",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ln-018",
@@ -12007,7 +12710,18 @@
       "image": "🥧",
       "photo": "/assets/images/products/la-nevada/ln-018.jpg",
       "price": 0.74,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0,
+          "capacity": 4
+        },
+        {
+          "name": "Jaba",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ln-019",
@@ -12035,6 +12749,3511 @@
       "longDescription": "Tocinillo del cielo artesanal de La Nevada.",
       "image": "🍮",
       "photo": "/assets/images/products/la-nevada/ln-020.jpg",
+      "price": 1,
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0,
+          "capacity": 4
+        },
+        {
+          "name": "Jaba",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "daf-001",
+      "name": "Aceite (900 ml)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Botella de 900 ml.",
+      "longDescription": "Aceite de cocina, botella de 900 ml.",
+      "image": "🛢️",
+      "photo": "/assets/images/products/DAF/Aceite 900 ml , 3700.jpg",
+      "price": 7.2,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-002",
+      "name": "Agua Importada Sultán",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Agua importada Sultán, se vende por unidad.",
+      "image": "💧",
+      "photo": "/assets/images/products/DAF/Agua importada  Sultán- 140.jpg",
+      "price": 0.28,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-003",
+      "name": "Botonetas",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Botonetas, se venden por unidad.",
+      "image": "🍬",
+      "photo": "/assets/images/products/DAF/Botonetas - 70.jpg",
+      "price": 0.14,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-004",
+      "name": "Chanceler Golden Label",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Chanceler Golden Label, se vende por unidad.",
+      "image": "🥃",
+      "photo": "/assets/images/products/DAF/Chanceler Golden Label 3700.jpg",
+      "price": 7.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-005",
+      "name": "CocoBar Galletas",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "CocoBar galletas, se venden por unidad.",
+      "image": "🍪",
+      "photo": "/assets/images/products/DAF/CocoBar galletas -60.jpg",
+      "price": 0.12,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-006",
+      "name": "Galletas María Biscobom",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Galletas María Biscobom, se venden por unidad.",
+      "image": "🍪",
+      "photo": "/assets/images/products/DAF/Galletas Maria Biscobom 350.jpg",
+      "price": 0.7,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-007",
+      "name": "Galletas Bambil",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Galletas Bambil, se venden por unidad.",
+      "image": "🍪",
+      "photo": "/assets/images/products/DAF/Galletas bambil -400.jpg",
+      "price": 0.8,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-008",
+      "name": "Garbanzos",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Garbanzos, se venden por unidad.",
+      "image": "🫘",
+      "photo": "/assets/images/products/DAF/Garbanzos -1000 cup.jpg",
+      "price": 2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-009",
+      "name": "Mini Vodka (200 ml)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "Botella de 200 ml.",
+      "longDescription": "Mini vodka, botella de 200 ml.",
+      "image": "🍾",
+      "photo": "/assets/images/products/DAF/MIni Vodka 200 ml --920.jpg",
+      "price": 1.84,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-010",
+      "name": "Macarrones con Queso",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Macarrones con queso, se venden por unidad.",
+      "image": "🧀",
+      "photo": "/assets/images/products/DAF/Macarrones con Queso - 370 cup.jpg",
+      "price": 0.74,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-011",
+      "name": "Malvaviscos",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Malvaviscos, se venden por unidad.",
+      "image": "🍬",
+      "photo": "/assets/images/products/DAF/Malvaviscos - 30.jpg",
+      "price": 0.06,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-012",
+      "name": "Mermelada de Mango",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Mermelada de mango, se vende por unidad.",
+      "image": "🍯",
+      "photo": "/assets/images/products/DAF/Mermeladada de Mango 3850.jpg",
+      "price": 7.7,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-013",
+      "name": "Mini Whisky (200 ml)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "Botella de 200 ml.",
+      "longDescription": "Mini whisky, botella de 200 ml.",
+      "image": "🥃",
+      "photo": "/assets/images/products/DAF/Mini whisky 200ml --920.jpg",
+      "price": 1.84,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-014",
+      "name": "Moscatel Supremos",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Moscatel Supremos, se vende por unidad.",
+      "image": "🍷",
+      "photo": "/assets/images/products/DAF/Moscatel Supremos 950.jpg",
+      "price": 1.9,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-015",
+      "name": "Papitas Fresh Cucumber Flavored",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Papitas sabor a pepino (Fresh Cucumber Flavored), se venden por unidad.",
+      "image": "🥔",
+      "photo": "/assets/images/products/DAF/Papitas Fresh Cucumber flavored --1050.jpg",
+      "price": 2.1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-016",
+      "name": "Pelly Tigo Puff",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Pelly Tigo Puff, se vende por unidad.",
+      "image": "🍿",
+      "photo": "/assets/images/products/DAF/Pelly Tigo Puff --650.jpg",
+      "price": 1.3,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-017",
+      "name": "Refresco de Lata",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "Se vende por lata.",
+      "longDescription": "Refresco de lata.",
+      "image": "🥤",
+      "photo": "/assets/images/products/DAF/Refresco de la ta 415.jpg",
+      "price": 1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-018",
+      "name": "Salsa BBQ",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Salsa BBQ, se vende por unidad.",
+      "image": "🍖",
+      "photo": "/assets/images/products/DAF/Salsa BBQ- 650.jpg",
+      "price": 1.3,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-019",
+      "name": "Sorbeto Mr. Bite",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Sorbeto Mr. Bite, se vende por unidad.",
+      "image": "🍭",
+      "photo": "/assets/images/products/DAF/Sorbeto Mr.Bite 265.jpg",
+      "price": 0.53,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-020",
+      "name": "Vakik Vodka Energy",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "490 por unidad, 480 por caja.",
+      "longDescription": "Vakik Vodka Energy. Precio de 490 CUP por unidad; comprando por caja, 480 CUP por unidad.",
+      "image": "🥤",
+      "photo": "/assets/images/products/DAF/Vakik Vodka Energy -490 por unidad , 480 por caja.jpg",
+      "price": 0.98,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-021",
+      "name": "Vino El Sotillo (Tinto, Cosecha)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "Tinto, cosecha.",
+      "longDescription": "Vino El Sotillo, tinto de cosecha.",
+      "image": "🍷",
+      "photo": "/assets/images/products/DAF/Vino el Sotillo (tinto , cosecha) -2500.jpg",
+      "price": 5,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-022",
+      "name": "Vodka Premium",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Vodka Premium, se vende por unidad.",
+      "image": "🍾",
+      "photo": "/assets/images/products/DAF/Vodka Premium 3750.jpg",
+      "price": 7.5,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-023",
+      "name": "Chupa Chupa Pirulito Good Smile",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "60 por unidad, 55 por paquete.",
+      "longDescription": "Chupa Chupa Pirulito Good Smile. Precio de 60 CUP por unidad; comprando por paquete, 55 CUP por unidad.",
+      "image": "🍭",
+      "photo": "/assets/images/products/DAF/chupa chupa pirulito good smile 60 por unidad , 55 por paquete.jpg",
+      "price": 0.12,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-024",
+      "name": "Donut",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Donut, se vende por unidad.",
+      "image": "🍩",
+      "photo": "/assets/images/products/DAF/donut 180.jpg",
+      "price": 0.42,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-025",
+      "name": "Gelatina (Fresa y Frutos Rojos)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Fresa y frutos rojos.",
+      "longDescription": "Gelatina sabor fresa y frutos rojos.",
+      "image": "🍮",
+      "photo": "/assets/images/products/DAF/gelantina - 320  (Fresa y Frutos Rojos).jpg",
+      "price": 0.64,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-026",
+      "name": "Galletas Pizza Kraker",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Galletas Pizza Kraker, se venden por unidad.",
+      "image": "🍪",
+      "photo": "/assets/images/products/DAF/gelletas pizza kraker - 1500.jpg",
+      "price": 3,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-027",
+      "name": "Gomitas",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Gomitas, se venden por unidad.",
+      "image": "🍬",
+      "photo": "/assets/images/products/DAF/gomitas - 360.jpg",
+      "price": 0.72,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-028",
+      "name": "Huevo Sorpresa",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Huevo sorpresa, se vende por unidad.",
+      "image": "🥚",
+      "photo": "/assets/images/products/DAF/huevo sorpresa --235.jpg",
+      "price": 0.47,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-029",
+      "name": "Nutella Marwa",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Nutella Marwa, se vende por unidad.",
+      "image": "🍫",
+      "photo": "/assets/images/products/DAF/nutella Marwa 1100.jpg",
+      "price": 2.46,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-030",
+      "name": "Popular Rojo",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Popular Rojo, se vende por unidad.",
+      "image": "🚬",
+      "photo": "/assets/images/products/DAF/popular rojo 850 por unidad.jpg",
+      "price": 1.7,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-031",
+      "name": "Espaguetis",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "350 por unidad, 340 por caja.",
+      "longDescription": "Espaguetis. Precio de 350 CUP por unidad; comprando por caja, 340 CUP por unidad.",
+      "image": "🍝",
+      "photo": "/assets/images/products/DAF/spaguettis 350 por unidad , 340 por caja.jpg",
+      "price": 0.7,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-032",
+      "name": "Arroz Blanco Seleccionado",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Arroz blanco seleccionado, se vende por unidad.",
+      "image": "🍚",
+      "photo": "/assets/images/products/DAF/Arroz Blanco Seleccionado , 280 cup.jpg",
+      "price": 0.56,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-033",
+      "name": "Arroz Karibee (1 kg)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Paquete de 1 kg.",
+      "longDescription": "Arroz Karibee, paquete de 1 kg.",
+      "image": "🍚",
+      "photo": "/assets/images/products/DAF/Arroz Karibee 1kg -800.jpg",
+      "price": 1.6,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-034",
+      "name": "Azúcar (por libra)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por libra.",
+      "longDescription": "Azúcar, precio por libra.",
+      "image": "🍬",
+      "photo": "/assets/images/products/DAF/Azúcar por libra -- 480.jpg",
+      "price": 0.96,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-035",
+      "name": "Bandeja de Bistec de Cerdo Empanados",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por bandeja.",
+      "longDescription": "Bandeja de bistec de cerdo empanados.",
+      "image": "🍖",
+      "photo": "/assets/images/products/DAF/Bandeja de Bistec de cerdo empanados -1700.jpg",
+      "price": 4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-036",
+      "name": "Café Dufiltro",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Café Dufiltro, se vende por unidad.",
+      "image": "☕",
+      "photo": "/assets/images/products/DAF/Café dufiltro 1600.jpg",
+      "price": 3.2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-037",
+      "name": "Cazuela Mediana",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Cazuela mediana, se vende por unidad.",
+      "image": "🍲",
+      "photo": "/assets/images/products/DAF/Cazuela Mediana --2350.jpg",
+      "price": 4.7,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-038",
+      "name": "Cinta Adhesiva",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Cinta adhesiva, se vende por unidad.",
+      "image": "📦",
+      "photo": "/assets/images/products/DAF/Cinta Adhesiva 800 cup.jpg",
+      "price": 1.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-039",
+      "name": "Cóctel de Frutas (16 onzas)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Envase de 16 onzas.",
+      "longDescription": "Cóctel de frutas, envase de 16 onzas.",
+      "image": "🍹",
+      "photo": "/assets/images/products/DAF/Coctel de Frutas 16 onzas 450.jpg",
+      "price": 0.9,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-040",
+      "name": "Detergente en Polvo (400 g)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Paquete de 400 gramos.",
+      "longDescription": "Detergente en polvo, paquete de 400 gramos.",
+      "image": "🧺",
+      "photo": "/assets/images/products/DAF/Detergente en polvo 400 gramos -- 750.jpg",
+      "price": 1.5,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-041",
+      "name": "Espumadera",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Espumadera, se vende por unidad.",
+      "image": "🍳",
+      "photo": "/assets/images/products/DAF/Espumadera --610.jpg",
+      "price": 1.22,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-042",
+      "name": "Fosforeras",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Fosforeras, se venden por unidad.",
+      "image": "🔥",
+      "photo": "/assets/images/products/DAF/Fosforeras - 85.jpg",
+      "price": 0.17,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-043",
+      "name": "Frijoles Negros (por libra)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por libra.",
+      "longDescription": "Frijoles negros, precio por libra.",
+      "image": "🫘",
+      "photo": "/assets/images/products/DAF/Frijoles negros (por libra) --430.jpg",
+      "price": 0.86,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-044",
+      "name": "Fritada de Vegetales Cubanito",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Fritada de vegetales Cubanito, se vende por unidad.",
+      "image": "🥫",
+      "photo": "/assets/images/products/DAF/Fritada de Vegetales Cubanito - 720.jpg",
+      "price": 1.44,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-045",
+      "name": "Harina (por libra)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por libra.",
+      "longDescription": "Harina, precio por libra.",
+      "image": "🌾",
+      "photo": "/assets/images/products/DAF/Harina por libras --400.jpg",
+      "price": 0.8,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-046",
+      "name": "Jabón de Baño",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Jabón de baño, se vende por unidad.",
+      "image": "🧼",
+      "photo": "/assets/images/products/DAF/Jabón de Baño --300.jpg",
+      "price": 0.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-047",
+      "name": "Jabón de Lavar Ríos",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Jabón de lavar Ríos, se vende por unidad.",
+      "image": "🧼",
+      "photo": "/assets/images/products/DAF/Jabón de Lavar Rios -420.jpg",
+      "price": 0.84,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-048",
+      "name": "Jarra Blanca",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Jarra blanca, se vende por unidad.",
+      "image": "🫙",
+      "photo": "/assets/images/products/DAF/Jarra Blanca --840.jpg",
+      "price": 1.68,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-049",
+      "name": "Juego de Pozuelos (250 ml x 3)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Juego de 3, 250 ml c/u.",
+      "longDescription": "Juego de pozuelos, 3 unidades de 250 ml cada uno.",
+      "image": "🥣",
+      "photo": "/assets/images/products/DAF/Juego de Pozuelos 250 ml x 3 --1000.jpg",
+      "price": 2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-050",
+      "name": "Juego de Shampoo y Acondicionador",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por juego.",
+      "longDescription": "Juego de shampoo y acondicionador.",
+      "image": "🧴",
+      "photo": "/assets/images/products/DAF/Juego de Shampoo y Acondicionador -- 2000.jpg",
+      "price": 4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-051",
+      "name": "Mantequilla",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Mantequilla, se vende por unidad.",
+      "image": "🧈",
+      "photo": "/assets/images/products/DAF/Mantequilla --600.jpg",
+      "price": 1.2,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-052",
+      "name": "Mayonesa Tropigusto",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Mayonesa Tropigusto, se vende por unidad.",
+      "image": "🥫",
+      "photo": "/assets/images/products/DAF/Mayonesa Tropi gusto 700.jpg",
+      "price": 1.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-053",
+      "name": "Mermelada de Guayaba (8 onzas)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Envase de 8 onzas.",
+      "longDescription": "Mermelada de guayaba, envase de 8 onzas.",
+      "image": "🍯",
+      "photo": "/assets/images/products/DAF/Mermelada de guayaba 8 onzas --320.jpg",
+      "price": 0.64,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-054",
+      "name": "Moldes de Cerámica",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Moldes de cerámica, se venden por unidad.",
+      "image": "🍮",
+      "photo": "/assets/images/products/DAF/Moldes de cerámica --360.jpg",
+      "price": 0.72,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-055",
+      "name": "Naranja Agria (Zumo)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Zumo de naranja agria, se vende por unidad.",
+      "image": "🍊",
+      "photo": "/assets/images/products/DAF/Naranja Agria (Zumo ) - 290.jpg",
+      "price": 0.58,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-056",
+      "name": "Pasta Dental Dentix",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Pasta dental Dentix, se vende por unidad.",
+      "image": "🪥",
+      "photo": "/assets/images/products/DAF/Pasta dental dentix --460.jpg",
+      "price": 0.92,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-057",
+      "name": "Tubo de Picadillo El Cocinerito",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Tubo de picadillo El Cocinerito, se vende por unidad.",
+      "image": "🥩",
+      "photo": "/assets/images/products/DAF/Picadillo de tubo -- 800.jpg",
+      "price": 1.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-058",
+      "name": "Pinzas",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Pinzas, se venden por unidad.",
+      "image": "🗜️",
+      "photo": "/assets/images/products/DAF/Pinzas -600.jpg",
+      "price": 1.2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-059",
+      "name": "Rollos de Jamón y Queso (4 unidades)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Paquete de 4 unidades.",
+      "longDescription": "Rollos de jamón y queso, paquete de 4 unidades.",
+      "image": "🧀",
+      "photo": "/assets/images/products/DAF/Rollos de jamón y queso (4 unidades) --2000.jpg",
+      "price": 4.7,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-060",
+      "name": "Sal Marina (por libra)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por libra.",
+      "longDescription": "Sal marina, precio por libra.",
+      "image": "🧂",
+      "photo": "/assets/images/products/DAF/Sal Marina ( por libra) --190.jpg",
+      "price": 0.38,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-061",
+      "name": "Suavizante de Tela",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Suavizante de tela, se vende por unidad.",
+      "image": "🧺",
+      "photo": "/assets/images/products/DAF/Suabizante de tela --1000.jpg",
+      "price": 2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-062",
+      "name": "Vinagre",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Vinagre, se vende por unidad.",
+      "image": "🍶",
+      "photo": "/assets/images/products/DAF/Vinagre 290.jpg",
+      "price": 0.58,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-063",
+      "name": "Vinagre Claro",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Vinagre claro, se vende por unidad.",
+      "image": "🍶",
+      "photo": "/assets/images/products/DAF/Vinagre claro 290.jpg",
+      "price": 0.58,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-064",
+      "name": "Vinagre de Vino Tinto",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Vinagre de vino tinto, se vende por unidad.",
+      "image": "🍶",
+      "photo": "/assets/images/products/DAF/Vinagre de vino tinto - 290.jpg",
+      "price": 0.58,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-065",
+      "name": "Vino Seco",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Vino seco, se vende por unidad.",
+      "image": "🍷",
+      "photo": "/assets/images/products/DAF/Vino seco 270.jpg",
+      "price": 0.54,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-066",
+      "name": "Yogurt Probiótico (4 litros)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Envase de 4 litros.",
+      "longDescription": "Yogurt probiótico, envase de 4 litros.",
+      "image": "🥛",
+      "photo": "/assets/images/products/DAF/Yogurt Probiótico 4 Litros , 3500 cup.jpg",
+      "price": 17,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-067",
+      "name": "Yogurt Probiótico (500 ml)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Envase de 500 ml.",
+      "longDescription": "Yogurt probiótico, envase de 500 ml.",
+      "image": "🥛",
+      "photo": "/assets/images/products/DAF/Yogurt probiótico 500 ml , 1150.jpg",
+      "price": 2.3,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-068",
+      "name": "Zumo de Limón",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Zumo de limón, se vende por unidad.",
+      "image": "🍋",
+      "photo": "/assets/images/products/DAF/Zumo de Limón 290.jpg",
+      "price": 0.58,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-069",
+      "name": "Atún (185 g)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Lata de 185 g.",
+      "longDescription": "Atún, lata de 185 g.",
+      "image": "🐟",
+      "photo": "/assets/images/products/DAF/atún 185 g - 900.jpg",
+      "price": 1.8,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-070",
+      "name": "Cucharón",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Cucharón, se vende por unidad.",
+      "image": "🥄",
+      "photo": "/assets/images/products/DAF/cucharon --770.jpg",
+      "price": 1.54,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-071",
+      "name": "Ensalada Fría (8 onzas)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Envase de 8 onzas.",
+      "longDescription": "Ensalada fría, envase de 8 onzas.",
+      "image": "🥗",
+      "photo": "/assets/images/products/DAF/ensala fría 8 onzas --650.jpg",
+      "price": 1.3,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-072",
+      "name": "Esponjas de Fregar (x10)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Paquete de 10 unidades.",
+      "longDescription": "Esponjas de fregar, paquete de 10 unidades.",
+      "image": "🧽",
+      "photo": "/assets/images/products/DAF/esponjas de fregar x 10 -- 500.jpg",
+      "price": 1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-073",
+      "name": "Gel de Baño",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Gel de baño, se vende por unidad.",
+      "image": "🧴",
+      "photo": "/assets/images/products/DAF/gel de baño -- 850.jpg",
+      "price": 1.7,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-074",
+      "name": "Helado Cid (1 litro)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Envase de 1 litro.",
+      "longDescription": "Helado Cid, envase de 1 litro.",
+      "image": "🍨",
+      "photo": "/assets/images/products/DAF/helado Cid - 1 litro - 2100.jpg",
+      "price": 4.2,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-075",
+      "name": "Jaba de Pollo (3 lbs)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Jaba de 3 libras.",
+      "longDescription": "Jaba de pollo, 3 libras.",
+      "image": "🍗",
+      "photo": "/assets/images/products/DAF/jabas de pollo 3 lbs --2600.jpg",
+      "price": 5.2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-076",
+      "name": "Mermelada de Guayaba (grande)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Envase grande.",
+      "longDescription": "Mermelada de guayaba, envase grande.",
+      "image": "🍯",
+      "photo": "/assets/images/products/DAF/mermelada de guayaba - 3800.jpg",
+      "price": 7.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-077",
+      "name": "Pastillita de Congrí",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Pastillita de congrí, se vende por unidad.",
+      "image": "🥟",
+      "photo": "/assets/images/products/DAF/pastillita de congrí 60.jpg",
+      "price": 0.12,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-078",
+      "name": "Pastillita de Pollo con Tomate",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Pastillita de pollo con tomate, se vende por unidad.",
+      "image": "🥟",
+      "photo": "/assets/images/products/DAF/pastillita de pollo con tomate 30 cup.jpg",
+      "price": 0.06,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-079",
+      "name": "Perrito Caliente",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Perrito caliente, se vende por unidad.",
+      "image": "🌭",
+      "photo": "/assets/images/products/DAF/perrito caliente - 1200.jpg",
+      "price": 2.4,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-080",
+      "name": "Protectores (paquete de 30 unidades)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Paquete de 30 unidades.",
+      "longDescription": "Protectores, paquete de 30 unidades.",
+      "image": "🧴",
+      "photo": "/assets/images/products/DAF/protectores , paquete de 30 unidades --420.jpg",
+      "price": 0.84,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-081",
+      "name": "Toallitas Húmedas",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Toallitas húmedas, se venden por unidad.",
+      "image": "🧻",
+      "photo": "/assets/images/products/DAF/toallitas húmedas - 710.jpg",
+      "price": 1.42,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-082",
+      "name": "Detergente Líquido para Lavar",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Detergente líquido para lavar, se vende por unidad.",
+      "image": "🧴",
+      "photo": "/assets/images/products/DAF/detergente líquido para lavar --900.jpg",
+      "price": 1.8,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-083",
+      "name": "Leche Condensada",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Leche condensada, se vende por unidad.",
+      "image": "🥛",
+      "photo": "/assets/images/products/DAF/leche condensada -- 900.jpg",
+      "price": 1.8,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-084",
+      "name": "Chorizo",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Chorizo, se vende por unidad.",
+      "image": "🌭",
+      "price": 0.5,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-085",
+      "name": "Papa (por libra)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por libra.",
+      "longDescription": "Papa, precio por libra.",
+      "image": "🥔",
+      "price": 0.7,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-086",
+      "name": "Cartón de Huevo",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por cartón.",
+      "longDescription": "Cartón de huevo, se vende por cartón.",
+      "image": "🥚",
+      "price": 9.1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-087",
+      "name": "Leche Evaporada",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Leche evaporada, se vende por unidad.",
+      "image": "🥛",
+      "price": 1.64,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-088",
+      "name": "Yogurt Probiótico (1 litro)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Envase de 1 litro.",
+      "longDescription": "Yogurt probiótico, envase de 1 litro.",
+      "image": "🥛",
+      "price": 4.6,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-089",
+      "name": "Pasta de Tomate",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Pasta de tomate, se vende por unidad.",
+      "image": "🍅",
+      "price": 1.35,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-090",
+      "name": "Refresco Instantáneo (5 litros)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "Envase de 5 litros.",
+      "longDescription": "Refresco instantáneo, envase de 5 litros.",
+      "image": "🥤",
+      "photo": "/assets/images/products/DAF/Refresco Instantáneo 5 litros.jpg",
+      "price": 1.72,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-091",
+      "name": "Galletas Show Gol",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Galletas Show Gol, se venden por unidad.",
+      "image": "🍪",
+      "photo": "/assets/images/products/DAF/galletas show gol.jpg",
+      "price": 0.5,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-092",
+      "name": "Ron 5 Shot (750 ml)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "Botella de 750 ml.",
+      "longDescription": "Ron 5 Shot, botella de 750 ml.",
+      "image": "🥃",
+      "photo": "/assets/images/products/DAF/Ron 5 shots.jpg",
+      "price": 7.9,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-093",
+      "name": "Galletas María Clásicas",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Galletas María Clásicas, se venden por unidad.",
+      "image": "🍪",
+      "photo": "/assets/images/products/DAF/galletas marie clasicas.jpg",
+      "price": 1.02,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-094",
+      "name": "Mini Galletas Amori",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Fresa o chocolate.",
+      "longDescription": "Mini galletas Amori, se venden por unidad.",
+      "image": "🍪",
+      "photo": "/assets/images/products/DAF/mini galletas amori.jpg",
+      "price": 0.34,
+      "options": [
+        "Fresa",
+        "Chocolate"
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-095",
+      "name": "Galletas María Biscuits",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Galletas María Biscuits, se venden por unidad.",
+      "image": "🍪",
+      "photo": "/assets/images/products/DAF/galletas Marie Biscuit.jpg",
+      "price": 0.84,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-096",
+      "name": "Galletas Dulce Estrella",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Galletas Dulce Estrella, se venden por unidad.",
+      "image": "🍪",
+      "photo": "/assets/images/products/DAF/galletas dulce estrella.jpg",
+      "price": 0.46,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-097",
+      "name": "Sopita Instantánea",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Sopita instantánea, se vende por unidad.",
+      "image": "🍜",
+      "photo": "/assets/images/products/DAF/sopitas instantánea.jpg",
+      "price": 0.55,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-098",
+      "name": "Agua (Pomo 500 ml)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Bebidas",
+      "shortDescription": "Pomo de 500 ml.",
+      "longDescription": "Agua, pomo de 500 ml.",
+      "image": "💧",
+      "price": 0.34,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-099",
+      "name": "Aceite Pima (1 Litro)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Botella de 1 litro.",
+      "longDescription": "Aceite Pima, botella de 1 litro.",
+      "image": "🫒",
+      "photo": "/assets/images/products/DAF/aceite 1 Litro 3400 cup.jpg",
+      "price": 6.8,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-100",
+      "name": "Arroz El Rey del Arroz (1 kg)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Paquete de 1 kg.",
+      "longDescription": "Arroz El Rey del Arroz, paquete de 1 kg.",
+      "image": "🍚",
+      "photo": "/assets/images/products/DAF/bolsa de arroz 1 kg 800.jpg",
+      "price": 1.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-101",
+      "name": "Culeros Talla M",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Pañales desechables, talla M.",
+      "longDescription": "Culeros desechables, talla M.",
+      "image": "🧷",
+      "photo": "/assets/images/products/DAF/culeros talla M 5700.jpg",
+      "price": 11.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-102",
+      "name": "Galletas Dolcero",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Sabor chocolate.",
+      "longDescription": "Galletas Dolcero, sabor chocolate.",
+      "image": "🍪",
+      "photo": "/assets/images/products/DAF/galletas dolcero 210.jpg",
+      "price": 0.42,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-103",
+      "name": "Galletas Fomitos",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "shortDescription": "Galletas rellenas.",
+      "longDescription": "Galletas Fomitos, rellenas.",
+      "image": "🍪",
+      "photo": "/assets/images/products/DAF/galletas fomitos 300.jpg",
+      "price": 0.6,
+      "options": [
+        "Fresa",
+        "Chocolate",
+        "Dulce de Leche"
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-104",
+      "name": "Mantequilla Excellent (500 g)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Pote de 500 g.",
+      "longDescription": "Mantequilla Excellent, pote de 500 g.",
+      "image": "🧈",
+      "photo": "/assets/images/products/DAF/Mantequilla 500 gramos 1160 cup.jpg",
+      "price": 2.32,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-105",
+      "name": "Mayonesa Doña Mirta (400 g)",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Pote de 400 g.",
+      "longDescription": "Mayonesa Doña Mirta, pote de 400 g.",
+      "image": "🥫",
+      "photo": "/assets/images/products/DAF/mayonesa 400 gramos1860.jpg",
+      "price": 3.72,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-106",
+      "name": "Melocotón en Almíbar",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Lata de melocotón en almíbar.",
+      "longDescription": "Melocotón en almíbar Marwa, lata.",
+      "image": "🍑",
+      "photo": "/assets/images/products/DAF/melocotón en conserva 810.jpg",
+      "price": 1.62,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-107",
+      "name": "Mortadella Mulata Bonita",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Mortadella Mulata Bonita, se vende por unidad.",
+      "image": "🥓",
+      "photo": "/assets/images/products/DAF/mortadella mulata bonita 900 cup.jpg",
+      "price": 1.8,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "daf-108",
+      "name": "Paleticas de Helado Cid",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Paleticas de helado Cid, sabor chocolate.",
+      "image": "🍦",
+      "photo": "/assets/images/products/DAF/paleticas Cid 580.jpg",
+      "price": 1.16,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "em-001",
+      "name": "Completa de Masa Frita",
+      "businessId": "el-monito",
+      "businessName": "El Monito",
+      "category": "Comidas",
+      "shortDescription": "Arroz moro, ensalada, yuca con mojo y chicharritas.",
+      "longDescription": "Masas fritas con arroz moro, ensalada, yuca con mojo y chicharritas.",
+      "image": "🍖",
+      "photo": "/assets/images/products/El Monito/Completa de masa frita.jpg",
+      "price": 5,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "em-002",
+      "name": "Completa de Bistec",
+      "businessId": "el-monito",
+      "businessName": "El Monito",
+      "category": "Comidas",
+      "shortDescription": "Arroz moro, yuca con mojo, ensalada y chicharritas.",
+      "longDescription": "Bistec con arroz moro, yuca con mojo, ensalada y chicharritas.",
+      "image": "🥩",
+      "photo": "/assets/images/products/El Monito/completa de bistec.jpg",
+      "price": 4.6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "em-003",
+      "name": "Posta de Pollo Asada",
+      "businessId": "el-monito",
+      "businessName": "El Monito",
+      "category": "Comidas",
+      "shortDescription": "Posta grande.",
+      "longDescription": "Posta de pollo asada, tamaño grande.",
+      "image": "🍗",
+      "photo": "/assets/images/products/El Monito/posta de pollo asada.jpg",
+      "price": 4,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "em-004",
+      "name": "Pinchos",
+      "businessId": "el-monito",
+      "businessName": "El Monito",
+      "category": "Comidas",
+      "shortDescription": "Pinchos asados.",
+      "longDescription": "Pinchos asados a la brasa.",
+      "image": "🍢",
+      "photo": "/assets/images/products/El Monito/pinchitos asados.jpg",
+      "price": 2.2,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-001",
+      "name": "Pan con Hamburguesa de Cerdo",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Panadería",
+      "shortDescription": "Queso gouda, tocino, salsa de la casa y papas fritas.",
+      "longDescription": "Pan con hamburguesa de cerdo, queso gouda, tocino, salsa de la casa y papas fritas.",
+      "image": "🍔",
+      "photo": "/assets/images/products/Ella y Yo/Hamburguesa de cerdo.jpg",
+      "price": 2.6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Huevo Frito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-002",
+      "name": "Pan con Doble Hamburguesa de Cerdo",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Panadería",
+      "shortDescription": "Doble queso gouda, tocino, salsa de la casa y papas fritas.",
+      "longDescription": "Pan con doble hamburguesa de cerdo, doble queso gouda, tocino, salsa de la casa y papas fritas.",
+      "image": "🍔",
+      "photo": "/assets/images/products/Ella y Yo/Hamburguesa Doble.jpg",
+      "price": 3.6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Huevo Frito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-003",
+      "name": "Pizza Queso Criollo",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza Queso Criollo — Pizza de 33 cm.",
+      "image": "🍕",
+      "price": 2,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-004",
+      "name": "Pizza Queso Doble Criollo",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza Queso Doble Criollo — Pizza de 33 cm.",
+      "image": "🍕",
+      "price": 2.4,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-005",
+      "name": "Pizza de Jamón Bravo (Criollo)",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza de Jamón Bravo (Criollo) — Pizza de 33 cm.",
+      "image": "🍕",
+      "photo": "/assets/images/products/Ella y Yo/pizza de Jamón.jpg",
+      "price": 2.7,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-006",
+      "name": "Pizza de Peperoni (Criollo)",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza de Peperoni (Criollo) — Pizza de 33 cm.",
+      "image": "🍕",
+      "photo": "/assets/images/products/Ella y Yo/pizza de peperoni.jpg",
+      "price": 2.8,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-007",
+      "name": "Pizza de Chorizo Bela (Criollo)",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza de Chorizo Bela (Criollo) — Pizza de 33 cm.",
+      "image": "🍕",
+      "photo": "/assets/images/products/Ella y Yo/pizza de chorizo.jpg",
+      "price": 3,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-008",
+      "name": "Pizza de Atún (Criollo)",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza de Atún (Criollo) — Pizza de 33 cm.",
+      "image": "🍕",
+      "photo": "/assets/images/products/Ella y Yo/pizza de atún.jpg",
+      "price": 3.4,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-009",
+      "name": "Pizza de Perrito (Criollo)",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza de Perrito (Criollo) — Pizza de 33 cm.",
+      "image": "🍕",
+      "price": 2.2,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-010",
+      "name": "Pizza Queso Gouda",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza Queso Gouda — Pizza de 33 cm.",
+      "image": "🍕",
+      "price": 2.7,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-011",
+      "name": "Pizza Doble Queso Gouda",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza Doble Queso Gouda — Pizza de 33 cm.",
+      "image": "🍕",
+      "price": 3.1,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-012",
+      "name": "Pizza de Jamón Bravo (Gouda)",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza de Jamón Bravo (Gouda) — Pizza de 33 cm.",
+      "image": "🍕",
+      "photo": "/assets/images/products/Ella y Yo/pizza de Jamón.jpg",
+      "price": 3.2,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-013",
+      "name": "Pizza de Peperoni (Gouda)",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza de Peperoni (Gouda) — Pizza de 33 cm.",
+      "image": "🍕",
+      "photo": "/assets/images/products/Ella y Yo/pizza de peperoni.jpg",
+      "price": 3.5,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-014",
+      "name": "Pizza de Chorizo Bela (Gouda)",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza de Chorizo Bela (Gouda) — Pizza de 33 cm.",
+      "image": "🍕",
+      "photo": "/assets/images/products/Ella y Yo/pizza de chorizo.jpg",
+      "price": 3.6,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-015",
+      "name": "Pizza de Atún (Gouda)",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Pizza de 33 cm.",
+      "longDescription": "Pizza de Atún (Gouda) — Pizza de 33 cm.",
+      "image": "🍕",
+      "photo": "/assets/images/products/Ella y Yo/pizza de atún.jpg",
+      "price": 4,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 0
+        },
+        {
+          "name": "Chorizo",
+          "price": 0
+        },
+        {
+          "name": "Atún",
+          "price": 0
+        },
+        {
+          "name": "Peperoni",
+          "price": 0
+        },
+        {
+          "name": "Perrito",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-016",
+      "name": "Jimagua",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Helado CID.",
+      "longDescription": "Jimagua — Helado CID.",
+      "image": "🍨",
+      "photo": "/assets/images/products/Ella y Yo/Jimagua.jpg",
+      "price": 1.1,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Helado",
+          "price": 0
+        },
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Fanguito",
+          "price": 0
+        },
+        {
+          "name": "Cake",
+          "price": 0
+        },
+        {
+          "name": "Flan",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-017",
+      "name": "Tres Gracias",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Helado CID.",
+      "longDescription": "Tres Gracias — Helado CID.",
+      "image": "🍨",
+      "photo": "/assets/images/products/Ella y Yo/3 Gracias.jpg",
+      "price": 1.4,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Helado",
+          "price": 0
+        },
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Fanguito",
+          "price": 0
+        },
+        {
+          "name": "Cake",
+          "price": 0
+        },
+        {
+          "name": "Flan",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-018",
+      "name": "Ice Cream",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Helado CID.",
+      "longDescription": "Ice Cream — Helado CID.",
+      "image": "🍨",
+      "photo": "/assets/images/products/Ella y Yo/Ice Cream-Helado.jpg",
+      "price": 1.6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Helado",
+          "price": 0
+        },
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Fanguito",
+          "price": 0
+        },
+        {
+          "name": "Cake",
+          "price": 0
+        },
+        {
+          "name": "Flan",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-019",
+      "name": "Cake a la Moda",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Helado CID.",
+      "longDescription": "Cake a la Moda — Helado CID.",
+      "image": "🍰",
+      "photo": "/assets/images/products/Ella y Yo/cake a la moda-Helado.jpg",
+      "price": 1.8,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Helado",
+          "price": 0
+        },
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Fanguito",
+          "price": 0
+        },
+        {
+          "name": "Cake",
+          "price": 0
+        },
+        {
+          "name": "Flan",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-020",
+      "name": "Copa Lolita",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Helado CID.",
+      "longDescription": "Copa Lolita — Helado CID.",
+      "image": "🍨",
+      "photo": "/assets/images/products/Ella y Yo/Copa Lolita -Helado.jpg",
+      "price": 1.9,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Helado",
+          "price": 0
+        },
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Fanguito",
+          "price": 0
+        },
+        {
+          "name": "Cake",
+          "price": 0
+        },
+        {
+          "name": "Flan",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-021",
+      "name": "Supreme",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Helado CID.",
+      "longDescription": "Supreme — Helado CID.",
+      "image": "🍨",
+      "photo": "/assets/images/products/Ella y Yo/cake supreme -helado.jpg",
+      "price": 1.6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Helado",
+          "price": 0
+        },
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Fanguito",
+          "price": 0
+        },
+        {
+          "name": "Cake",
+          "price": 0
+        },
+        {
+          "name": "Flan",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-022",
+      "name": "Super Supreme",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Helado CID.",
+      "longDescription": "Super Supreme — Helado CID.",
+      "image": "🍨",
+      "photo": "/assets/images/products/Ella y Yo/Super Supreme -Helado.jpg",
+      "price": 1.8,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Helado",
+          "price": 0
+        },
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Fanguito",
+          "price": 0
+        },
+        {
+          "name": "Cake",
+          "price": 0
+        },
+        {
+          "name": "Flan",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-023",
+      "name": "Especial",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Helado CID.",
+      "longDescription": "Especial — Helado CID.",
+      "image": "🍨",
+      "price": 2.6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Helado",
+          "price": 0
+        },
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Fanguito",
+          "price": 0
+        },
+        {
+          "name": "Cake",
+          "price": 0
+        },
+        {
+          "name": "Flan",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-024",
+      "name": "Super Especial",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Helado CID.",
+      "longDescription": "Super Especial — Helado CID.",
+      "image": "🍨",
+      "photo": "/assets/images/products/Ella y Yo/Super especial-Helado.jpg",
+      "price": 3.6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Helado",
+          "price": 0
+        },
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Fanguito",
+          "price": 0
+        },
+        {
+          "name": "Cake",
+          "price": 0
+        },
+        {
+          "name": "Flan",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-025",
+      "name": "Batido de Helado",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Helado CID.",
+      "longDescription": "Batido de Helado — Helado CID.",
+      "image": "🥤",
+      "price": 2,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Helado",
+          "price": 0
+        },
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Fanguito",
+          "price": 0
+        },
+        {
+          "name": "Cake",
+          "price": 0
+        },
+        {
+          "name": "Flan",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-026",
+      "name": "Batido de Helado Especial",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "shortDescription": "Helado CID.",
+      "longDescription": "Batido de Helado Especial — Helado CID.",
+      "image": "🥤",
+      "price": 2.5,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "addons": [
+        {
+          "name": "Helado",
+          "price": 0
+        },
+        {
+          "name": "Leche Condensada",
+          "price": 0
+        },
+        {
+          "name": "Fanguito",
+          "price": 0
+        },
+        {
+          "name": "Cake",
+          "price": 0
+        },
+        {
+          "name": "Flan",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-027",
+      "name": "Refresco",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Bebidas",
+      "shortDescription": "",
+      "longDescription": "Refresco",
+      "image": "🥤",
+      "price": 1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-028",
+      "name": "Jugos de Cajita",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Bebidas",
+      "shortDescription": "",
+      "longDescription": "Jugos de Cajita",
+      "image": "🧃",
+      "price": 0.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-029",
+      "name": "Agua de Pomo",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Bebidas",
+      "shortDescription": "",
+      "longDescription": "Agua de Pomo",
+      "image": "💧",
+      "price": 0.5,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "ey-030",
+      "name": "Cerveza",
+      "businessId": "ella-y-yo",
+      "businessName": "Ella y Yo",
+      "category": "Bebidas",
+      "shortDescription": "",
+      "longDescription": "Cerveza",
+      "image": "🍺",
+      "price": 1.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-001",
+      "name": "Pizza de Queso",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Pizza de queso.",
+      "image": "🍕",
+      "price": 0.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-002",
+      "name": "Pizza de Queso Doble",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Pizza de queso doble.",
+      "image": "🍕",
+      "price": 1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-003",
+      "name": "Pizza de Jamón",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Pizza de jamón.",
+      "image": "🍕",
+      "price": 1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-004",
+      "name": "Pizza de Chorizo",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Pizza de chorizo.",
+      "image": "🍕",
+      "price": 1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-005",
+      "name": "Pizza Hawaiana",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Pizza Hawaiana.",
+      "image": "🍕",
+      "price": 1.2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-006",
+      "name": "Pizza de Cebolla",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Pizza de cebolla.",
+      "image": "🍕",
+      "price": 0.9,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-007",
+      "name": "Pizza de Perro Caliente",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Pizza de perro caliente.",
+      "image": "🍕",
+      "price": 0.9,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-008",
+      "name": "Espaguetis Napolitano",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Espaguetis napolitano.",
+      "image": "🍝",
+      "price": 1.2,
+      "packaging": [
+        {
+          "name": "Jaba",
+          "price": 0
+        },
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-009",
+      "name": "Dulce 3 Leches",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Dulce 3 leches.",
+      "image": "🍮",
+      "price": 1.1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-010",
+      "name": "Ensalada Fría",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Ensalada fría.",
+      "image": "🥗",
+      "price": 0.7,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-011",
+      "name": "Gelatina",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Gelatina.",
+      "image": "🍮",
+      "price": 0.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-012",
+      "name": "Arroz con Leche",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Arroz con leche.",
+      "image": "🍚",
+      "price": 0.8,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-013",
+      "name": "Flan",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Flan.",
+      "image": "🍮",
+      "price": 0.9,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-014",
+      "name": "Natilla",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Natilla.",
+      "image": "🍮",
+      "price": 0.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-001",
+      "name": "Arroz Instantáneo",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Arroz instantáneo, se vende por unidad.",
+      "image": "🍚",
+      "photo": "/assets/images/products/Atrévete/Arroz Instantáneo -700 cup.jpg",
+      "price": 1.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-002",
+      "name": "Arroz Instantáneo Amarillo",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Arroz instantáneo amarillo, se vende por unidad.",
+      "image": "🍚",
+      "photo": "/assets/images/products/Atrévete/Arroz Instantáneo Amarillo --700 cup.jpg",
+      "price": 1.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-003",
+      "name": "Arroz Instantáneo con Frijoles Colorados",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Arroz instantáneo con frijoles colorados, se vende por unidad.",
+      "image": "🍚",
+      "photo": "/assets/images/products/Atrévete/Arroz Instantáneo con frijoles Colorados - 700 cup.jpg",
+      "price": 1.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-004",
+      "name": "Arroz (3 lb)",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Paquete de 3 libras.",
+      "longDescription": "Arroz, paquete de 3 libras.",
+      "image": "🍚",
+      "price": 2.1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-005",
+      "name": "Arroz (5 lb)",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Paquete de 5 libras.",
+      "longDescription": "Arroz, paquete de 5 libras.",
+      "image": "🍚",
+      "price": 3.5,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-006",
+      "name": "Café Colombiano",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Café Colombiano, se vende por unidad.",
+      "image": "☕",
+      "photo": "/assets/images/products/Atrévete/Café Colombiano 2420.jpg",
+      "price": 4.84,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-007",
+      "name": "Café Expresso",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Café Expresso, se vende por unidad.",
+      "image": "☕",
+      "photo": "/assets/images/products/Atrévete/Café Expresso 2420.jpg",
+      "price": 4.84,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-008",
+      "name": "Café Latin Blend",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Café Latin Blend, se vende por unidad.",
+      "image": "☕",
+      "photo": "/assets/images/products/Atrévete/Café Latin Blend --2420 cup.jpg",
+      "price": 4.84,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-009",
+      "name": "Champú",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Champú, se vende por unidad.",
+      "image": "🧴",
+      "photo": "/assets/images/products/Atrévete/Champú --1650 cup.jpg",
+      "price": 3.3,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-010",
+      "name": "Detergente Líquido Marwa",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Detergente líquido Marwa, se vende por unidad.",
+      "image": "🧴",
+      "photo": "/assets/images/products/Atrévete/detergente líquido Marwa - 370cup.jpg",
+      "price": 0.74,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-011",
+      "name": "Detergente en Polvo (500 g)",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Regalos",
+      "shortDescription": "Paquete de 500 g.",
+      "longDescription": "Detergente en polvo, paquete de 500 g.",
+      "image": "🧺",
+      "photo": "/assets/images/products/Atrévete/deterrgente en polvo 500g - 865 cup.jpg",
+      "price": 1.73,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-012",
+      "name": "Esponjas",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Esponjas, se venden por unidad.",
+      "image": "🧽",
+      "photo": "/assets/images/products/Atrévete/Esponjas -46 cup.jpg",
+      "price": 0.09,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-013",
+      "name": "Galletas Animados",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Galletas Animados, se venden por unidad.",
+      "image": "🍪",
+      "photo": "/assets/images/products/Atrévete/galletas animados 465 cup.jpg",
+      "price": 0.93,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-014",
+      "name": "Galletas Nikito (chica)",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Galletas Nikito, presentación chica.",
+      "image": "🍪",
+      "photo": "/assets/images/products/Atrévete/galletas Nikit0 150 cup y 300 cup.jpg",
+      "price": 0.3,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-015",
+      "name": "Galletas Nikito (grande)",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Galletas Nikito, presentación grande.",
+      "image": "🍪",
+      "photo": "/assets/images/products/Atrévete/galletas Nikito 300 cup.jpg",
+      "price": 0.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-016",
+      "name": "Lomo de Cerdo (pieza completa)",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Se vende la pieza completa.",
+      "longDescription": "Lomo de cerdo, se vende la pieza completa.",
+      "image": "🥩",
+      "photo": "/assets/images/products/Atrévete/lomo de cerdo -1600 cup (se vende la pieza completa).jpg",
+      "price": 3.2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-017",
+      "name": "Melocotón en Conserva",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Melocotón en conserva, se vende por unidad.",
+      "image": "🍑",
+      "photo": "/assets/images/products/Atrévete/melocotón en conserva - 780 cup.jpg",
+      "price": 1.56,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-018",
+      "name": "Nutella Marwa",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Nutella Marwa, se vende por unidad.",
+      "image": "🍫",
+      "photo": "/assets/images/products/Atrévete/Nutella Marwa 1070.jpg",
+      "price": 2.14,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-019",
+      "name": "Paquete de Pollo (10 libras)",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Paquete de 10 libras.",
+      "longDescription": "Paquete de pollo, 10 libras.",
+      "image": "🍗",
+      "photo": "/assets/images/products/Atrévete/paquete de pollo 10 libras 7350.jpg",
+      "price": 14.7,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-020",
+      "name": "Pasta Dental Colgate",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Regalos",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Pasta dental Colgate, se vende por unidad.",
+      "image": "🪥",
+      "photo": "/assets/images/products/Atrévete/pasta dental colgate -700.jpg",
+      "price": 1.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-021",
+      "name": "Pastilla de Pollo",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Pastilla de pollo, se vende por unidad.",
+      "image": "🥟",
+      "photo": "/assets/images/products/Atrévete/pastilla de pollo -30cup.jpg",
+      "price": 0.06,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-022",
+      "name": "Picadillo Cocinerito",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Picadillo Cocinerito, se vende por unidad.",
+      "image": "🥫",
+      "photo": "/assets/images/products/Atrévete/picadillo Cocinerito -660 cup.jpg",
+      "price": 1.32,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "atr-023",
+      "name": "Sopita Instantánea Pollo y Res",
+      "businessId": "atrevete",
+      "businessName": "Atrévete",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Sopita instantánea sabor pollo y res, se vende por unidad.",
+      "image": "🍜",
+      "photo": "/assets/images/products/Atrévete/Sopita Intantánea Pollo y Res --230 cup.jpg",
+      "price": 0.46,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-001",
+      "name": "Bistec de Pollo Grille",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Con guarnición (arroz moro o blanco, vianda y ensalada).",
+      "longDescription": "Bistec de pollo grille, servido con guarnición: arroz moro o arroz blanco, vianda y ensalada.",
+      "image": "🍗",
+      "photo": "/assets/images/products/La Cocina de Claudia/bistec de pollo grillé 2600 cup (con guarnición).jpg",
+      "price": 5.2,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-002",
+      "name": "Bistec de Pollo Empanado",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Con guarnición (arroz moro o blanco, vianda y ensalada).",
+      "longDescription": "Bistec de pollo empanado, servido con guarnición: arroz moro o arroz blanco, vianda y ensalada.",
+      "image": "🍗",
+      "price": 5.4,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-003",
+      "name": "Muslo de Pollo Asado",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Con guarnición (arroz moro o blanco, vianda y ensalada).",
+      "longDescription": "Muslo de pollo asado, servido con guarnición: arroz moro o arroz blanco, vianda y ensalada.",
+      "image": "🍗",
+      "price": 5,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-004",
+      "name": "Fajitas de Pollo",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Con guarnición (arroz moro o blanco, vianda y ensalada).",
+      "longDescription": "Fajitas de pollo, servidas con guarnición: arroz moro o arroz blanco, vianda y ensalada.",
+      "image": "🍗",
+      "price": 5.4,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-005",
+      "name": "Bistec de Pollo Gratinado",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Con guarnición (arroz moro o blanco, vianda y ensalada).",
+      "longDescription": "Bistec de pollo gratinado, servido con guarnición: arroz moro o arroz blanco, vianda y ensalada.",
+      "image": "🍗",
+      "photo": "/assets/images/products/La Cocina de Claudia/bistec de pollo gratinado - 2900 cup ( con guarnición).jpg",
+      "price": 5.8,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-006",
+      "name": "Masas de Cerdo",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Con guarnición (arroz moro o blanco, vianda y ensalada).",
+      "longDescription": "Masas de cerdo, servidas con guarnición: arroz moro o arroz blanco, vianda y ensalada.",
+      "image": "🍖",
+      "price": 5.8,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-007",
+      "name": "Bistec de Cerdo Grille",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Con guarnición (arroz moro o blanco, vianda y ensalada).",
+      "longDescription": "Bistec de cerdo grille, servido con guarnición: arroz moro o arroz blanco, vianda y ensalada.",
+      "image": "🥩",
+      "price": 5.2,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-008",
+      "name": "Bistec de Cerdo Gratinado",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Con guarnición (arroz moro o blanco, vianda y ensalada).",
+      "longDescription": "Bistec de cerdo gratinado, servido con guarnición: arroz moro o arroz blanco, vianda y ensalada.",
+      "image": "🥩",
+      "price": 5.8,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-009",
+      "name": "Bistec de Cerdo Uruguayo",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Con guarnición (arroz moro o blanco, vianda y ensalada).",
+      "longDescription": "Bistec de cerdo uruguayo, servido con guarnición: arroz moro o arroz blanco, vianda y ensalada.",
+      "image": "🥩",
+      "price": 8,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-010",
+      "name": "Carne con Papa",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Con guarnición (arroz moro o blanco, vianda y ensalada).",
+      "longDescription": "Carne con papa, servida con guarnición: arroz moro o arroz blanco, vianda y ensalada.",
+      "image": "🍲",
+      "price": 6.4,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-011",
+      "name": "Picadillo a la Habanera",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Con guarnición (arroz moro o blanco, vianda y ensalada).",
+      "longDescription": "Picadillo a la habanera, servido con guarnición: arroz moro o arroz blanco, vianda y ensalada.",
+      "image": "🍲",
+      "price": 5.6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-012",
+      "name": "Arroz Frito",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Especialidad de la casa.",
+      "longDescription": "Arroz frito, especialidad de la casa.",
+      "image": "🍚",
+      "photo": "/assets/images/products/La Cocina de Claudia/arroz frito - 1000 cup.jpg",
+      "price": 2,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-013",
+      "name": "Tamal en Cazuela con Carne",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Especialidad de la casa.",
+      "longDescription": "Tamal en cazuela con carne, especialidad de la casa.",
+      "image": "🌽",
+      "photo": "/assets/images/products/La Cocina de Claudia/tamal en casuela con carne - 2500 cup.jpg",
+      "price": 5,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-014",
+      "name": "Tamal",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Especialidad de la casa.",
+      "longDescription": "Tamal, especialidad de la casa.",
+      "image": "🌽",
+      "photo": "/assets/images/products/La Cocina de Claudia/tamal - 350 cup.jpg",
+      "price": 0.7,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-015",
+      "name": "Yuca",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Especialidad de la casa.",
+      "longDescription": "Yuca, especialidad de la casa.",
+      "image": "🍠",
+      "price": 1.8,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-016",
+      "name": "Guiso (por cucharón)",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Precio por cucharón.",
+      "longDescription": "Guiso, precio por cucharón.",
+      "image": "🍲",
+      "photo": "/assets/images/products/La Cocina de Claudia/guiso - 150 cup (por cucharón).jpg",
+      "price": 0.3,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-017",
+      "name": "Frijoles (por cucharón)",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Precio por cucharón.",
+      "longDescription": "Frijoles, precio por cucharón.",
+      "image": "🫘",
+      "price": 0.18,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-018",
+      "name": "Tostones Relleno",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Especialidad de la casa.",
+      "longDescription": "Tostones relleno, especialidad de la casa.",
+      "image": "🍽️",
+      "photo": "/assets/images/products/La Cocina de Claudia/tostones rellenos - 1600.jpg",
+      "price": 3.2,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-019",
+      "name": "Ensalada Fría (Termopack)",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Presentación en termopack.",
+      "longDescription": "Ensalada fría, presentación en termopack. El precio ya incluye el envase.",
+      "image": "🥗",
+      "photo": "/assets/images/products/La Cocina de Claudia/ensalada fría en termopack 1300.jpg",
+      "price": 2.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-020",
+      "name": "Ensalada Fría (Cubeta 4 Litros)",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Presentación en cubeta de 4 litros.",
+      "longDescription": "Ensalada fría, presentación en cubeta de 4 litros. El precio ya incluye el envase.",
+      "image": "🥗",
+      "price": 9,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-021",
+      "name": "Croquetas de la Casa",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Entrante.",
+      "longDescription": "Croquetas de la casa.",
+      "image": "🧆",
+      "price": 2,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-022",
+      "name": "Fajitas de Pollo (Entrante)",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Entrante.",
+      "longDescription": "Fajitas de pollo, porción de entrante.",
+      "image": "🍗",
+      "price": 3.2,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-023",
+      "name": "Picadera Especial",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Entrante para compartir.",
+      "longDescription": "Picadera especial, entrante para compartir.",
+      "image": "🍽️",
+      "price": 7,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-024",
+      "name": "Pudín",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Postre casero.",
+      "longDescription": "Pudín, postre casero.",
+      "image": "🍮",
+      "photo": "/assets/images/products/La Cocina de Claudia/pudin 2700 cup.jpg",
+      "price": 5.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-025",
+      "name": "Flan",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Postre casero.",
+      "longDescription": "Flan, postre casero.",
+      "image": "🍮",
+      "photo": "/assets/images/products/La Cocina de Claudia/flan - 3700 cup.jpg",
+      "price": 7.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-026",
+      "name": "Dulce de Fruta Bomba",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Con queso.",
+      "longDescription": "Dulce de fruta bomba con queso.",
+      "image": "🍯",
+      "photo": "/assets/images/products/La Cocina de Claudia/dulce de frutabomba con queso --500 cup.jpg",
+      "price": 1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-027",
+      "name": "Arroz con Leche",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Comidas",
+      "shortDescription": "Postre casero.",
+      "longDescription": "Arroz con leche, postre casero.",
+      "image": "🍮",
+      "photo": "/assets/images/products/La Cocina de Claudia/arroz con leche -500 cup.jpg",
+      "price": 1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-028",
+      "name": "Pan con Bistec de Cerdo",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Panadería",
+      "shortDescription": "Pan preparado.",
+      "longDescription": "Pan con bistec de cerdo.",
+      "image": "🥪",
+      "photo": "/assets/images/products/La Cocina de Claudia/pan con bistec de cerdo -1000 cup.jpg",
+      "price": 2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-029",
+      "name": "Pan con Hamburguesa",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Panadería",
+      "shortDescription": "Pan preparado.",
+      "longDescription": "Pan con hamburguesa.",
+      "image": "🍔",
+      "price": 1.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-030",
+      "name": "Pan Especial",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Panadería",
+      "shortDescription": "Bistec de cerdo, jamón y queso.",
+      "longDescription": "Pan especial: bistec de cerdo, jamón y queso.",
+      "image": "🥪",
+      "photo": "/assets/images/products/La Cocina de Claudia/pan especial bistec de cerdo , jamñon y queso 1500 cup.jpg",
+      "price": 3,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-031",
+      "name": "Pan con Carne Asada",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Panadería",
+      "shortDescription": "Pan preparado.",
+      "longDescription": "Pan con carne asada.",
+      "image": "🥪",
+      "price": 2.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-032",
+      "name": "Refrescos",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Bebidas",
+      "shortDescription": "Coca-Cola, Sprite o Fanta.",
+      "longDescription": "Refresco de lata, a elegir entre Coca-Cola, Sprite o Fanta.",
+      "image": "🥤",
+      "options": [
+        "Coca-Cola",
+        "Sprite",
+        "Fanta"
+      ],
+      "price": 0.96,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cc-033",
+      "name": "Cerveza",
+      "businessId": "cocina-de-claudia",
+      "businessName": "La Cocina de Claudia",
+      "category": "Bebidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Cerveza, precio por unidad.",
+      "image": "🍺",
       "price": 1,
       "stockStatus": "disponible"
     },
