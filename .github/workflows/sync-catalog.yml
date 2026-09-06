@@ -1,0 +1,40 @@
+name: Sync catálogo Familia
+
+on:
+  schedule:
+    # 09:00 UTC ~ madrugada en Cuba (UTC-4/UTC-5), horario de bajo tráfico.
+    - cron: '0 9 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-catalog
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Sincronizar catálogo e imágenes desde Traelo Normal
+        run: node scripts/build-catalog-familia.js
+
+      - name: Commit y push si hay cambios
+        run: |
+          git config user.name "traelo-familia-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/data/catalog-familia.json public/assets
+          if git diff --cached --quiet; then
+            echo "Sin cambios en el catálogo."
+            exit 0
+          fi
+          git commit -m "chore: sync catálogo desde Traelo Normal [automated]"
+          git push origin HEAD:main

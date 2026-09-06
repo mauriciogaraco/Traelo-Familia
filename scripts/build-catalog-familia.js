@@ -8,15 +8,16 @@
  *   productos ma-ecoflow-delta2 / ma-ecoflow-delta3 (currency:"USD")
  */
 
-import { writeFileSync } from 'fs'
+import { writeFileSync, existsSync, mkdirSync } from 'fs'
 import { fileURLToPath } from 'url'
-import { dirname, resolve } from 'path'
+import { dirname, resolve, join } from 'path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = resolve(__dirname, '..')
 
 const SOURCE_URL =
   'https://raw.githubusercontent.com/mauriciogaraco/Traelo/main/public/data/catalog-familia.json'
+const SOURCE_ASSETS_BASE = 'https://raw.githubusercontent.com/mauriciogaraco/Traelo/main/public'
 
 const RATE = 500
 
@@ -366,6 +367,45 @@ const COMBOS = [
   },
 ]
 
+/** Descarga a public/ los assets (/assets/...) que el catálogo referencia y no existen localmente. */
+async function syncMissingAssets(catalog) {
+  const paths = new Set()
+  for (const b of catalog.businesses) {
+    if (b.image?.startsWith('/assets/')) paths.add(b.image)
+  }
+  for (const p of catalog.products) {
+    if (p.photo?.startsWith('/assets/')) paths.add(p.photo)
+    if (p.image?.startsWith('/assets/')) paths.add(p.image)
+  }
+
+  const missing = [...paths].filter(p => !existsSync(join(root, 'public', decodeURIComponent(p))))
+  if (missing.length === 0) {
+    console.log('✓ imágenes — nada que descargar')
+    return
+  }
+
+  console.log(`↓ Descargando ${missing.length} imágenes faltantes…`)
+  let ok = 0
+  let failed = 0
+  for (const relPath of missing) {
+    const decoded = decodeURIComponent(relPath)
+    const encodedUrl = SOURCE_ASSETS_BASE + decoded.split('/').map(encodeURIComponent).join('/')
+    const destPath = join(root, 'public', decoded)
+    try {
+      const res = await fetch(encodedUrl)
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      const buf = Buffer.from(await res.arrayBuffer())
+      mkdirSync(dirname(destPath), { recursive: true })
+      writeFileSync(destPath, buf)
+      ok++
+    } catch (err) {
+      failed++
+      console.warn(`  ✗ ${decoded} — ${err.message}`)
+    }
+  }
+  console.log(`✓ imágenes — ${ok} descargadas, ${failed} fallidas`)
+}
+
 async function main() {
   console.log('↓ Descargando catálogo de Tráelo Normal…')
   const res = await fetch(SOURCE_URL)
@@ -421,6 +461,8 @@ async function main() {
   console.log(
     `✓ catalog-familia.json — ${catalog.products.length} productos, ${catalog.businesses.length} negocios`
   )
+
+  await syncMissingAssets(catalog)
 }
 
 main().catch(err => {
