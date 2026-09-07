@@ -462,6 +462,7 @@
       "description": "Frappio — Otra forma de disfrutar el café.",
       "image": "/assets/images/business/Frappio.jpg",
       "color": "from-sky-100 to-cyan-50",
+      "status": "cerrado",
       "businessCommission": 0,
       "clientCommission": 5,
       "schedule": {
@@ -727,6 +728,7 @@
       "description": "La Cocina de Claudia — De mi cocina a tu mesa. Comida casera, panes y postres.",
       "image": "/assets/images/business/La Cocina de Claudia.jpg",
       "color": "from-rose-100 to-pink-50",
+      "status": "cerrado",
       "paymentNote": "Mensajería 250 CUP · después de las 7:00 pm sube a 350 CUP.",
       "deliveryFee": 250,
       "businessCommission": 0,
@@ -743,7 +745,10 @@
         "open": "12:30",
         "close": "19:00",
         "label": "Mar–Dom · 12:30 pm – 7:00 pm"
-      }
+      },
+      "businessCategories": [
+        "Restaurantes"
+      ]
     }
   ],
   "products": [
@@ -4201,7 +4206,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🥤",
-      "price": 1,
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -4213,7 +4218,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🥤",
-      "price": 1,
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -5208,7 +5213,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🥤",
-      "price": 1,
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -5220,7 +5225,7 @@
       "shortDescription": "",
       "longDescription": "Se vende por unidad.",
       "image": "🥤",
-      "price": 1,
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -13876,7 +13881,7 @@
       "longDescription": "Cartón de huevo, se vende por cartón.",
       "image": "🥚",
       "price": 9.1,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "daf-087",
@@ -14045,7 +14050,7 @@
       "image": "🫒",
       "photo": "/assets/images/products/DAF/aceite 1 Litro 3400 cup.jpg",
       "price": 6.8,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "daf-100",
@@ -14167,7 +14172,7 @@
       "image": "🍦",
       "photo": "/assets/images/products/DAF/paleticas Cid 580.jpg",
       "price": 1.16,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "em-001",
