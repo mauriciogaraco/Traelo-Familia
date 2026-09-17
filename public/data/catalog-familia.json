@@ -734,6 +734,7 @@
       "description": "La Cocina de Claudia — De mi cocina a tu mesa. Comida casera, panes y postres.",
       "image": "/assets/images/business/La Cocina de Claudia.jpg",
       "color": "from-rose-100 to-pink-50",
+      "status": "cerrado",
       "paymentNote": "Mensajería 250 CUP · después de las 7:00 pm sube a 350 CUP.",
       "deliveryFee": 250,
       "businessCommission": 0,
@@ -11225,7 +11226,7 @@
       "shortDescription": "Se vende por unidad.",
       "longDescription": "Malta fría, se vende por unidad.",
       "image": "🍺",
-      "price": 0.86,
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -13564,7 +13565,7 @@
       "image": "🍬",
       "photo": "/assets/images/products/DAF/Azúcar por libra -- 480.jpg",
       "price": 0.72,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "daf-035",
@@ -14237,7 +14238,7 @@
       "longDescription": "Cartón de huevo, se vende por cartón.",
       "image": "🥚",
       "price": 8.5,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "daf-087",
@@ -14753,7 +14754,7 @@
       "longDescription": "Hígado de pollo, se vende por kilogramo.",
       "image": "🍗",
       "price": 3.5,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "daf-127",
@@ -14765,7 +14766,7 @@
       "longDescription": "Lomo Ahumado, se vende por unidad.",
       "image": "🥓",
       "price": 3.7,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "daf-128",
@@ -14777,7 +14778,7 @@
       "longDescription": "Lomo de cerdo, precio por libra.",
       "image": "🥩",
       "price": 3.6,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "daf-129",
@@ -14825,7 +14826,7 @@
       "longDescription": "Refresco Fresh Mix, con gas.",
       "image": "🥤",
       "price": 0.56,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "daf-133",
@@ -14862,6 +14863,18 @@
       "image": "🔗",
       "price": 0,
       "stockStatus": "agotado"
+    },
+    {
+      "id": "daf-136",
+      "name": "Chorizo",
+      "businessId": "mercado-daf",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "shortDescription": "Precio por unidad.",
+      "longDescription": "Chorizo, se vende por unidad.",
+      "image": "🌭",
+      "price": 0.48,
+      "stockStatus": "disponible"
     },
     {
       "id": "em-001",
@@ -17328,7 +17341,13 @@
       "longDescription": "Pechuga de pollo a la grille.",
       "image": "🍗",
       "price": 5.2,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-002",
@@ -17340,7 +17359,13 @@
       "longDescription": "Pechuga de pollo gratinada.",
       "image": "🍗",
       "price": 5.6,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-003",
@@ -17352,7 +17377,13 @@
       "longDescription": "Pechuga de pollo con jamón y queso.",
       "image": "🍗",
       "price": 6.4,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-004",
@@ -17364,7 +17395,13 @@
       "longDescription": "Pechuga de pollo empanada.",
       "image": "🍗",
       "price": 5,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-005",
@@ -17376,7 +17413,13 @@
       "longDescription": "Pechuga de pollo Cordon Blue.",
       "image": "🍗",
       "price": 8.4,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-006",
@@ -17388,7 +17431,13 @@
       "longDescription": "Fajitas de pechuga de pollo.",
       "image": "🍗",
       "price": 5,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-007",
@@ -17400,7 +17449,13 @@
       "longDescription": "Bistec de cerdo a la grille.",
       "image": "🥩",
       "price": 4.8,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-008",
@@ -17412,7 +17467,13 @@
       "longDescription": "Bistec de cerdo empanado.",
       "image": "🥩",
       "price": 5,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-009",
@@ -17424,7 +17485,13 @@
       "longDescription": "Bistec de cerdo gratinado.",
       "image": "🥩",
       "price": 5.4,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-010",
@@ -17436,7 +17503,13 @@
       "longDescription": "Bistec de cerdo especial.",
       "image": "🥩",
       "price": 6,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-011",
@@ -17449,7 +17522,13 @@
       "image": "🥩",
       "photo": "/assets/images/products/La Lomita/bistec uruguayo.jpg",
       "price": 7.2,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-012",
@@ -17461,7 +17540,13 @@
       "longDescription": "Bistec de cerdo en rollo.",
       "image": "🥩",
       "price": 5.6,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-013",
@@ -17473,7 +17558,13 @@
       "longDescription": "Lonjas de cerdo.",
       "image": "🥩",
       "price": 5.8,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-014",
@@ -17485,7 +17576,13 @@
       "longDescription": "Fajitas de cerdo.",
       "image": "🥩",
       "price": 4.8,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-015",
@@ -17498,7 +17595,13 @@
       "image": "🍝",
       "photo": "/assets/images/products/La Lomita/spaguettis de queso.jpg",
       "price": 4,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-016",
@@ -17511,7 +17614,13 @@
       "image": "🍝",
       "photo": "/assets/images/products/La Lomita/spaguettis de jamón y queso.jpg",
       "price": 5,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-017",
@@ -17523,7 +17632,13 @@
       "longDescription": "Papas fritas, entrante.",
       "image": "🍟",
       "price": 2,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-018",
@@ -17535,7 +17650,13 @@
       "longDescription": "Entremés de la casa.",
       "image": "🍽️",
       "price": 3,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-019",
@@ -17547,7 +17668,13 @@
       "longDescription": "Tostón relleno.",
       "image": "🍽️",
       "price": 2,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-020",
@@ -17559,7 +17686,13 @@
       "longDescription": "Tostón natural.",
       "image": "🍽️",
       "price": 1.6,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-021",
@@ -17571,7 +17704,13 @@
       "longDescription": "Chicharritas de plátano.",
       "image": "🍽️",
       "price": 1.4,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-022",
@@ -17584,7 +17723,13 @@
       "image": "🧆",
       "photo": "/assets/images/products/La Lomita/ración de croquetas.jpg",
       "price": 2,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-023",
@@ -17596,7 +17741,13 @@
       "longDescription": "Picadera para compartir.",
       "image": "🍽️",
       "price": 8,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-024",
@@ -17608,7 +17759,13 @@
       "longDescription": "Arroz blanco, guarnición.",
       "image": "🍚",
       "price": 0.7,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-025",
@@ -17621,7 +17778,13 @@
       "image": "🍚",
       "photo": "/assets/images/products/La Lomita/arroz moro.jpg",
       "price": 1.4,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-026",
@@ -17634,7 +17797,13 @@
       "image": "🍚",
       "photo": "/assets/images/products/La Lomita/arroz frito.jpg",
       "price": 1.8,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-027",
@@ -17646,7 +17815,13 @@
       "longDescription": "Ensalada mixta, guarnición.",
       "image": "🥗",
       "price": 2,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-028",
@@ -17658,7 +17833,13 @@
       "longDescription": "Flan, postre casero.",
       "image": "🍮",
       "price": 1.8,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-029",
@@ -17670,7 +17851,13 @@
       "longDescription": "Cuña de cake tres leches.",
       "image": "🍰",
       "price": 2,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-030",
@@ -17682,7 +17869,13 @@
       "longDescription": "Ropa vieja, especial de la casa.",
       "image": "🍲",
       "price": 6.4,
-      "stockStatus": "disponible"
+      "stockStatus": "disponible",
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0
+        }
+      ]
     },
     {
       "id": "ll-031",

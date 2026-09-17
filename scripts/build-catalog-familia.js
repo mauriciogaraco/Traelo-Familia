@@ -59,6 +59,9 @@ function adjustPrice(p) {
   if (/(cerveza|refresco).*\b(de|en)\s+lata\b/i.test(p.name)) {
     return { ...p, price: 1 }
   }
+  if (p.businessId === 'pizzeria-mm' && p.name.trim().toLowerCase() === 'malta') {
+    return { ...p, price: 1.1 }
+  }
   const text = `${p.name} ${p.shortDescription ?? ''} ${p.longDescription ?? ''}`.toLowerCase()
   if (p.businessId === 'mercadito-ahorro' && text.includes('aceite')) {
     return { ...p, price: Math.round((p.price + 5) * 100) / 100 }
