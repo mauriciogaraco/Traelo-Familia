@@ -4457,7 +4457,7 @@
       "longDescription": "Se vende por unidad.",
       "image": "🍺",
       "price": 1.1,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "pm-dr-jugo-cajita",
@@ -4615,7 +4615,7 @@
       "image": "🌭",
       "photo": "/assets/images/products/mercado/perritos_mana.jpg",
       "price": 2.4,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "ma-004",
@@ -5497,7 +5497,7 @@
       "longDescription": "Se vende por unidad.",
       "image": "🍺",
       "price": 1.1,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "lm-dr-jugo-cajita",
@@ -13512,7 +13512,7 @@
       "image": "🚬",
       "photo": "/assets/images/products/DAF/popular rojo 850 por unidad.jpg",
       "price": 1.7,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "daf-031",
@@ -17278,6 +17278,47 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "lr-017",
+      "name": "Lámpara con Tubo LED",
+      "businessId": "los-reales",
+      "businessName": "Los Reales Tiendas de Electrodomésticos",
+      "category": "Regalos",
+      "shortDescription": "Precio en CUP.",
+      "longDescription": "Lámpara con tubo LED incluido, bajo consumo de energía.",
+      "image": "💡",
+      "photo": "/assets/images/products/Los Reales Electrodomésticos/Lámpara de Tubo Led 2700 cup.jpg",
+      "price": 5.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "lr-018",
+      "name": "Split Milexus 1 Tonelada",
+      "businessId": "los-reales",
+      "businessName": "Los Reales Tiendas de Electrodomésticos",
+      "category": "Regalos",
+      "shortDescription": "Precio en USD.",
+      "longDescription": "Split Milexus 1 tonelada, tipo pared. Equivalente: 208,000 CUP si prefieres pagar en esa moneda.",
+      "image": "❄️",
+      "photo": "/assets/images/products/Los Reales Electrodomésticos/Split 1 Tonelada 260 usd o 208000 cup.jpg",
+      "price": 260,
+      "currency": "USD",
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "lr-019",
+      "name": "Ventilador de Pared Pulox",
+      "businessId": "los-reales",
+      "businessName": "Los Reales Tiendas de Electrodomésticos",
+      "category": "Regalos",
+      "shortDescription": "Precio en USD.",
+      "longDescription": "Ventilador de pared Pulox, 75W. Equivalente: 24,000 CUP si prefieres pagar en esa moneda.",
+      "image": "🌀",
+      "photo": "/assets/images/products/Los Reales Electrodomésticos/Ventilador de Pared Pulox 30 usd o 24 000 cup.jpg",
+      "price": 30,
+      "currency": "USD",
+      "stockStatus": "disponible"
+    },
+    {
       "id": "ll-001",
       "name": "Pechuga Grille",
       "businessId": "la-lomita",
@@ -17690,7 +17731,7 @@
       "image": "🌭",
       "photo": "/assets/images/products/La Pino  - Tienda de Alimentos/Chorizo especial 2500 la libra.jpg",
       "price": 5,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "lpin-002",
@@ -17716,7 +17757,7 @@
       "image": "🥓",
       "photo": "/assets/images/products/La Pino  - Tienda de Alimentos/Jamón Escaldado 1800 la libra.jpg",
       "price": 3.6,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "lpin-004",
@@ -17768,7 +17809,7 @@
       "image": "🥓",
       "photo": "/assets/images/products/La Pino  - Tienda de Alimentos/jamón embuchado en bicora - 1800cup.jpg",
       "price": 3.6,
-      "stockStatus": "disponible"
+      "stockStatus": "agotado"
     },
     {
       "id": "lpin-008",
@@ -17807,6 +17848,19 @@
       "image": "🌭",
       "photo": "/assets/images/products/La Pino  - Tienda de Alimentos/mini chorizo por cantidad 550 por unidad 800.jpg",
       "price": 1.6,
+      "stockStatus": "agotado"
+    },
+    {
+      "id": "lpin-011",
+      "name": "Carne de Res",
+      "businessId": "la-pino",
+      "businessName": "La Pino - Tienda de Alimentos",
+      "category": "Comidas",
+      "shortDescription": "Precio por libra.",
+      "longDescription": "Carne de res, precio por libra.",
+      "image": "🥩",
+      "photo": "/assets/images/products/La Pino  - Tienda de Alimentos/carne de res -1800 lalibra.jpg",
+      "price": 3.6,
       "stockStatus": "disponible"
     },
     {
