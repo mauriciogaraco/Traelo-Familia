@@ -7,7 +7,7 @@ import { EmptyState } from '../components/ui/EmptyState'
 import { formatDate, formatPrice } from '../lib/format'
 import { groupByBusiness } from '../lib/order'
 import { hasFormato, itemLineId, lineTotal, unitsOf } from '../lib/cart'
-import { sendOrderToTelegram } from '../lib/telegram'
+import { sendOrderToTelegram, orderCooldownRemaining, cooldownMessage } from '../lib/telegram'
 import type { Order } from '../types'
 
 const statusConfig = {
@@ -75,6 +75,11 @@ function OrderCard({ order, onComplete }: { order: Order; onComplete: () => void
 
   async function resend() {
     if (resending) return
+    const wait = orderCooldownRemaining()
+    if (wait > 0) {
+      showToast(cooldownMessage(wait), 'error')
+      return
+    }
     setResending(true)
     const ok = await sendOrderToTelegram(order)
     setResending(false)

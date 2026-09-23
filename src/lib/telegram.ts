@@ -54,7 +54,29 @@ export function buildOrderMessage(order: Order): string {
   return lines.join('\n')
 }
 
+const COOLDOWN_MS = 3 * 60 * 1000
+const LAST_SENT_KEY = 'traelo_last_order_sent'
+
+/** Milisegundos que faltan para poder enviar otro pedido (0 si ya se puede). */
+export function orderCooldownRemaining(): number {
+  try {
+    const last = Number(localStorage.getItem(LAST_SENT_KEY))
+    if (!last) return 0
+    return Math.max(0, last + COOLDOWN_MS - Date.now())
+  } catch {
+    return 0
+  }
+}
+
+export function cooldownMessage(ms: number): string {
+  const secs = Math.ceil(ms / 1000)
+  const m = Math.floor(secs / 60)
+  const s = secs % 60
+  return `Espera ${m}:${String(s).padStart(2, '0')} min antes de enviar otro pedido.`
+}
+
 export async function sendOrderToTelegram(order: Order): Promise<boolean> {
+  if (orderCooldownRemaining() > 0) return false
   try {
     const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
       method: 'POST',
@@ -67,7 +89,15 @@ export async function sendOrderToTelegram(order: Order): Promise<boolean> {
       }),
     })
     const data = await res.json().catch(() => null)
-    return res.ok && data?.ok === true
+    const ok = res.ok && data?.ok === true
+    if (ok) {
+      try {
+        localStorage.setItem(LAST_SENT_KEY, String(Date.now()))
+      } catch {
+        // sin storage no hay cooldown
+      }
+    }
+    return ok
   } catch {
     return false
   }

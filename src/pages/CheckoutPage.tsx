@@ -10,7 +10,7 @@ import { EmptyState } from "../components/ui/EmptyState";
 import { formatPrice } from "../lib/format";
 import { makeOrder, groupByBusiness } from "../lib/order";
 import { hasFormato, itemLineId, lineTotal, unitsOf } from "../lib/cart";
-import { sendOrderToTelegram } from "../lib/telegram";
+import { sendOrderToTelegram, orderCooldownRemaining, cooldownMessage } from "../lib/telegram";
 import { useState } from "react";
 
 export function CheckoutPage() {
@@ -46,6 +46,11 @@ export function CheckoutPage() {
 
   async function confirm() {
     if (!canConfirm) return;
+    const wait = orderCooldownRemaining();
+    if (wait > 0) {
+      showToast(cooldownMessage(wait), "error");
+      return;
+    }
     setSending(true);
 
     const order = makeOrder(items, address!, {
