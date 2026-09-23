@@ -66,7 +66,13 @@ export function CheckoutPage() {
       navigate("/pedidos", { replace: true, state: { justOrdered: order.id } });
     } else {
       setSending(false);
-      showToast("No se pudo enviar el pedido. Inténtalo de nuevo.", "error");
+      const wait = orderCooldownRemaining();
+      showToast(
+        wait > 0
+          ? cooldownMessage(wait)
+          : "No se pudo enviar el pedido. Inténtalo de nuevo o escríbenos por WhatsApp.",
+        "error",
+      );
     }
   }
 

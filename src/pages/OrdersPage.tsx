@@ -83,8 +83,13 @@ function OrderCard({ order, onComplete }: { order: Order; onComplete: () => void
     setResending(true)
     const ok = await sendOrderToTelegram(order)
     setResending(false)
+    const left = orderCooldownRemaining()
     showToast(
-      ok ? 'Pedido reenviado correctamente.' : 'No se pudo reenviar. Inténtalo de nuevo.',
+      ok
+        ? 'Pedido reenviado correctamente.'
+        : left > 0
+          ? cooldownMessage(left)
+          : 'No se pudo reenviar. Inténtalo de nuevo o escríbenos por WhatsApp.',
       ok ? 'success' : 'error'
     )
   }

@@ -28,6 +28,7 @@ export default defineConfig({
       workbox: {
         // Precache solo el app shell (JS/CSS/HTML). Las imágenes se cachean on-demand.
         globPatterns: ['**/*.{js,css,html}'],
+        navigateFallbackDenylist: [/^\/api\//],
         runtimeCaching: [
           {
             // catalog.json: NetworkFirst con timeout corto. La app muestra localStorage
