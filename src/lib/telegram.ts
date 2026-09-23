@@ -8,7 +8,19 @@ function esc(text: string): string {
   return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 }
 
-export function buildOrderMessage(order: Order): string {
+async function getClientIp(): Promise<string> {
+  try {
+    const res = await fetch('https://api.ipify.org?format=json', {
+      signal: AbortSignal.timeout(3000),
+    })
+    const data = await res.json()
+    return typeof data?.ip === 'string' ? data.ip : 'no disponible'
+  } catch {
+    return 'no disponible'
+  }
+}
+
+export function buildOrderMessage(order: Order, ip = 'no disponible'): string {
   const { id, address, total } = order
   const groups = groupByBusiness(order.items)
 
@@ -50,6 +62,9 @@ export function buildOrderMessage(order: Order): string {
   lines.push(`💳 <b>Total Zelle: ${formatPrice(zelleTotalVal)} USD</b>`)
   lines.push('')
   lines.push(`📲 <i>Coordinar pago por WhatsApp</i>`)
+  lines.push('')
+  lines.push(`🌐 <b>IP:</b> ${esc(ip)}`)
+  lines.push(`🖥 <b>Dispositivo:</b> ${esc(navigator.userAgent)}`)
 
   return lines.join('\n')
 }
@@ -78,12 +93,13 @@ export function cooldownMessage(ms: number): string {
 export async function sendOrderToTelegram(order: Order): Promise<boolean> {
   if (orderCooldownRemaining() > 0) return false
   try {
+    const ip = await getClientIp()
     const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         chat_id: TELEGRAM_CHAT_ID,
-        text: buildOrderMessage(order),
+        text: buildOrderMessage(order, ip),
         parse_mode: 'HTML',
         disable_web_page_preview: true,
       }),
