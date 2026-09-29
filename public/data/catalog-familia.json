@@ -15537,6 +15537,42 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "4e-015",
+      "name": "Pizza de Queso Gouda",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Pizza de queso gouda.",
+      "image": "🍕",
+      "price": 1.2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-016",
+      "name": "Pizza de Queso Doble Gouda",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Pizza de queso doble gouda.",
+      "image": "🍕",
+      "price": 1.8,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "4e-017",
+      "name": "Pizza de Atún",
+      "businessId": "4-esquinas",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "shortDescription": "",
+      "longDescription": "Pizza de atún.",
+      "image": "🍕",
+      "price": 1.6,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "4e-003",
       "name": "Pizza de Jamón",
       "businessId": "4-esquinas",
@@ -15545,7 +15581,7 @@
       "shortDescription": "",
       "longDescription": "Pizza de jamón.",
       "image": "🍕",
-      "price": 1,
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -15581,7 +15617,7 @@
       "shortDescription": "",
       "longDescription": "Pizza de cebolla.",
       "image": "🍕",
-      "price": 0.9,
+      "price": 1,
       "stockStatus": "disponible"
     },
     {
@@ -15593,7 +15629,7 @@
       "shortDescription": "",
       "longDescription": "Pizza de perro caliente.",
       "image": "🍕",
-      "price": 0.9,
+      "price": 1,
       "stockStatus": "disponible"
     },
     {
@@ -17591,7 +17627,7 @@
       "longDescription": "Manteca en rama, precio por libra.",
       "image": "🧈",
       "photo": "/assets/images/products/La Pino  - Tienda de Alimentos/manteca en rama 1600 la libra.jpg",
-      "price": 3.2,
+      "price": 3.4,
       "stockStatus": "disponible"
     },
     {
