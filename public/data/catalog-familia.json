@@ -4698,7 +4698,7 @@
       "shortDescription": "Una libra.",
       "longDescription": "Lomo de cerdo, se entrega por libra.",
       "image": "🥩",
-      "price": 3.5,
+      "price": 3.9,
       "stockStatus": "disponible"
     },
     {
@@ -4710,7 +4710,7 @@
       "shortDescription": "Una libra, en bistec.",
       "longDescription": "Lomo de cerdo cortado en bistec, se entrega por libra.",
       "image": "🥩",
-      "price": 3.8,
+      "price": 4,
       "stockStatus": "disponible"
     },
     {
@@ -11788,7 +11788,7 @@
       "longDescription": "Papa fresca, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🥔",
       "photo": "/assets/images/products/agro-los-prietos/alp-006.jpg",
-      "price": 1,
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -11879,7 +11879,7 @@
       "longDescription": "Piña fresca, se vende por unidad.",
       "image": "🍍",
       "photo": "/assets/images/products/agro-los-prietos/alp-013.webp",
-      "price": 0.9,
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -11905,7 +11905,7 @@
       "longDescription": "Melón fresco, precio por libra. Indica la cantidad de libras al confirmar.",
       "image": "🍈",
       "photo": "/assets/images/products/agro-los-prietos/alp-015.jpg",
-      "price": 0.32,
+      "price": 0.44,
       "stockStatus": "disponible"
     },
     {
@@ -16177,11 +16177,11 @@
       "businessId": "atrevete",
       "businessName": "Atrévete",
       "category": "Comidas",
-      "shortDescription": "Se vende la pieza completa.",
-      "longDescription": "Lomo de cerdo, se vende la pieza completa.",
+      "shortDescription": "Precio por libra. Se vende la pieza completa.",
+      "longDescription": "Lomo de cerdo, precio por libra. Se vende la pieza completa.",
       "image": "🥩",
       "photo": "/assets/images/products/Atrévete/lomo de cerdo -1600 cup (se vende la pieza completa).jpg",
-      "price": 3.45,
+      "price": 3.6,
       "stockStatus": "disponible"
     },
     {
