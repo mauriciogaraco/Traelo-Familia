@@ -25,6 +25,8 @@ jobs:
           node-version: 20
 
       - name: Sincronizar catálogo e imágenes desde Traelo Normal
+        env:
+          TRAELO_API_KEY: ${{ secrets.TRAELO_API_KEY }}
         run: node scripts/build-catalog-familia.js
 
       - name: Commit y push si hay cambios
