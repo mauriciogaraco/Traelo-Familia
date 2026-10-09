@@ -19,11 +19,103 @@ const SOURCE_URL =
   'https://raw.githubusercontent.com/mauriciogaraco/Traelo/main/public/data/catalog-familia.json'
 const SOURCE_ASSETS_BASE = 'https://raw.githubusercontent.com/mauriciogaraco/Traelo/main/public'
 
-const RATE = 500
+// Dashboard real de Tráelo (Settings → tasa de cambio, Productos → "disponible solo para
+// Tráelo Familia"). Ver TRAELO_API_KEY en .env.example — misma apiKeyAuth que ya usa la app
+// de Tráelo Normal, sin JWT de staff.
+const DASHBOARD_API_BASE =
+  process.env.TRAELO_API_BASE_URL || 'https://api.traelo-market.com/api/v1/catalog'
+const DASHBOARD_API_KEY = process.env.TRAELO_API_KEY
+
+const DEFAULT_RATE = 500
+// Se reemplaza en main() con fetchExchangeRate() antes de convertir ningún precio — ver abajo.
+let RATE = DEFAULT_RATE
 
 /** Convierte CUP → USD (solo para addons y packaging, cuyo precio llega en CUP). */
 function cupToUsd(cup) {
   return Math.round((cup / RATE) * 100) / 100
+}
+
+/**
+ * Tasa de cambio editable en vivo desde Settings del dashboard (antes vivía hardcodeada acá).
+ * Si no hay API key configurada o la llamada falla, se sigue con DEFAULT_RATE para no romper
+ * el build del catálogo por un problema de red/infra ajeno a los datos en sí.
+ */
+async function fetchExchangeRate() {
+  if (!DASHBOARD_API_KEY) {
+    console.warn(`⚠ TRAELO_API_KEY no configurada — usando tasa por defecto (${DEFAULT_RATE})`)
+    return DEFAULT_RATE
+  }
+  try {
+    const res = await fetch(`${DASHBOARD_API_BASE}/familia/config`, {
+      headers: { 'x-api-key': DASHBOARD_API_KEY },
+    })
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    const { data } = await res.json()
+    return data.exchangeRate
+  } catch (err) {
+    console.warn(
+      `⚠ No se pudo leer la tasa de cambio del dashboard (${err.message}) — usando ${DEFAULT_RATE}`
+    )
+    return DEFAULT_RATE
+  }
+}
+
+/**
+ * Productos marcados "disponible solo para Tráelo Familia" desde el dashboard (ver
+ * Product.familiaOnly). Se suman a los COMBOS de abajo; con el tiempo estos últimos se pueden
+ * migrar al dashboard y retirar de este script. Nunca rompe el build: sin API key o si falla la
+ * llamada, simplemente no hay productos exclusivos adicionales esta vez (COMBOS sigue intacto).
+ */
+async function fetchFamiliaOnlyProducts() {
+  if (!DASHBOARD_API_KEY) return []
+  try {
+    const res = await fetch(`${DASHBOARD_API_BASE}/familia/products`, {
+      headers: { 'x-api-key': DASHBOARD_API_KEY },
+    })
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    const { data } = await res.json()
+    return data
+  } catch (err) {
+    console.warn(
+      `⚠ No se pudieron leer los productos exclusivos de Familia del dashboard (${err.message})`
+    )
+    return []
+  }
+}
+
+/**
+ * Convierte un producto del dashboard real (precios en CUP, sin short/long description) al
+ * shape que espera el frontend de Familia. Solo se incluyen productos cuyo negocio ya existe en
+ * el catálogo de Familia (todos los `businesses` vienen del mismo catálogo fuente que `products`
+ * en esta primera versión) — si el dashboard algún día tiene un negocio nuevo sin equivalente
+ * acá, se omite con una advertencia en vez de inventar una tarjeta de negocio a medias.
+ */
+function mapDashboardProduct(p, businessesById) {
+  const business = businessesById.get(p.businessId)
+  if (!business) {
+    console.warn(
+      `⚠ Producto exclusivo de Familia "${p.name}" (${p.id}) pertenece a un negocio (${p.businessId}) sin equivalente en Familia — se omite.`
+    )
+    return null
+  }
+  const priceCup = p.effectivePrice ?? p.price ?? 0
+  return {
+    id: p.id,
+    businessId: p.businessId,
+    businessName: business.name,
+    category: mapCat(p.category, p.businessId),
+    name: p.name,
+    shortDescription: p.description ?? '',
+    longDescription: p.description ?? '',
+    image: '🎁',
+    photo: p.imageUrl ?? undefined,
+    price: cupToUsd(priceCup),
+    formato: p.formato ?? undefined,
+    options: p.options ?? undefined,
+    addons: p.addons ? p.addons.map(a => ({ ...a, price: cupToUsd(a.price) })) : undefined,
+    packaging: p.packaging ? p.packaging.map(pk => ({ ...pk, price: cupToUsd(pk.price) })) : undefined,
+    stockStatus: !p.available ? 'agotado' : p.lowStock ? 'pocas' : 'disponible',
+  }
 }
 
 const CAT_MAP = {
@@ -415,6 +507,9 @@ async function main() {
   if (!res.ok) throw new Error(`HTTP ${res.status} al descargar ${SOURCE_URL}`)
   const normal = await res.json()
 
+  RATE = await fetchExchangeRate()
+  console.log(`✓ tasa de cambio Tráelo Familia: ${RATE} CUP = 1 USD`)
+
   // Transformar negocios
   const businesses = normal.businesses.map(b => {
     const biz = { ...b }
@@ -454,9 +549,17 @@ async function main() {
     return prod
   })
 
+  const businessesById = new Map(businesses.map(b => [b.id, b]))
+  const dashboardProducts = (await fetchFamiliaOnlyProducts())
+    .map(p => mapDashboardProduct(p, businessesById))
+    .filter(Boolean)
+  if (dashboardProducts.length > 0) {
+    console.log(`✓ ${dashboardProducts.length} producto(s) exclusivo(s) de Familia desde el dashboard`)
+  }
+
   const catalog = {
     businesses,
-    products: [...products, ...COMBOS].map(adjustPrice),
+    products: [...products, ...COMBOS, ...dashboardProducts].map(adjustPrice),
   }
 
   const outPath = resolve(root, 'public/data/catalog-familia.json')
