@@ -1,392 +1,103 @@
 // @ts-check
 /**
- * Descarga el catálogo de Tráelo Normal desde GitHub y genera
- * public/data/catalog-familia.json con precios convertidos a USD.
+ * Genera public/data/catalog-familia.json a partir del backend real de Tráelo
+ * (api.traelo-market.com) — ya NO depende del catálogo estático legacy de Tráelo Normal
+ * (data/*.json editado a mano → raw GitHub). Ese pipeline estaba desconectado de la base de
+ * datos real: un precio cambiado desde el dashboard nunca llegaba a Tráelo Familia. Ahora todo
+ * sale de la misma fuente que ya usa la app de Tráelo Normal.
  *
- * Conversión: CUP ÷ 500 = USD (redondeado a 2 decimales)
- * Excepciones USD: negocio eme-boutique (currency:"USD") y
- *   productos ma-ecoflow-delta2 / ma-ecoflow-delta3 (currency:"USD")
+ * Precios: el backend da todo en CUP; se convierten a USD con la tasa en vivo de
+ * GET /catalog/familia/config (Settings del dashboard, antes hardcodeada acá).
+ *
+ * Si no hay TRAELO_API_KEY configurada o el backend no responde, el script no toca el catálogo
+ * ya commiteado (se mantiene el último bueno conocido) en vez de romper el build.
  */
 
-import { writeFileSync, existsSync, mkdirSync } from 'fs'
+import { writeFileSync } from 'fs'
 import { fileURLToPath } from 'url'
-import { dirname, resolve, join } from 'path'
+import { dirname, resolve } from 'path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const root = resolve(__dirname, '..')
 
-const SOURCE_URL =
-  'https://raw.githubusercontent.com/mauriciogaraco/Traelo/main/public/data/catalog-familia.json'
-const SOURCE_ASSETS_BASE = 'https://raw.githubusercontent.com/mauriciogaraco/Traelo/main/public'
-
-// Dashboard real de Tráelo (Settings → tasa de cambio, Productos → "disponible solo para
-// Tráelo Familia"). Ver TRAELO_API_KEY en .env.example — misma apiKeyAuth que ya usa la app
-// de Tráelo Normal, sin JWT de staff.
-const DASHBOARD_API_BASE =
-  process.env.TRAELO_API_BASE_URL || 'https://api.traelo-market.com/api/v1/catalog'
-const DASHBOARD_API_KEY = process.env.TRAELO_API_KEY
-
+const API_BASE = process.env.TRAELO_API_BASE_URL || 'https://api.traelo-market.com/api/v1/catalog'
+const API_KEY = process.env.TRAELO_API_KEY
 const DEFAULT_RATE = 500
-// Se reemplaza en main() con fetchExchangeRate() antes de convertir ningún precio — ver abajo.
-let RATE = DEFAULT_RATE
 
-/** Convierte CUP → USD (solo para addons y packaging, cuyo precio llega en CUP). */
-function cupToUsd(cup) {
-  return Math.round((cup / RATE) * 100) / 100
+/** Convierte CUP → USD con la tasa dada (redondeado a 2 decimales). */
+function cupToUsd(cup, rate) {
+  return Math.round((cup / rate) * 100) / 100
 }
 
-/**
- * Tasa de cambio editable en vivo desde Settings del dashboard (antes vivía hardcodeada acá).
- * Si no hay API key configurada o la llamada falla, se sigue con DEFAULT_RATE para no romper
- * el build del catálogo por un problema de red/infra ajeno a los datos en sí.
- */
+async function apiGet(path) {
+  const res = await fetch(`${API_BASE}${path}`, { headers: { 'x-api-key': API_KEY } })
+  if (!res.ok) throw new Error(`HTTP ${res.status} en ${path}`)
+  const body = await res.json()
+  return body.data
+}
+
+/** Tasa de cambio editable en vivo desde Settings — si falla, sigue con DEFAULT_RATE. */
 async function fetchExchangeRate() {
-  if (!DASHBOARD_API_KEY) {
-    console.warn(`⚠ TRAELO_API_KEY no configurada — usando tasa por defecto (${DEFAULT_RATE})`)
-    return DEFAULT_RATE
-  }
   try {
-    const res = await fetch(`${DASHBOARD_API_BASE}/familia/config`, {
-      headers: { 'x-api-key': DASHBOARD_API_KEY },
-    })
-    if (!res.ok) throw new Error(`HTTP ${res.status}`)
-    const { data } = await res.json()
-    return data.exchangeRate
+    return (await apiGet('/familia/config')).exchangeRate
   } catch (err) {
-    console.warn(
-      `⚠ No se pudo leer la tasa de cambio del dashboard (${err.message}) — usando ${DEFAULT_RATE}`
-    )
+    console.warn(`⚠ No se pudo leer la tasa de cambio (${err.message}) — usando ${DEFAULT_RATE}`)
     return DEFAULT_RATE
   }
 }
 
-/**
- * Productos marcados "disponible solo para Tráelo Familia" desde el dashboard (ver
- * Product.familiaOnly). Se suman a los COMBOS de abajo; con el tiempo estos últimos se pueden
- * migrar al dashboard y retirar de este script. Nunca rompe el build: sin API key o si falla la
- * llamada, simplemente no hay productos exclusivos adicionales esta vez (COMBOS sigue intacto).
- */
+/** Productos marcados "disponible solo para Tráelo Familia" (Product.familiaOnly) en el dashboard. */
 async function fetchFamiliaOnlyProducts() {
-  if (!DASHBOARD_API_KEY) return []
   try {
-    const res = await fetch(`${DASHBOARD_API_BASE}/familia/products`, {
-      headers: { 'x-api-key': DASHBOARD_API_KEY },
-    })
-    if (!res.ok) throw new Error(`HTTP ${res.status}`)
-    const { data } = await res.json()
-    return data
+    return await apiGet('/familia/products')
   } catch (err) {
-    console.warn(
-      `⚠ No se pudieron leer los productos exclusivos de Familia del dashboard (${err.message})`
-    )
+    console.warn(`⚠ No se pudieron leer los productos exclusivos de Familia (${err.message})`)
     return []
   }
 }
 
-/**
- * Convierte un producto del dashboard real (precios en CUP, sin short/long description) al
- * shape que espera el frontend de Familia. Solo se incluyen productos cuyo negocio ya existe en
- * el catálogo de Familia (todos los `businesses` vienen del mismo catálogo fuente que `products`
- * en esta primera versión) — si el dashboard algún día tiene un negocio nuevo sin equivalente
- * acá, se omite con una advertencia en vez de inventar una tarjeta de negocio a medias.
- */
-function mapDashboardProduct(p, businessesById) {
-  const business = businessesById.get(p.businessId)
-  if (!business) {
-    console.warn(
-      `⚠ Producto exclusivo de Familia "${p.name}" (${p.id}) pertenece a un negocio (${p.businessId}) sin equivalente en Familia — se omite.`
-    )
-    return null
-  }
-  const priceCup = p.effectivePrice ?? p.price ?? 0
-  return {
-    id: p.id,
-    businessId: p.businessId,
-    businessName: business.name,
-    category: mapCat(p.category, p.businessId),
-    name: p.name,
-    shortDescription: p.description ?? '',
-    longDescription: p.description ?? '',
-    image: '🎁',
-    photo: p.imageUrl ?? undefined,
-    price: cupToUsd(priceCup),
-    formato: p.formato ?? undefined,
-    options: p.options ?? undefined,
-    addons: p.addons ? p.addons.map(a => ({ ...a, price: cupToUsd(a.price) })) : undefined,
-    packaging: p.packaging ? p.packaging.map(pk => ({ ...pk, price: cupToUsd(pk.price) })) : undefined,
-    stockStatus: !p.available ? 'agotado' : p.lowStock ? 'pocas' : 'disponible',
-  }
-}
-
-const CAT_MAP = {
-  Comida: 'Comidas',
+// Categorías reales del backend (Product.category / Category.name) → las 5 categorías de
+// Familia. Cualquier categoría no listada cae en 'Comidas' por defecto. A diferencia del
+// catálogo legacy anterior, esta taxonomía viene de la base de datos real — se puede ver con
+// GET /catalog/bootstrap si hace falta ajustar el mapeo.
+const CATEGORY_MAP = {
   Bebidas: 'Bebidas',
-  Alimentos: 'Comidas',
-  Aseo: 'Regalos',
+  Ron: 'Bebidas',
+  Restaurantes: 'Comidas',
+  Mercado: 'Comidas',
+  'Cárnicos': 'Comidas',
+  'Comida Criolla': 'Comidas',
+  Helados: 'Comidas',
+  'Pizzas y Más': 'Comidas',
+  Pizzas: 'Comidas',
+  'Productos del Agro': 'Comidas',
+  'Compra Mayorista': 'Comidas',
+  'Compra mayorista': 'Comidas',
+  Tamal: 'Comidas',
+  'Ropa y Accesorios': 'Regalos',
+  'Aseo y limpieza': 'Regalos',
+  Dulces: 'Regalos',
   Confituras: 'Regalos',
-  Batidos: 'Bebidas',
-  Malteadas: 'Bebidas',
-  Ropa: 'Regalos',
-  Dulcería: 'Panadería',
-  Postres: 'Comidas',
-  Cakes: 'Panadería',
+  Confitura: 'Regalos',
+  'Electrodomésticos': 'Regalos',
+  'Ferretería': 'Regalos',
   Panes: 'Panadería',
-  Electrónica: 'Regalos',
 }
 
-function mapCat(cat, bizId) {
-  if (bizId === 'panes-macus') return cat === 'Bebidas' ? 'Bebidas' : 'Panadería'
-  return CAT_MAP[cat] ?? 'Comidas'
+function mapCategory(product) {
+  const key = (product.categoryName || product.category || '').trim()
+  return CATEGORY_MAP[key] ?? 'Comidas'
 }
 
-/**
- * Ajustes de precio propios de Familia (no vienen del catálogo fuente,
- * hay que reaplicarlos en cada sync).
- */
-function adjustPrice(p) {
-  if (p.businessId === 'dlm' && p.name.trim().toLowerCase() === 'ensalada mixta') {
-    return { ...p, price: 3 }
-  }
-  // Cerveza/refresco de lata: precio de mercado fijo, 500 CUP = 1 USD.
-  if (/(cerveza|refresco).*\b(de|en)\s+lata\b/i.test(p.name)) {
-    return { ...p, price: 1 }
-  }
-  if (p.businessId === 'pizzeria-mm' && p.name.trim().toLowerCase() === 'malta') {
-    return { ...p, price: 1.1 }
-  }
-  const text = `${p.name} ${p.shortDescription ?? ''} ${p.longDescription ?? ''}`.toLowerCase()
-  if (p.businessId === 'mercadito-ahorro' && text.includes('aceite')) {
-    return { ...p, price: Math.round((p.price + 5) * 100) / 100 }
-  }
-  return p
-}
-
-/**
- * Sobrescribe el campo `photo` del catálogo fuente (que apunta a rutas
- * con tildes/espacios, ej. "/products/FerreGüira/Alicate -2600cup.jpg")
- * por rutas seguras basadas en el id del producto. Los archivos viven en
- * public/assets/images/products/<businessId>/<productId>.<ext> — nombres
- * con caracteres especiales dan 404 en algunos hosts (ver Linea_Callejón).
- */
-const IMAGE_OVERRIDES = {
-  "am-001": "/assets/images/products/amore/am-001.jpg",
-  "am-002": "/assets/images/products/amore/am-002.jpg",
-  "am-003": "/assets/images/products/amore/am-003.jpg",
-  "am-004": "/assets/images/products/amore/am-004.jpg",
-  "am-005": "/assets/images/products/amore/am-005.jpg",
-  "am-006": "/assets/images/products/amore/am-006.jpg",
-  "am-007": "/assets/images/products/amore/am-007.jpg",
-  "am-008": "/assets/images/products/amore/am-008.jpg",
-  "am-009": "/assets/images/products/amore/am-009.jpg",
-  "am-010": "/assets/images/products/amore/am-010.jpg",
-  "am-011": "/assets/images/products/amore/am-011.jpg",
-  "am-012": "/assets/images/products/amore/am-012.jpg",
-  "am-013": "/assets/images/products/amore/am-013.jpg",
-  "am-014": "/assets/images/products/amore/am-014.jpg",
-  "cr-001": "/assets/images/products/cronos/cr-001.jpg",
-  "cr-002": "/assets/images/products/cronos/cr-002.jpg",
-  "cr-003": "/assets/images/products/cronos/cr-003.jpg",
-  "cr-004": "/assets/images/products/cronos/cr-004.jpg",
-  "cr-005": "/assets/images/products/cronos/cr-005.jpg",
-  "cr-006": "/assets/images/products/cronos/cr-006.jpg",
-  "cr-007": "/assets/images/products/cronos/cr-007.jpg",
-  "cr-008": "/assets/images/products/cronos/cr-008.jpg",
-  "cr-009": "/assets/images/products/cronos/cr-009.jpg",
-  "cr-010": "/assets/images/products/cronos/cr-010.jpg",
-  "cr-011": "/assets/images/products/cronos/cr-011.jpg",
-  "cr-012": "/assets/images/products/cronos/cr-012.jpg",
-  "dulceM-001": "/assets/images/products/dulce-momento/dulceM-001.jpg",
-  "dulceM-002": "/assets/images/products/dulce-momento/dulceM-002.jpg",
-  "dulceM-003": "/assets/images/products/dulce-momento/dulceM-003.jpg",
-  "dulceM-004": "/assets/images/products/dulce-momento/dulceM-004.jpg",
-  "dulceM-005": "/assets/images/products/dulce-momento/dulceM-005.jpg",
-  "dulceM-006": "/assets/images/products/dulce-momento/dulceM-006.jpg",
-  "dulceM-007": "/assets/images/products/dulce-momento/dulceM-007.jpg",
-  "dulceM-008": "/assets/images/products/dulce-momento/dulceM-008.jpg",
-  "dulceM-009": "/assets/images/products/dulce-momento/dulceM-009.jpg",
-  "dulceM-010": "/assets/images/products/dulce-momento/dulceM-010.jpg",
-  "eb-001": "/assets/images/products/eme-boutique/eb-001.jpg",
-  "eb-002": "/assets/images/products/eme-boutique/eb-002.jpg",
-  "eb-003": "/assets/images/products/eme-boutique/eb-003.jpg",
-  "eb-004": "/assets/images/products/eme-boutique/eb-004.jpg",
-  "eb-005": "/assets/images/products/eme-boutique/eb-005.jpg",
-  "eb-007": "/assets/images/products/eme-boutique/eb-007.jpg",
-  "eb-009": "/assets/images/products/eme-boutique/eb-009.jpg",
-  "eb-010": "/assets/images/products/eme-boutique/eb-010.jpg",
-  "eb-011": "/assets/images/products/eme-boutique/eb-011.jpg",
-  "eb-012": "/assets/images/products/eme-boutique/eb-012.jpg",
-  "eb-013": "/assets/images/products/eme-boutique/eb-013.jpg",
-  "eb-014": "/assets/images/products/eme-boutique/eb-014.jpg",
-  "eb-015": "/assets/images/products/eme-boutique/eb-015.jpg",
-  "eb-017": "/assets/images/products/eme-boutique/eb-017.jpg",
-  "eb-021": "/assets/images/products/eme-boutique/eb-021.jpg",
-  "eb-022": "/assets/images/products/eme-boutique/eb-022.jpg",
-  "eb-023": "/assets/images/products/eme-boutique/eb-023.jpg",
-  "eb-024": "/assets/images/products/eme-boutique/eb-024.jpg",
-  "eb-025": "/assets/images/products/eme-boutique/eb-025.jpg",
-  "eb-026": "/assets/images/products/eme-boutique/eb-026.jpg",
-  "eb-028": "/assets/images/products/eme-boutique/eb-028.jpg",
-  "eb-029": "/assets/images/products/eme-boutique/eb-029.jpg",
-  "eb-030": "/assets/images/products/eme-boutique/eb-030.jpg",
-  "eb-031": "/assets/images/products/eme-boutique/eb-031.jpg",
-  "eb-032": "/assets/images/products/eme-boutique/eb-032.jpg",
-  "eb-033": "/assets/images/products/eme-boutique/eb-033.jpg",
-  "eb-035": "/assets/images/products/eme-boutique/eb-035.jpg",
-  "eb-036": "/assets/images/products/eme-boutique/eb-036.jpg",
-  "eb-037": "/assets/images/products/eme-boutique/eb-037.jpg",
-  "eb-038": "/assets/images/products/eme-boutique/eb-038.jpg",
-  "eb-040": "/assets/images/products/eme-boutique/eb-040.jpg",
-  "eb-042": "/assets/images/products/eme-boutique/eb-042.jpg",
-  "eb-043": "/assets/images/products/eme-boutique/eb-043.jpg",
-  "eb-045": "/assets/images/products/eme-boutique/eb-045.jpg",
-  "eb-046": "/assets/images/products/eme-boutique/eb-046.jpg",
-  "eb-047": "/assets/images/products/eme-boutique/eb-047.jpg",
-  "eb-049": "/assets/images/products/eme-boutique/eb-049.jpg",
-  "eb-050": "/assets/images/products/eme-boutique/eb-050.jpg",
-  "eb-051": "/assets/images/products/eme-boutique/eb-051.jpg",
-  "eb-053": "/assets/images/products/eme-boutique/eb-053.jpg",
-  "eb-054": "/assets/images/products/eme-boutique/eb-054.jpg",
-  "eb-055": "/assets/images/products/eme-boutique/eb-055.jpg",
-  "eb-056": "/assets/images/products/eme-boutique/eb-056.jpg",
-  "eb-057": "/assets/images/products/eme-boutique/eb-057.jpg",
-  "eb-058": "/assets/images/products/eme-boutique/eb-058.jpg",
-  "eb-059": "/assets/images/products/eme-boutique/eb-059.jpg",
-  "eb-060": "/assets/images/products/eme-boutique/eb-060.jpg",
-  "eb-061": "/assets/images/products/eme-boutique/eb-061.jpg",
-  "eb-062": "/assets/images/products/eme-boutique/eb-062.jpg",
-  "eb-063": "/assets/images/products/eme-boutique/eb-063.jpg",
-  "eb-064": "/assets/images/products/eme-boutique/eb-064.jpg",
-  "eb-065": "/assets/images/products/eme-boutique/eb-065.jpg",
-  "eb-066": "/assets/images/products/eme-boutique/eb-066.jpg",
-  "eb-067": "/assets/images/products/eme-boutique/eb-067.jpg",
-  "eb-068": "/assets/images/products/eme-boutique/eb-068.jpg",
-  "eb-070": "/assets/images/products/eme-boutique/eb-070.jpg",
-  "eb-071": "/assets/images/products/eme-boutique/eb-071.jpg",
-  "eb-073": "/assets/images/products/eme-boutique/eb-073.jpg",
-  "eb-074": "/assets/images/products/eme-boutique/eb-074.jpg",
-  "eb-079": "/assets/images/products/eme-boutique/eb-079.jpg",
-  "eb-080": "/assets/images/products/eme-boutique/eb-080.jpg",
-  "eb-081": "/assets/images/products/eme-boutique/eb-081.jpg",
-  "eb-083": "/assets/images/products/eme-boutique/eb-083.jpg",
-  "fg-001": "/assets/images/products/ferreguira/fg-001.jpg",
-  "fg-002": "/assets/images/products/ferreguira/fg-002.jpg",
-  "fg-003": "/assets/images/products/ferreguira/fg-003.jpg",
-  "fg-004": "/assets/images/products/ferreguira/fg-004.jpg",
-  "fg-005": "/assets/images/products/ferreguira/fg-005.jpg",
-  "fg-006": "/assets/images/products/ferreguira/fg-006.jpg",
-  "fg-007": "/assets/images/products/ferreguira/fg-007.jpg",
-  "fg-008": "/assets/images/products/ferreguira/fg-008.jpg",
-  "fg-009": "/assets/images/products/ferreguira/fg-009.jpg",
-  "fg-010": "/assets/images/products/ferreguira/fg-010.jpg",
-  "fg-011": "/assets/images/products/ferreguira/fg-011.jpg",
-  "fg-012": "/assets/images/products/ferreguira/fg-012.jpg",
-  "fg-013": "/assets/images/products/ferreguira/fg-013.jpg",
-  "fg-014": "/assets/images/products/ferreguira/fg-014.jpg",
-  "fg-015": "/assets/images/products/ferreguira/fg-015.jpg",
-  "fg-016": "/assets/images/products/ferreguira/fg-016.jpg",
-  "fg-017": "/assets/images/products/ferreguira/fg-017.jpg",
-  "fg-018": "/assets/images/products/ferreguira/fg-018.jpg",
-  "fg-019": "/assets/images/products/ferreguira/fg-019.jpg",
-  "fg-020": "/assets/images/products/ferreguira/fg-020.jpg",
-  "fg-021": "/assets/images/products/ferreguira/fg-021.jpg",
-  "fg-022": "/assets/images/products/ferreguira/fg-022.jpg",
-  "fg-023": "/assets/images/products/ferreguira/fg-023.jpg",
-  "fg-024": "/assets/images/products/ferreguira/fg-024.jpg",
-  "fg-025": "/assets/images/products/ferreguira/fg-025.jpg",
-  "fg-026": "/assets/images/products/ferreguira/fg-026.jpg",
-  "fg-027": "/assets/images/products/ferreguira/fg-027.jpg",
-  "fg-028": "/assets/images/products/ferreguira/fg-028.jpg",
-  "fg-029": "/assets/images/products/ferreguira/fg-029.jpg",
-  "fg-030": "/assets/images/products/ferreguira/fg-030.jpg",
-  "fg-031": "/assets/images/products/ferreguira/fg-031.jpg",
-  "fg-032": "/assets/images/products/ferreguira/fg-032.jpg",
-  "fg-033": "/assets/images/products/ferreguira/fg-033.jpg",
-  "fg-034": "/assets/images/products/ferreguira/fg-034.jpg",
-  "fg-035": "/assets/images/products/ferreguira/fg-035.jpg",
-  "fg-036": "/assets/images/products/ferreguira/fg-036.jpg",
-  "fg-037": "/assets/images/products/ferreguira/fg-037.jpg",
-  "fg-038": "/assets/images/products/ferreguira/fg-038.jpg",
-  "fg-039": "/assets/images/products/ferreguira/fg-039.jpg",
-  "fg-040": "/assets/images/products/ferreguira/fg-040.jpg",
-  "fg-041": "/assets/images/products/ferreguira/fg-041.jpg",
-  "fg-042": "/assets/images/products/ferreguira/fg-042.jpg",
-  "frappio-001": "/assets/images/products/frappio/frappio-001.jpg",
-  "frappio-002": "/assets/images/products/frappio/frappio-002.jpg",
-  "frappio-003": "/assets/images/products/frappio/frappio-003.jpg",
-  "frappio-004": "/assets/images/products/frappio/frappio-004.jpg",
-  "frappio-005": "/assets/images/products/frappio/frappio-005.jpg",
-  "frappio-006": "/assets/images/products/frappio/frappio-006.jpg",
-  "hmk-001": "/assets/images/products/heladeria-mk/hmk-001.jpg",
-  "hmk-002": "/assets/images/products/heladeria-mk/hmk-002.webp",
-  "hmk-003": "/assets/images/products/heladeria-mk/hmk-003.jpg",
-  "hmk-004": "/assets/images/products/heladeria-mk/hmk-004.jpg",
-  "hmk-005": "/assets/images/products/heladeria-mk/hmk-005.jpg",
-  "hmk-006": "/assets/images/products/heladeria-mk/hmk-006.jpg",
-  "hmk-007": "/assets/images/products/heladeria-mk/hmk-007.jpg",
-  "hmk-008": "/assets/images/products/heladeria-mk/hmk-008.jpg",
-  "hmk-009": "/assets/images/products/heladeria-mk/hmk-009.jpg",
-  "hmk-010": "/assets/images/products/heladeria-mk/hmk-010.jpg",
-  "hmk-011": "/assets/images/products/heladeria-mk/hmk-011.jpg",
-  "hmk-012": "/assets/images/products/heladeria-mk/hmk-012.jpg",
-  "hmk-013": "/assets/images/products/heladeria-mk/hmk-013.jpg",
-  "ln-001": "/assets/images/products/la-nevada/ln-001.jpg",
-  "ln-002": "/assets/images/products/la-nevada/ln-002.jpg",
-  "ln-003": "/assets/images/products/la-nevada/ln-003.jpg",
-  "ln-004": "/assets/images/products/la-nevada/ln-004.jpg",
-  "ln-005": "/assets/images/products/la-nevada/ln-005.jpg",
-  "ln-006": "/assets/images/products/la-nevada/ln-006.jpg",
-  "ln-007": "/assets/images/products/la-nevada/ln-007.jpg",
-  "ln-008": "/assets/images/products/la-nevada/ln-008.jpg",
-  "ln-009": "/assets/images/products/la-nevada/ln-009.jpg",
-  "ln-010": "/assets/images/products/la-nevada/ln-010.jpg",
-  "ln-011": "/assets/images/products/la-nevada/ln-011.jpg",
-  "ln-012": "/assets/images/products/la-nevada/ln-012.jpg",
-  "ln-013": "/assets/images/products/la-nevada/ln-013.jpg",
-  "ln-014": "/assets/images/products/la-nevada/ln-014.jpg",
-  "ln-016": "/assets/images/products/la-nevada/ln-016.jpg",
-  "ln-017": "/assets/images/products/la-nevada/ln-017.jpg",
-  "ln-018": "/assets/images/products/la-nevada/ln-018.jpg",
-  "ln-019": "/assets/images/products/la-nevada/ln-019.jpg",
-  "ln-020": "/assets/images/products/la-nevada/ln-020.jpg",
-  "los-4-hermanos-001": "/assets/images/products/los-4-hermanos/los-4-hermanos-001.jpg",
-  "lllk-001": "/assets/images/products/los-llenik/lllk-001.jpg",
-  "lllk-002": "/assets/images/products/los-llenik/lllk-002.jpg",
-  "lllk-003": "/assets/images/products/los-llenik/lllk-003.jpg",
-  "lllk-004": "/assets/images/products/los-llenik/lllk-004.jpg",
-  "lllk-005": "/assets/images/products/los-llenik/lllk-005.webp",
-  "lllk-006": "/assets/images/products/los-llenik/lllk-006.jpg",
-  "alp-001": "/assets/images/products/agro-los-prietos/alp-001.jpg",
-  "alp-002": "/assets/images/products/agro-los-prietos/alp-002.webp",
-  "alp-003": "/assets/images/products/agro-los-prietos/alp-003.jpg",
-  "alp-004": "/assets/images/products/agro-los-prietos/alp-004.jpg",
-  "alp-005": "/assets/images/products/agro-los-prietos/alp-005.jpg",
-  "alp-006": "/assets/images/products/agro-los-prietos/alp-006.jpg",
-  "alp-007": "/assets/images/products/agro-los-prietos/alp-007.webp",
-  "alp-008": "/assets/images/products/agro-los-prietos/alp-008.jpg",
-  "alp-009": "/assets/images/products/agro-los-prietos/alp-009.jpg",
-  "alp-010": "/assets/images/products/agro-los-prietos/alp-010.webp",
-  "alp-011": "/assets/images/products/agro-los-prietos/alp-011.jpg",
-  "alp-012": "/assets/images/products/agro-los-prietos/alp-012.webp",
-  "alp-013": "/assets/images/products/agro-los-prietos/alp-013.webp",
-  "alp-014": "/assets/images/products/agro-los-prietos/alp-014.jpg",
-  "alp-015": "/assets/images/products/agro-los-prietos/alp-015.jpg",
-  "alp-016": "/assets/images/products/agro-los-prietos/alp-016.jpg",
-  "alp-017": "/assets/images/products/agro-los-prietos/alp-017.jpg",
-  "alp-018": "/assets/images/products/agro-los-prietos/alp-018.jpg",
-  "alp-019": "/assets/images/products/agro-los-prietos/alp-019.jpg",
-  "alp-020": "/assets/images/products/agro-los-prietos/alp-020.webp",
-  "alp-021": "/assets/images/products/agro-los-prietos/alp-021.jpg",
-  "alp-022": "/assets/images/products/agro-los-prietos/alp-022.jpg",
-  "ac-007": "/assets/images/products/al-carbon/ac-007.jpg"
-}
-
-// Combos exclusivos de Familia (ya en USD)
+// Combos exclusivos de Familia que todavía no viven como productos reales en el dashboard
+// (candidatos a migrar ahí con Product.familiaOnly más adelante — ver fetchFamiliaOnlyProducts).
+// Los precios ya están en USD (no pasan por cupToUsd).
+const COMBOS_BUSINESS_NAME = 'El Mercadito'
 const COMBOS = [
   {
     id: 'combo-papa',
     name: 'Combo para Papá 👨',
-    businessId: 'mercadito-ahorro',
-    businessName: 'El Mercadito',
+    businessName: COMBOS_BUSINESS_NAME,
     category: 'Combos',
     shortDescription: '¡Especial Día del Padre!',
     longDescription:
@@ -398,8 +109,7 @@ const COMBOS = [
   {
     id: 'combo-001',
     name: 'Combo Familiar Básico',
-    businessId: 'mercadito-ahorro',
-    businessName: 'El Mercadito',
+    businessName: COMBOS_BUSINESS_NAME,
     category: 'Combos',
     shortDescription: 'La despensa esencial.',
     longDescription:
@@ -411,8 +121,7 @@ const COMBOS = [
   {
     id: 'combo-super',
     name: 'Super Combo',
-    businessId: 'mercadito-ahorro',
-    businessName: 'El Mercadito',
+    businessName: COMBOS_BUSINESS_NAME,
     category: 'Combos',
     shortDescription: 'Lo mejor de lo mejor.',
     longDescription:
@@ -424,8 +133,7 @@ const COMBOS = [
   {
     id: 'combo-escolar',
     name: 'Combo Escolar',
-    businessId: 'mercadito-ahorro',
-    businessName: 'El Mercadito',
+    businessName: COMBOS_BUSINESS_NAME,
     category: 'Combos',
     shortDescription: 'Para los más pequeños.',
     longDescription:
@@ -437,8 +145,7 @@ const COMBOS = [
   {
     id: 'combo-cumple-adulto',
     name: 'Combo Cumpleaños Adulto',
-    businessId: 'mercadito-ahorro',
-    businessName: 'El Mercadito',
+    businessName: COMBOS_BUSINESS_NAME,
     category: 'Combos',
     shortDescription: '¡A celebrar lo grande!',
     longDescription:
@@ -450,8 +157,7 @@ const COMBOS = [
   {
     id: 'combo-cumple-nino',
     name: 'Combo Cumpleaños Niño',
-    businessId: 'mercadito-ahorro',
-    businessName: 'El Mercadito',
+    businessName: COMBOS_BUSINESS_NAME,
     category: 'Combos',
     shortDescription: '¡Que lo disfruten!',
     longDescription:
@@ -462,104 +168,136 @@ const COMBOS = [
   },
 ]
 
-/** Descarga a public/ los assets (/assets/...) que el catálogo referencia y no existen localmente. */
-async function syncMissingAssets(catalog) {
-  const paths = new Set()
-  for (const b of catalog.businesses) {
-    if (b.image?.startsWith('/assets/')) paths.add(b.image)
+// Ajustes de precio puntuales que no vienen del backend (decisiones de negocio propias de
+// Familia) — resueltos por NOMBRE real del negocio, porque los ids de este backend son cuids,
+// no los slugs del catálogo legacy anterior ("dlm", "mercadito-ahorro", "pizzeria-mm"...).
+// Se reaplican en cada build.
+function adjustPrice(p, businessNameById) {
+  const bizName = businessNameById.get(p.businessId) ?? ''
+  if (bizName === 'Bar Restaurante DLM' && p.name.trim().toLowerCase() === 'ensalada mixta') {
+    return { ...p, price: 3 }
   }
-  for (const p of catalog.products) {
-    if (p.photo?.startsWith('/assets/')) paths.add(p.photo)
-    if (p.image?.startsWith('/assets/')) paths.add(p.image)
+  // Cerveza/refresco de lata: precio de mercado fijo, sin importar el negocio.
+  if (/(cerveza|refresco).*\b(de|en)\s+lata\b/i.test(p.name)) {
+    return { ...p, price: 1 }
   }
+  if (bizName === COMBOS_BUSINESS_NAME) {
+    const text = `${p.name} ${p.shortDescription ?? ''}`.toLowerCase()
+    if (text.includes('aceite')) return { ...p, price: Math.round((p.price + 5) * 100) / 100 }
+  }
+  return p
+}
 
-  const missing = [...paths].filter(p => !existsSync(join(root, 'public', decodeURIComponent(p))))
-  if (missing.length === 0) {
-    console.log('✓ imágenes — nada que descargar')
-    return
-  }
+// Placeholder mientras carga la foto (ver LazyImage) — no hay noción de "color de marca" en el
+// backend real, así que se asigna un degradado fijo por negocio (determinístico, no aleatorio
+// entre builds) de la misma paleta que ya usa ProductImage.
+const PLACEHOLDER_GRADIENTS = [
+  'from-orange-100 to-amber-50',
+  'from-rose-100 to-orange-50',
+  'from-pink-100 to-rose-50',
+  'from-sky-100 to-cyan-50',
+  'from-yellow-100 to-amber-50',
+  'from-stone-100 to-stone-50',
+]
+function colorFor(id) {
+  let hash = 0
+  for (let i = 0; i < id.length; i++) hash = (hash * 31 + id.charCodeAt(i)) >>> 0
+  return PLACEHOLDER_GRADIENTS[hash % PLACEHOLDER_GRADIENTS.length]
+}
 
-  console.log(`↓ Descargando ${missing.length} imágenes faltantes…`)
-  let ok = 0
-  let failed = 0
-  for (const relPath of missing) {
-    const decoded = decodeURIComponent(relPath)
-    const encodedUrl = SOURCE_ASSETS_BASE + decoded.split('/').map(encodeURIComponent).join('/')
-    const destPath = join(root, 'public', decoded)
-    try {
-      const res = await fetch(encodedUrl)
-      if (!res.ok) throw new Error(`HTTP ${res.status}`)
-      const buf = Buffer.from(await res.arrayBuffer())
-      mkdirSync(dirname(destPath), { recursive: true })
-      writeFileSync(destPath, buf)
-      ok++
-    } catch (err) {
-      failed++
-      console.warn(`  ✗ ${decoded} — ${err.message}`)
-    }
+// Copy propio de Familia que el backend no tiene (marketing, no dato de negocio) — se reaplica
+// a mano por nombre real en cada build. Ver COMBOS arriba.
+const BUSINESS_OVERRIDES = {
+  [COMBOS_BUSINESS_NAME]: {
+    description: 'Combos curados para enviar a tu familia, más productos del día a día.',
+    paymentNote:
+      '¿Quieres añadir o quitar algo? Todos los combos se pueden personalizar a tu gusto. Escríbenos por WhatsApp y armamos el tuyo.',
+  },
+}
+
+function mapBusiness(b) {
+  const override = BUSINESS_OVERRIDES[b.name]
+  return {
+    id: b.id,
+    name: b.name,
+    description: override?.description ?? '',
+    image: b.logoUrl,
+    color: colorFor(b.id),
+    ...(override?.paymentNote ? { paymentNote: override.paymentNote } : {}),
+    // acceptingOrders/isOpenNow ya los calcula el backend en vivo (horario real de La Habana) —
+    // más preciso que el flag manual que usaba el catálogo legacy.
+    ...(!b.acceptingOrders || !b.isOpenNow ? { status: 'cerrado' } : {}),
   }
-  console.log(`✓ imágenes — ${ok} descargadas, ${failed} fallidas`)
+}
+
+function mapProduct(p, businessNameById, rate) {
+  const priceCup = p.effectivePrice ?? p.price ?? 0
+  return {
+    id: p.id,
+    businessId: p.businessId,
+    businessName: businessNameById.get(p.businessId) ?? '',
+    category: mapCategory(p),
+    name: p.name,
+    shortDescription: p.description ?? '',
+    longDescription: p.description ?? '',
+    image: '🛍️',
+    ...(p.imageUrl ? { photo: p.imageUrl } : {}),
+    price: cupToUsd(priceCup, rate),
+    ...(p.formato ? { formato: p.formato } : {}),
+    ...(p.options?.length ? { options: p.options } : {}),
+    ...(p.addons?.length
+      ? { addons: p.addons.map(a => ({ ...a, price: cupToUsd(a.price, rate) })) }
+      : {}),
+    ...(p.packaging?.length
+      ? { packaging: p.packaging.map(pk => ({ ...pk, price: cupToUsd(pk.price, rate) })) }
+      : {}),
+    stockStatus: !p.available ? 'agotado' : p.lowStock ? 'pocas' : 'disponible',
+  }
 }
 
 async function main() {
-  console.log('↓ Descargando catálogo de Tráelo Normal…')
-  const res = await fetch(SOURCE_URL)
-  if (!res.ok) throw new Error(`HTTP ${res.status} al descargar ${SOURCE_URL}`)
-  const normal = await res.json()
+  if (!API_KEY) {
+    console.warn('⚠ TRAELO_API_KEY no configurada — se mantiene el catálogo existente sin cambios.')
+    return
+  }
 
-  RATE = await fetchExchangeRate()
-  console.log(`✓ tasa de cambio Tráelo Familia: ${RATE} CUP = 1 USD`)
+  const rate = await fetchExchangeRate()
+  console.log(`✓ tasa de cambio Tráelo Familia: ${rate} CUP = 1 USD`)
 
-  // Transformar negocios
-  const businesses = normal.businesses.map(b => {
-    const biz = { ...b }
-    if (b.id === 'linea-callejon') {
-      biz.name = 'Línea Callejón'
-      biz.image = '/assets/images/business/Linea_Callejon.jpg'
-    }
-    if (b.id === 'mercadito-ahorro') {
-      biz.description =
-        'Combos curados para enviar a tu familia, más productos del día a día.'
-      biz.paymentNote =
-        '¿Quieres añadir o quitar algo? Todos los combos se pueden personalizar a tu gusto. Escríbenos por WhatsApp y armamos el tuyo.'
-    }
-    return biz
-  })
+  let bootstrap
+  try {
+    bootstrap = await apiGet('/bootstrap')
+  } catch (err) {
+    console.warn(
+      `⚠ No se pudo descargar el catálogo del backend (${err.message}) — se mantiene el existente sin cambios.`
+    )
+    return
+  }
 
-  // Transformar productos
-  // El precio principal ya viene en USD desde el catálogo fuente.
-  // Addons y packaging siguen en CUP → se convierten aquí.
-  const products = normal.products.map(p => {
-    const prod = {
-      ...p,
-      category: mapCat(p.category, p.businessId),
-    }
-    if (p.businessId === 'linea-callejon') {
-      prod.businessName = 'Línea Callejón'
-    }
-    if (prod.addons) {
-      prod.addons = prod.addons.map(a => ({ ...a, price: cupToUsd(a.price) }))
-    }
-    if (prod.packaging) {
-      prod.packaging = prod.packaging.map(pk => ({ ...pk, price: cupToUsd(pk.price) }))
-    }
-    if (IMAGE_OVERRIDES[prod.id]) {
-      prod.photo = IMAGE_OVERRIDES[prod.id]
-    }
-    return prod
-  })
+  const businessNameById = new Map(bootstrap.businesses.map(b => [b.id, b.name]))
+  const businesses = bootstrap.businesses.map(mapBusiness)
+  const products = bootstrap.products.map(p => mapProduct(p, businessNameById, rate))
 
-  const businessesById = new Map(businesses.map(b => [b.id, b]))
-  const dashboardProducts = (await fetchFamiliaOnlyProducts())
-    .map(p => mapDashboardProduct(p, businessesById))
-    .filter(Boolean)
-  if (dashboardProducts.length > 0) {
-    console.log(`✓ ${dashboardProducts.length} producto(s) exclusivo(s) de Familia desde el dashboard`)
+  const combosBusinessId = [...businessNameById.entries()].find(
+    ([, name]) => name === COMBOS_BUSINESS_NAME
+  )?.[0]
+  if (!combosBusinessId) {
+    console.warn(`⚠ No se encontró el negocio "${COMBOS_BUSINESS_NAME}" — se omiten los COMBOS`)
+  }
+  const combos = combosBusinessId ? COMBOS.map(c => ({ ...c, businessId: combosBusinessId })) : []
+
+  const dashboardExclusive = (await fetchFamiliaOnlyProducts()).map(p =>
+    mapProduct(p, businessNameById, rate)
+  )
+  if (dashboardExclusive.length > 0) {
+    console.log(`✓ ${dashboardExclusive.length} producto(s) exclusivo(s) de Familia desde el dashboard`)
   }
 
   const catalog = {
     businesses,
-    products: [...products, ...COMBOS, ...dashboardProducts].map(adjustPrice),
+    products: [...products, ...combos, ...dashboardExclusive].map(p =>
+      adjustPrice(p, businessNameById)
+    ),
   }
 
   const outPath = resolve(root, 'public/data/catalog-familia.json')
@@ -567,8 +305,6 @@ async function main() {
   console.log(
     `✓ catalog-familia.json — ${catalog.products.length} productos, ${catalog.businesses.length} negocios`
   )
-
-  await syncMissingAssets(catalog)
 }
 
 main().catch(err => {
