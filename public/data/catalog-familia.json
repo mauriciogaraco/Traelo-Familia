@@ -5,24 +5,21 @@
       "name": "4 Esquinas",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778497/traelo/businesses/cmtloxd8d000y1gksrxoq23wp/mkuonvnjnqubgnzjzx2z.jpg?v=1789778497690",
-      "color": "from-pink-100 to-rose-50",
-      "status": "cerrado"
+      "color": "from-pink-100 to-rose-50"
     },
     {
       "id": "cmsw1ar39000g1gjrihyzo3r1",
       "name": "Agro Los Prietos",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778395/traelo/businesses/cmsw1ar39000g1gjrihyzo3r1/fpssmib103tfgn8p3sba.jpg?v=1790190087523",
-      "color": "from-yellow-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-yellow-100 to-amber-50"
     },
     {
       "id": "cmsxgudt300071ge0eu5zk4cs",
       "name": "Al Carbón",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778377/traelo/businesses/cmsxgudt300071ge0eu5zk4cs/ktrkvtc3klzujlmyy1bo.jpg?v=1789778378200",
-      "color": "from-pink-100 to-rose-50",
-      "status": "cerrado"
+      "color": "from-pink-100 to-rose-50"
     },
     {
       "id": "cmsw0nkl600041gjrkb3v2u91",
@@ -53,16 +50,14 @@
       "name": "Carniceria el Yompy",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791037695/traelo/businesses/cmusfo79600jo1gpbv6ugd9gt/hytt9kcj2cf1ytlkjskc.jpg?v=1791067068573",
-      "color": "from-orange-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-orange-100 to-amber-50"
     },
     {
       "id": "cmusgsjzo0000r0uhoa8lqcs5",
       "name": "Charcutería Luis",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791036340/traelo/businesses/cmusgsjzo0000r0uhoa8lqcs5/bycatx9cithoendnhmju.webp?v=1791037899513",
-      "color": "from-pink-100 to-rose-50",
-      "status": "cerrado"
+      "color": "from-pink-100 to-rose-50"
     },
     {
       "id": "cmswb9g5j00011hd17at5ffuv",
@@ -84,16 +79,14 @@
       "name": "Doña Fela",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791128540/traelo/businesses/cmutys3wj017i20oq7y2ddbjc/lfhif8k2s0gqzqusl4qe.jpg?v=1791315333130",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmsxgsly600061ge0qtm5p3s1",
       "name": "Dulce Momento",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778361/traelo/businesses/cmsxgsly600061ge0qtm5p3s1/m1c41awrjn7nb04dbl1f.jpg?v=1789778362132",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado"
+      "color": "from-sky-100 to-cyan-50"
     },
     {
       "id": "cmsw0l3f600031gjrewm3turo",
@@ -101,16 +94,14 @@
       "description": "Combos curados para enviar a tu familia, más productos del día a día.",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778109/traelo/businesses/cmsw0l3f600031gjrewm3turo/nghgm60xq3qgh6ekpqbj.jpg?v=1790190079516",
       "color": "from-yellow-100 to-amber-50",
-      "paymentNote": "¿Quieres añadir o quitar algo? Todos los combos se pueden personalizar a tu gusto. Escríbenos por WhatsApp y armamos el tuyo.",
-      "status": "cerrado"
+      "paymentNote": "¿Quieres añadir o quitar algo? Todos los combos se pueden personalizar a tu gusto. Escríbenos por WhatsApp y armamos el tuyo."
     },
     {
       "id": "cmtj1406y000i1gczoluux21s",
       "name": "El Monito",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778434/traelo/businesses/cmtj1406y000i1gczoluux21s/y5pn8vnfnmktozwmpibg.jpg?v=1790190088874",
-      "color": "from-stone-100 to-stone-50",
-      "status": "cerrado"
+      "color": "from-stone-100 to-stone-50"
     },
     {
       "id": "cmuegyu69000zacuhad9yapnj",
@@ -132,8 +123,7 @@
       "name": "Eme Boutique",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778136/traelo/businesses/cmsxgn0tv00021ge0jyabgle4/wrq3kcq7fxvpez1xadwm.jpg?v=1789778136887",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado"
+      "color": "from-sky-100 to-cyan-50"
     },
     {
       "id": "cmsxgrsyj00051ge023frkwwc",
@@ -148,48 +138,42 @@
       "name": "Frappio",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778370/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/fdodkehsjo507koxtss3.jpg?v=1791135471411",
-      "color": "from-orange-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-orange-100 to-amber-50"
     },
     {
       "id": "cmsxgr1x000041ge0t5m1iu08",
       "name": "Heladería M&K",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778293/traelo/businesses/cmsxgr1x000041ge0t5m1iu08/cdywonkkvwuhmw8qaau5.jpg?v=1789778295150",
-      "color": "from-stone-100 to-stone-50",
-      "status": "cerrado"
+      "color": "from-stone-100 to-stone-50"
     },
     {
       "id": "cmtu8ybla000j1ghii23olmxk",
       "name": "Iron Bross Pizzas",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789782235/traelo/businesses/cmtu8ybla000j1ghii23olmxk/vkb3r8axilswd1nqtpkt.jpg?v=1791335935405",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmsw1frzv000h1gjre7l07ygd",
       "name": "La Marina",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789783100/traelo/businesses/cmsw1frzv000h1gjre7l07ygd/chb0lmyxzvqeaqraca8e.jpg?v=1789783101590",
-      "color": "from-pink-100 to-rose-50",
-      "status": "cerrado"
+      "color": "from-pink-100 to-rose-50"
     },
     {
       "id": "cmsxgz5ci000b1ge092q7kzze",
       "name": "La Nevada",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778402/traelo/businesses/cmsxgz5ci000b1ge092q7kzze/ng1z0w9zlg8pkqj4aqs9.jpg?v=1789778403118",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado"
+      "color": "from-sky-100 to-cyan-50"
     },
     {
       "id": "cmu47egmg00161hag3nvutfom",
       "name": "La Pino - Tienda de Alimentos",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789782254/traelo/businesses/cmu47egmg00161hag3nvutfom/tyll7xit9zp0molbklxp.jpg?v=1790190095503",
-      "color": "from-orange-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-orange-100 to-amber-50"
     },
     {
       "id": "cmsw26idv000v1gjrf66xea8h",
@@ -204,40 +188,35 @@
       "name": "Línea-Callejón",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778189/traelo/businesses/cmsw21slo000t1gjrp8psk5rq/glbqikzdmvzp6tlm3a3t.jpg?v=1789778189810",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmubpwjqg00021gg4qerd7p0k",
       "name": "Los Barca - Mercado",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790190779/traelo/businesses/cmubpwjqg00021gg4qerd7p0k/wmvlzt6qh1zejkvygdfg.jpg?v=1790190781076",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmsw1hb6g000i1gjrzo23cub7",
       "name": "Los Macus",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778101/traelo/businesses/cmsw1hb6g000i1gjrzo23cub7/gxqpcawexymwopslzydn.jpg?v=1789778102197",
-      "color": "from-yellow-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-yellow-100 to-amber-50"
     },
     {
       "id": "cmuu0586r01ap20oqynw6u96y",
       "name": "Los Pérez ",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791130074/traelo/businesses/cmuu0586r01ap20oqynw6u96y/jc9s3dghkmzr9u1lroet.jpg?v=1791295414770",
-      "color": "from-yellow-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-yellow-100 to-amber-50"
     },
     {
       "id": "cmu2vg0vu00021gehpoa2bh90",
       "name": "Los Reales Tiendas de Electrodomésticos",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789782243/traelo/businesses/cmu2vg0vu00021gehpoa2bh90/tqvwqud8mf7x4ykmvg1v.jpg?v=1790190093980",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado"
+      "color": "from-sky-100 to-cyan-50"
     },
     {
       "id": "cmu7ezjnp0000fwuhq2dxrosc",
@@ -252,8 +231,7 @@
       "name": "Mercado DAF",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778410/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/q2ufm4qoqoasnsq6ddz7.jpg?v=1789778411714",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmv2xy95n00005guhsblnv0a3",
@@ -283,8 +261,7 @@
       "name": "Tu Kprichito",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778154/traelo/businesses/cmsxgx1r5000a1ge0idapiwm1/b7wqufdz0aghrbwutww0.jpg?v=1790190081216",
-      "color": "from-yellow-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-yellow-100 to-amber-50"
     }
   ],
   "products": [
@@ -792,8 +769,8 @@
       "shortDescription": "Se vende por saco",
       "longDescription": "Se vende por saco",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791057168/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/ycf8ri79mad2ybwai0yv.jpg?v=1791497684787",
-      "price": 71.2,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791057168/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/ycf8ri79mad2ybwai0yv.jpg?v=1791729690044",
+      "price": 70,
       "stockStatus": "disponible"
     },
     {
@@ -15590,18 +15567,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmu7to5mk003ebouh1mghz60i",
-      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
-      "businessName": "Bar Restaurante DLM",
-      "category": "Bebidas",
-      "name": "Tequila Rose",
-      "shortDescription": "Botellas en Ofertas · Promociones Especiales",
-      "longDescription": "Botellas en Ofertas · Promociones Especiales",
-      "image": "🛍️",
-      "price": 70,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufka3cd02773ouh0p0pb1zp",
       "businessId": "cmubpwjqg00021gg4qerd7p0k",
       "businessName": "Los Barca - Mercado",
@@ -15612,6 +15577,18 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790256137/traelo/businesses/cmubpwjqg00021gg4qerd7p0k/products/xa9nx7zwzx251zpmzjk7.jpg?v=1790882376183",
       "price": 50,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmu7to5mk003ebouh1mghz60i",
+      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
+      "businessName": "Bar Restaurante DLM",
+      "category": "Bebidas",
+      "name": "Tequila Rose",
+      "shortDescription": "Botellas en Ofertas · Promociones Especiales",
+      "longDescription": "Botellas en Ofertas · Promociones Especiales",
+      "image": "🛍️",
+      "price": 70,
       "stockStatus": "disponible"
     },
     {
@@ -16198,24 +16175,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmu7tn7uc000xbouhk5nvvxm7",
-      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
-      "businessName": "Bar Restaurante DLM",
-      "category": "Comidas",
-      "name": "Vaca Frita",
-      "shortDescription": "Res · Parrilla",
-      "longDescription": "Res · Parrilla",
-      "image": "🛍️",
-      "price": 5.4,
-      "packaging": [
-        {
-          "name": "Termopack",
-          "price": 0.4
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufjr6ts00t83ouh0zx2cwpj",
       "businessId": "cmsw26idv000v1gjrf66xea8h",
       "businessName": "Las Palmitas",
@@ -16225,6 +16184,24 @@
       "longDescription": "Vaca frita.",
       "image": "🛍️",
       "price": 6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.4
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmu7tn7uc000xbouhk5nvvxm7",
+      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
+      "businessName": "Bar Restaurante DLM",
+      "category": "Comidas",
+      "name": "Vaca Frita",
+      "shortDescription": "Res · Parrilla",
+      "longDescription": "Res · Parrilla",
+      "image": "🛍️",
+      "price": 5.4,
       "packaging": [
         {
           "name": "Termopack",
