@@ -5,40 +5,35 @@
       "name": "4 Esquinas",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778497/traelo/businesses/cmtloxd8d000y1gksrxoq23wp/mkuonvnjnqubgnzjzx2z.jpg?v=1789778497690",
-      "color": "from-pink-100 to-rose-50",
-      "status": "cerrado"
+      "color": "from-pink-100 to-rose-50"
     },
     {
       "id": "cmsw1ar39000g1gjrihyzo3r1",
       "name": "Agro Los Prietos",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778395/traelo/businesses/cmsw1ar39000g1gjrihyzo3r1/fpssmib103tfgn8p3sba.jpg?v=1790190087523",
-      "color": "from-yellow-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-yellow-100 to-amber-50"
     },
     {
       "id": "cmsxgudt300071ge0eu5zk4cs",
       "name": "Al Carbón",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778377/traelo/businesses/cmsxgudt300071ge0eu5zk4cs/ktrkvtc3klzujlmyy1bo.jpg?v=1789778378200",
-      "color": "from-pink-100 to-rose-50",
-      "status": "cerrado"
+      "color": "from-pink-100 to-rose-50"
     },
     {
       "id": "cmsw0nkl600041gjrkb3v2u91",
       "name": "AmoRe Dulcería",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778205/traelo/businesses/cmsw0nkl600041gjrkb3v2u91/b5rpa5out1qucneilro4.jpg?v=1790190082596",
-      "color": "from-pink-100 to-rose-50",
-      "status": "cerrado"
+      "color": "from-pink-100 to-rose-50"
     },
     {
       "id": "cmux5fiac006h20lmhod1r1uw",
       "name": "Atlántica ",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791319903/traelo/businesses/cmux5fiac006h20lmhod1r1uw/dm9gmn88granlonndh7o.jpg?v=1791373819336",
-      "color": "from-stone-100 to-stone-50",
-      "status": "cerrado"
+      "color": "from-stone-100 to-stone-50"
     },
     {
       "id": "cmsw2ho5h001c1gjrm3jt1bq8",
@@ -52,72 +47,63 @@
       "name": "Carniceria el Yompy",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791037695/traelo/businesses/cmusfo79600jo1gpbv6ugd9gt/hytt9kcj2cf1ytlkjskc.jpg?v=1791067068573",
-      "color": "from-orange-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-orange-100 to-amber-50"
     },
     {
       "id": "cmvc0apc200000wuh2hvjun6b",
       "name": "Charcutería Los Pitas",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792218968/traelo/businesses/cmvc0apc200000wuh2hvjun6b/wylyzqt6fiedvpo9dejp.jpg?v=1792218968427",
-      "color": "from-orange-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-orange-100 to-amber-50"
     },
     {
       "id": "cmusgsjzo0000r0uhoa8lqcs5",
       "name": "Charcutería Luis",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791036340/traelo/businesses/cmusgsjzo0000r0uhoa8lqcs5/bycatx9cithoendnhmju.webp?v=1791037899513",
-      "color": "from-pink-100 to-rose-50",
-      "status": "cerrado"
+      "color": "from-pink-100 to-rose-50"
     },
     {
       "id": "cmvbzgp790000h0uh20gxdo2n",
       "name": "Coppelia San Antonio",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792216569/traelo/businesses/cmvbzgp790000h0uh20gxdo2n/pm9mwpts22vkts9vm4mp.jpg?v=1792216569317",
-      "color": "from-yellow-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-yellow-100 to-amber-50"
     },
     {
       "id": "cmswb9g5j00011hd17at5ffuv",
       "name": "Cronos",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789774472/traelo/businesses/cmswb9g5j00011hd17at5ffuv/pddht0uxtcl0ip2veb3x.jpg?v=1791053829029",
-      "color": "from-yellow-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-yellow-100 to-amber-50"
     },
     {
       "id": "cmvbzkj230000fouhgz7c5xwx",
       "name": "Ditú San Antonio",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792216779/traelo/businesses/cmvbzkj230000fouhgz7c5xwx/l97ez2qsyu6ian9rzzal.jpg?v=1792216779439",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmutys3wj017i20oq7y2ddbjc",
       "name": "Doña Fela",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791128540/traelo/businesses/cmutys3wj017i20oq7y2ddbjc/lfhif8k2s0gqzqusl4qe.jpg?v=1791315333130",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmvbsmojh00171xs6vwsv63sp",
       "name": "Dulce Aurora",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792205154/traelo/businesses/cmvbsmojh00171xs6vwsv63sp/fg4pyqdolmyzulj5klmi.jpg?v=1792205155359",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmsxgsly600061ge0qtm5p3s1",
       "name": "Dulce Momento",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778361/traelo/businesses/cmsxgsly600061ge0qtm5p3s1/m1c41awrjn7nb04dbl1f.jpg?v=1789778362132",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado"
+      "color": "from-sky-100 to-cyan-50"
     },
     {
       "id": "cmsw0l3f600031gjrewm3turo",
@@ -125,16 +111,14 @@
       "description": "Combos curados para enviar a tu familia, más productos del día a día.",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778109/traelo/businesses/cmsw0l3f600031gjrewm3turo/nghgm60xq3qgh6ekpqbj.jpg?v=1790190079516",
       "color": "from-yellow-100 to-amber-50",
-      "paymentNote": "¿Quieres añadir o quitar algo? Todos los combos se pueden personalizar a tu gusto. Escríbenos por WhatsApp y armamos el tuyo.",
-      "status": "cerrado"
+      "paymentNote": "¿Quieres añadir o quitar algo? Todos los combos se pueden personalizar a tu gusto. Escríbenos por WhatsApp y armamos el tuyo."
     },
     {
       "id": "cmtj1406y000i1gczoluux21s",
       "name": "El Monito",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778434/traelo/businesses/cmtj1406y000i1gczoluux21s/y5pn8vnfnmktozwmpibg.jpg?v=1790190088874",
-      "color": "from-stone-100 to-stone-50",
-      "status": "cerrado"
+      "color": "from-stone-100 to-stone-50"
     },
     {
       "id": "cmuegyu69000zacuhad9yapnj",
@@ -148,208 +132,182 @@
       "name": "Ella y Yo",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778478/traelo/businesses/cmtlzmags000i1gfdf8ybrfj4/o61iarmxxd7nkjfjpflm.jpg?v=1791505767844",
-      "color": "from-orange-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-orange-100 to-amber-50"
     },
     {
       "id": "cmsxgn0tv00021ge0jyabgle4",
       "name": "Eme Boutique",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778136/traelo/businesses/cmsxgn0tv00021ge0jyabgle4/wrq3kcq7fxvpez1xadwm.jpg?v=1789778136887",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado"
+      "color": "from-sky-100 to-cyan-50"
     },
     {
       "id": "cmsxgrsyj00051ge023frkwwc",
       "name": "FerreGüira",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778335/traelo/businesses/cmsxgrsyj00051ge023frkwwc/uv2n3r9siahotwr95i0u.jpg?v=1789778339710",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado"
+      "color": "from-sky-100 to-cyan-50"
     },
     {
       "id": "cmsw2ip0r001d1gjrlt0ekpya",
       "name": "Frappio",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778370/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/fdodkehsjo507koxtss3.jpg?v=1791135471411",
-      "color": "from-orange-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-orange-100 to-amber-50"
     },
     {
       "id": "cmsxgr1x000041ge0t5m1iu08",
       "name": "Heladería M&K",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778293/traelo/businesses/cmsxgr1x000041ge0t5m1iu08/cdywonkkvwuhmw8qaau5.jpg?v=1789778295150",
-      "color": "from-stone-100 to-stone-50",
-      "status": "cerrado"
+      "color": "from-stone-100 to-stone-50"
     },
     {
       "id": "cmtu8ybla000j1ghii23olmxk",
       "name": "Iron Bross Pizzas",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789782235/traelo/businesses/cmtu8ybla000j1ghii23olmxk/vkb3r8axilswd1nqtpkt.jpg?v=1791335935405",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmsw1frzv000h1gjre7l07ygd",
       "name": "La Marina",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789783100/traelo/businesses/cmsw1frzv000h1gjre7l07ygd/chb0lmyxzvqeaqraca8e.jpg?v=1789783101590",
-      "color": "from-pink-100 to-rose-50",
-      "status": "cerrado"
+      "color": "from-pink-100 to-rose-50"
     },
     {
       "id": "cmsxgz5ci000b1ge092q7kzze",
       "name": "La Nevada",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778402/traelo/businesses/cmsxgz5ci000b1ge092q7kzze/ng1z0w9zlg8pkqj4aqs9.jpg?v=1789778403118",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado"
+      "color": "from-sky-100 to-cyan-50"
     },
     {
       "id": "cmu47egmg00161hag3nvutfom",
       "name": "La Pino - Tienda de Alimentos",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789782254/traelo/businesses/cmu47egmg00161hag3nvutfom/tyll7xit9zp0molbklxp.jpg?v=1790190095503",
-      "color": "from-orange-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-orange-100 to-amber-50"
     },
     {
       "id": "cmsw26idv000v1gjrf66xea8h",
       "name": "Las Palmitas",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778269/traelo/businesses/cmsw26idv000v1gjrf66xea8h/zkvyziclbi07c0hibdmo.jpg?v=1790190084217",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado"
+      "color": "from-sky-100 to-cyan-50"
     },
     {
       "id": "cmsw21slo000t1gjrp8psk5rq",
       "name": "Línea-Callejón",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778189/traelo/businesses/cmsw21slo000t1gjrp8psk5rq/glbqikzdmvzp6tlm3a3t.jpg?v=1789778189810",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmvbzv7q60000b8uh0s585zb6",
       "name": "Los Arcos Viejos",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792217292/traelo/businesses/cmvbzv7q60000b8uh0s585zb6/r0ftmy6jn99plphwvk9f.jpg?v=1792217292185",
-      "color": "from-orange-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-orange-100 to-amber-50"
     },
     {
       "id": "cmubpwjqg00021gg4qerd7p0k",
       "name": "Los Barca - Mercado",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790190779/traelo/businesses/cmubpwjqg00021gg4qerd7p0k/wmvlzt6qh1zejkvygdfg.jpg?v=1790190781076",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmsw1hb6g000i1gjrzo23cub7",
       "name": "Los Macus",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778101/traelo/businesses/cmsw1hb6g000i1gjrzo23cub7/gxqpcawexymwopslzydn.jpg?v=1789778102197",
-      "color": "from-yellow-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-yellow-100 to-amber-50"
     },
     {
       "id": "cmuu0586r01ap20oqynw6u96y",
       "name": "Los Pérez ",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791130074/traelo/businesses/cmuu0586r01ap20oqynw6u96y/jc9s3dghkmzr9u1lroet.jpg?v=1791295414770",
-      "color": "from-yellow-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-yellow-100 to-amber-50"
     },
     {
       "id": "cmu2vg0vu00021gehpoa2bh90",
       "name": "Los Reales Tiendas de Electrodomésticos",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789782243/traelo/businesses/cmu2vg0vu00021gehpoa2bh90/tqvwqud8mf7x4ykmvg1v.jpg?v=1790190093980",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado"
+      "color": "from-sky-100 to-cyan-50"
     },
     {
       "id": "cmvbtlyt80000fkuhqfpj426m",
       "name": "Martinica",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792206922/traelo/businesses/cmvbtlyt80000fkuhqfpj426m/dzwvj0mbt9ysnyn2tugp.jpg?v=1792206923257",
-      "color": "from-stone-100 to-stone-50",
-      "status": "cerrado"
+      "color": "from-stone-100 to-stone-50"
     },
     {
       "id": "cmu7ezjnp0000fwuhq2dxrosc",
       "name": "Mercado Alpha",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789763903/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/ai3a2qqyn6lymotlrnvm.jpg?v=1790190101822",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado"
+      "color": "from-sky-100 to-cyan-50"
     },
     {
       "id": "cmt37zq5i001y1ggm1ukr5li1",
       "name": "Mercado DAF",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778410/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/q2ufm4qoqoasnsq6ddz7.jpg?v=1789778411714",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmvc08kln00003ouhenv0j1ml",
       "name": "Mercado Garaje Verde",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792218932/traelo/businesses/cmvc08kln00003ouhenv0j1ml/deoohn9yqtvrwz6yyyn6.jpg?v=1792235725677",
-      "color": "from-orange-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-orange-100 to-amber-50"
     },
     {
       "id": "cmvbuj8jm0000kcuh16pb2y6b",
       "name": "Mercado Los Primos",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792209144/traelo/businesses/cmvbuj8jm0000kcuh16pb2y6b/tgrs0swmyxufybyb4emr.jpg?v=1792217350317",
-      "color": "from-rose-100 to-orange-50",
-      "status": "cerrado"
+      "color": "from-rose-100 to-orange-50"
     },
     {
       "id": "cmvc00xr40000xcuh2mnuls50",
       "name": "Piedra y Carbón",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792217564/traelo/businesses/cmvc00xr40000xcuh2mnuls50/urfmrcgdztzrd3tcv7p7.jpg?v=1792217564041",
-      "color": "from-sky-100 to-cyan-50",
-      "status": "cerrado"
+      "color": "from-sky-100 to-cyan-50"
     },
     {
       "id": "cmuszt74m00gi20oqem1szqp3",
       "name": "Pizzería D&J",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791068754/traelo/businesses/cmuszt74m00gi20oqem1szqp3/e6wvghpdhcogxl2vijlu.jpg?v=1791298570166",
-      "color": "from-pink-100 to-rose-50",
-      "status": "cerrado"
+      "color": "from-pink-100 to-rose-50"
     },
     {
       "id": "cmvc03t4b0000vguhlr5rn22i",
       "name": "Pizzería Los Jimaguas",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792217661/traelo/businesses/cmvc03t4b0000vguhlr5rn22i/zglhqv48ervufbnrwokj.jpg?v=1792235741327",
-      "color": "from-yellow-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-yellow-100 to-amber-50"
     },
     {
       "id": "cmsxgx1r5000a1ge0idapiwm1",
       "name": "Tu Kprichito",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789778154/traelo/businesses/cmsxgx1r5000a1ge0idapiwm1/b7wqufdz0aghrbwutww0.jpg?v=1790190081216",
-      "color": "from-yellow-100 to-amber-50",
-      "status": "cerrado"
+      "color": "from-yellow-100 to-amber-50"
     },
     {
       "id": "cmvc0sfko000018uh6izascg8",
       "name": "Variedades en Vivanco",
       "description": "",
       "image": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792218948/traelo/businesses/cmvc0sfko000018uh6izascg8/xdxvei1ol9ryboocl3aj.jpg?v=1792235702447",
-      "color": "from-stone-100 to-stone-50",
-      "status": "cerrado"
+      "color": "from-stone-100 to-stone-50"
     }
   ],
   "products": [

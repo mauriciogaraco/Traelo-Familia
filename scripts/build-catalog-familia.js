@@ -224,9 +224,8 @@ function mapBusiness(b) {
     image: b.logoUrl,
     color: colorFor(b.id),
     ...(override?.paymentNote ? { paymentNote: override.paymentNote } : {}),
-    // acceptingOrders/isOpenNow ya los calcula el backend en vivo (horario real de La Habana) —
-    // más preciso que el flag manual que usaba el catálogo legacy.
-    ...(!b.acceptingOrders || !b.isOpenNow ? { status: 'cerrado' } : {}),
+    // En Familia los pedidos son de la diáspora y la entrega se coordina aparte: todos los
+    // negocios aceptan órdenes siempre, así que se ignoran acceptingOrders/isOpenNow del backend.
   }
 }
 
