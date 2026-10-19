@@ -561,18 +561,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmv9vqeuk000d1xqls65pia17",
-      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
-      "businessName": "Charcutería Luis",
-      "category": "Bebidas",
-      "name": "Agua Los Piscis(Pomo 500 ml)",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 0.5,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufjzpm401jx3ouhvajxp7fg",
       "businessId": "cmt37zq5i001y1ggm1ukr5li1",
       "businessName": "Mercado DAF",
@@ -583,6 +571,18 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791644567/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/bc8aoemt4kxhgvicuih0.jpg?v=1791644587787",
       "price": 0.38,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmv9vqeuk000d1xqls65pia17",
+      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
+      "businessName": "Charcutería Luis",
+      "category": "Bebidas",
+      "name": "Agua Los Piscis(Pomo 500 ml)",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 0.5,
       "stockStatus": "disponible"
     },
     {
@@ -1045,24 +1045,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmu7rbgsn002bdkuhh8s5ym3i",
-      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
-      "businessName": "Bar Restaurante DLM",
-      "category": "Comidas",
-      "name": "Arroz blanco",
-      "shortDescription": "Pastas & arroz · Clásicos",
-      "longDescription": "Pastas & arroz · Clásicos",
-      "image": "🛍️",
-      "price": 0.6,
-      "packaging": [
-        {
-          "name": "Termopack",
-          "price": 0.4
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvc0140u000mxcuh46qeqjm9",
       "businessId": "cmvc00xr40000xcuh2mnuls50",
       "businessName": "Piedra y Carbón",
@@ -1076,6 +1058,24 @@
         {
           "name": "Contenedor",
           "price": 0.6
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmu7rbgsn002bdkuhh8s5ym3i",
+      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
+      "businessName": "Bar Restaurante DLM",
+      "category": "Comidas",
+      "name": "Arroz blanco",
+      "shortDescription": "Pastas & arroz · Clásicos",
+      "longDescription": "Pastas & arroz · Clásicos",
+      "image": "🛍️",
+      "price": 0.6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.4
         }
       ],
       "stockStatus": "disponible"
@@ -1162,8 +1162,8 @@
       "shortDescription": "Se vende por saco. Para 50 sacos o más el precio baja a 35200cup",
       "longDescription": "Se vende por saco. Para 50 sacos o más el precio baja a 35200cup",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791057168/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/ycf8ri79mad2ybwai0yv.jpg?v=1792278641295",
-      "price": 71.2,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791057168/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/ycf8ri79mad2ybwai0yv.jpg?v=1792355432510",
+      "price": 70.52,
       "stockStatus": "disponible"
     },
     {
@@ -1203,6 +1203,18 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmvbzwcb4003ub8uhjpq7y3sl",
+      "businessId": "cmvbzv7q60000b8uh0s585zb6",
+      "businessName": "Los Arcos Viejos",
+      "category": "Comidas",
+      "name": "Arroz Frito",
+      "shortDescription": "Guarniciones",
+      "longDescription": "Guarniciones",
+      "image": "🛍️",
+      "price": 6,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmufjr7d500te3ouhyvw2z7p2",
       "businessId": "cmsw26idv000v1gjrf66xea8h",
       "businessName": "Las Palmitas",
@@ -1218,18 +1230,6 @@
           "price": 0.4
         }
       ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmvbzwcb4003ub8uhjpq7y3sl",
-      "businessId": "cmvbzv7q60000b8uh0s585zb6",
-      "businessName": "Los Arcos Viejos",
-      "category": "Comidas",
-      "name": "Arroz Frito",
-      "shortDescription": "Guarniciones",
-      "longDescription": "Guarniciones",
-      "image": "🛍️",
-      "price": 6,
       "stockStatus": "disponible"
     },
     {
@@ -1572,8 +1572,8 @@
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791060718/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/zzj7efzl5l2ztfoi4sso.jpg?v=1792166327496",
-      "price": 50.4,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791060718/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/zzj7efzl5l2ztfoi4sso.jpg?v=1792355384922",
+      "price": 50.84,
       "stockStatus": "disponible"
     },
     {
@@ -1741,18 +1741,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbzgqwj0006h0uhho2eqpxy",
-      "businessId": "cmvbzgp790000h0uh20gxdo2n",
-      "businessName": "Coppelia San Antonio",
-      "category": "Bebidas",
-      "name": "Batido de helado",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 2,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmu7tnmth0020bouhnu9ytct1",
       "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
       "businessName": "Bar Restaurante DLM",
@@ -1768,6 +1756,19 @@
           "price": 0.4
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvbzgqwj0006h0uhho2eqpxy",
+      "businessId": "cmvbzgp790000h0uh20gxdo2n",
+      "businessName": "Coppelia San Antonio",
+      "category": "Bebidas",
+      "name": "Batido de helado",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792346820/traelo/businesses/cmvbzgp790000h0uh20gxdo2n/products/lt01jiepary3rhuwplg4.jpg?v=1792346827615",
+      "price": 2.2,
       "stockStatus": "disponible"
     },
     {
@@ -2035,6 +2036,24 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmufjpvre00nx3ouhtoqh2g4w",
+      "businessId": "cmsw21slo000t1gjrp8psk5rq",
+      "businessName": "Línea-Callejón",
+      "category": "Comidas",
+      "name": "Bistec de Cerdo",
+      "shortDescription": "Comidas Criollas · Platos",
+      "longDescription": "Comidas Criollas · Platos",
+      "image": "🛍️",
+      "price": 6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.3
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmufjld2i008r3ouhf33fzi48",
       "businessId": "cmsw1hb6g000i1gjrzo23cub7",
       "businessName": "Los Macus",
@@ -2043,7 +2062,7 @@
       "shortDescription": "Pan con bistec de cerdo.",
       "longDescription": "Pan con bistec de cerdo.",
       "image": "🛍️",
-      "price": 1.8,
+      "price": 1.96,
       "addons": [
         {
           "name": "Hamburguesa",
@@ -2076,24 +2095,6 @@
         {
           "name": "Aporreado",
           "price": 0.44
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmufjpvre00nx3ouhtoqh2g4w",
-      "businessId": "cmsw21slo000t1gjrp8psk5rq",
-      "businessName": "Línea-Callejón",
-      "category": "Comidas",
-      "name": "Bistec de Cerdo",
-      "shortDescription": "Comidas Criollas · Platos",
-      "longDescription": "Comidas Criollas · Platos",
-      "image": "🛍️",
-      "price": 6,
-      "packaging": [
-        {
-          "name": "Termopack",
-          "price": 0.3
         }
       ],
       "stockStatus": "disponible"
@@ -2179,24 +2180,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmv4k95yv01qo1ylwrj3ji4zg",
-      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
-      "businessName": "Bar Restaurante DLM",
-      "category": "Comidas",
-      "name": "Bistec de pechuga de pollo ",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 5.6,
-      "packaging": [
-        {
-          "name": "Termopack",
-          "price": 0.4
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmuu4f4tt01vv20oq3cxky5mh",
       "businessId": "cmsw21slo000t1gjrp8psk5rq",
       "businessName": "Línea-Callejón",
@@ -2210,6 +2193,24 @@
         {
           "name": "Termopack",
           "price": 0.3
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmv4k95yv01qo1ylwrj3ji4zg",
+      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
+      "businessName": "Bar Restaurante DLM",
+      "category": "Comidas",
+      "name": "Bistec de pechuga de pollo ",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 5.6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.4
         }
       ],
       "stockStatus": "disponible"
@@ -2299,24 +2300,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmu7tn33k000lbouhsfmfebsi",
-      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
-      "businessName": "Bar Restaurante DLM",
-      "category": "Comidas",
-      "name": "Bistec grillé 230g",
-      "shortDescription": "Cerdo · Parrilla",
-      "longDescription": "Cerdo · Parrilla",
-      "image": "🛍️",
-      "price": 5,
-      "packaging": [
-        {
-          "name": "Termopack",
-          "price": 0.4
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmu7tmxzg0007bouh5wdniirp",
       "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
       "businessName": "Bar Restaurante DLM",
@@ -2326,6 +2309,24 @@
       "longDescription": "Pollo · Fuertes",
       "image": "🛍️",
       "price": 5.6,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.4
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmu7tn33k000lbouhsfmfebsi",
+      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
+      "businessName": "Bar Restaurante DLM",
+      "category": "Comidas",
+      "name": "Bistec grillé 230g",
+      "shortDescription": "Cerdo · Parrilla",
+      "longDescription": "Cerdo · Parrilla",
+      "image": "🛍️",
+      "price": 5,
       "packaging": [
         {
           "name": "Termopack",
@@ -2481,15 +2482,27 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmve2qgb300op20odfyu5a74d",
+      "businessId": "cmsw1hb6g000i1gjrzo23cub7",
+      "businessName": "Los Macus",
+      "category": "Panadería",
+      "name": "Bocadito Surtido ",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 1,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmvbzgpu00002h0uhmcqmt7iu",
       "businessId": "cmvbzgp790000h0uh20gxdo2n",
       "businessName": "Coppelia San Antonio",
       "category": "Comidas",
-      "name": "Bola de helado",
+      "name": "Bola de helado sencillo ",
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "price": 0.6,
+      "price": 0.7,
       "options": [
         "Chocolate",
         "Vainilla",
@@ -2884,7 +2897,7 @@
       "shortDescription": "Brochetas de cerdo asadas a las brasas. Se venden por unidad.",
       "longDescription": "Brochetas de cerdo asadas a las brasas. Se venden por unidad.",
       "image": "🛍️",
-      "price": 1.8,
+      "price": 2.2,
       "stockStatus": "disponible"
     },
     {
@@ -2908,7 +2921,7 @@
       "shortDescription": "Brochetas de cerdo rellenas de queso, asadas a las brasas. Se venden por unidad.",
       "longDescription": "Brochetas de cerdo rellenas de queso, asadas a las brasas. Se venden por unidad.",
       "image": "🛍️",
-      "price": 1.8,
+      "price": 2.2,
       "stockStatus": "disponible"
     },
     {
@@ -3017,19 +3030,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjwngq01ee3ouhl07ericm",
-      "businessId": "cmt37zq5i001y1ggm1ukr5li1",
-      "businessName": "Mercado DAF",
-      "category": "Comidas",
-      "name": "Café Dufiltro",
-      "shortDescription": "Café Dufiltro, se vende por unidad.",
-      "longDescription": "Café Dufiltro, se vende por unidad.",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255513/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/utu0blhj9lvwuajyq2lr.jpg?v=1790882096650",
-      "price": 3.2,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvc0b04k00080wuh9xxk9otw",
       "businessId": "cmvc0apc200000wuh2hvjun6b",
       "businessName": "Charcutería Los Pitas",
@@ -3039,6 +3039,19 @@
       "longDescription": "",
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792217976/traelo/businesses/cmvc0apc200000wuh2hvjun6b/products/vut1uislnmmxmfk3cpeu.jpg?v=1792217976802",
+      "price": 3.2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufjwngq01ee3ouhl07ericm",
+      "businessId": "cmt37zq5i001y1ggm1ukr5li1",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "name": "Café Dufiltro",
+      "shortDescription": "Café Dufiltro, se vende por unidad.",
+      "longDescription": "Café Dufiltro, se vende por unidad.",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255513/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/utu0blhj9lvwuajyq2lr.jpg?v=1790882096650",
       "price": 3.2,
       "stockStatus": "disponible"
     },
@@ -3307,6 +3320,19 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmve5bz4i017d20odc5fxjm2l",
+      "businessId": "cmvbzgp790000h0uh20gxdo2n",
+      "businessName": "Coppelia San Antonio",
+      "category": "Regalos",
+      "name": "Cake cuña",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792347360/traelo/businesses/cmvbzgp790000h0uh20gxdo2n/products/e4dlp9syq3ejoxvraqas.jpg?v=1792347426212",
+      "price": 0.64,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmufjqp9j00r73ouho0hk2z5r",
       "businessId": "cmsw0nkl600041gjrkb3v2u91",
       "businessName": "AmoRe Dulcería",
@@ -3442,6 +3468,19 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmux60jsr007r20lme8smj1ro",
+      "businessId": "cmux5fiac006h20lmhod1r1uw",
+      "businessName": "Atlántica ",
+      "category": "Comidas",
+      "name": "Calamar",
+      "shortDescription": "Calamar por libra ",
+      "longDescription": "Calamar por libra ",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791320590/traelo/businesses/cmux5fiac006h20lmhod1r1uw/products/lo9ok5dqfwclw5b8yppl.jpg?v=1791320595220",
+      "price": 5,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmufjrp3p00yz3ouheu3exgel",
       "businessId": "cmsw26idv000v1gjrf66xea8h",
       "businessName": "Las Palmitas",
@@ -3457,19 +3496,6 @@
           "price": 0.4
         }
       ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmux60jsr007r20lme8smj1ro",
-      "businessId": "cmux5fiac006h20lmhod1r1uw",
-      "businessName": "Atlántica ",
-      "category": "Comidas",
-      "name": "Calamar",
-      "shortDescription": "Calamar por libra ",
-      "longDescription": "Calamar por libra ",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791320590/traelo/businesses/cmux5fiac006h20lmhod1r1uw/products/lo9ok5dqfwclw5b8yppl.jpg?v=1791320595220",
-      "price": 5,
       "stockStatus": "disponible"
     },
     {
@@ -3527,6 +3553,18 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmvbzw9io003kb8uhy87qch4y",
+      "businessId": "cmvbzv7q60000b8uh0s585zb6",
+      "businessName": "Los Arcos Viejos",
+      "category": "Comidas",
+      "name": "Camarón al Ajillo",
+      "shortDescription": "Pescados y Mariscos",
+      "longDescription": "Pescados y Mariscos",
+      "image": "🛍️",
+      "price": 13,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmufjrnzk00yj3ouh5ah50x3j",
       "businessId": "cmsw26idv000v1gjrf66xea8h",
       "businessName": "Las Palmitas",
@@ -3542,18 +3580,6 @@
           "price": 0.4
         }
       ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmvbzw9io003kb8uhy87qch4y",
-      "businessId": "cmvbzv7q60000b8uh0s585zb6",
-      "businessName": "Los Arcos Viejos",
-      "category": "Comidas",
-      "name": "Camarón al Ajillo",
-      "shortDescription": "Pescados y Mariscos",
-      "longDescription": "Pescados y Mariscos",
-      "image": "🛍️",
-      "price": 13,
       "stockStatus": "disponible"
     },
     {
@@ -4112,8 +4138,8 @@
       "shortDescription": "Es el saco grande",
       "longDescription": "Es el saco grande",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791060417/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/bipoop9yiaw18ix47s3f.jpg?v=1791579925420",
-      "price": 34,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791060417/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/bipoop9yiaw18ix47s3f.jpg?v=1792355465722",
+      "price": 34.44,
       "stockStatus": "disponible"
     },
     {
@@ -4321,9 +4347,9 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjli06009z3ouhnrgqaxo7",
-      "businessId": "cmsw1hb6g000i1gjrzo23cub7",
-      "businessName": "Los Macus",
+      "id": "cmufjmaqf00ev3ouh399yyyek",
+      "businessId": "cmsw1frzv000h1gjre7l07ygd",
+      "businessName": "La Marina",
       "category": "Bebidas",
       "name": "Cerv. Muralla",
       "shortDescription": "Se vende por unidad.",
@@ -4333,9 +4359,9 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjmaqf00ev3ouh399yyyek",
-      "businessId": "cmsw1frzv000h1gjre7l07ygd",
-      "businessName": "La Marina",
+      "id": "cmufjli06009z3ouhnrgqaxo7",
+      "businessId": "cmsw1hb6g000i1gjrzo23cub7",
+      "businessName": "Los Macus",
       "category": "Bebidas",
       "name": "Cerv. Muralla",
       "shortDescription": "Se vende por unidad.",
@@ -4417,18 +4443,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc01f7a001mxcuhcs2910i2",
-      "businessId": "cmvc00xr40000xcuh2mnuls50",
-      "businessName": "Piedra y Carbón",
-      "category": "Bebidas",
-      "name": "Cerveza Cristal de botella",
-      "shortDescription": "Bebidas",
-      "longDescription": "Bebidas",
-      "image": "🛍️",
-      "price": 1.99,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvbzku6z000kfouhggafjorn",
       "businessId": "cmvbzkj230000fouhgz7c5xwx",
       "businessName": "Ditú San Antonio",
@@ -4438,6 +4452,18 @@
       "longDescription": "Cerveza nacional.",
       "image": "🛍️",
       "price": 1.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvc01f7a001mxcuhcs2910i2",
+      "businessId": "cmvc00xr40000xcuh2mnuls50",
+      "businessName": "Piedra y Carbón",
+      "category": "Bebidas",
+      "name": "Cerveza Cristal de botella",
+      "shortDescription": "Bebidas",
+      "longDescription": "Bebidas",
+      "image": "🛍️",
+      "price": 1.99,
       "stockStatus": "disponible"
     },
     {
@@ -4489,18 +4515,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc01fq9001oxcuhegf1p561",
-      "businessId": "cmvc00xr40000xcuh2mnuls50",
-      "businessName": "Piedra y Carbón",
-      "category": "Bebidas",
-      "name": "Cerveza importada",
-      "shortDescription": "Bebidas",
-      "longDescription": "Bebidas",
-      "image": "🛍️",
-      "price": 2.91,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmu7tnowt0026bouhp9qrf9ih",
       "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
       "businessName": "Bar Restaurante DLM",
@@ -4510,6 +4524,18 @@
       "longDescription": "Bebidas · Refrescantes y Energéticas",
       "image": "🛍️",
       "price": 2.2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvc01fq9001oxcuhegf1p561",
+      "businessId": "cmvc00xr40000xcuh2mnuls50",
+      "businessName": "Piedra y Carbón",
+      "category": "Bebidas",
+      "name": "Cerveza importada",
+      "shortDescription": "Bebidas",
+      "longDescription": "Bebidas",
+      "image": "🛍️",
+      "price": 2.91,
       "stockStatus": "disponible"
     },
     {
@@ -4549,18 +4575,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbujmlm0018kcuhvrfkic9w",
-      "businessId": "cmvbuj8jm0000kcuh16pb2y6b",
-      "businessName": "Mercado Los Primos",
-      "category": "Bebidas",
-      "name": "Cerveza Shekels",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 1.16,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvbzkwlc000mfouhq3tvzw1f",
       "businessId": "cmvbzkj230000fouhgz7c5xwx",
       "businessName": "Ditú San Antonio",
@@ -4570,6 +4584,18 @@
       "longDescription": "Cerveza importada.",
       "image": "🛍️",
       "price": 1.3,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvbujmlm0018kcuhvrfkic9w",
+      "businessId": "cmvbuj8jm0000kcuh16pb2y6b",
+      "businessName": "Mercado Los Primos",
+      "category": "Bebidas",
+      "name": "Cerveza Shekels",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 1.16,
       "stockStatus": "disponible"
     },
     {
@@ -4659,9 +4685,9 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjlgdi009m3ouhju9snvoo",
-      "businessId": "cmsw1hb6g000i1gjrzo23cub7",
-      "businessName": "Los Macus",
+      "id": "cmufjm9cb00ei3ouhmwhijxxr",
+      "businessId": "cmsw1frzv000h1gjre7l07ygd",
+      "businessName": "La Marina",
       "category": "Bebidas",
       "name": "Chaka",
       "shortDescription": "Se vende por unidad.",
@@ -4671,9 +4697,9 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjm9cb00ei3ouhmwhijxxr",
-      "businessId": "cmsw1frzv000h1gjre7l07ygd",
-      "businessName": "La Marina",
+      "id": "cmufjlgdi009m3ouhju9snvoo",
+      "businessId": "cmsw1hb6g000i1gjrzo23cub7",
+      "businessName": "Los Macus",
       "category": "Bebidas",
       "name": "Chaka",
       "shortDescription": "Se vende por unidad.",
@@ -4883,7 +4909,7 @@
       "shortDescription": "Pan con chorizo",
       "longDescription": "Pan con chorizo",
       "image": "🛍️",
-      "price": 0.74,
+      "price": 0.8,
       "addons": [
         {
           "name": "Hamburguesa",
@@ -5058,18 +5084,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbzvtmg0024b8uhygu4jnao",
-      "businessId": "cmvbzv7q60000b8uh0s585zb6",
-      "businessName": "Los Arcos Viejos",
-      "category": "Comidas",
-      "name": "Cóctel de Camarones",
-      "shortDescription": "Entrantes",
-      "longDescription": "Entrantes",
-      "image": "🛍️",
-      "price": 9.6,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufjrln500xl3ouh61e23yuf",
       "businessId": "cmsw26idv000v1gjrf66xea8h",
       "businessName": "Las Palmitas",
@@ -5085,6 +5099,18 @@
           "price": 0.4
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvbzvtmg0024b8uhygu4jnao",
+      "businessId": "cmvbzv7q60000b8uh0s585zb6",
+      "businessName": "Los Arcos Viejos",
+      "category": "Comidas",
+      "name": "Cóctel de Camarones",
+      "shortDescription": "Entrantes",
+      "longDescription": "Entrantes",
+      "image": "🛍️",
+      "price": 9.6,
       "stockStatus": "disponible"
     },
     {
@@ -5269,6 +5295,18 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmv9uu57800c51gqa9n05rt81",
+      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
+      "businessName": "Charcutería Luis",
+      "category": "Comidas",
+      "name": "Completas",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 3.5,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmush7ehp00no1gpb067yisod",
       "businessId": "cmusfo79600jo1gpbv6ugd9gt",
       "businessName": "Carniceria el Yompy",
@@ -5279,18 +5317,6 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791037049/traelo/businesses/cmusfo79600jo1gpbv6ugd9gt/products/x50irg8i3v6otprpfix2.jpg?v=1791037052757",
       "price": 2.4,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmv9uu57800c51gqa9n05rt81",
-      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
-      "businessName": "Charcutería Luis",
-      "category": "Comidas",
-      "name": "Completas",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 3.5,
       "stockStatus": "disponible"
     },
     {
@@ -5486,18 +5512,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbzw7ie003cb8uhn3u972bi",
-      "businessId": "cmvbzv7q60000b8uh0s585zb6",
-      "businessName": "Los Arcos Viejos",
-      "category": "Comidas",
-      "name": "Costilla Frita",
-      "shortDescription": "Cerdo",
-      "longDescription": "Cerdo",
-      "image": "🛍️",
-      "price": 12.6,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufjr6bx00t23ouhzfwjmkcu",
       "businessId": "cmsw26idv000v1gjrf66xea8h",
       "businessName": "Las Palmitas",
@@ -5516,6 +5530,18 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmvbzw7ie003cb8uhn3u972bi",
+      "businessId": "cmvbzv7q60000b8uh0s585zb6",
+      "businessName": "Los Arcos Viejos",
+      "category": "Comidas",
+      "name": "Costilla Frita",
+      "shortDescription": "Cerdo",
+      "longDescription": "Cerdo",
+      "image": "🛍️",
+      "price": 12.6,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmvbzv9q20008b8uh9b87oc5y",
       "businessId": "cmvbzv7q60000b8uh0s585zb6",
       "businessName": "Los Arcos Viejos",
@@ -5528,21 +5554,15 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjrmrw00y13ouhpy8mw8rk",
-      "businessId": "cmsw26idv000v1gjrf66xea8h",
-      "businessName": "Las Palmitas",
+      "id": "cmvbzv8qr0004b8uhir8zj76a",
+      "businessId": "cmvbzv7q60000b8uh0s585zb6",
+      "businessName": "Los Arcos Viejos",
       "category": "Comidas",
       "name": "Crema Aurora",
-      "shortDescription": "Crema Aurora.",
-      "longDescription": "Crema Aurora.",
+      "shortDescription": "Cremas",
+      "longDescription": "Cremas",
       "image": "🛍️",
-      "price": 2,
-      "packaging": [
-        {
-          "name": "Termopack",
-          "price": 0.4
-        }
-      ],
+      "price": 4.4,
       "stockStatus": "disponible"
     },
     {
@@ -5564,15 +5584,21 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbzv8qr0004b8uhir8zj76a",
-      "businessId": "cmvbzv7q60000b8uh0s585zb6",
-      "businessName": "Los Arcos Viejos",
+      "id": "cmufjrmrw00y13ouhpy8mw8rk",
+      "businessId": "cmsw26idv000v1gjrf66xea8h",
+      "businessName": "Las Palmitas",
       "category": "Comidas",
       "name": "Crema Aurora",
-      "shortDescription": "Cremas",
-      "longDescription": "Cremas",
+      "shortDescription": "Crema Aurora.",
+      "longDescription": "Crema Aurora.",
       "image": "🛍️",
-      "price": 4.4,
+      "price": 2,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.4
+        }
+      ],
       "stockStatus": "disponible"
     },
     {
@@ -5729,19 +5755,19 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc01191000cxcuhkzi4d0u6",
-      "businessId": "cmvc00xr40000xcuh2mnuls50",
-      "businessName": "Piedra y Carbón",
+      "id": "cmvbtmbk6000efkuhz63q336b",
+      "businessId": "cmvbtlyt80000fkuhqfpj426m",
+      "businessName": "Martinica",
       "category": "Comidas",
       "name": "Crema de queso",
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes",
       "image": "🛍️",
-      "price": 3.79,
+      "price": 3.4,
       "packaging": [
         {
-          "name": "Contenedor",
-          "price": 0.6
+          "name": "Termopack",
+          "price": 0.5
         }
       ],
       "stockStatus": "disponible"
@@ -5765,21 +5791,33 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbtmbk6000efkuhz63q336b",
-      "businessId": "cmvbtlyt80000fkuhqfpj426m",
-      "businessName": "Martinica",
+      "id": "cmvc01191000cxcuhkzi4d0u6",
+      "businessId": "cmvc00xr40000xcuh2mnuls50",
+      "businessName": "Piedra y Carbón",
       "category": "Comidas",
       "name": "Crema de queso",
       "shortDescription": "Entrantes",
       "longDescription": "Entrantes",
       "image": "🛍️",
-      "price": 3.4,
+      "price": 3.79,
       "packaging": [
         {
-          "name": "Termopack",
-          "price": 0.5
+          "name": "Contenedor",
+          "price": 0.6
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvbzv88r0002b8uhecgc53h9",
+      "businessId": "cmvbzv7q60000b8uh0s585zb6",
+      "businessName": "Los Arcos Viejos",
+      "category": "Comidas",
+      "name": "Crema de Queso",
+      "shortDescription": "Cremas",
+      "longDescription": "Cremas",
+      "image": "🛍️",
+      "price": 4,
       "stockStatus": "disponible"
     },
     {
@@ -5798,18 +5836,6 @@
           "price": 0.4
         }
       ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmvbzv88r0002b8uhecgc53h9",
-      "businessId": "cmvbzv7q60000b8uh0s585zb6",
-      "businessName": "Los Arcos Viejos",
-      "category": "Comidas",
-      "name": "Crema de Queso",
-      "shortDescription": "Cremas",
-      "longDescription": "Cremas",
-      "image": "🛍️",
-      "price": 4,
       "stockStatus": "disponible"
     },
     {
@@ -6109,6 +6135,18 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmv9ue5c900ax1gqa6czkqkk8",
+      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
+      "businessName": "Charcutería Luis",
+      "category": "Comidas",
+      "name": "Croquetas ",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 0.06,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmv070lh402d31ynwiciytabs",
       "businessId": "cmt37zq5i001y1ggm1ukr5li1",
       "businessName": "Mercado DAF",
@@ -6119,18 +6157,6 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791503670/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/lc6e3i35leqpqnlkyykg.jpg?v=1791504092065",
       "price": 0.5,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmv9ue5c900ax1gqa6czkqkk8",
-      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
-      "businessName": "Charcutería Luis",
-      "category": "Comidas",
-      "name": "Croquetas ",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 0.06,
       "stockStatus": "disponible"
     },
     {
@@ -6624,18 +6650,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmurfeen6003v1gpbz9tpxij9",
-      "businessId": "cmsw0l3f600031gjrewm3turo",
-      "businessName": "El Mercadito",
-      "category": "Regalos",
-      "name": "Detergente Hogar",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 1,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmusgty5c001er0uhvpqibz1c",
       "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
       "businessName": "Charcutería Luis",
@@ -6646,20 +6660,6 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791036404/traelo/businesses/cmusgsjzo0000r0uhoa8lqcs5/products/ftl5labs3azforz3jnl7.jpg?v=1792086521012",
       "price": 0.9,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmu7ff7t900159ouhhzf3x6fg",
-      "businessId": "cmu7ezjnp0000fwuhq2dxrosc",
-      "businessName": "Mercado Alpha",
-      "category": "Comidas",
-      "name": "Detergente Líquido",
-      "shortDescription": "Se venden por blister 10 unidades. Sale a 460 cup",
-      "longDescription": "Se venden por blister 10 unidades. Sale a 460 cup",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791062130/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/l63znxp7s4dmrq5hn5zz.jpg?v=1792165725281",
-      "price": 9.2,
-      "formato": 10,
       "stockStatus": "disponible"
     },
     {
@@ -6809,7 +6809,7 @@
       "shortDescription": "Detergente Súper María 500g. Se vende por sacos de 40 unidades, sale a 820 cup",
       "longDescription": "Detergente Súper María 500g. Se vende por sacos de 40 unidades, sale a 820 cup",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791319490/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/puugplpcgevltormpksa.jpg?v=1792165757110",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791319490/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/puugplpcgevltormpksa.jpg?v=1792355960307",
       "price": 65.6,
       "stockStatus": "disponible"
     },
@@ -7257,6 +7257,19 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmve5a04x017020od2tn73m3n",
+      "businessId": "cmvbzgp790000h0uh20gxdo2n",
+      "businessName": "Coppelia San Antonio",
+      "category": "Comidas",
+      "name": "Ensalada ( helado)",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792347268/traelo/businesses/cmvbzgp790000h0uh20gxdo2n/products/rzonjut5brhqxsbxpc3i.jpg?v=1792347272314",
+      "price": 3.5,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmvbzvjsh001ab8uhirnlzqy8",
       "businessId": "cmvbzv7q60000b8uh0s585zb6",
       "businessName": "Los Arcos Viejos",
@@ -7299,18 +7312,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbzvwr1002eb8uh240wltrm",
-      "businessId": "cmvbzv7q60000b8uh0s585zb6",
-      "businessName": "Los Arcos Viejos",
-      "category": "Comidas",
-      "name": "Ensalada Fría",
-      "shortDescription": "Entrantes",
-      "longDescription": "Entrantes",
-      "image": "🛍️",
-      "price": 5,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufk25g201pu3ouh4iqelf46",
       "businessId": "cmtloxd8d000y1gksrxoq23wp",
       "businessName": "4 Esquinas",
@@ -7320,6 +7321,18 @@
       "longDescription": "Ensalada fría.",
       "image": "🛍️",
       "price": 0.8,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvbzvwr1002eb8uh240wltrm",
+      "businessId": "cmvbzv7q60000b8uh0s585zb6",
+      "businessName": "Los Arcos Viejos",
+      "category": "Comidas",
+      "name": "Ensalada Fría",
+      "shortDescription": "Entrantes",
+      "longDescription": "Entrantes",
+      "image": "🛍️",
+      "price": 5,
       "stockStatus": "disponible"
     },
     {
@@ -7353,24 +7366,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmu7qpb590022dkuhse09eq5y",
-      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
-      "businessName": "Bar Restaurante DLM",
-      "category": "Comidas",
-      "name": "Ensalada mixta",
-      "shortDescription": "Guarniciones · Acompañantes",
-      "longDescription": "Guarniciones · Acompañantes",
-      "image": "🛍️",
-      "price": 3,
-      "packaging": [
-        {
-          "name": "Termopack",
-          "price": 0.4
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvbtmv4e0016fkuh9ef1x1pk",
       "businessId": "cmvbtlyt80000fkuhqfpj426m",
       "businessName": "Martinica",
@@ -7384,6 +7379,24 @@
         {
           "name": "Termopack",
           "price": 0.5
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmu7qpb590022dkuhse09eq5y",
+      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
+      "businessName": "Bar Restaurante DLM",
+      "category": "Comidas",
+      "name": "Ensalada mixta",
+      "shortDescription": "Guarniciones · Acompañantes",
+      "longDescription": "Guarniciones · Acompañantes",
+      "image": "🛍️",
+      "price": 3,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.4
         }
       ],
       "stockStatus": "disponible"
@@ -7567,13 +7580,13 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmu7qo2uy000bdkuhq86y0oh4",
-      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
-      "businessName": "Bar Restaurante DLM",
+      "id": "cmufjrkdf00x43ouh4po8m9gy",
+      "businessId": "cmsw26idv000v1gjrf66xea8h",
+      "businessName": "Las Palmitas",
       "category": "Comidas",
       "name": "Entremés Mixto",
-      "shortDescription": "Entrantes · Para empezar",
-      "longDescription": "Entrantes · Para empezar",
+      "shortDescription": "Entremés mixto: jamón, queso y aceituna.",
+      "longDescription": "Entremés mixto: jamón, queso y aceituna.",
       "image": "🛍️",
       "price": 3.4,
       "packaging": [
@@ -7585,13 +7598,13 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjrkdf00x43ouh4po8m9gy",
-      "businessId": "cmsw26idv000v1gjrf66xea8h",
-      "businessName": "Las Palmitas",
+      "id": "cmu7qo2uy000bdkuhq86y0oh4",
+      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
+      "businessName": "Bar Restaurante DLM",
       "category": "Comidas",
       "name": "Entremés Mixto",
-      "shortDescription": "Entremés mixto: jamón, queso y aceituna.",
-      "longDescription": "Entremés mixto: jamón, queso y aceituna.",
+      "shortDescription": "Entrantes · Para empezar",
+      "longDescription": "Entrantes · Para empezar",
       "image": "🛍️",
       "price": 3.4,
       "packaging": [
@@ -8323,7 +8336,7 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjr90o00ty3ouht2ru9wrr",
+      "id": "cmufjrm8400xt3ouhgkvsl312",
       "businessId": "cmsw26idv000v1gjrf66xea8h",
       "businessName": "Las Palmitas",
       "category": "Comidas",
@@ -8341,7 +8354,7 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjrm8400xt3ouhgkvsl312",
+      "id": "cmufjr90o00ty3ouht2ru9wrr",
       "businessId": "cmsw26idv000v1gjrf66xea8h",
       "businessName": "Las Palmitas",
       "category": "Comidas",
@@ -8481,7 +8494,7 @@
       "shortDescription": "Cerdo · Parrilla",
       "longDescription": "Cerdo · Parrilla",
       "image": "🛍️",
-      "price": 5.2,
+      "price": 5.8,
       "packaging": [
         {
           "name": "Termopack",
@@ -8584,7 +8597,7 @@
       "shortDescription": "Fanguito, se vende por lata.",
       "longDescription": "Fanguito, se vende por lata.",
       "image": "🛍️",
-      "price": 1.9,
+      "price": 2,
       "stockStatus": "disponible"
     },
     {
@@ -8887,8 +8900,8 @@
       "shortDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con galletas de chocolate batidas, sirope y galletas de decoración.",
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con galletas de chocolate batidas, sirope y galletas de decoración.",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796268/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/bwfvr7y3rvrihvnbvec1.jpg?v=1790881965225",
-      "price": 1.9,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796268/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/bwfvr7y3rvrihvnbvec1.jpg?v=1792418832730",
+      "price": 2.1,
       "addons": [
         {
           "name": "Leche Condensada",
@@ -8914,8 +8927,8 @@
       "shortDescription": "Refrescante bebida frappé (12 oz) a base de café, leche, nutella, galletas y peter de chocolate.",
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café, leche, nutella, galletas y peter de chocolate.",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796274/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/x2ipe7egptukxlmrvzx6.jpg?v=1790881965548",
-      "price": 2.2,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796274/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/x2ipe7egptukxlmrvzx6.jpg?v=1792418812925",
+      "price": 2.4,
       "addons": [
         {
           "name": "Leche Condensada",
@@ -8933,6 +8946,19 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmvfcbbii000w1zs2p6ei482r",
+      "businessId": "cmsw2ip0r001d1gjrlt0ekpya",
+      "businessName": "Frappio",
+      "category": "Bebidas",
+      "name": "Frappio Candy",
+      "shortDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con sirope de caramelo y galletas de decoración.",
+      "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con sirope de caramelo y galletas de decoración.",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792419393/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/proposals/ouvv8vbnjtvzpicwgtuf.jpg?v=1792419538698",
+      "price": 1.9,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmu7yh9t0002tj8uh0gdpn8rq",
       "businessId": "cmsw2ip0r001d1gjrlt0ekpya",
       "businessName": "Frappio",
@@ -8941,8 +8967,8 @@
       "shortDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con leche condensada y galletas espolvoreadas.",
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con leche condensada y galletas espolvoreadas.",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796260/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/ny1gqts3g5p509tff0xx.jpg?v=1790881963827",
-      "price": 1.7,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796260/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/ny1gqts3g5p509tff0xx.jpg?v=1792418851023",
+      "price": 1.9,
       "addons": [
         {
           "name": "Leche Condensada",
@@ -8968,8 +8994,8 @@
       "shortDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con dulce de leche (fanguito) y galletas espolvoreadas.",
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con dulce de leche (fanguito) y galletas espolvoreadas.",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796267/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/zohvu6mkqsj3qrulgnkq.jpg?v=1790881963961",
-      "price": 1.8,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796267/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/zohvu6mkqsj3qrulgnkq.jpg?v=1792418842100",
+      "price": 1.9,
       "addons": [
         {
           "name": "Leche Condensada",
@@ -8995,8 +9021,8 @@
       "shortDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con chocolate, sirope y galletas de chocolate espolvoreadas.",
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con chocolate, sirope y galletas de chocolate espolvoreadas.",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796259/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/ecraf73xfnvtshxf6ixk.jpg?v=1790881963501",
-      "price": 1.6,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796259/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/ecraf73xfnvtshxf6ixk.jpg?v=1792418872803",
+      "price": 1.9,
       "addons": [
         {
           "name": "Leche Condensada",
@@ -9022,8 +9048,8 @@
       "shortDescription": "Refrescante bebida frappé (12 oz) a base de café, leche, maní molido y en grano, sirope de chocolate y galletas.",
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café, leche, maní molido y en grano, sirope de chocolate y galletas.",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796277/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/oks1vwtdfqjj57cyz0nc.jpg?v=1790881965999",
-      "price": 1.8,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796277/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/oks1vwtdfqjj57cyz0nc.jpg?v=1792418803104",
+      "price": 2,
       "addons": [
         {
           "name": "Leche Condensada",
@@ -9049,8 +9075,8 @@
       "shortDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con canela espolvoreada.",
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con canela espolvoreada.",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796260/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/x1lce2aoynv3ljjnheh5.jpg?v=1790881963676",
-      "price": 1.5,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796260/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/x1lce2aoynv3ljjnheh5.jpg?v=1792418861789",
+      "price": 1.7,
       "addons": [
         {
           "name": "Leche Condensada",
@@ -9065,6 +9091,19 @@
           "price": 0.3
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvfcb7vx000t1zs2teasok7r",
+      "businessId": "cmsw2ip0r001d1gjrlt0ekpya",
+      "businessName": "Frappio",
+      "category": "Bebidas",
+      "name": "Frappio Vanilla",
+      "shortDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con sirope y esencia de vainilla, galletas y malvaviscos de decoración.",
+      "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con sirope y esencia de vainilla, galletas y malvaviscos de decoración.",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792419361/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/proposals/fx4ry4vtptyjw0js0cab.jpg?v=1792419533997",
+      "price": 2,
       "stockStatus": "disponible"
     },
     {
@@ -9150,9 +9189,9 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc0sov7000w18uheohbhgmh",
-      "businessId": "cmvc0sfko000018uh6izascg8",
-      "businessName": "Variedades en Vivanco",
+      "id": "cmvc08tl5000w3ouhx21hhhou",
+      "businessId": "cmvc08kln00003ouhenv0j1ml",
+      "businessName": "Mercado Garaje Verde",
       "category": "Comidas",
       "name": "Frijol colorado",
       "shortDescription": "",
@@ -9162,9 +9201,9 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc08tl5000w3ouhx21hhhou",
-      "businessId": "cmvc08kln00003ouhenv0j1ml",
-      "businessName": "Mercado Garaje Verde",
+      "id": "cmvc0sov7000w18uheohbhgmh",
+      "businessId": "cmvc0sfko000018uh6izascg8",
+      "businessName": "Variedades en Vivanco",
       "category": "Comidas",
       "name": "Frijol colorado",
       "shortDescription": "",
@@ -9199,18 +9238,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc08t0u000u3ouhf9q4irvh",
-      "businessId": "cmvc08kln00003ouhenv0j1ml",
-      "businessName": "Mercado Garaje Verde",
-      "category": "Comidas",
-      "name": "Frijol negro",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 1.1,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvc0soe6000u18uhteavvmk3",
       "businessId": "cmvc0sfko000018uh6izascg8",
       "businessName": "Variedades en Vivanco",
@@ -9220,6 +9247,18 @@
       "longDescription": "",
       "image": "🛍️",
       "price": 1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvc08t0u000u3ouhf9q4irvh",
+      "businessId": "cmvc08kln00003ouhenv0j1ml",
+      "businessName": "Mercado Garaje Verde",
+      "category": "Comidas",
+      "name": "Frijol negro",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -9257,8 +9296,20 @@
       "shortDescription": "Frijoles de 1kg.",
       "longDescription": "Frijoles de 1kg.",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790254995/traelo/businesses/cmsw0l3f600031gjrewm3turo/products/bdgd38zxocadmyiic0ck.jpg?v=1790881409987",
-      "price": 1.8,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790254995/traelo/businesses/cmsw0l3f600031gjrewm3turo/products/bdgd38zxocadmyiic0ck.jpg?v=1792345709984",
+      "price": 1.9,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmve4ho8b012z20odyv3yk295",
+      "businessId": "cmsw0l3f600031gjrewm3turo",
+      "businessName": "El Mercadito",
+      "category": "Comidas",
+      "name": "Frijoles Negros (por libra)",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 0.96,
       "stockStatus": "disponible"
     },
     {
@@ -9293,15 +9344,21 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbzvv74002ab8uh0j27yp0c",
-      "businessId": "cmvbzv7q60000b8uh0s585zb6",
-      "businessName": "Los Arcos Viejos",
+      "id": "cmu7qofmb000wdkuh7tvv3r9j",
+      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
+      "businessName": "Bar Restaurante DLM",
       "category": "Comidas",
       "name": "Frituras de Malanga",
-      "shortDescription": "Entrantes",
-      "longDescription": "Entrantes",
+      "shortDescription": "Entrantes · Para empezar",
+      "longDescription": "Entrantes · Para empezar",
       "image": "🛍️",
-      "price": 4.4,
+      "price": 2.4,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.4
+        }
+      ],
       "stockStatus": "disponible"
     },
     {
@@ -9323,21 +9380,15 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmu7qofmb000wdkuh7tvv3r9j",
-      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
-      "businessName": "Bar Restaurante DLM",
+      "id": "cmvbzvv74002ab8uh0j27yp0c",
+      "businessId": "cmvbzv7q60000b8uh0s585zb6",
+      "businessName": "Los Arcos Viejos",
       "category": "Comidas",
       "name": "Frituras de Malanga",
-      "shortDescription": "Entrantes · Para empezar",
-      "longDescription": "Entrantes · Para empezar",
+      "shortDescription": "Entrantes",
+      "longDescription": "Entrantes",
       "image": "🛍️",
-      "price": 2.4,
-      "packaging": [
-        {
-          "name": "Termopack",
-          "price": 0.4
-        }
-      ],
+      "price": 4.4,
       "stockStatus": "disponible"
     },
     {
@@ -9404,19 +9455,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmusgu2sr001nr0uh1mfcl5ds",
-      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
-      "businessName": "Charcutería Luis",
-      "category": "Comidas",
-      "name": "Galletas Cream Cracker",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791036410/traelo/businesses/cmusgsjzo0000r0uhoa8lqcs5/products/fqyspsfiy4sral8n1rys.jpg?v=1791036923341",
-      "price": 1.76,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmuzz0w6a021t1ynwqsy85m7b",
       "businessId": "cmt37zq5i001y1ggm1ukr5li1",
       "businessName": "Mercado DAF",
@@ -9427,6 +9465,19 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791490244/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/q8zxcbuhd4q1xoulggyn.jpg?v=1791664574879",
       "price": 1.1,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmusgu2sr001nr0uh1mfcl5ds",
+      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
+      "businessName": "Charcutería Luis",
+      "category": "Comidas",
+      "name": "Galletas Cream Cracker",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791036410/traelo/businesses/cmusgsjzo0000r0uhoa8lqcs5/products/fqyspsfiy4sral8n1rys.jpg?v=1791036923341",
+      "price": 1.76,
       "stockStatus": "disponible"
     },
     {
@@ -9481,18 +9532,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbujlgw0014kcuhqkl0yw43",
-      "businessId": "cmvbuj8jm0000kcuh16pb2y6b",
-      "businessName": "Mercado Los Primos",
-      "category": "Regalos",
-      "name": "Galletas María",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 0.9,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufjlwjs00co3ouhyb732md7",
       "businessId": "cmsw0l3f600031gjrewm3turo",
       "businessName": "El Mercadito",
@@ -9502,6 +9541,18 @@
       "longDescription": "Galletas María, se venden por paquete.",
       "image": "🛍️",
       "price": 0.3,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvbujlgw0014kcuhqkl0yw43",
+      "businessId": "cmvbuj8jm0000kcuh16pb2y6b",
+      "businessName": "Mercado Los Primos",
+      "category": "Regalos",
+      "name": "Galletas María",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 0.9,
       "stockStatus": "disponible"
     },
     {
@@ -9622,18 +9673,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbzwe370040b8uhk2vju8k3",
-      "businessId": "cmvbzv7q60000b8uh0s585zb6",
-      "businessName": "Los Arcos Viejos",
-      "category": "Comidas",
-      "name": "Garbanzo Frito",
-      "shortDescription": "Sugerencias de la casa",
-      "longDescription": "Sugerencias de la casa",
-      "image": "🛍️",
-      "price": 9,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufjr8qa00tu3ouh4kbwhi7w",
       "businessId": "cmsw26idv000v1gjrf66xea8h",
       "businessName": "Las Palmitas",
@@ -9649,6 +9688,18 @@
           "price": 0.4
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvbzwe370040b8uhk2vju8k3",
+      "businessId": "cmvbzv7q60000b8uh0s585zb6",
+      "businessName": "Los Arcos Viejos",
+      "category": "Comidas",
+      "name": "Garbanzo Frito",
+      "shortDescription": "Sugerencias de la casa",
+      "longDescription": "Sugerencias de la casa",
+      "image": "🛍️",
+      "price": 9,
       "stockStatus": "disponible"
     },
     {
@@ -9701,19 +9752,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjykxu01hu3ouh1mmk8orz",
-      "businessId": "cmt37zq5i001y1ggm1ukr5li1",
-      "businessName": "Mercado DAF",
-      "category": "Regalos",
-      "name": "Gel de Baño",
-      "shortDescription": "Gel de baño, se vende por unidad.",
-      "longDescription": "Gel de baño, se vende por unidad.",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791503473/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/kuhnlwxejskj84qfhfzx.jpg?v=1791503488153",
-      "price": 1.4,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufk7sf1022v3ouhrdw5wwk5",
       "businessId": "cmubpwjqg00021gg4qerd7p0k",
       "businessName": "Los Barca - Mercado",
@@ -9724,6 +9762,19 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790256032/traelo/businesses/cmubpwjqg00021gg4qerd7p0k/products/wbgfrd0pgsmiethxo3gp.jpg?v=1790882349447",
       "price": 4.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufjykxu01hu3ouh1mmk8orz",
+      "businessId": "cmt37zq5i001y1ggm1ukr5li1",
+      "businessName": "Mercado DAF",
+      "category": "Regalos",
+      "name": "Gel de Baño",
+      "shortDescription": "Gel de baño, se vende por unidad.",
+      "longDescription": "Gel de baño, se vende por unidad.",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791503473/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/kuhnlwxejskj84qfhfzx.jpg?v=1791503488153",
+      "price": 1.4,
       "stockStatus": "disponible"
     },
     {
@@ -10346,7 +10397,7 @@
       "shortDescription": "Pan especial imperial",
       "longDescription": "Pan especial imperial",
       "image": "🛍️",
-      "price": 3,
+      "price": 3.5,
       "addons": [
         {
           "name": "Hamburguesa",
@@ -10498,6 +10549,18 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmufjlz5q00d33ouh1tjtlk4c",
+      "businessId": "cmsw0l3f600031gjrewm3turo",
+      "businessName": "El Mercadito",
+      "category": "Regalos",
+      "name": "Jabón de Baño",
+      "shortDescription": "100 gramos",
+      "longDescription": "100 gramos",
+      "image": "🛍️",
+      "price": 0.76,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmufjx4mi01fc3ouh1ek2ishr",
       "businessId": "cmt37zq5i001y1ggm1ukr5li1",
       "businessName": "Mercado DAF",
@@ -10508,18 +10571,6 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791304966/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/rfzzr9qhwlelygt2qaev.jpg?v=1791304970552",
       "price": 0.48,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmufjlz5q00d33ouh1tjtlk4c",
-      "businessId": "cmsw0l3f600031gjrewm3turo",
-      "businessName": "El Mercadito",
-      "category": "Regalos",
-      "name": "Jabón de Baño",
-      "shortDescription": "100 gramos",
-      "longDescription": "100 gramos",
-      "image": "🛍️",
-      "price": 0.76,
       "stockStatus": "disponible"
     },
     {
@@ -11105,6 +11156,19 @@
           "price": 0.4
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmve552z8015u20odfm93pnze",
+      "businessId": "cmvbzgp790000h0uh20gxdo2n",
+      "businessName": "Coppelia San Antonio",
+      "category": "Comidas",
+      "name": "Jimagua ( helado)",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792347145/traelo/businesses/cmvbzgp790000h0uh20gxdo2n/products/iveju9v6nr3qcft3l9x7.jpg?v=1792347152122",
+      "price": 1.4,
       "stockStatus": "disponible"
     },
     {
@@ -11907,21 +11971,8 @@
       "shortDescription": "Leche condensada, se vende por lata.",
       "longDescription": "Leche condensada, se vende por lata.",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255003/traelo/businesses/cmsw0l3f600031gjrewm3turo/products/dui3wnpqevo6elw4mhne.jpg?v=1790881419882",
-      "price": 1.8,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmusgvam0002wr0uhh94xmth8",
-      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
-      "businessName": "Charcutería Luis",
-      "category": "Comidas",
-      "name": "Leche en polvo",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791036467/traelo/businesses/cmusgsjzo0000r0uhoa8lqcs5/products/krmaonwuiox0hvr0zbef.jpg?v=1792086193010",
-      "price": 10,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255003/traelo/businesses/cmsw0l3f600031gjrewm3turo/products/dui3wnpqevo6elw4mhne.jpg?v=1792345659420",
+      "price": 1.9,
       "stockStatus": "disponible"
     },
     {
@@ -11938,15 +11989,16 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc0t1af001y18uh8czpnz1a",
-      "businessId": "cmvc0sfko000018uh6izascg8",
-      "businessName": "Variedades en Vivanco",
+      "id": "cmusgvam0002wr0uhh94xmth8",
+      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
+      "businessName": "Charcutería Luis",
       "category": "Comidas",
-      "name": "Leche evaporada",
+      "name": "Leche en polvo",
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "price": 1.9,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791036467/traelo/businesses/cmusgsjzo0000r0uhoa8lqcs5/products/krmaonwuiox0hvr0zbef.jpg?v=1792086193010",
+      "price": 10,
       "stockStatus": "disponible"
     },
     {
@@ -11960,6 +12012,18 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791036470/traelo/businesses/cmusgsjzo0000r0uhoa8lqcs5/products/m1mbr9p24rtvct5h7fs2.jpg?v=1792085791774",
       "price": 1.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvc0t1af001y18uh8czpnz1a",
+      "businessId": "cmvc0sfko000018uh6izascg8",
+      "businessName": "Variedades en Vivanco",
+      "category": "Comidas",
+      "name": "Leche evaporada",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 1.9,
       "stockStatus": "disponible"
     },
     {
@@ -11983,7 +12047,7 @@
       "shortDescription": "Leche evaporada, se vende por lata.",
       "longDescription": "Leche evaporada, se vende por lata.",
       "image": "🛍️",
-      "price": 1.8,
+      "price": 1.9,
       "stockStatus": "disponible"
     },
     {
@@ -12310,24 +12374,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc01zio003qxcuh79380nfi",
-      "businessId": "cmvc00xr40000xcuh2mnuls50",
-      "businessName": "Piedra y Carbón",
-      "category": "Comidas",
-      "name": "Lomo ahumado",
-      "shortDescription": "Cerdo",
-      "longDescription": "Cerdo",
-      "image": "🛍️",
-      "price": 8.79,
-      "packaging": [
-        {
-          "name": "Contenedor",
-          "price": 0.6
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvbtnrij002ifkuh07dl15tr",
       "businessId": "cmvbtlyt80000fkuhqfpj426m",
       "businessName": "Martinica",
@@ -12346,16 +12392,21 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufk5nr001yj3ouhhzp763e2",
-      "businessId": "cmu47egmg00161hag3nvutfom",
-      "businessName": "La Pino - Tienda de Alimentos",
+      "id": "cmvc01zio003qxcuh79380nfi",
+      "businessId": "cmvc00xr40000xcuh2mnuls50",
+      "businessName": "Piedra y Carbón",
       "category": "Comidas",
-      "name": "Lomo Ahumado",
-      "shortDescription": "Lomo ahumado, precio por libra.",
-      "longDescription": "Lomo ahumado, precio por libra.",
+      "name": "Lomo ahumado",
+      "shortDescription": "Cerdo",
+      "longDescription": "Cerdo",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791052305/traelo/businesses/cmu47egmg00161hag3nvutfom/products/lgdz4pizx18dcqwfzuvh.jpg?v=1791412918588",
-      "price": 4.8,
+      "price": 8.79,
+      "packaging": [
+        {
+          "name": "Contenedor",
+          "price": 0.6
+        }
+      ],
       "stockStatus": "disponible"
     },
     {
@@ -12394,6 +12445,19 @@
           "price": 0.64
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufk5nr001yj3ouhhzp763e2",
+      "businessId": "cmu47egmg00161hag3nvutfom",
+      "businessName": "La Pino - Tienda de Alimentos",
+      "category": "Comidas",
+      "name": "Lomo Ahumado",
+      "shortDescription": "Lomo ahumado, precio por libra.",
+      "longDescription": "Lomo ahumado, precio por libra.",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791052305/traelo/businesses/cmu47egmg00161hag3nvutfom/products/lgdz4pizx18dcqwfzuvh.jpg?v=1791412918588",
+      "price": 4.8,
       "stockStatus": "disponible"
     },
     {
@@ -12487,7 +12551,7 @@
       "shortDescription": "Lomo de cerdo cortado en bistec, se entrega por libra.",
       "longDescription": "Lomo de cerdo cortado en bistec, se entrega por libra.",
       "image": "🛍️",
-      "price": 4,
+      "price": 4.2,
       "stockStatus": "disponible"
     },
     {
@@ -12654,30 +12718,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbtm0zq0004fkuhbcjeckt4",
-      "businessId": "cmvbtlyt80000fkuhqfpj426m",
-      "businessName": "Martinica",
-      "category": "Comidas",
-      "name": "Malta",
-      "shortDescription": "Bebidas",
-      "longDescription": "Bebidas",
-      "image": "🛍️",
-      "price": 1.5,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmvbzvqha001ub8uhjdr56mvu",
-      "businessId": "cmvbzv7q60000b8uh0s585zb6",
-      "businessName": "Los Arcos Viejos",
-      "category": "Bebidas",
-      "name": "Malta",
-      "shortDescription": "Líquidos",
-      "longDescription": "Líquidos",
-      "image": "🛍️",
-      "price": 1.6,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmu7tnqc3002abouhsno34t4u",
       "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
       "businessName": "Bar Restaurante DLM",
@@ -12699,6 +12739,30 @@
       "longDescription": "Bebidas",
       "image": "🛍️",
       "price": 1.37,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvbzvqha001ub8uhjdr56mvu",
+      "businessId": "cmvbzv7q60000b8uh0s585zb6",
+      "businessName": "Los Arcos Viejos",
+      "category": "Bebidas",
+      "name": "Malta",
+      "shortDescription": "Líquidos",
+      "longDescription": "Líquidos",
+      "image": "🛍️",
+      "price": 1.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvbtm0zq0004fkuhbcjeckt4",
+      "businessId": "cmvbtlyt80000fkuhqfpj426m",
+      "businessName": "Martinica",
+      "category": "Comidas",
+      "name": "Malta",
+      "shortDescription": "Bebidas",
+      "longDescription": "Bebidas",
+      "image": "🛍️",
+      "price": 1.5,
       "stockStatus": "disponible"
     },
     {
@@ -12726,9 +12790,9 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjlg11009h3ouhl5b05l17",
-      "businessId": "cmsw1hb6g000i1gjrzo23cub7",
-      "businessName": "Los Macus",
+      "id": "cmufjm7t500eb3ouha764buc0",
+      "businessId": "cmsw1frzv000h1gjre7l07ygd",
+      "businessName": "La Marina",
       "category": "Bebidas",
       "name": "Malta Guajira 1.5 L",
       "shortDescription": "Se vende por unidad.",
@@ -12738,9 +12802,9 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjm7t500eb3ouha764buc0",
-      "businessId": "cmsw1frzv000h1gjre7l07ygd",
-      "businessName": "La Marina",
+      "id": "cmufjlg11009h3ouhl5b05l17",
+      "businessId": "cmsw1hb6g000i1gjrzo23cub7",
+      "businessName": "Los Macus",
       "category": "Bebidas",
       "name": "Malta Guajira 1.5 L",
       "shortDescription": "Se vende por unidad.",
@@ -12949,6 +13013,18 @@
           "price": 0.6
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmve5ebaz018k20odmxk3rksr",
+      "businessId": "cmvbzgp790000h0uh20gxdo2n",
+      "businessName": "Coppelia San Antonio",
+      "category": "Regalos",
+      "name": "Marquesita",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 0.26,
       "stockStatus": "disponible"
     },
     {
@@ -13886,6 +13962,18 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmvbujhql000skcuhtvwbtubd",
+      "businessId": "cmvbuj8jm0000kcuh16pb2y6b",
+      "businessName": "Mercado Los Primos",
+      "category": "Comidas",
+      "name": "Mostaza",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 2.2,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmupx0mg001byd0uhcbavkd7g",
       "businessId": "cmt37zq5i001y1ggm1ukr5li1",
       "businessName": "Mercado DAF",
@@ -13896,18 +13984,6 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791645824/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/lypn8htdyvyp2myigoxu.jpg?v=1791645834388",
       "price": 1.9,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmvbujhql000skcuhtvwbtubd",
-      "businessId": "cmvbuj8jm0000kcuh16pb2y6b",
-      "businessName": "Mercado Los Primos",
-      "category": "Comidas",
-      "name": "Mostaza",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 2.2,
       "stockStatus": "disponible"
     },
     {
@@ -14325,7 +14401,8 @@
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "price": 0.64,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792343351/traelo/businesses/cmvbzgp790000h0uh20gxdo2n/products/frvufgeb4luf4ny3k1kk.jpg?v=1792343381920",
+      "price": 0.74,
       "stockStatus": "disponible"
     },
     {
@@ -14337,7 +14414,7 @@
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "price": 0.54,
+      "price": 0.66,
       "stockStatus": "disponible"
     },
     {
@@ -14349,7 +14426,7 @@
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "price": 0.72,
+      "price": 0.92,
       "stockStatus": "disponible"
     },
     {
@@ -14361,7 +14438,7 @@
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "price": 0.5,
+      "price": 0.6,
       "stockStatus": "disponible"
     },
     {
@@ -14373,7 +14450,7 @@
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "price": 0.56,
+      "price": 0.66,
       "stockStatus": "disponible"
     },
     {
@@ -14385,7 +14462,7 @@
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "price": 0.56,
+      "price": 0.66,
       "stockStatus": "disponible"
     },
     {
@@ -14424,6 +14501,18 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792218101/traelo/businesses/cmvc0apc200000wuh2hvjun6b/products/vqioajphoftehrqwksll.jpg?v=1792218100931",
       "price": 0.8,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmve33f4f00tr20od8s1v21g8",
+      "businessId": "cmvbzgp790000h0uh20gxdo2n",
+      "businessName": "Coppelia San Antonio",
+      "category": "Panadería",
+      "name": "Pan pierna ",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 0.86,
       "stockStatus": "disponible"
     },
     {
@@ -14475,6 +14564,18 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791644420/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/cmriepxnh4m0wssvdodb.jpg?v=1791644425305",
       "price": 0.56,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmve5d4ev017w20od72hols9s",
+      "businessId": "cmvbzgp790000h0uh20gxdo2n",
+      "businessName": "Coppelia San Antonio",
+      "category": "Regalos",
+      "name": "Panquesitos",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 0.26,
       "stockStatus": "disponible"
     },
     {
@@ -14549,24 +14650,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmu7qol810012dkuhdqdv5ohh",
-      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
-      "businessName": "Bar Restaurante DLM",
-      "category": "Comidas",
-      "name": "Papas fritas",
-      "shortDescription": "Entrantes · Para empezar",
-      "longDescription": "Entrantes · Para empezar",
-      "image": "🛍️",
-      "price": 3.2,
-      "packaging": [
-        {
-          "name": "Termopack",
-          "price": 0.4
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvc010js000axcuhg540vlri",
       "businessId": "cmvc00xr40000xcuh2mnuls50",
       "businessName": "Piedra y Carbón",
@@ -14580,6 +14663,24 @@
         {
           "name": "Contenedor",
           "price": 0.6
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmu7qol810012dkuhdqdv5ohh",
+      "businessId": "cmsw2ho5h001c1gjrm3jt1bq8",
+      "businessName": "Bar Restaurante DLM",
+      "category": "Comidas",
+      "name": "Papas fritas",
+      "shortDescription": "Entrantes · Para empezar",
+      "longDescription": "Entrantes · Para empezar",
+      "image": "🛍️",
+      "price": 3.2,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.4
         }
       ],
       "stockStatus": "disponible"
@@ -14849,18 +14950,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmushf1xq00o61gpbnhajukn3",
-      "businessId": "cmusfo79600jo1gpbv6ugd9gt",
-      "businessName": "Carniceria el Yompy",
-      "category": "Comidas",
-      "name": "Pargo",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 8,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmux5v015007b20lmqw86zlay",
       "businessId": "cmux5fiac006h20lmhod1r1uw",
       "businessName": "Atlántica ",
@@ -14871,6 +14960,18 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791320333/traelo/businesses/cmux5fiac006h20lmhod1r1uw/products/jz8u32nojbdxhfwmsdjh.jpg?v=1791320339146",
       "price": 2,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmushf1xq00o61gpbnhajukn3",
+      "businessId": "cmusfo79600jo1gpbv6ugd9gt",
+      "businessName": "Carniceria el Yompy",
+      "category": "Comidas",
+      "name": "Pargo",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 8,
       "stockStatus": "disponible"
     },
     {
@@ -15793,7 +15894,7 @@
       "shortDescription": "Pan con picadillo.",
       "longDescription": "Pan con picadillo.",
       "image": "🛍️",
-      "price": 0.5,
+      "price": 0.6,
       "addons": [
         {
           "name": "Hamburguesa",
@@ -15919,29 +16020,16 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmusfwv8200k71gpbod7mm43b",
-      "businessId": "cmusfo79600jo1gpbv6ugd9gt",
-      "businessName": "Carniceria el Yompy",
+      "id": "cmufjphge00ml3ouhqw41ji26",
+      "businessId": "cmsxgx1r5000a1ge0idapiwm1",
+      "businessName": "Tu Kprichito",
       "category": "Comidas",
       "name": "Picadillo MDM",
-      "shortDescription": "",
-      "longDescription": "",
+      "shortDescription": "Picadillo MDM, se vende por unidad.",
+      "longDescription": "Picadillo MDM, se vende por unidad.",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791035504/traelo/businesses/cmusfo79600jo1gpbv6ugd9gt/products/sg6lgrlan1wubej8lg3v.jpg?v=1792271181049",
-      "price": 1.5,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmvc0dydy001n0wuh6u84n156",
-      "businessId": "cmvc0apc200000wuh2hvjun6b",
-      "businessName": "Charcutería Los Pitas",
-      "category": "Comidas",
-      "name": "Picadillo MDM",
-      "shortDescription": "Precio por libra.",
-      "longDescription": "Precio por libra.",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792218111/traelo/businesses/cmvc0apc200000wuh2hvjun6b/products/yxutwe8vnj2wp4mezrrf.jpg?v=1792218111078",
-      "price": 1.26,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791055118/traelo/businesses/cmsxgx1r5000a1ge0idapiwm1/products/bw9ovgpbwjokszntheoa.jpg?v=1791055123941",
+      "price": 1.4,
       "stockStatus": "disponible"
     },
     {
@@ -15958,6 +16046,19 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmvc0dydy001n0wuh6u84n156",
+      "businessId": "cmvc0apc200000wuh2hvjun6b",
+      "businessName": "Charcutería Los Pitas",
+      "category": "Comidas",
+      "name": "Picadillo MDM",
+      "shortDescription": "Precio por libra.",
+      "longDescription": "Precio por libra.",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792218111/traelo/businesses/cmvc0apc200000wuh2hvjun6b/products/yxutwe8vnj2wp4mezrrf.jpg?v=1792218111078",
+      "price": 1.26,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmvc0swia001o18uhm7d3dni6",
       "businessId": "cmvc0sfko000018uh6izascg8",
       "businessName": "Variedades en Vivanco",
@@ -15970,16 +16071,16 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjphge00ml3ouhqw41ji26",
-      "businessId": "cmsxgx1r5000a1ge0idapiwm1",
-      "businessName": "Tu Kprichito",
+      "id": "cmusfwv8200k71gpbod7mm43b",
+      "businessId": "cmusfo79600jo1gpbv6ugd9gt",
+      "businessName": "Carniceria el Yompy",
       "category": "Comidas",
       "name": "Picadillo MDM",
-      "shortDescription": "Picadillo MDM, se vende por unidad.",
-      "longDescription": "Picadillo MDM, se vende por unidad.",
+      "shortDescription": "",
+      "longDescription": "",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791055118/traelo/businesses/cmsxgx1r5000a1ge0idapiwm1/products/bw9ovgpbwjokszntheoa.jpg?v=1791055123941",
-      "price": 1.4,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791035504/traelo/businesses/cmusfo79600jo1gpbv6ugd9gt/products/sg6lgrlan1wubej8lg3v.jpg?v=1792271181049",
+      "price": 1.5,
       "stockStatus": "disponible"
     },
     {
@@ -16446,6 +16547,18 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmupx1haf01f6d0uhdi7z1r0q",
+      "businessId": "cmtloxd8d000y1gksrxoq23wp",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "name": "Pizza de Atún",
+      "shortDescription": "Pizza de atún.",
+      "longDescription": "Pizza de atún.",
+      "image": "🛍️",
+      "price": 1.7,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmufjq7rp00pi3ouhpnqfq1nm",
       "businessId": "cmsw21slo000t1gjrp8psk5rq",
       "businessName": "Línea-Callejón",
@@ -16465,18 +16578,6 @@
           "price": 0.3
         }
       ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmupx1haf01f6d0uhdi7z1r0q",
-      "businessId": "cmtloxd8d000y1gksrxoq23wp",
-      "businessName": "4 Esquinas",
-      "category": "Comidas",
-      "name": "Pizza de Atún",
-      "shortDescription": "Pizza de atún.",
-      "longDescription": "Pizza de atún.",
-      "image": "🛍️",
-      "price": 1.6,
       "stockStatus": "disponible"
     },
     {
@@ -16598,28 +16699,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjq7at00pd3ouhmgxnwx41",
-      "businessId": "cmsw21slo000t1gjrp8psk5rq",
-      "businessName": "Línea-Callejón",
-      "category": "Comidas",
-      "name": "Pizza de Cebolla",
-      "shortDescription": "Pizzas · Individuales",
-      "longDescription": "Pizzas · Individuales",
-      "image": "🛍️",
-      "price": 1,
-      "packaging": [
-        {
-          "name": "Sin caja",
-          "price": 0
-        },
-        {
-          "name": "Caja",
-          "price": 0.3
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufk42oi01un3ouhaty42yt1",
       "businessId": "cmtu8ybla000j1ghii23olmxk",
       "businessName": "Iron Bross Pizzas",
@@ -16629,18 +16708,6 @@
       "longDescription": "Pizza de cebolla, pizza fitness.",
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255858/traelo/businesses/cmtu8ybla000j1ghii23olmxk/products/tig7njg3jrwncwcbv3cd.jpg?v=1790882284354",
-      "price": 1,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmufk245501po3ouhz9zpyujc",
-      "businessId": "cmtloxd8d000y1gksrxoq23wp",
-      "businessName": "4 Esquinas",
-      "category": "Comidas",
-      "name": "Pizza de Cebolla",
-      "shortDescription": "Pizza de cebolla.",
-      "longDescription": "Pizza de cebolla.",
-      "image": "🛍️",
       "price": 1,
       "stockStatus": "disponible"
     },
@@ -16671,16 +16738,37 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc03ygr0008vguhjp2ffk44",
-      "businessId": "cmvc03t4b0000vguhlr5rn22i",
-      "businessName": "Pizzería Los Jimaguas",
+      "id": "cmufjq7at00pd3ouhmgxnwx41",
+      "businessId": "cmsw21slo000t1gjrp8psk5rq",
+      "businessName": "Línea-Callejón",
       "category": "Comidas",
-      "name": "Pizza de chorizo",
-      "shortDescription": "",
-      "longDescription": "",
+      "name": "Pizza de Cebolla",
+      "shortDescription": "Pizzas · Individuales",
+      "longDescription": "Pizzas · Individuales",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792217643/traelo/businesses/cmvc03t4b0000vguhlr5rn22i/products/hhyq5b1joevpqivl1ct7.jpg?v=1792217643475",
-      "price": 0.66,
+      "price": 1,
+      "packaging": [
+        {
+          "name": "Sin caja",
+          "price": 0
+        },
+        {
+          "name": "Caja",
+          "price": 0.3
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufk245501po3ouhz9zpyujc",
+      "businessId": "cmtloxd8d000y1gksrxoq23wp",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "name": "Pizza de Cebolla",
+      "shortDescription": "Pizza de cebolla.",
+      "longDescription": "Pizza de cebolla.",
+      "image": "🛍️",
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -16699,6 +16787,19 @@
           "price": 0.5
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmvc03ygr0008vguhjp2ffk44",
+      "businessId": "cmvc03t4b0000vguhlr5rn22i",
+      "businessName": "Pizzería Los Jimaguas",
+      "category": "Comidas",
+      "name": "Pizza de chorizo",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792217643/traelo/businesses/cmvc03t4b0000vguhlr5rn22i/products/hhyq5b1joevpqivl1ct7.jpg?v=1792217643475",
+      "price": 0.66,
       "stockStatus": "disponible"
     },
     {
@@ -16728,7 +16829,7 @@
       "shortDescription": "Pizza de chorizo.",
       "longDescription": "Pizza de chorizo.",
       "image": "🛍️",
-      "price": 1,
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -16839,16 +16940,21 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc03w0k0005vguh3lnk371n",
-      "businessId": "cmvc03t4b0000vguhlr5rn22i",
-      "businessName": "Pizzería Los Jimaguas",
+      "id": "cmvbtn43x001kfkuh9rnvgm8v",
+      "businessId": "cmvbtlyt80000fkuhqfpj426m",
+      "businessName": "Martinica",
       "category": "Comidas",
       "name": "Pizza de jamón",
-      "shortDescription": "",
-      "longDescription": "",
+      "shortDescription": "Pizzas y Pastas",
+      "longDescription": "Pizzas y Pastas",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792217640/traelo/businesses/cmvc03t4b0000vguhlr5rn22i/products/nv1js5kjwwykkldqu8hq.jpg?v=1792221118057",
-      "price": 0.66,
+      "price": 6.4,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.5
+        }
+      ],
       "stockStatus": "disponible"
     },
     {
@@ -16870,21 +16976,63 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbtn43x001kfkuh9rnvgm8v",
-      "businessId": "cmvbtlyt80000fkuhqfpj426m",
-      "businessName": "Martinica",
+      "id": "cmvc03w0k0005vguh3lnk371n",
+      "businessId": "cmvc03t4b0000vguhlr5rn22i",
+      "businessName": "Pizzería Los Jimaguas",
       "category": "Comidas",
       "name": "Pizza de jamón",
-      "shortDescription": "Pizzas y Pastas",
-      "longDescription": "Pizzas y Pastas",
+      "shortDescription": "",
+      "longDescription": "",
       "image": "🛍️",
-      "price": 6.4,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792217640/traelo/businesses/cmvc03t4b0000vguhlr5rn22i/products/nv1js5kjwwykkldqu8hq.jpg?v=1792221118057",
+      "price": 0.66,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufjq75f00pb3ouhy1h5q87g",
+      "businessId": "cmsw21slo000t1gjrp8psk5rq",
+      "businessName": "Línea-Callejón",
+      "category": "Comidas",
+      "name": "Pizza de Jamón",
+      "shortDescription": "Pizzas · Individuales",
+      "longDescription": "Pizzas · Individuales",
+      "image": "🛍️",
+      "price": 1.4,
       "packaging": [
         {
-          "name": "Termopack",
-          "price": 0.5
+          "name": "Sin caja",
+          "price": 0
+        },
+        {
+          "name": "Caja",
+          "price": 0.3
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufk3uvu01ud3ouh0y27btol",
+      "businessId": "cmtu8ybla000j1ghii23olmxk",
+      "businessName": "Iron Bross Pizzas",
+      "category": "Comidas",
+      "name": "Pizza de Jamón",
+      "shortDescription": "Pizza de jamón, pizza fitness.",
+      "longDescription": "Pizza de jamón, pizza fitness.",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255851/traelo/businesses/cmtu8ybla000j1ghii23olmxk/products/qafdpv8g2cpflz4rpfnt.jpg?v=1790882282741",
+      "price": 1.3,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufk21ym01pg3ouh5en0nwkt",
+      "businessId": "cmtloxd8d000y1gksrxoq23wp",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "name": "Pizza de Jamón",
+      "shortDescription": "Pizza de jamón.",
+      "longDescription": "Pizza de jamón.",
+      "image": "🛍️",
+      "price": 1.2,
       "stockStatus": "disponible"
     },
     {
@@ -16911,53 +17059,6 @@
           "price": 0.2
         }
       ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmufjq75f00pb3ouhy1h5q87g",
-      "businessId": "cmsw21slo000t1gjrp8psk5rq",
-      "businessName": "Línea-Callejón",
-      "category": "Comidas",
-      "name": "Pizza de Jamón",
-      "shortDescription": "Pizzas · Individuales",
-      "longDescription": "Pizzas · Individuales",
-      "image": "🛍️",
-      "price": 1.4,
-      "packaging": [
-        {
-          "name": "Sin caja",
-          "price": 0
-        },
-        {
-          "name": "Caja",
-          "price": 0.3
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmufk21ym01pg3ouh5en0nwkt",
-      "businessId": "cmtloxd8d000y1gksrxoq23wp",
-      "businessName": "4 Esquinas",
-      "category": "Comidas",
-      "name": "Pizza de Jamón",
-      "shortDescription": "Pizza de jamón.",
-      "longDescription": "Pizza de jamón.",
-      "image": "🛍️",
-      "price": 1.1,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmufk3uvu01ud3ouh0y27btol",
-      "businessId": "cmtu8ybla000j1ghii23olmxk",
-      "businessName": "Iron Bross Pizzas",
-      "category": "Comidas",
-      "name": "Pizza de Jamón",
-      "shortDescription": "Pizza de jamón, pizza fitness.",
-      "longDescription": "Pizza de jamón, pizza fitness.",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255851/traelo/businesses/cmtu8ybla000j1ghii23olmxk/products/qafdpv8g2cpflz4rpfnt.jpg?v=1790882282741",
-      "price": 1.3,
       "stockStatus": "disponible"
     },
     {
@@ -17332,7 +17433,7 @@
       "shortDescription": "Pizza de perro caliente.",
       "longDescription": "Pizza de perro caliente.",
       "image": "🛍️",
-      "price": 1,
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -17398,6 +17499,19 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmvc03tmj0002vguhrrhxpmvp",
+      "businessId": "cmvc03t4b0000vguhlr5rn22i",
+      "businessName": "Pizzería Los Jimaguas",
+      "category": "Comidas",
+      "name": "Pizza de queso",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792217637/traelo/businesses/cmvc03t4b0000vguhlr5rn22i/products/nkjrocqauqrhlfym4vhe.jpg?v=1792217637448",
+      "price": 0.5,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmvbtn1qo001gfkuhwxv3bynz",
       "businessId": "cmvbtlyt80000fkuhqfpj426m",
       "businessName": "Martinica",
@@ -17413,19 +17527,6 @@
           "price": 0.5
         }
       ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmvc03tmj0002vguhrrhxpmvp",
-      "businessId": "cmvc03t4b0000vguhlr5rn22i",
-      "businessName": "Pizzería Los Jimaguas",
-      "category": "Comidas",
-      "name": "Pizza de queso",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792217637/traelo/businesses/cmvc03t4b0000vguhlr5rn22i/products/nkjrocqauqrhlfym4vhe.jpg?v=1792217637448",
-      "price": 0.5,
       "stockStatus": "disponible"
     },
     {
@@ -17447,18 +17548,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufk21yp01ph3ouhodlixry7",
-      "businessId": "cmtloxd8d000y1gksrxoq23wp",
-      "businessName": "4 Esquinas",
-      "category": "Comidas",
-      "name": "Pizza de Queso",
-      "shortDescription": "Pizza de queso.",
-      "longDescription": "Pizza de queso.",
-      "image": "🛍️",
-      "price": 0.6,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufk3uvk01ub3ouhryxgszsq",
       "businessId": "cmtu8ybla000j1ghii23olmxk",
       "businessName": "Iron Bross Pizzas",
@@ -17469,6 +17558,18 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255853/traelo/businesses/cmtu8ybla000j1ghii23olmxk/products/cm1lpgutyf35tfkhp8b5.jpg?v=1790882282854",
       "price": 0.6,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufk21yp01ph3ouhodlixry7",
+      "businessId": "cmtloxd8d000y1gksrxoq23wp",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "name": "Pizza de Queso",
+      "shortDescription": "Pizza de queso.",
+      "longDescription": "Pizza de queso.",
+      "image": "🛍️",
+      "price": 0.7,
       "stockStatus": "disponible"
     },
     {
@@ -17552,7 +17653,7 @@
       "shortDescription": "Pizza de queso doble.",
       "longDescription": "Pizza de queso doble.",
       "image": "🛍️",
-      "price": 1,
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -17577,7 +17678,7 @@
       "shortDescription": "Pizza de queso doble gouda.",
       "longDescription": "Pizza de queso doble gouda.",
       "image": "🛍️",
-      "price": 1.8,
+      "price": 1.9,
       "stockStatus": "disponible"
     },
     {
@@ -17594,18 +17695,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmupx1ga101f0d0uh2mzype2m",
-      "businessId": "cmtloxd8d000y1gksrxoq23wp",
-      "businessName": "4 Esquinas",
-      "category": "Comidas",
-      "name": "Pizza de Queso Gouda",
-      "shortDescription": "Pizza de queso gouda.",
-      "longDescription": "Pizza de queso gouda.",
-      "image": "🛍️",
-      "price": 1.2,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvb1s8ix00qk1zperip6sfss",
       "businessId": "cmsw1frzv000h1gjre7l07ygd",
       "businessName": "La Marina",
@@ -17618,6 +17707,18 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmupx1ga101f0d0uh2mzype2m",
+      "businessId": "cmtloxd8d000y1gksrxoq23wp",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "name": "Pizza de Queso Gouda",
+      "shortDescription": "Pizza de queso gouda.",
+      "longDescription": "Pizza de queso gouda.",
+      "image": "🛍️",
+      "price": 1.3,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmvb1srzv00qo1zpez4egz761",
       "businessId": "cmsw1frzv000h1gjre7l07ygd",
       "businessName": "La Marina",
@@ -17626,7 +17727,7 @@
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "price": 2,
+      "price": 2.42,
       "stockStatus": "disponible"
     },
     {
@@ -17847,24 +17948,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc01d0i001excuheyf48ynk",
-      "businessId": "cmvc00xr40000xcuh2mnuls50",
-      "businessName": "Piedra y Carbón",
-      "category": "Comidas",
-      "name": "Pizza hawaiana",
-      "shortDescription": "Pizzas 33 cm",
-      "longDescription": "Pizzas 33 cm",
-      "image": "🛍️",
-      "price": 5.99,
-      "packaging": [
-        {
-          "name": "Empaque de pizza",
-          "price": 0.2
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvbtn8j4001ofkuhm08y6yt1",
       "businessId": "cmvbtlyt80000fkuhqfpj426m",
       "businessName": "Martinica",
@@ -17883,50 +17966,21 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufk3uvt01uc3ouho5p821hd",
-      "businessId": "cmtu8ybla000j1ghii23olmxk",
-      "businessName": "Iron Bross Pizzas",
+      "id": "cmvc01d0i001excuheyf48ynk",
+      "businessId": "cmvc00xr40000xcuh2mnuls50",
+      "businessName": "Piedra y Carbón",
       "category": "Comidas",
-      "name": "Pizza Hawaiana",
-      "shortDescription": "Pizza Hawaiana, pizza fitness.",
-      "longDescription": "Pizza Hawaiana, pizza fitness.",
+      "name": "Pizza hawaiana",
+      "shortDescription": "Pizzas 33 cm",
+      "longDescription": "Pizzas 33 cm",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255846/traelo/businesses/cmtu8ybla000j1ghii23olmxk/products/xxlqqhfm0eexzdfnbkmj.jpg?v=1790882282452",
-      "price": 1.5,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmufjq9zv00q23ouhvirhgfw2",
-      "businessId": "cmsw21slo000t1gjrp8psk5rq",
-      "businessName": "Línea-Callejón",
-      "category": "Comidas",
-      "name": "Pizza Hawaiana",
-      "shortDescription": "Pizzas · Especiales",
-      "longDescription": "Pizzas · Especiales",
-      "image": "🛍️",
-      "price": 2,
+      "price": 5.99,
       "packaging": [
         {
-          "name": "Sin caja",
-          "price": 0
-        },
-        {
-          "name": "Caja",
-          "price": 0.3
+          "name": "Empaque de pizza",
+          "price": 0.2
         }
       ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmufk23l901pn3ouhvhyzvzvc",
-      "businessId": "cmtloxd8d000y1gksrxoq23wp",
-      "businessName": "4 Esquinas",
-      "category": "Comidas",
-      "name": "Pizza Hawaiana",
-      "shortDescription": "Pizza Hawaiana.",
-      "longDescription": "Pizza Hawaiana.",
-      "image": "🛍️",
-      "price": 1.3,
       "stockStatus": "disponible"
     },
     {
@@ -17971,6 +18025,53 @@
         {
           "name": "Atún",
           "price": 3
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufk3uvt01uc3ouho5p821hd",
+      "businessId": "cmtu8ybla000j1ghii23olmxk",
+      "businessName": "Iron Bross Pizzas",
+      "category": "Comidas",
+      "name": "Pizza Hawaiana",
+      "shortDescription": "Pizza Hawaiana, pizza fitness.",
+      "longDescription": "Pizza Hawaiana, pizza fitness.",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255846/traelo/businesses/cmtu8ybla000j1ghii23olmxk/products/xxlqqhfm0eexzdfnbkmj.jpg?v=1790882282452",
+      "price": 1.5,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufk23l901pn3ouhvhyzvzvc",
+      "businessId": "cmtloxd8d000y1gksrxoq23wp",
+      "businessName": "4 Esquinas",
+      "category": "Comidas",
+      "name": "Pizza Hawaiana",
+      "shortDescription": "Pizza Hawaiana.",
+      "longDescription": "Pizza Hawaiana.",
+      "image": "🛍️",
+      "price": 1.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufjq9zv00q23ouhvirhgfw2",
+      "businessId": "cmsw21slo000t1gjrp8psk5rq",
+      "businessName": "Línea-Callejón",
+      "category": "Comidas",
+      "name": "Pizza Hawaiana",
+      "shortDescription": "Pizzas · Especiales",
+      "longDescription": "Pizzas · Especiales",
+      "image": "🛍️",
+      "price": 2,
+      "packaging": [
+        {
+          "name": "Sin caja",
+          "price": 0
+        },
+        {
+          "name": "Caja",
+          "price": 0.3
         }
       ],
       "stockStatus": "disponible"
@@ -18185,6 +18286,28 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmufjq80b00pl3ouhmljp3ecf",
+      "businessId": "cmsw21slo000t1gjrp8psk5rq",
+      "businessName": "Línea-Callejón",
+      "category": "Comidas",
+      "name": "Pizza Queso Doble",
+      "shortDescription": "Pizzas · Doble queso",
+      "longDescription": "Pizzas · Doble queso",
+      "image": "🛍️",
+      "price": 1.4,
+      "packaging": [
+        {
+          "name": "Sin caja",
+          "price": 0
+        },
+        {
+          "name": "Caja",
+          "price": 0.3
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmufjm3r200dp3ouhxvaop3m3",
       "businessId": "cmsw1frzv000h1gjre7l07ygd",
       "businessName": "La Marina",
@@ -18206,28 +18329,6 @@
         {
           "name": "Cebolla",
           "price": 0.2
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmufjq80b00pl3ouhmljp3ecf",
-      "businessId": "cmsw21slo000t1gjrp8psk5rq",
-      "businessName": "Línea-Callejón",
-      "category": "Comidas",
-      "name": "Pizza Queso Doble",
-      "shortDescription": "Pizzas · Doble queso",
-      "longDescription": "Pizzas · Doble queso",
-      "image": "🛍️",
-      "price": 1.4,
-      "packaging": [
-        {
-          "name": "Sin caja",
-          "price": 0
-        },
-        {
-          "name": "Caja",
-          "price": 0.3
         }
       ],
       "stockStatus": "disponible"
@@ -18317,46 +18418,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufk1fdd01nv3ouhfuvgjaf6",
-      "businessId": "cmtlzmags000i1gfdf8ybrfj4",
-      "businessName": "Ella y Yo",
-      "category": "Comidas",
-      "name": "Pizza Queso Gouda",
-      "shortDescription": "Pizza Queso Gouda — Pizza de 33 cm.",
-      "longDescription": "Pizza Queso Gouda — Pizza de 33 cm.",
-      "image": "🛍️",
-      "price": 2.9,
-      "addons": [
-        {
-          "name": "Jamón",
-          "price": 1
-        },
-        {
-          "name": "Chorizo",
-          "price": 1.2
-        },
-        {
-          "name": "Atún",
-          "price": 1.7
-        },
-        {
-          "name": "Peperoni",
-          "price": 1.1
-        },
-        {
-          "name": "Perrito",
-          "price": 0.5
-        }
-      ],
-      "packaging": [
-        {
-          "name": "Caja",
-          "price": 0.4
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvbzva7r000ab8uhdu8b1wns",
       "businessId": "cmvbzv7q60000b8uh0s585zb6",
       "businessName": "Los Arcos Viejos",
@@ -18398,6 +18459,46 @@
         {
           "name": "Atún",
           "price": 3
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufk1fdd01nv3ouhfuvgjaf6",
+      "businessId": "cmtlzmags000i1gfdf8ybrfj4",
+      "businessName": "Ella y Yo",
+      "category": "Comidas",
+      "name": "Pizza Queso Gouda",
+      "shortDescription": "Pizza Queso Gouda — Pizza de 33 cm.",
+      "longDescription": "Pizza Queso Gouda — Pizza de 33 cm.",
+      "image": "🛍️",
+      "price": 2.9,
+      "addons": [
+        {
+          "name": "Jamón",
+          "price": 1
+        },
+        {
+          "name": "Chorizo",
+          "price": 1.2
+        },
+        {
+          "name": "Atún",
+          "price": 1.7
+        },
+        {
+          "name": "Peperoni",
+          "price": 1.1
+        },
+        {
+          "name": "Perrito",
+          "price": 0.5
+        }
+      ],
+      "packaging": [
+        {
+          "name": "Caja",
+          "price": 0.4
         }
       ],
       "stockStatus": "disponible"
@@ -18774,6 +18875,19 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmufjtgo0015v3ouhr86q7jqv",
+      "businessId": "cmsxgudt300071ge0eu5zk4cs",
+      "businessName": "Al Carbón",
+      "category": "Comidas",
+      "name": "Posta de Pollo Asada",
+      "shortDescription": "Posta de pollo asada a las brasas.",
+      "longDescription": "Posta de pollo asada a las brasas.",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255360/traelo/businesses/cmsxgudt300071ge0eu5zk4cs/products/fykgl7y68f5kcjxsdfdr.jpg?v=1790881969308",
+      "price": 2.6,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmufk0zeu01n13ouhgjgt456a",
       "businessId": "cmtj1406y000i1gczoluux21s",
       "businessName": "El Monito",
@@ -18790,19 +18904,6 @@
           "price": 0.4
         }
       ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmufjtgo0015v3ouhr86q7jqv",
-      "businessId": "cmsxgudt300071ge0eu5zk4cs",
-      "businessName": "Al Carbón",
-      "category": "Comidas",
-      "name": "Posta de Pollo Asada",
-      "shortDescription": "Posta de pollo asada a las brasas.",
-      "longDescription": "Posta de pollo asada a las brasas.",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255360/traelo/businesses/cmsxgudt300071ge0eu5zk4cs/products/fykgl7y68f5kcjxsdfdr.jpg?v=1790881969308",
-      "price": 2.6,
       "stockStatus": "disponible"
     },
     {
@@ -19154,19 +19255,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmusfvbqt00k21gpbz3xthsw8",
-      "businessId": "cmusfo79600jo1gpbv6ugd9gt",
-      "businessName": "Carniceria el Yompy",
-      "category": "Comidas",
-      "name": "Queso",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791034823/traelo/businesses/cmusfo79600jo1gpbv6ugd9gt/products/rpucziyz8thsnpslovbp.jpg?v=1791399548717",
-      "price": 3.6,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufjlbq4008j3ouhzrqdlh4i",
       "businessId": "cmsw1hb6g000i1gjrzo23cub7",
       "businessName": "Los Macus",
@@ -19202,6 +19290,19 @@
           "price": 0.64
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmusfvbqt00k21gpbz3xthsw8",
+      "businessId": "cmusfo79600jo1gpbv6ugd9gt",
+      "businessName": "Carniceria el Yompy",
+      "category": "Comidas",
+      "name": "Queso",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791034823/traelo/businesses/cmusfo79600jo1gpbv6ugd9gt/products/rpucziyz8thsnpslovbp.jpg?v=1791399548717",
+      "price": 3.6,
       "stockStatus": "disponible"
     },
     {
@@ -19322,18 +19423,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufk1zya01p73ouh975p2vln",
-      "businessId": "cmtlzmags000i1gfdf8ybrfj4",
-      "businessName": "Ella y Yo",
-      "category": "Bebidas",
-      "name": "Refresco",
-      "shortDescription": "Refresco",
-      "longDescription": "Refresco",
-      "image": "🛍️",
-      "price": 1.1,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvbtm06q0002fkuhlq6ovxrz",
       "businessId": "cmvbtlyt80000fkuhqfpj426m",
       "businessName": "Martinica",
@@ -19343,6 +19432,18 @@
       "longDescription": "Bebidas",
       "image": "🛍️",
       "price": 1.4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufk1zya01p73ouh975p2vln",
+      "businessId": "cmtlzmags000i1gfdf8ybrfj4",
+      "businessName": "Ella y Yo",
+      "category": "Bebidas",
+      "name": "Refresco",
+      "shortDescription": "Refresco",
+      "longDescription": "Refresco",
+      "image": "🛍️",
+      "price": 1.1,
       "stockStatus": "disponible"
     },
     {
@@ -19625,6 +19726,18 @@
           "price": 0
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmve5ewop018q20odoycs0ddi",
+      "businessId": "cmvbzgp790000h0uh20gxdo2n",
+      "businessName": "Coppelia San Antonio",
+      "category": "Regalos",
+      "name": "Rollitos ",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 0.28,
       "stockStatus": "disponible"
     },
     {
@@ -19922,6 +20035,24 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmvbtoi0q003ufkuhzw0rfsp9",
+      "businessId": "cmvbtlyt80000fkuhqfpj426m",
+      "businessName": "Martinica",
+      "category": "Comidas",
+      "name": "Ropa vieja",
+      "shortDescription": "Res",
+      "longDescription": "Res",
+      "image": "🛍️",
+      "price": 8,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.5
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmvc021g3003wxcuhc4e75n6o",
       "businessId": "cmvc00xr40000xcuh2mnuls50",
       "businessName": "Piedra y Carbón",
@@ -19940,19 +20071,19 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbtoi0q003ufkuhzw0rfsp9",
-      "businessId": "cmvbtlyt80000fkuhqfpj426m",
-      "businessName": "Martinica",
+      "id": "cmufjr6p800t63ouh40sk34rq",
+      "businessId": "cmsw26idv000v1gjrf66xea8h",
+      "businessName": "Las Palmitas",
       "category": "Comidas",
-      "name": "Ropa vieja",
-      "shortDescription": "Res",
-      "longDescription": "Res",
+      "name": "Ropa Vieja",
+      "shortDescription": "Ropa vieja de res.",
+      "longDescription": "Ropa vieja de res.",
       "image": "🛍️",
-      "price": 8,
+      "price": 6,
       "packaging": [
         {
           "name": "Termopack",
-          "price": 0.5
+          "price": 0.4
         }
       ],
       "stockStatus": "disponible"
@@ -19999,24 +20130,6 @@
         {
           "name": "Aporreado",
           "price": 0.44
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmufjr6p800t63ouh40sk34rq",
-      "businessId": "cmsw26idv000v1gjrf66xea8h",
-      "businessName": "Las Palmitas",
-      "category": "Comidas",
-      "name": "Ropa Vieja",
-      "shortDescription": "Ropa vieja de res.",
-      "longDescription": "Ropa vieja de res.",
-      "image": "🛍️",
-      "price": 6,
-      "packaging": [
-        {
-          "name": "Termopack",
-          "price": 0.4
         }
       ],
       "stockStatus": "disponible"
@@ -20158,6 +20271,18 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmv5sp5kk03121ylwtud0gb73",
+      "businessId": "cmsw0l3f600031gjrewm3turo",
+      "businessName": "El Mercadito",
+      "category": "Comidas",
+      "name": "Sal por libra",
+      "shortDescription": "Sal por libra ",
+      "longDescription": "Sal por libra ",
+      "image": "🛍️",
+      "price": 0.4,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmusr0itg01791gpbkpj95u34",
       "businessId": "cmsxgx1r5000a1ge0idapiwm1",
       "businessName": "Tu Kprichito",
@@ -20171,15 +20296,16 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmv5sp5kk03121ylwtud0gb73",
-      "businessId": "cmsw0l3f600031gjrewm3turo",
-      "businessName": "El Mercadito",
+      "id": "cmuyp3oed01471ynwyyuruu40",
+      "businessId": "cmu47egmg00161hag3nvutfom",
+      "businessName": "La Pino - Tienda de Alimentos",
       "category": "Comidas",
-      "name": "Sal por libra",
-      "shortDescription": "Sal por libra ",
-      "longDescription": "Sal por libra ",
+      "name": "Salame ",
+      "shortDescription": "Salame 1000 por cantidad a partir de 10 y por unidad 1200",
+      "longDescription": "Salame 1000 por cantidad a partir de 10 y por unidad 1200",
       "image": "🛍️",
-      "price": 0.4,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791413111/traelo/businesses/cmu47egmg00161hag3nvutfom/products/aokvegsjpwtxf6tyjiqr.jpg?v=1791936328778",
+      "price": 2.4,
       "stockStatus": "disponible"
     },
     {
@@ -20192,19 +20318,6 @@
       "longDescription": "",
       "image": "🛍️",
       "price": 2.6,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmuyp3oed01471ynwyyuruu40",
-      "businessId": "cmu47egmg00161hag3nvutfom",
-      "businessName": "La Pino - Tienda de Alimentos",
-      "category": "Comidas",
-      "name": "Salame ",
-      "shortDescription": "Salame 1000 por cantidad a partir de 10 y por unidad 1200",
-      "longDescription": "Salame 1000 por cantidad a partir de 10 y por unidad 1200",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791413111/traelo/businesses/cmu47egmg00161hag3nvutfom/products/aokvegsjpwtxf6tyjiqr.jpg?v=1791936328778",
-      "price": 2.4,
       "stockStatus": "disponible"
     },
     {
@@ -20495,19 +20608,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufk0fvb01l93ouh7jjhk5hw",
-      "businessId": "cmt37zq5i001y1ggm1ukr5li1",
-      "businessName": "Mercado DAF",
-      "category": "Comidas",
-      "name": "Sazón Completo",
-      "shortDescription": "Sazón Completo, se vende por unidad.",
-      "longDescription": "Sazón Completo, se vende por unidad.",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255687/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/ttxdrdskf7cwddtyeuma.jpg?v=1791304671159",
-      "price": 0.14,
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmufk9ol2026a3ouhncfqxlnr",
       "businessId": "cmubpwjqg00021gg4qerd7p0k",
       "businessName": "Los Barca - Mercado",
@@ -20518,6 +20618,19 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790256120/traelo/businesses/cmubpwjqg00021gg4qerd7p0k/products/fwlohkzontecs0meip0x.jpg?v=1790882371416",
       "price": 4,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufk0fvb01l93ouh7jjhk5hw",
+      "businessId": "cmt37zq5i001y1ggm1ukr5li1",
+      "businessName": "Mercado DAF",
+      "category": "Comidas",
+      "name": "Sazón Completo",
+      "shortDescription": "Sazón Completo, se vende por unidad.",
+      "longDescription": "Sazón Completo, se vende por unidad.",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790255687/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/ttxdrdskf7cwddtyeuma.jpg?v=1791304671159",
+      "price": 0.14,
       "stockStatus": "disponible"
     },
     {
@@ -21239,12 +21352,12 @@
       "businessId": "cmsw2ip0r001d1gjrlt0ekpya",
       "businessName": "Frappio",
       "category": "Bebidas",
-      "name": "Super Frapio",
+      "name": "Super Frappio",
       "shortDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con dulce de leche (fanguito), galletas de chocolate batidas, sirope y galletas de decoración.",
       "longDescription": "Refrescante bebida frappé (12 oz) a base de café y leche, con dulce de leche (fanguito), galletas de chocolate batidas, sirope y galletas de decoración.",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796271/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/jphorgkkvoufwglaixmo.jpg?v=1790881965353",
-      "price": 2.2,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789796271/traelo/businesses/cmsw2ip0r001d1gjrlt0ekpya/products/jphorgkkvoufwglaixmo.jpg?v=1792419304296",
+      "price": 2.4,
       "addons": [
         {
           "name": "Leche Condensada",
@@ -21339,6 +21452,19 @@
           "price": 0.4
         }
       ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmve58s5r016u20ododnnpoqn",
+      "businessId": "cmvbzgp790000h0uh20gxdo2n",
+      "businessName": "Coppelia San Antonio",
+      "category": "Comidas",
+      "name": "Supertuin",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792347211/traelo/businesses/cmvbzgp790000h0uh20gxdo2n/products/auzu1bldb45ri2pwslqt.jpg?v=1792347215218",
+      "price": 2.8,
       "stockStatus": "disponible"
     },
     {
@@ -21491,7 +21617,7 @@
       "shortDescription": "Pan surtido especial.",
       "longDescription": "Pan surtido especial.",
       "image": "🛍️",
-      "price": 1.6,
+      "price": 1.8,
       "addons": [
         {
           "name": "Hamburguesa",
@@ -22019,7 +22145,7 @@
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792217086/traelo/businesses/cmvbsmojh00171xs6vwsv63sp/products/byzitm9vh6wjojv5u3wh.jpg?v=1792217086088",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792217086/traelo/businesses/cmvbsmojh00171xs6vwsv63sp/products/byzitm9vh6wjojv5u3wh.jpg?v=1792420706638",
       "price": 1.16,
       "stockStatus": "disponible"
     },
@@ -22199,24 +22325,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc00ywy0004xcuhc4d98iiq",
-      "businessId": "cmvc00xr40000xcuh2mnuls50",
-      "businessName": "Piedra y Carbón",
-      "category": "Comidas",
-      "name": "Tostones rellenos",
-      "shortDescription": "Entrantes",
-      "longDescription": "Entrantes",
-      "image": "🛍️",
-      "price": 3.79,
-      "packaging": [
-        {
-          "name": "Contenedor",
-          "price": 0.6
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvbtmlxf000sfkuhi6sfdtvc",
       "businessId": "cmvbtlyt80000fkuhqfpj426m",
       "businessName": "Martinica",
@@ -22235,19 +22343,19 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmv5m2wt602t21ylwed9xxs76",
-      "businessId": "cmtj1406y000i1gczoluux21s",
-      "businessName": "El Monito",
+      "id": "cmvc00ywy0004xcuhc4d98iiq",
+      "businessId": "cmvc00xr40000xcuh2mnuls50",
+      "businessName": "Piedra y Carbón",
       "category": "Comidas",
-      "name": "Tostones Rellenos",
-      "shortDescription": "Tostones rellenos ",
-      "longDescription": "Tostones rellenos ",
+      "name": "Tostones rellenos",
+      "shortDescription": "Entrantes",
+      "longDescription": "Entrantes",
       "image": "🛍️",
-      "price": 2.4,
+      "price": 3.79,
       "packaging": [
         {
-          "name": "Termopack",
-          "price": 0.4
+          "name": "Contenedor",
+          "price": 0.6
         }
       ],
       "stockStatus": "disponible"
@@ -22266,6 +22374,24 @@
         {
           "name": "Termopack",
           "price": 0.3
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmv5m2wt602t21ylwed9xxs76",
+      "businessId": "cmtj1406y000i1gczoluux21s",
+      "businessName": "El Monito",
+      "category": "Comidas",
+      "name": "Tostones Rellenos",
+      "shortDescription": "Tostones rellenos ",
+      "longDescription": "Tostones rellenos ",
+      "image": "🛍️",
+      "price": 2.4,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.4
         }
       ],
       "stockStatus": "disponible"
@@ -22462,6 +22588,19 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmve5699r015z20odieqjj57p",
+      "businessId": "cmvbzgp790000h0uh20gxdo2n",
+      "businessName": "Coppelia San Antonio",
+      "category": "Comidas",
+      "name": "Tres Gracias ( helado)",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1792347119/traelo/businesses/cmvbzgp790000h0uh20gxdo2n/products/kllqdsmnjobhsnl1hoxh.jpg?v=1792347125218",
+      "price": 2.1,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmvc02866004ixcuhnqgu1u1n",
       "businessId": "cmvc00xr40000xcuh2mnuls50",
       "businessName": "Piedra y Carbón",
@@ -22581,24 +22720,6 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvbtoj19003wfkuh83xer5iq",
-      "businessId": "cmvbtlyt80000fkuhqfpj426m",
-      "businessName": "Martinica",
-      "category": "Comidas",
-      "name": "Vaca frita",
-      "shortDescription": "Res",
-      "longDescription": "Res",
-      "image": "🛍️",
-      "price": 8,
-      "packaging": [
-        {
-          "name": "Termopack",
-          "price": 0.5
-        }
-      ],
-      "stockStatus": "disponible"
-    },
-    {
       "id": "cmvc02230003yxcuh8ovf8b4k",
       "businessId": "cmvc00xr40000xcuh2mnuls50",
       "businessName": "Piedra y Carbón",
@@ -22617,19 +22738,19 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjr6ts00t83ouh0zx2cwpj",
-      "businessId": "cmsw26idv000v1gjrf66xea8h",
-      "businessName": "Las Palmitas",
+      "id": "cmvbtoj19003wfkuh83xer5iq",
+      "businessId": "cmvbtlyt80000fkuhqfpj426m",
+      "businessName": "Martinica",
       "category": "Comidas",
-      "name": "Vaca Frita",
-      "shortDescription": "Vaca frita.",
-      "longDescription": "Vaca frita.",
+      "name": "Vaca frita",
+      "shortDescription": "Res",
+      "longDescription": "Res",
       "image": "🛍️",
-      "price": 6,
+      "price": 8,
       "packaging": [
         {
           "name": "Termopack",
-          "price": 0.4
+          "price": 0.5
         }
       ],
       "stockStatus": "disponible"
@@ -22644,6 +22765,24 @@
       "longDescription": "Res · Parrilla",
       "image": "🛍️",
       "price": 5.4,
+      "packaging": [
+        {
+          "name": "Termopack",
+          "price": 0.4
+        }
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufjr6ts00t83ouh0zx2cwpj",
+      "businessId": "cmsw26idv000v1gjrf66xea8h",
+      "businessName": "Las Palmitas",
+      "category": "Comidas",
+      "name": "Vaca Frita",
+      "shortDescription": "Vaca frita.",
+      "longDescription": "Vaca frita.",
+      "image": "🛍️",
+      "price": 6,
       "packaging": [
         {
           "name": "Termopack",
@@ -23095,6 +23234,44 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmvc0stai001e18uhp5nfqvdm",
+      "businessId": "cmvc0sfko000018uh6izascg8",
+      "businessName": "Variedades en Vivanco",
+      "category": "Comidas",
+      "name": "Vinagre",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 0.8,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmufjlv3400c83ouhi3lqgbjp",
+      "businessId": "cmsw0l3f600031gjrewm3turo",
+      "businessName": "El Mercadito",
+      "category": "Comidas",
+      "name": "Vinagre",
+      "shortDescription": "Vinagre, se vende por unidad.",
+      "longDescription": "Vinagre, se vende por unidad.",
+      "image": "🛍️",
+      "price": 0.8,
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmu7fa3ol001404uh9gplm5e3",
+      "businessId": "cmu7ezjnp0000fwuhq2dxrosc",
+      "businessName": "Mercado Alpha",
+      "category": "Comidas",
+      "name": "Vinagre",
+      "shortDescription": "Se vende por blister de 10 unidades.Sale a 320",
+      "longDescription": "Se vende por blister de 10 unidades.Sale a 320",
+      "image": "🛍️",
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789764242/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/fepgxh3pb510jm20atbb.jpg?v=1792166214164",
+      "price": 6.4,
+      "formato": 10,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmufka4xf027c3ouhg855dbt7",
       "businessId": "cmubpwjqg00021gg4qerd7p0k",
       "businessName": "Los Barca - Mercado",
@@ -23105,18 +23282,6 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1790256140/traelo/businesses/cmubpwjqg00021gg4qerd7p0k/products/ebxgx480dmtryhpaca9g.jpg?v=1790882377052",
       "price": 0.5,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmv9tp9ot008o1gqatselb69y",
-      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
-      "businessName": "Charcutería Luis",
-      "category": "Comidas",
-      "name": "Vinagre",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 0.7,
       "stockStatus": "disponible"
     },
     {
@@ -23144,41 +23309,15 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmufjlv3400c83ouhi3lqgbjp",
-      "businessId": "cmsw0l3f600031gjrewm3turo",
-      "businessName": "El Mercadito",
-      "category": "Comidas",
-      "name": "Vinagre",
-      "shortDescription": "Vinagre, se vende por unidad.",
-      "longDescription": "Vinagre, se vende por unidad.",
-      "image": "🛍️",
-      "price": 0.8,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmvc0stai001e18uhp5nfqvdm",
-      "businessId": "cmvc0sfko000018uh6izascg8",
-      "businessName": "Variedades en Vivanco",
+      "id": "cmv9tp9ot008o1gqatselb69y",
+      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
+      "businessName": "Charcutería Luis",
       "category": "Comidas",
       "name": "Vinagre",
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "price": 0.8,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmu7fa3ol001404uh9gplm5e3",
-      "businessId": "cmu7ezjnp0000fwuhq2dxrosc",
-      "businessName": "Mercado Alpha",
-      "category": "Comidas",
-      "name": "Vinagre",
-      "shortDescription": "Se vende por blister de 10 unidades.Sale a 320",
-      "longDescription": "Se vende por blister de 10 unidades.Sale a 320",
-      "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1789764242/traelo/businesses/cmu7ezjnp0000fwuhq2dxrosc/products/fepgxh3pb510jm20atbb.jpg?v=1792166214164",
-      "price": 6.4,
-      "formato": 10,
+      "price": 0.7,
       "stockStatus": "disponible"
     },
     {
@@ -23322,15 +23461,16 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmvc08ykq001e3ouh6j1ofz33",
-      "businessId": "cmvc08kln00003ouhenv0j1ml",
-      "businessName": "Mercado Garaje Verde",
+      "id": "cmusgx5s4004er0uhuaw16m4l",
+      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
+      "businessName": "Charcutería Luis",
       "category": "Comidas",
       "name": "Vino seco",
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "price": 0.8,
+      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791036555/traelo/businesses/cmusgsjzo0000r0uhoa8lqcs5/products/j5dcskxevqidwmwlun4o.jpg?v=1792085916325",
+      "price": 0.7,
       "stockStatus": "disponible"
     },
     {
@@ -23346,29 +23486,27 @@
       "stockStatus": "disponible"
     },
     {
-      "id": "cmusgx5s4004er0uhuaw16m4l",
-      "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
-      "businessName": "Charcutería Luis",
+      "id": "cmvc08ykq001e3ouh6j1ofz33",
+      "businessId": "cmvc08kln00003ouhenv0j1ml",
+      "businessName": "Mercado Garaje Verde",
       "category": "Comidas",
       "name": "Vino seco",
       "shortDescription": "",
       "longDescription": "",
       "image": "🛍️",
-      "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791036555/traelo/businesses/cmusgsjzo0000r0uhoa8lqcs5/products/j5dcskxevqidwmwlun4o.jpg?v=1792085916325",
-      "price": 0.7,
+      "price": 0.8,
       "stockStatus": "disponible"
     },
     {
-      "id": "cmu7fgzcs00219ouh2yxwoeid",
-      "businessId": "cmu7ezjnp0000fwuhq2dxrosc",
-      "businessName": "Mercado Alpha",
+      "id": "cmufjlvcy00ca3ouhxomtond3",
+      "businessId": "cmsw0l3f600031gjrewm3turo",
+      "businessName": "El Mercadito",
       "category": "Comidas",
       "name": "Vino Seco",
-      "shortDescription": "Vino seco, se vende por unidad. Caja de 10 unidades. Sale a 320",
-      "longDescription": "Vino seco, se vende por unidad. Caja de 10 unidades. Sale a 320",
+      "shortDescription": "Vino seco, se vende por unidad.",
+      "longDescription": "Vino seco, se vende por unidad.",
       "image": "🛍️",
-      "price": 6.4,
-      "formato": 10,
+      "price": 0.8,
       "stockStatus": "disponible"
     },
     {
@@ -23382,18 +23520,6 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791637840/traelo/businesses/cmt37zq5i001y1ggm1ukr5li1/products/aoqc6ms4fvjbss8sflu9.jpg?v=1791637849974",
       "price": 0.66,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmufjlvcy00ca3ouhxomtond3",
-      "businessId": "cmsw0l3f600031gjrewm3turo",
-      "businessName": "El Mercadito",
-      "category": "Comidas",
-      "name": "Vino Seco",
-      "shortDescription": "Vino seco, se vende por unidad.",
-      "longDescription": "Vino seco, se vende por unidad.",
-      "image": "🛍️",
-      "price": 0.8,
       "stockStatus": "disponible"
     },
     {
@@ -23733,14 +23859,29 @@
       "businessName": "El Mercadito",
       "category": "Comidas",
       "name": "Yogurt Naya",
-      "shortDescription": "Yogurt Naya, se vende por unidad. Opciones: Fresa, Natural, Macedonia.",
-      "longDescription": "Yogurt Naya, se vende por unidad. Opciones: Fresa, Natural, Macedonia.",
+      "shortDescription": "Yogurt Naya, se vende por unidad. Opciones: Fresa, Macedonia.",
+      "longDescription": "Yogurt Naya, se vende por unidad. Opciones: Fresa, Macedonia.",
       "image": "🛍️",
       "price": 0.8,
       "options": [
         "Fresa",
-        "Natural",
         "Macedonia"
+      ],
+      "stockStatus": "disponible"
+    },
+    {
+      "id": "cmve4g9rx012n20odcqv0p8u6",
+      "businessId": "cmsw0l3f600031gjrewm3turo",
+      "businessName": "El Mercadito",
+      "category": "Comidas",
+      "name": "Yogurt PMI",
+      "shortDescription": "Yogurt PMI, sabor plátano - fresa y plátano ",
+      "longDescription": "Yogurt PMI, sabor plátano - fresa y plátano ",
+      "image": "🛍️",
+      "price": 0.9,
+      "options": [
+        "Plátano",
+        "Plátano - fresa"
       ],
       "stockStatus": "disponible"
     },
@@ -23862,6 +24003,18 @@
       "stockStatus": "disponible"
     },
     {
+      "id": "cmvc090dc001k3ouhs9bcywuv",
+      "businessId": "cmvc08kln00003ouhenv0j1ml",
+      "businessName": "Mercado Garaje Verde",
+      "category": "Comidas",
+      "name": "Zumo de naranja",
+      "shortDescription": "",
+      "longDescription": "",
+      "image": "🛍️",
+      "price": 0.8,
+      "stockStatus": "disponible"
+    },
+    {
       "id": "cmusgxbf2004kr0uhsd2vgwq0",
       "businessId": "cmusgsjzo0000r0uhoa8lqcs5",
       "businessName": "Charcutería Luis",
@@ -23872,18 +24025,6 @@
       "image": "🛍️",
       "photo": "https://res.cloudinary.com/dew8qnaad/image/upload/v1791036566/traelo/businesses/cmusgsjzo0000r0uhoa8lqcs5/products/wubkfpht6k4y3tnh4nqh.jpg?v=1792085830045",
       "price": 0.7,
-      "stockStatus": "disponible"
-    },
-    {
-      "id": "cmvc090dc001k3ouhs9bcywuv",
-      "businessId": "cmvc08kln00003ouhenv0j1ml",
-      "businessName": "Mercado Garaje Verde",
-      "category": "Comidas",
-      "name": "Zumo de naranja",
-      "shortDescription": "",
-      "longDescription": "",
-      "image": "🛍️",
-      "price": 0.8,
       "stockStatus": "disponible"
     },
     {
