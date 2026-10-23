@@ -29,6 +29,8 @@ function cupToUsd(cup, rate) {
   return Math.round((cup / rate) * 100) / 100
 }
 
+const GUIRA_CODE = 'guira-de-melena'
+
 async function apiGet(path) {
   const res = await fetch(`${API_BASE}${path}`, { headers: { 'x-api-key': API_KEY } })
   if (!res.ok) throw new Error(`HTTP ${res.status} en ${path}`)
@@ -52,6 +54,33 @@ async function fetchFamiliaOnlyProducts() {
     return await apiGet('/familia/products')
   } catch (err) {
     console.warn(`⚠ No se pudieron leer los productos exclusivos de Familia (${err.message})`)
+    return []
+  }
+}
+
+/**
+ * Negocios/productos de las localidades que NO son Güira (hoy San Antonio de los Baños). El backend
+ * filtra con `?cityId=` (GET /catalog/cities da el id de cada una). Güira es el catálogo de siempre:
+ * todo lo que no aparece en otra localidad se queda en Güira. Si el endpoint falla, todo es Güira.
+ * Devuelve [{ code, businesses, products }].
+ */
+async function fetchOtherCities() {
+  try {
+    const cities = await apiGet('/cities')
+    const others = (Array.isArray(cities) ? cities : []).filter(c => c?.id && c.code && c.code !== GUIRA_CODE)
+    const out = []
+    for (const city of others) {
+      try {
+        const data = await apiGet(`/bootstrap?cityId=${encodeURIComponent(city.id)}`)
+        out.push({ code: city.code, businesses: data.businesses ?? [], products: data.products ?? [] })
+        console.log(`✓ ${city.code}: ${data.businesses?.length ?? 0} negocios`)
+      } catch (err) {
+        console.warn(`⚠ No se pudo leer el catálogo de ${city.code} (${err.message})`)
+      }
+    }
+    return out
+  } catch (err) {
+    console.warn(`⚠ No se pudo leer la lista de localidades (${err.message}) — todo se deja en Güira`)
     return []
   }
 }
@@ -215,10 +244,11 @@ const BUSINESS_OVERRIDES = {
   },
 }
 
-function mapBusiness(b) {
+function mapBusiness(b, cityCode) {
   const override = BUSINESS_OVERRIDES[b.name]
   return {
     id: b.id,
+    cityCode,
     name: b.name,
     description: override?.description ?? '',
     image: b.logoUrl,
@@ -273,9 +303,24 @@ async function main() {
     return
   }
 
-  const businessNameById = new Map(bootstrap.businesses.map(b => [b.id, b.name]))
-  const businesses = bootstrap.businesses.map(mapBusiness)
-  const products = bootstrap.products.map(p => mapProduct(p, businessNameById, rate))
+  // Localidades: lo que el backend devuelve para otra ciudad se etiqueta con su código y se une al
+  // catálogo (por si el bootstrap global solo trae Güira); el resto es Güira.
+  const otherCities = await fetchOtherCities()
+  const cityByBusinessId = new Map()
+  for (const city of otherCities) for (const b of city.businesses) cityByBusinessId.set(b.id, city.code)
+
+  const allBusinesses = [...bootstrap.businesses]
+  const allProducts = [...bootstrap.products]
+  const seenBusinesses = new Set(allBusinesses.map(b => b.id))
+  const seenProducts = new Set(allProducts.map(p => p.id))
+  for (const city of otherCities) {
+    for (const b of city.businesses) if (!seenBusinesses.has(b.id)) { seenBusinesses.add(b.id); allBusinesses.push(b) }
+    for (const p of city.products) if (!seenProducts.has(p.id)) { seenProducts.add(p.id); allProducts.push(p) }
+  }
+
+  const businessNameById = new Map(allBusinesses.map(b => [b.id, b.name]))
+  const businesses = allBusinesses.map(b => mapBusiness(b, cityByBusinessId.get(b.id) ?? GUIRA_CODE))
+  const products = allProducts.map(p => mapProduct(p, businessNameById, rate))
 
   const combosBusinessId = [...businessNameById.entries()].find(
     ([, name]) => name === COMBOS_BUSINESS_NAME

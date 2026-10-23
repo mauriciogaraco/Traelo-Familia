@@ -50,7 +50,17 @@ function normalizeOrder(body, catalog) {
   const a = body.address
   if (!a || typeof a !== 'object') return null
 
+  // Zona de entrega: Güira, San Antonio u otro lugar (con el lugar escrito). Pedidos viejos sin zona = Güira.
+  const ZONES = { guira: 'Güira de Melena', 'san-antonio': 'San Antonio de los Baños', otro: 'Otro lugar' }
+  const zona = a.zona == null ? 'guira' : a.zona
+  if (!Object.hasOwn(ZONES, zona)) return null
+  const lugar = zona === 'otro' ? str(a.lugar, 150) : null
+  if (zona === 'otro' && !lugar) return null
+
   const address = {
+    zona,
+    zonaLabel: ZONES[zona],
+    lugar,
     nombreComprador: str(a.nombreComprador, 100),
     whatsappComprador: str(a.whatsappComprador, 30),
     nombreDestinatario: str(a.nombreDestinatario, 100),
@@ -120,6 +130,7 @@ function buildMessage({ id, address, lines }, ip, userAgent) {
     `📱 <b>WhatsApp:</b> ${esc(address.whatsappComprador)}`,
     '',
     `📦 <b>Para:</b> ${esc(address.nombreDestinatario)}`,
+    `🗺 <b>Zona:</b> ${esc(address.zonaLabel)}${address.lugar ? ` — ${esc(address.lugar)}` : ''}`,
     `📍 <b>Dirección:</b> ${esc(address.direccion)}`,
     ...(address.observaciones ? [`📝 <b>Observaciones:</b> ${esc(address.observaciones)}`] : []),
     '',

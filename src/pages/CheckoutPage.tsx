@@ -12,6 +12,8 @@ import { makeOrder, groupByBusiness } from "../lib/order";
 import { hasFormato, itemLineId, lineTotal, unitsOf } from "../lib/cart";
 import { sendOrderToTelegram, orderCooldownRemaining, cooldownMessage } from "../lib/telegram";
 import { useState } from "react";
+import { useCatalog } from "../context/CatalogContext";
+import { cityOfBusiness, cityOfZone, findCity, zoneLabel } from "../lib/cities";
 
 export function CheckoutPage() {
   const navigate = useNavigate();
@@ -20,6 +22,7 @@ export function CheckoutPage() {
   const { address } = useAddress();
   const { showToast } = useToast();
   const [sending, setSending] = useState(false);
+  const { businesses } = useCatalog();
 
   if (items.length === 0) {
     return (
@@ -43,6 +46,18 @@ export function CheckoutPage() {
   const zelleFee = Math.round(subtotal * 0.1 * 100) / 100;
   const totalWithFee = Math.round((subtotal + zelleFee) * 100) / 100;
   const canConfirm = !!address && !sending;
+
+  // Aviso (no bloquea): productos de una localidad con entrega en la otra.
+  const zoneCity = address ? cityOfZone(address.zona ?? "guira") : null;
+  const cartCities = [
+    ...new Set(
+      groups
+        .map((g) => businesses.find((b) => b.id === g.businessId))
+        .filter((b): b is NonNullable<typeof b> => !!b)
+        .map((b) => cityOfBusiness(b)),
+    ),
+  ];
+  const cityMismatch = zoneCity !== null && cartCities.some((c) => c !== zoneCity);
 
   async function confirm() {
     if (!canConfirm) return;
@@ -116,6 +131,16 @@ export function CheckoutPage() {
                   </div>
                   <div className="flex items-start gap-2 mt-1">
                     <span className="text-[11px] font-semibold text-text-secondary w-20 flex-shrink-0 mt-0.5">
+                      Zona
+                    </span>
+                    <span className="text-sm font-bold text-text-primary">
+                      {address.zona === "otro"
+                        ? `Otro lugar · ${address.lugar ?? ""}`
+                        : zoneLabel(address.zona)}
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-2 mt-1">
+                    <span className="text-[11px] font-semibold text-text-secondary w-20 flex-shrink-0 mt-0.5">
                       Dirección
                     </span>
                     <span className="text-sm text-text-secondary">
@@ -147,6 +172,28 @@ export function CheckoutPage() {
             </>
           )}
         </section>
+
+        {cityMismatch && (
+          <div className="flex items-start gap-2.5 bg-amber-50 border border-amber-200 rounded-2xl p-3">
+            <span className="text-lg flex-shrink-0">⚠️</span>
+            <p className="text-xs text-amber-800 leading-relaxed">
+              Tu carrito tiene productos de{" "}
+              {cartCities.map((c) => findCity(c)?.name).join(" y ")}, pero la entrega es en{" "}
+              {zoneLabel(address?.zona)}. Revisa la zona o haz un pedido por localidad; si no, te
+              escribiremos por WhatsApp para coordinarlo.
+            </p>
+          </div>
+        )}
+
+        {address?.zona === "otro" && (
+          <div className="flex items-start gap-2.5 bg-secondary/60 border border-border rounded-2xl p-3">
+            <span className="text-lg flex-shrink-0">📍</span>
+            <p className="text-xs text-text-secondary leading-relaxed">
+              Para entregas fuera de Güira y San Antonio te confirmaremos por WhatsApp si llegamos y
+              el costo de la mensajería antes de cobrar.
+            </p>
+          </div>
+        )}
 
         {/* Resumen */}
         <section>
@@ -259,7 +306,7 @@ export function CheckoutPage() {
             Al confirmar, te contactaremos por WhatsApp para coordinar el pago
             de{" "}
             <span className="font-bold text-text-primary">
-              ${formatPrice(totalWithFee)} USD por Zelle
+              {formatPrice(totalWithFee)} USD por Zelle
             </span>
             . No se realiza ningún cargo automático.
           </p>
