@@ -13,6 +13,7 @@ import { ToastProvider } from "./context/ToastContext";
 import { CatalogProvider } from "./context/CatalogContext";
 import { CityProvider } from "./context/CityContext";
 import { AppShell } from "./components/layout/AppShell";
+import { UpdateModal } from "./components/ui/UpdateModal";
 import { HomePage } from "./pages/HomePage";
 import { ProductDetailPage } from "./pages/ProductDetailPage";
 import { CartPage } from "./pages/CartPage";
@@ -67,6 +68,7 @@ export default function App() {
     <BrowserRouter>
       <Providers>
         <ScrollToTop />
+        <UpdateModal />
         <AppShell>
           <Routes>
             <Route path="/" element={<HomePage />} />
