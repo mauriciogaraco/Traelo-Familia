@@ -14,8 +14,12 @@ export interface BusinessSchedule {
   label: string
 }
 
+export type DeliveryZone = 'guira' | 'san-antonio' | 'otro'
+
 export interface Business {
   id: string
+  /** `City.code` de la localidad del negocio. Sin él = Güira de Melena. */
+  cityCode?: 'guira-de-melena' | 'san-antonio-de-los-banos'
   name: string
   description: string
   image: string
@@ -63,6 +67,10 @@ export interface CartItem {
 }
 
 export interface Address {
+  /** Dónde se entrega. Pedidos guardados antes de las zonas no lo traen: se asume Güira. */
+  zona?: DeliveryZone
+  /** Solo con zona "otro": municipio/provincia que escribió el comprador. */
+  lugar?: string
   nombreComprador: string
   whatsappComprador: string
   nombreDestinatario: string

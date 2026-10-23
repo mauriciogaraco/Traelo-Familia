@@ -8,51 +8,62 @@ import { useCart } from "../../context/CartContext";
 )}`; */
 }
 
+function Svg({ active, children }: { active: boolean; children: React.ReactNode }) {
+  return (
+    <svg
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill={active ? "currentColor" : "none"}
+      stroke="currentColor"
+      strokeWidth={active ? 0 : 1.8}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      {children}
+    </svg>
+  );
+}
+
 const navItems = [
   {
-    to: "/",
-    label: "Inicio",
+    to: "/categorias",
+    label: "Categorías",
     icon: (active: boolean) => (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill={active ? "currentColor" : "none"}
-        stroke="currentColor"
-        strokeWidth={active ? 0 : 1.8}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3 11.5 12 4l9 7.5M5.5 10v9a1 1 0 0 0 1 1H10v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h3.5a1 1 0 0 0 1-1v-9"
-        />
+      <Svg active={active}>
+        <rect x="4" y="4" width="6.5" height="6.5" rx="1.5" />
+        <rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5" />
+        <rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5" />
+        <rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5" />
+      </Svg>
+    ),
+  },
+  {
+    to: "/buscar",
+    label: "Buscar",
+    icon: (active: boolean) => (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={active ? 2.6 : 1.8} strokeLinecap="round">
+        <circle cx="11" cy="11" r="7" />
+        <path d="m21 21-4.3-4.3" />
       </svg>
     ),
   },
   {
-    to: "/pedidos",
-    label: "Pedidos",
+    to: "/",
+    label: "Inicio",
     icon: (active: boolean) => (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill={active ? "currentColor" : "none"}
-        stroke="currentColor"
-        strokeWidth={active ? 0 : 1.8}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M5 4h11l3 3v13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"
-        />
-        {!active && (
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M8 10h8M8 14h6"
-          />
-        )}
+      <Svg active={active}>
+        <path d="M3 11.5 12 4l9 7.5M5.5 10v9a1 1 0 0 0 1 1H10v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h3.5a1 1 0 0 0 1-1v-9" />
+      </Svg>
+    ),
+  },
+  {
+    to: "/ayuda",
+    label: "Ayuda",
+    icon: (active: boolean) => (
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={active ? 2.4 : 1.8} strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="9" />
+        <path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.7.3-1 .9-1 1.7M12 17h.01" />
       </svg>
     ),
   },
@@ -61,22 +72,11 @@ const navItems = [
     label: "Carrito",
     badge: true,
     icon: (active: boolean) => (
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill={active ? "currentColor" : "none"}
-        stroke="currentColor"
-        strokeWidth={active ? 0 : 1.8}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M4 5h2l1.5 10.5a1 1 0 0 0 1 .9h7.8a1 1 0 0 0 1-.8L19 8H7"
-        />
+      <Svg active={active}>
+        <path d="M4 5h2l1.5 10.5a1 1 0 0 0 1 .9h7.8a1 1 0 0 0 1-.8L19 8H7" />
         <circle cx="9.5" cy="20" r="1.4" />
         <circle cx="17" cy="20" r="1.4" />
-      </svg>
+      </Svg>
     ),
   },
 ];

@@ -1,3 +1,4 @@
+import { zoneLabel } from "../lib/cities";
 import { useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useOrders } from '../context/OrdersContext'
@@ -108,6 +109,8 @@ function OrderCard({ order, onComplete }: { order: Order; onComplete: () => void
                 <path strokeLinecap="round" d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
               </svg>
               Para: {order.address.nombreDestinatario}
+              {" · "}
+              {order.address.zona === "otro" ? order.address.lugar || "Otro lugar" : zoneLabel(order.address.zona)}
             </p>
           )}
         </div>

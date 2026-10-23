@@ -11,24 +11,31 @@ import { CartProvider } from "./context/CartContext";
 import { OrdersProvider } from "./context/OrdersContext";
 import { ToastProvider } from "./context/ToastContext";
 import { CatalogProvider } from "./context/CatalogContext";
+import { CityProvider } from "./context/CityContext";
 import { AppShell } from "./components/layout/AppShell";
 import { HomePage } from "./pages/HomePage";
 import { ProductDetailPage } from "./pages/ProductDetailPage";
 import { CartPage } from "./pages/CartPage";
 import { CheckoutPage } from "./pages/CheckoutPage";
 import { OrdersPage } from "./pages/OrdersPage";
+import { SearchPage } from "./pages/SearchPage";
+import { CategoriesPage } from "./pages/CategoriesPage";
+import { BusinessPage } from "./pages/BusinessPage";
+import { HelpPage } from "./pages/HelpPage";
 //import { ComingSoonModal } from "./pages/CommingSoonModal";
 
 function Providers({ children }: { children: ReactNode }) {
   return (
     <CatalogProvider>
-      <ToastProvider>
-        <AddressProvider>
-          <OrdersProvider>
-            <CartProvider>{children}</CartProvider>
-          </OrdersProvider>
-        </AddressProvider>
-      </ToastProvider>
+      <CityProvider>
+        <ToastProvider>
+          <AddressProvider>
+            <OrdersProvider>
+              <CartProvider>{children}</CartProvider>
+            </OrdersProvider>
+          </AddressProvider>
+        </ToastProvider>
+      </CityProvider>
     </CatalogProvider>
   );
 }
@@ -63,6 +70,10 @@ export default function App() {
         <AppShell>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/buscar" element={<SearchPage />} />
+            <Route path="/categorias" element={<CategoriesPage />} />
+            <Route path="/ayuda" element={<HelpPage />} />
+            <Route path="/negocio/:id" element={<BusinessPage />} />
             <Route path="/producto/:id" element={<ProductDetailPage />} />
             <Route path="/carrito" element={<CartPage />} />
             <Route path="/checkout" element={<CheckoutPage />} />

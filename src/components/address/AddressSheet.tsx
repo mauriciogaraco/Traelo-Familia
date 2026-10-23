@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
-import type { Address } from '../../types'
+import type { Address, DeliveryZone } from '../../types'
 import { Button } from '../ui/Button'
+import { useCity } from '../../context/CityContext'
+import { ZONE_OPTIONS, zoneLabel, zoneOfCity } from '../../lib/cities'
 
 interface AddressSheetProps {
   open: boolean
@@ -10,6 +12,8 @@ interface AddressSheetProps {
 }
 
 const empty: Address = {
+  zona: 'guira',
+  lugar: '',
   nombreComprador: '',
   whatsappComprador: '',
   nombreDestinatario: '',
@@ -20,14 +24,18 @@ const empty: Address = {
 type Errors = Partial<Record<keyof Address, string>>
 
 export function AddressSheet({ open, initial, onClose, onSave }: AddressSheetProps) {
-  const [form, setForm] = useState<Address>(initial ?? empty)
+  const { cityCode } = useCity()
+  // La zona por defecto es la localidad desde la que se está comprando.
+  const defaultForm: Address = { ...empty, zona: zoneOfCity(cityCode) }
+  const [form, setForm] = useState<Address>(initial ? { ...initial, zona: initial.zona ?? 'guira' } : defaultForm)
   const [errors, setErrors] = useState<Errors>({})
 
   useEffect(() => {
     if (open) {
-      setForm(initial ?? empty)
+      setForm(initial ? { ...initial, zona: initial.zona ?? 'guira' } : { ...empty, zona: zoneOfCity(cityCode) })
       setErrors({})
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [open, initial])
 
   useEffect(() => {
@@ -52,6 +60,7 @@ export function AddressSheet({ open, initial, onClose, onSave }: AddressSheetPro
       errs.whatsappComprador = 'Número no válido'
     if (!form.nombreDestinatario.trim()) errs.nombreDestinatario = 'Requerido'
     if (!form.direccion.trim()) errs.direccion = 'Requerido'
+    if (form.zona === 'otro' && !form.lugar?.trim()) errs.lugar = 'Escribe el municipio o provincia'
     setErrors(errs)
     return Object.keys(errs).length === 0
   }
@@ -59,7 +68,10 @@ export function AddressSheet({ open, initial, onClose, onSave }: AddressSheetPro
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (!validate()) return
+    const zona: DeliveryZone = form.zona ?? 'guira'
     onSave({
+      zona,
+      ...(zona === 'otro' ? { lugar: form.lugar?.trim() } : {}),
       nombreComprador: form.nombreComprador.trim(),
       whatsappComprador: form.whatsappComprador.trim(),
       nombreDestinatario: form.nombreDestinatario.trim(),
@@ -128,9 +140,47 @@ export function AddressSheet({ open, initial, onClose, onSave }: AddressSheetPro
           {/* Sección destinatario */}
           <div>
             <p className="text-xs font-bold text-accent uppercase tracking-wider mb-3">
-              Quién recibe en Güira de Melena
+              Quién recibe
             </p>
             <div className="space-y-3">
+              <fieldset>
+                <legend className="block text-xs font-bold text-text-secondary mb-1.5">Zona de entrega</legend>
+                <div className="grid grid-cols-3 gap-2">
+                  {ZONE_OPTIONS.map((opt) => {
+                    const active = (form.zona ?? 'guira') === opt.zone
+                    return (
+                      <button
+                        key={opt.zone}
+                        type="button"
+                        aria-pressed={active}
+                        onClick={() => {
+                          setForm((f) => ({ ...f, zona: opt.zone }))
+                          if (errors.lugar) setErrors((e) => ({ ...e, lugar: undefined }))
+                        }}
+                        className={`rounded-2xl border px-2 py-2.5 text-[12px] font-bold leading-tight transition-all ${
+                          active ? 'border-primary bg-primary/10 text-primary ring-2 ring-primary/20' : 'border-border bg-background text-text-secondary'
+                        }`}
+                      >
+                        {opt.label}
+                      </button>
+                    )
+                  })}
+                </div>
+                {form.zona === 'otro' && (
+                  <span className="block text-[11px] text-text-secondary mt-1.5">
+                    Te confirmamos por WhatsApp si llegamos hasta allí y el costo de la mensajería.
+                  </span>
+                )}
+              </fieldset>
+              {form.zona === 'otro' && (
+                <Field
+                  label="Municipio y provincia"
+                  value={form.lugar ?? ''}
+                  onChange={(v) => update('lugar', v)}
+                  error={errors.lugar}
+                  placeholder="Ej: Artemisa, Artemisa"
+                />
+              )}
               <Field
                 label="Nombre del familiar"
                 value={form.nombreDestinatario}
@@ -139,7 +189,7 @@ export function AddressSheet({ open, initial, onClose, onSave }: AddressSheetPro
                 placeholder="Ej: María García"
               />
               <Field
-                label="Dirección en Güira de Melena"
+                label={`Dirección en ${form.zona === 'otro' ? 'ese lugar' : zoneLabel(form.zona)}`}
                 value={form.direccion}
                 onChange={(v) => update('direccion', v)}
                 error={errors.direccion}
