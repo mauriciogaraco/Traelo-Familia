@@ -1,9 +1,14 @@
-// Función serverless de Vercel: recibe el pedido, lo valida contra el catálogo
-// y lo envía a Telegram. El token vive solo en variables de entorno.
+// Función serverless de Vercel: recibe el pedido, lo valida contra el catálogo, lo GUARDA en la base de datos
+// de Tráelo (backend, pestaña "Familia" del dashboard) y avisa por Telegram. Las claves viven solo en variables
+// de entorno: TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID y FAMILIA_ORDERS_API_KEY (la misma que el backend).
 
 const CATALOG_URL = `https://${
   process.env.VERCEL_PROJECT_PRODUCTION_URL || 'traelo-familia.vercel.app'
 }/data/catalog-familia.json`
+
+// Origen del backend (sin /api/v1). En producción: https://api.traelo-market.com
+const API_ORIGIN = (process.env.TRAELO_API_ORIGIN || 'https://api.traelo-market.com').replace(/\/+$/, '')
+const SAVE_TIMEOUT_MS = 10_000
 
 const COOLDOWN_MS = 3 * 60 * 1000
 const CATALOG_TTL_MS = 5 * 60 * 1000
@@ -115,7 +120,57 @@ function normalizeOrder(body, catalog) {
   return { id, address, lines }
 }
 
-function buildMessage({ id, address, lines }, ip, userAgent) {
+const round2 = n => Math.round(n * 100) / 100
+
+/** Subtotal, comisión Zelle (10%) y total en USD — los mismos números en Telegram y en la base de datos. */
+function computeTotals(lines) {
+  const subtotal = round2(lines.reduce((sum, l) => sum + round2(l.total), 0))
+  const commission = round2(subtotal * 0.1)
+  return { subtotal, commission, total: round2(subtotal + commission) }
+}
+
+/** Guarda el pedido en la base de datos (backend). Idempotente por id: reintentar no duplica. */
+async function saveOrder({ id, address, lines }, totals, key) {
+  const payload = {
+    clientOrderId: id,
+    buyerName: address.nombreComprador,
+    buyerWhatsapp: address.whatsappComprador,
+    recipientName: address.nombreDestinatario,
+    zone: address.zona,
+    ...(address.lugar ? { place: address.lugar } : {}),
+    address: address.direccion,
+    ...(address.observaciones ? { notes: address.observaciones } : {}),
+    items: lines.map(l => ({
+      productRef: l.product.id,
+      productName: l.product.name,
+      businessName: l.product.businessName,
+      ...(l.option ? { optionName: l.option } : {}),
+      ...(l.addon ? { addonName: l.addon.name } : {}),
+      ...(l.packaging ? { packagingName: l.packaging.name } : {}),
+      quantity: l.quantity,
+      pack: l.pack,
+      lineTotalUsd: round2(l.total),
+    })),
+    subtotalUsd: totals.subtotal,
+    zelleFeeUsd: totals.commission,
+    totalUsd: totals.total,
+  }
+  try {
+    const res = await fetch(`${API_ORIGIN}/api/v1/familia-orders`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'X-Familia-Key': key },
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(SAVE_TIMEOUT_MS),
+    })
+    if (!res.ok) return { ok: false }
+    const body = await res.json().catch(() => null)
+    return { ok: true, orderNumber: body?.data?.orderNumber ?? null }
+  } catch {
+    return { ok: false }
+  }
+}
+
+function buildMessage({ id, address, lines }, ip, userAgent, totals, orderNumber) {
   const byBusiness = new Map()
   for (const line of lines) {
     const key = line.product.businessName
@@ -125,6 +180,7 @@ function buildMessage({ id, address, lines }, ip, userAgent) {
 
   const out = [
     `🎁 <b>Pedido #${esc(id)}</b> — Tráelo Familia`,
+    ...(orderNumber ? [`🗂 <b>Dashboard:</b> pestaña Familia, pedido #${orderNumber}`] : []),
     '',
     `👤 <b>Comprador:</b> ${esc(address.nombreComprador)}`,
     `📱 <b>WhatsApp:</b> ${esc(address.whatsappComprador)}`,
@@ -136,7 +192,6 @@ function buildMessage({ id, address, lines }, ip, userAgent) {
     '',
   ]
 
-  let subtotal = 0
   for (const [business, items] of byBusiness) {
     out.push(`🏪 <b>${esc(business)}</b>`)
     let groupTotal = 0
@@ -153,17 +208,12 @@ function buildMessage({ id, address, lines }, ip, userAgent) {
       groupTotal += l.total
     }
     out.push(`   <i>Subtotal: ${fmt(groupTotal)}</i>`, '')
-    subtotal += groupTotal
   }
 
-  subtotal = Math.round(subtotal * 100) / 100
-  const commission = Math.round(subtotal * 0.1 * 100) / 100
-  const total = Math.round((subtotal + commission) * 100) / 100
-
   out.push(
-    `💵 Subtotal: ${fmt(subtotal)} USD`,
-    `➕ Comisión Zelle (10%): ${fmt(commission)} USD`,
-    `💳 <b>Total Zelle: ${fmt(total)} USD</b>`,
+    `💵 Subtotal: ${fmt(totals.subtotal)} USD`,
+    `➕ Comisión Zelle (10%): ${fmt(totals.commission)} USD`,
+    `💳 <b>Total Zelle: ${fmt(totals.total)} USD</b>`,
     '',
     `📲 <i>Coordinar pago por WhatsApp</i>`,
     '',
@@ -183,7 +233,8 @@ export default async function handler(req, res) {
 
   const token = process.env.TELEGRAM_BOT_TOKEN
   const chatId = process.env.TELEGRAM_CHAT_ID
-  if (!token || !chatId) return res.status(500).json({ ok: false, error: 'config' })
+  const familiaKey = process.env.FAMILIA_ORDERS_API_KEY
+  if (!token || !chatId || !familiaKey) return res.status(500).json({ ok: false, error: 'config' })
 
   const ip = clientIp(req)
 
@@ -206,9 +257,16 @@ export default async function handler(req, res) {
   }
   if (!order) return res.status(400).json({ ok: false, error: 'invalid' })
 
-  const text = buildMessage(order, ip, String(req.headers['user-agent'] || 'desconocido'))
+  // 1) Guardar en la base de datos. Si falla, NO se avisa por Telegram y el cliente ve el error (puede reintentar:
+  //    el id del pedido lo hace idempotente, no se duplica).
+  const totals = computeTotals(order.lines)
+  const saved = await saveOrder(order, totals, familiaKey)
+  if (!saved.ok) return res.status(502).json({ ok: false, error: 'save' })
 
-  let tg
+  // 2) Avisar por Telegram. El pedido YA está guardado: si Telegram falla no se pierde, el personal lo ve en la
+  //    pestaña Familia del dashboard, así que no se le muestra un error al cliente.
+  const text = buildMessage(order, ip, String(req.headers['user-agent'] || 'desconocido'), totals, saved.orderNumber)
+
   try {
     const r = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: 'POST',
@@ -220,11 +278,11 @@ export default async function handler(req, res) {
         disable_web_page_preview: true,
       }),
     })
-    tg = await r.json().catch(() => null)
+    const tg = await r.json().catch(() => null)
+    if (!tg?.ok) console.error('Telegram no aceptó el aviso del pedido', order.id)
   } catch {
-    return res.status(502).json({ ok: false, error: 'telegram' })
+    console.error('Telegram no respondió para el pedido', order.id)
   }
-  if (!tg?.ok) return res.status(502).json({ ok: false, error: 'telegram' })
 
   lastByIp.set(ip, Date.now())
   if (lastByIp.size > 5000) {
