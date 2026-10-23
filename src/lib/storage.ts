@@ -22,4 +22,5 @@ export const STORAGE_KEYS = {
   orders: 'traelo_orders',
   address: 'traelo_address',
   city: 'traelo_familia_city',
+  appVersion: 'traelo_familia_app_version',
 } as const
