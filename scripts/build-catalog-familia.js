@@ -271,7 +271,9 @@ function mapProduct(p, businessNameById, rate) {
     longDescription: p.description ?? '',
     image: '🛍️',
     ...(p.imageUrl ? { photo: p.imageUrl } : {}),
-    price: cupToUsd(priceCup, rate),
+    // Productos que el negocio vende en USD: el backend los convierte a CUP (precio, price) pero manda también el
+    // precio en USD original (priceUsd): se usa tal cual, sin ir y volver por la tasa y perder centavos.
+    price: p.priceUsd ?? cupToUsd(priceCup, rate),
     ...(p.formato ? { formato: p.formato } : {}),
     ...(p.options?.length ? { options: p.options } : {}),
     ...(p.addons?.length
