@@ -1,5 +1,13 @@
-// Función serverless de Vercel: recibe el pedido, lo valida contra el catálogo
-// y lo envía a Telegram. El token vive solo en variables de entorno.
+// Función serverless de Vercel: recibe el pedido, lo valida contra el catálogo, lo registra en el
+// dashboard (base de datos real de Tráelo) y lo avisa por Telegram. Los secretos viven solo en
+// variables de entorno.
+
+import { randomUUID } from 'node:crypto'
+
+// Backend real (POST /familia/orders). Sin FAMILIA_ORDERS_TOKEN no se registra en el dashboard y el
+// pedido sigue llegando por Telegram como siempre.
+const BACKEND_URL = (process.env.TRAELO_API_URL || 'https://api.traelo-market.com').replace(/\/$/, '')
+const BACKEND_TIMEOUT_MS = 8000
 
 const CATALOG_URL = `https://${
   process.env.VERCEL_PROJECT_PRODUCTION_URL || 'traelo-familia.vercel.app'
@@ -115,7 +123,84 @@ function normalizeOrder(body, catalog) {
   return { id, address, lines }
 }
 
-function buildMessage({ id, address, lines }, ip, userAgent) {
+const REAL_PRODUCT_ID = /^c[a-z0-9]{20,}$/
+
+function roundCents(n) {
+  return Math.round(n * 100) / 100
+}
+
+/** Subtotal, comisión Zelle (10%) y total del pedido, en USD. */
+function totals(lines) {
+  const subtotal = roundCents(lines.reduce((sum, l) => sum + l.total, 0))
+  const commission = roundCents(subtotal * 0.1)
+  return { subtotal, commission, total: roundCents(subtotal + commission) }
+}
+
+/** Pedido ya validado → cuerpo de POST /familia/orders (precios en USD; el backend convierte a CUP). */
+function backendPayload({ address, lines }) {
+  const byBusiness = new Map()
+  for (const l of lines) {
+    const businessId = l.product.businessId
+    if (!byBusiness.has(businessId)) byBusiness.set(businessId, [])
+    byBusiness.get(businessId).push({
+      // Los combos de Familia no existen como productos del backend: van solo con nombre.
+      ...(REAL_PRODUCT_ID.test(l.product.id) ? { productId: l.product.id } : {}),
+      productName: l.product.name,
+      quantity: l.quantity,
+      unitPriceUsd: roundCents((l.product.price + (l.addon?.price ?? 0)) * l.pack),
+      ...(l.option ? { optionName: l.option } : {}),
+      ...(l.addon ? { addonName: l.addon.name, addonPriceUsd: l.addon.price } : {}),
+      ...(l.packaging
+        ? { packagingName: l.packaging.name, packagingFeeUsd: roundCents(l.packaging.price * l.quantity * l.pack) }
+        : {}),
+      ...(l.pack > 1 ? { unitsPerPack: l.pack } : {}),
+    })
+  }
+  return {
+    clientRequestId: `familia-${randomUUID()}`,
+    buyerName: address.nombreComprador,
+    buyerPhone: address.whatsappComprador,
+    recipientName: address.nombreDestinatario,
+    zone: address.zona,
+    ...(address.lugar ? { place: address.lugar } : {}),
+    address: address.direccion,
+    ...(address.observaciones ? { notes: address.observaciones } : {}),
+    zelleTotalUsd: totals(lines).total,
+    businesses: [...byBusiness].map(([businessId, items]) => ({ businessId, items })),
+  }
+}
+
+/**
+ * Registra el pedido en el dashboard. Nunca lanza: devuelve { ok, number } o { ok: false, reason }.
+ * Si falla, el pedido igual se avisa por Telegram (con la advertencia) para que no se pierda.
+ */
+async function saveToDashboard(order) {
+  const token = process.env.FAMILIA_ORDERS_TOKEN
+  if (!token) return { ok: false, reason: 'sin FAMILIA_ORDERS_TOKEN' }
+  const controller = new AbortController()
+  const timer = setTimeout(() => controller.abort(), BACKEND_TIMEOUT_MS)
+  try {
+    const res = await fetch(`${BACKEND_URL}/api/v1/familia/orders`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-familia-token': token },
+      body: JSON.stringify(backendPayload(order)),
+      signal: controller.signal,
+    })
+    const body = await res.json().catch(() => null)
+    if (!res.ok) {
+      console.error('familia dashboard', res.status, JSON.stringify(body)?.slice(0, 500))
+      return { ok: false, reason: `HTTP ${res.status}${body?.error?.message ? ` — ${body.error.message}` : ''}` }
+    }
+    return { ok: true, number: body?.data?.orderNumber ?? null }
+  } catch (err) {
+    console.error('familia dashboard', err)
+    return { ok: false, reason: err?.name === 'AbortError' ? 'tiempo de espera agotado' : 'sin conexión' }
+  } finally {
+    clearTimeout(timer)
+  }
+}
+
+function buildMessage({ id, address, lines }, ip, userAgent, dashboard) {
   const byBusiness = new Map()
   for (const line of lines) {
     const key = line.product.businessName
@@ -156,9 +241,8 @@ function buildMessage({ id, address, lines }, ip, userAgent) {
     subtotal += groupTotal
   }
 
-  subtotal = Math.round(subtotal * 100) / 100
-  const commission = Math.round(subtotal * 0.1 * 100) / 100
-  const total = Math.round((subtotal + commission) * 100) / 100
+  const { commission, total } = totals(lines)
+  subtotal = totals(lines).subtotal
 
   out.push(
     `💵 Subtotal: ${fmt(subtotal)} USD`,
@@ -166,6 +250,9 @@ function buildMessage({ id, address, lines }, ip, userAgent) {
     `💳 <b>Total Zelle: ${fmt(total)} USD</b>`,
     '',
     `📲 <i>Coordinar pago por WhatsApp</i>`,
+    dashboard.ok
+      ? `🗂 <b>Dashboard:</b> pedido ${dashboard.number ? `#${esc(dashboard.number)}` : 'registrado'}`
+      : `⚠️ <b>NO se registró en el dashboard</b> (${esc(dashboard.reason)}) — cargarlo a mano`,
     '',
     `🌐 <b>IP:</b> ${esc(ip)}`,
     `🖥 <b>Dispositivo:</b> ${esc(userAgent.slice(0, 200))}`,
@@ -206,7 +293,8 @@ export default async function handler(req, res) {
   }
   if (!order) return res.status(400).json({ ok: false, error: 'invalid' })
 
-  const text = buildMessage(order, ip, String(req.headers['user-agent'] || 'desconocido'))
+  const dashboard = await saveToDashboard(order)
+  const text = buildMessage(order, ip, String(req.headers['user-agent'] || 'desconocido'), dashboard)
 
   let tg
   try {
