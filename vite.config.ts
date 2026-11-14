@@ -1,13 +1,23 @@
-import { defineConfig } from 'vite'
+import { defineConfig, type Plugin } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 import pkg from './package.json'
+
+// Publica /version.json con la versión de esta build: las webs ya abiertas (o servidas desde el caché
+// de un service worker viejo) lo consultan para saber que deben actualizarse.
+const versionFile = (): Plugin => ({
+  name: 'version-json',
+  generateBundle() {
+    this.emitFile({ type: 'asset', fileName: 'version.json', source: JSON.stringify({ version: pkg.version }) })
+  },
+})
 
 export default defineConfig({
   // Versión de la app (package.json): la usa UpdateModal para pedir actualizar a quien tenga una anterior.
   define: { __APP_VERSION__: JSON.stringify(pkg.version) },
   plugins: [
     react(),
+    versionFile(),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['logo.webp', 'traelo_192x192.png', 'traelo_512x512.png'],

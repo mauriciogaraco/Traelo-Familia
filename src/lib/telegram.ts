@@ -1,4 +1,5 @@
 import type { Order } from '../types'
+import { APP_VERSION, OUTDATED_EVENT } from './version'
 
 const COOLDOWN_MS = 3 * 60 * 1000
 const LAST_SENT_KEY = 'traelo_last_order_sent'
@@ -35,7 +36,7 @@ export async function sendOrderToTelegram(order: Order): Promise<boolean> {
   try {
     const res = await fetch('/api/order', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'X-App-Version': APP_VERSION },
       body: JSON.stringify({
         id: order.id,
         address: order.address,
@@ -48,6 +49,11 @@ export async function sendOrderToTelegram(order: Order): Promise<boolean> {
         })),
       }),
     })
+    // 426: el servidor exige una versión más nueva de la web → modal obligatorio de actualización.
+    if (res.status === 426) {
+      window.dispatchEvent(new Event(OUTDATED_EVENT))
+      return false
+    }
     const data = await res.json().catch(() => null)
 
     if (res.status === 429 && typeof data?.retryAfter === 'number') {

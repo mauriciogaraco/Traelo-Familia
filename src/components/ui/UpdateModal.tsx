@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { readStorage, writeStorage, STORAGE_KEYS } from '../../lib/storage'
-import { APP_VERSION, hasLegacyData, needsUpdate } from '../../lib/version'
+import { APP_VERSION, OUTDATED_EVENT, compareVersions, fetchServerVersion, hasLegacyData, needsUpdate } from '../../lib/version'
+
+const RECHECK_MS = 5 * 60 * 1000
 
 const CLEANUP_TIMEOUT_MS = 3000
 
@@ -34,6 +36,31 @@ export function UpdateModal() {
     if (!open) writeStorage(STORAGE_KEYS.appVersion, APP_VERSION)
   }, [open])
 
+  // Esta pestaña puede llevar días abierta o venir del caché de un service worker viejo: se compara con la
+  // versión publicada al cargar, al volver a la pestaña y cada pocos minutos. Si hay una más nueva, el
+  // modal es obligatorio. También se abre si el servidor rechaza un pedido por versión vieja (HTTP 426).
+  useEffect(() => {
+    let cancelled = false
+    async function check() {
+      const server = await fetchServerVersion()
+      if (!cancelled && server && compareVersions(APP_VERSION, server) < 0) setOpen(true)
+    }
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') void check()
+    }
+    const onOutdated = () => setOpen(true)
+    void check()
+    const timer = window.setInterval(check, RECHECK_MS)
+    document.addEventListener('visibilitychange', onVisible)
+    window.addEventListener(OUTDATED_EVENT, onOutdated)
+    return () => {
+      cancelled = true
+      window.clearInterval(timer)
+      document.removeEventListener('visibilitychange', onVisible)
+      window.removeEventListener(OUTDATED_EVENT, onOutdated)
+    }
+  }, [])
+
   if (!open) return null
 
   async function update() {
@@ -55,7 +82,7 @@ export function UpdateModal() {
           Nueva versión disponible
         </h2>
         <p className="text-sm text-text-secondary mt-2">
-          Actualiza Tráelo Familia para ver las novedades: buscador, negocios por localidad y más. Tu carrito y tus datos se conservan.
+          Esta versión de Tráelo Familia está desactualizada y tus pedidos podrían no llegar. Actualiza para seguir comprando; tu carrito y tus datos se conservan.
         </p>
         <button
           onClick={update}
