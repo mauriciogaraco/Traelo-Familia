@@ -10,6 +10,20 @@ const CATALOG_URL = `https://${
 const API_ORIGIN = (process.env.TRAELO_API_ORIGIN || 'https://api.traelo-market.com').replace(/\/+$/, '')
 const SAVE_TIMEOUT_MS = 10_000
 
+// Versión mínima de la web que puede enviar pedidos (package.json). Una web más vieja (o sin cabecera
+// X-App-Version: las anteriores a 1.0.1) recibe 426 y se le obliga a actualizar, en vez de enviar un pedido
+// con datos que ya no se entienden. Súbela cuando un cambio exija que todos refresquen.
+const MIN_APP_VERSION = '1.0.2'
+
+function versionLess(a, b) {
+  const pa = String(a).split('.').map(n => parseInt(n, 10) || 0)
+  const pb = String(b).split('.').map(n => parseInt(n, 10) || 0)
+  for (let i = 0; i < Math.max(pa.length, pb.length); i++) {
+    if ((pa[i] ?? 0) !== (pb[i] ?? 0)) return (pa[i] ?? 0) < (pb[i] ?? 0)
+  }
+  return false
+}
+
 const COOLDOWN_MS = 3 * 60 * 1000
 const CATALOG_TTL_MS = 5 * 60 * 1000
 const MAX_ITEMS = 60
@@ -229,6 +243,12 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') {
     res.setHeader('Allow', 'POST')
     return res.status(405).json({ ok: false, error: 'method' })
+  }
+
+  // Web desactualizada: se rechaza y la web muestra el modal obligatorio de actualización.
+  const appVersion = req.headers['x-app-version']
+  if (typeof appVersion !== 'string' || versionLess(appVersion, MIN_APP_VERSION)) {
+    return res.status(426).json({ ok: false, error: 'outdated', minVersion: MIN_APP_VERSION })
   }
 
   const token = process.env.TELEGRAM_BOT_TOKEN

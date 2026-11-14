@@ -32,3 +32,18 @@ export function hasLegacyData(): boolean {
     return false
   }
 }
+
+/** Versión publicada en el servidor (/version.json de la última build). null si no se pudo leer. */
+export async function fetchServerVersion(): Promise<string | null> {
+  try {
+    const res = await fetch(`/version.json?t=${Date.now()}`, { cache: 'no-store' })
+    if (!res.ok) return null
+    const data = (await res.json()) as { version?: unknown }
+    return typeof data.version === 'string' ? data.version : null
+  } catch {
+    return null
+  }
+}
+
+/** Evento que lanza el envío de un pedido cuando el servidor responde "versión vieja" (HTTP 426). */
+export const OUTDATED_EVENT = 'traelo:outdated'
